@@ -1,0 +1,112 @@
+\documentclass{beamer}
+\usepackage{booktabs,tikz}
+\usetheme{Berlin}
+\title{Risk and Return}
+\begin{document}
+\maketitle
+
+\section{Introduction}
+\begin{frame}{Risk and Return}
+	\begin{itemize}
+		\item Investors prefer more return and less risk
+		\item In this lecture, we will focus on two concepts related to investors' preferences over return and risk
+		\begin{enumerate}
+			\item The risk premium, which is the return we expect to receive for taking a certain amount of risk
+			\item The Sharpe ratio, which tells us how much return we receive for each unit of risk we take
+		\end{enumerate}
+	\end{itemize}
+\end{frame}
+
+\section{Risk Aversion}
+
+\begin{frame}{Risk Aversion}
+	\begin{center}
+		\renewcommand{\arraystretch}{1.5}
+		\begin{tabular}{cc|cc}
+			\multicolumn{2}{c}{\textbf{Bet A}} & \multicolumn{2}{c}{\textbf{Bet B}} \\
+			Amount & Probability & Amount & Probability \\ \hline
+			-10k USD & 0.5 & 10k USD & 1. \\
+			30k USD & 0.5 & & \\ \hline
+			\multicolumn{2}{c}{Average = 10k USD} & \multicolumn{2}{c}{Average = 10k}
+		\end{tabular}
+	\end{center}
+\begin{center}
+A risk averse investor prefers \textbf{Bet B} to \textbf{Bet A}. While both bets return 10k USD on average, \textbf{Bet A} is significantly riskier.
+\end{center}
+\end{frame}
+
+\begin{frame}{Risk Aversion}
+	\begin{center}
+		\renewcommand{\arraystretch}{1.5}
+		\begin{tabular}{cc|cc}
+			\multicolumn{2}{c}{\textbf{Bet A}} & \multicolumn{2}{c}{\textbf{Bet B}} \\
+			Amount & Probability & Amount & Probability \\ \hline
+			-10k USD & 0.5 & 10k USD & 1. \\
+			40k USD & 0.5 & & \\ \hline
+			\multicolumn{2}{c}{Average = 15k USD} & \multicolumn{2}{c}{Average = 10k USD}
+		\end{tabular}
+	\end{center}
+\begin{center}
+She will only accept \textbf{Bet A} to \textbf{Bet B} if she is compensated for doing so, in this example, by earning an additional 5k USD.
+\end{center}
+\end{frame}
+
+\section{Risk Premia}
+
+\begin{frame}{Risk-Free Asset}
+	\begin{itemize}
+		\item The risk-free rate is the rate of return that can be earned with certainty
+		\item The risk-free asset is the asset that yields a risk-free return
+		\item We take US Treasuries to be risk-free assets and Treasury yields to be the risk-free return
+		\item Let's call the risk-free rate $R_{F}$ 
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Risk Premia}
+	\begin{itemize}
+		\item The risk premium is the expected excess return over the risk-free rate
+		\begin{equation}
+			\text{RP}[R_{P}]=\text{E}[R_{P}]-R_{F}
+		\end{equation}
+		\item It is the return we earn for taking risk: higher risk stocks will generally have higher risk premia, safer stocks will generally have lower risk premia
+		\item If the portfolio $P$ is risk-free, its risk-premium will be zero
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Risk Premia}
+	The mean monthly return on the market from 1929 to 2019 was 0.9379\%. The mean monthly return on US T-bills was 0.2732\%. What was the market risk premium over this period?\\
+	\pause
+	{\color{blue}
+		The monthly market risk premium was
+		\begin{equation}
+			\text{RP}[R_{\text{Market}}]=0.9379\%-0.2732\%=0.6647\%
+		\end{equation}
+		This is how much the market had to compensate investors for the risk they were taking.
+	}
+\end{frame}
+
+\section{Sharpe Ratio}
+
+\begin{frame}{Sharpe Ratios}
+	\begin{itemize}
+		\item The Sharpe ratio is the ratio of a portfolio's risk premium to its standard deviation:
+			\begin{equation}
+				\text{SR}[R_{P}]=\frac{\text{RP}[R_{P}]}{\text{SD}[R_{P}]}=\frac{\text{E}[R_{P}]-R_{F}}{\text{SD}[R_{P}]}
+			\end{equation}
+			where $\text{E}[R_{P}]$ and $\text{SD}[R_{P}]$ are the mean and standard deviation of the return on the portfolio respectively 
+		\item It is the return we earn for each unit of risk we take
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Sharpe Ratios}
+	The mean monthly standard deviation of market returns from 1929 to 2019 was 5.3324\%. What was the market Sharpe ratio over this period?\\
+	\pause
+	{\color{blue}
+		The monthly market risk premium was
+		\begin{equation}
+			\text{SR}[R_{\text{Market}}]=\frac{.6647\%}{5.3324\%}=0.1247
+		\end{equation}
+}
+\end{frame}
+
+\end{document}

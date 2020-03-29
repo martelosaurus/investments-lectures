@@ -1,0 +1,8 @@
+
+# Find price, coupon rate, and yield of a coupon bond
+'{date}: the {}-year Treasury trades for \${}. What is the price?'
+'{date}: the {}-year Treasury trades for \${}. What is the coupon rate?'
+'{date}: the {}-year Treasury trades for \${}. What is the yield?'
+
+# Use zeros to price a coupon bond
+'{date}: the 1-year Treasury trades for , the 2-year for, and the 3-year for. How much did the x trade for?'

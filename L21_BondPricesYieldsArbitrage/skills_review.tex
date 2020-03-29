@@ -1,0 +1,358 @@
+\documentclass{beamer}
+\usepackage{tikz,amsmath,comment,multirow}
+\usetheme{Berlin}
+\title{Skills Review}
+\newcommand{\should}{\overset{\text{should}}{=}}
+\begin{document}
+\maketitle
+
+%-----------------------------------------------------------------------------%
+% OVERVIEW
+%-----------------------------------------------------------------------------%
+\section{Overview}
+
+%-----------------------------------------------------------------------------%
+% OVERVIEW
+%-----------------------------------------------------------------------------%
+\begin{frame}{Objectives}
+	\begin{enumerate}
+		\item For a \underline{bond}, compute the
+			\begin{itemize}
+				\item price and 
+				\item (implied) yield
+			\end{itemize}
+		\item For a \underline{stock}, compute the
+			\begin{itemize}
+				\item price,
+				\item (implied) expected dividend growth rate
+			\end{itemize}
+	\end{enumerate}
+\end{frame}
+
+%-----------------------------------------------------------------------------%
+% BONDS
+%-----------------------------------------------------------------------------%
+\section{Bonds}
+
+% Annuities
+\begin{frame}{Treasuries}
+	A $T$-year Treasury makes semi-annual payments.
+	\begin{figure}[H]
+		\begin{center}
+			\begin{tikzpicture}
+				\draw (0,0) -- (8,0);
+				\foreach \x in {0,2,4,8}
+				\draw(\x cm,3pt) -- (\x cm, -3pt);
+				\draw (0,0) node[above=3pt] {0};
+				\draw (2,0) node[above=3pt] {1};
+				\draw (4,0) node[above=3pt] {2};
+				\draw (8,0) node[above=3pt] {$2T$};
+				\draw (0,0) node[below=3pt] {$-P$};
+				\draw (2,0) node[below=3pt] {$cF/2$};
+				\draw (4,0) node[below=3pt] {$cF/2$};
+				\draw (6,0) node[above=3pt, align=center] {$\cdots$};
+				\draw (6,0) node[below=3pt, align=center] {$\cdots$};
+				\draw (8,0) node[below=3pt] {$cF/2+F$};
+			\end{tikzpicture}
+		\end{center}
+	\end{figure}
+where $c\geq0$ is the coupon rate (APR) 
+{\scriptsize
+\begin{align*}
+	P&\should\frac{cF/2}{(1+y/2)}+\frac{cF/2}{(1+y/2)^2}+\frac{cF/2}{(1+y/2)^3}+\cdots+\frac{cF/2}{(1+y/2)^{2T}}+\frac{F}{(1+y/2)^{2T}}\\
+	&=\frac{cF/2}{y/2}\left(1-\frac{1}{(1+y/2)^{2T}}\right)+\frac{F}{(1+y/2)^{2T}}
+\end{align*}}
+where $y$ is the yield (APR). 
+\end{frame}
+
+% dividend examples
+\begin{frame}{From the Data}
+	\begin{center}
+		\includegraphics[scale=0.5]{CUSIP_912828HR_col}
+	\end{center}
+\end{frame}
+
+% Bond Checklist
+\begin{frame}{Treasury Checklist}
+	\begin{itemize}
+		\item[$\checkmark$] Yields and coupon rates are quoted as APRs, so divide them by the number of payments per year to get the per-period rate
+		\item[$\checkmark$] Multiply the number of years by the number of payments per year to get the number of periods
+		\item[$\checkmark$] The future value is the face value
+		\item[$\checkmark$] \underline{Remember}: if the coupon rate is greater than (less than) the yield, the price is greater than (less than) the face value
+		\item[$\checkmark$] \textbf{Use four decimal places!}
+	\end{itemize}
+\end{frame}
+
+% question 1
+\begin{frame}{Example}
+	\input{problems/prob01_000Q}
+	\pause
+	{\color{blue}\input{problems/prob01_000A}}
+\end{frame}
+\iffalse
+% question 2
+\begin{frame}{Example}
+	\input{problems/prob01_001Q}
+	\pause
+	{\color{blue}\input{problems/prob01_001A}}
+\end{frame}
+\fi
+
+% question 3
+\begin{frame}{Example}
+	\input{problems/prob01_010Q}
+	\pause
+	{\color{blue}\input{problems/prob01_010A}}
+\end{frame}
+\iffalse
+% question 4
+\begin{frame}{Example}
+	\input{problems/prob01_011Q}
+	\pause
+	{\color{blue}\input{problems/prob01_011A}}
+\end{frame}
+\fi
+
+%-----------------------------------------------------------------------------%
+% STOCKS
+%-----------------------------------------------------------------------------%
+\section{Stocks}
+
+% A One Year Investor
+\begin{frame}{Stocks}
+	\begin{figure}[H]
+		\begin{center}
+			\begin{tikzpicture}
+				\draw (0,0) -- (4,0);
+				\foreach \x in {0,4}
+					\draw(\x,-.1) -- (\x, .1);
+				\draw (0,0) node[above=3pt] {0};
+				\draw (4,0) node[above=3pt] {1};
+				\draw (0,0) node[below=3pt] {$-P_{0}$};
+				\draw (4,0) node[below=3pt] {$D_{1}+P_{1}$};
+			\end{tikzpicture}
+		\end{center}
+	\end{figure}
+	\begin{itemize}
+		\item $P_{1}$ is the expected price in one period (usually one quarter)
+		\item $r$ is the required total rate of return (usually quarterly)
+		\item $D_{1}$ is the expected dividend 
+		\item The price \underline{should} be
+		\begin{equation*}
+			P_{0}\should\frac{D_{1}+P_{1}}{1+r}.
+		\end{equation*}
+	\end{itemize}
+\end{frame}
+
+% Dividend Yields, Capital Gains, and Total Returns
+\begin{frame}{Didend Yields, Capital Gains, and Total Returns}
+\begin{equation*}
+r\should\frac{D_{1}+P_{1}}{P_{0}}-1=\underbrace{\frac{D_{1}}{P_{0}}}_{\text{Didend Yield}}+\underbrace{\frac{P_{1}-P_{0}}{P_{0}}}_{\text{Capital Gain Rate}}
+\end{equation*}
+\begin{itemize}
+\item The \underline{dividend yield} is the expected annual dividend of the stock divided by its current price 
+\item The \underline{capital gain rate} is the percent by which the stock price increases from the current period to the next
+\item The \underline{total return} is the sum of the dividend yield and the capital gain rate  
+\end{itemize}
+\end{frame}
+
+% A Multiyear Investor
+\begin{frame}{Stocks}
+	\begin{figure}[H]
+		\begin{center}
+			\begin{tikzpicture}
+				\draw (0,0) -- (8,0);
+				\foreach \x in {0,4,8}
+				\draw(\x cm,3pt) -- (\x cm, -3pt);
+				\draw (0,0) node[above=3pt] {0};
+				\draw (4,0) node[above=3pt] {1};
+				\draw (8,0) node[above=3pt] {2};
+				\draw (0,0) node[below=3pt] {$-P_{0}$};
+				\draw (4,0) node[below=3pt] {$D_{1}$};
+				\draw (8,0) node[below=3pt] {$D_{2}+P_{2}$};
+			\end{tikzpicture}
+		\end{center}
+	\end{figure}
+\begin{itemize}
+\item The prices should be
+\begin{equation*}
+	P_{0}\should\frac{D_{1}}{1+r}+\frac{D_{2}+P_{2}}{(1+r)^2}\text{ and } P_{1}\should\frac{D_{2}+P_{2}}{1+r}.
+\end{equation*}
+\item Does the two-year investor value the stock differently than the one-ear investor? \textbf{No!}
+\begin{equation*}
+	P_{0}=\frac{D_{1}}{1+r}+\frac{D_{2}+P_{2}}{(1+r)^2}=\frac{D_{1}}{1+r}+\frac{P_{1}}{1+r}=\frac{D_{1}+P_{1}}{1+r}
+\end{equation*}
+\end{itemize}
+\end{frame}
+
+% Dividend Discount Model Equation
+\begin{frame}{The Dividend Discount Model}
+	\begin{itemize}
+		\item It doesn't matter whether the investor wants to hold the stock for one quarter, two quarters, or infinitely many quarters: she is always willing to pay the same price $P_{0}$
+		\item In particular, the investor who holds the stock for infinitely many periods is willing to pay 
+		\begin{equation*}
+			P_{0}\should\frac{D_{1}}{1+r}+\frac{D_{2}}{(1+r)^2}+\frac{D_{3}}{(1+r)^3}+\cdots 
+		\end{equation*}
+		for the stock
+		\item \underline{Implication}: we don't need to know the prices $P_{1}$, $P_{2}$, $\ldots$, just the dividends $D_{1}$, $D_{2}$, $D_{3}$, $\ldots$
+	\end{itemize}
+\end{frame}
+
+% Growing Perpetuities
+\begin{frame}{Constant Dividend Growth}
+Simple model: dividends grow at a constant rate $g$ 
+\begin{figure}[H]
+	\begin{center}
+		\begin{tikzpicture}
+		\draw (0,0) -- (8,0);
+		\foreach \x in {0,2,4,6}
+		\draw(\x cm,3pt) -- (\x cm, -3pt);
+		\draw (0,0) node[above=3pt] {0};
+		\draw (2,0) node[above=3pt] {1};
+		\draw (4,0) node[above=3pt] {2};
+		\draw (6,0) node[above=3pt] {3};
+		\draw (0,0) node[below=3pt] {};
+		\draw (0,0) node[below=3pt] {\footnotesize$-P_{0}$};
+		\draw (2,0) node[below=3pt] {\footnotesize$(1+g)D_{0}$};
+		\draw (4,0) node[below=3pt] {\footnotesize$(1+g)^{2}D_{0}$};
+		\draw (6,0) node[below=3pt] {\footnotesize$(1+g)^{3}D_{0}$};
+		\draw (8,0) node[above=3pt, align=center] {$\cdots$};
+		\draw (8,0) node[below=3pt, align=center] {$\cdots$};
+		\end{tikzpicture}
+	\end{center}
+\end{figure}
+where $D_{0}$ is the dividend that was \underline{just} paid
+\begin{equation*}
+	P_{0}\should\frac{(1+g)D_{0}}{(1+r)}+\frac{(1+g)^{2}D_{0}}{(1+r)^2}+\frac{(1+g)^{3}D_{0}}{(1+r)^3}+\cdots=\frac{(1+g)D_{0}}{r-g}
+\end{equation*}
+\end{frame}
+
+% Constant Dividend Growth
+\begin{frame}{Constant Dividend Growth}
+\begin{itemize}
+	\item The Dividend Discount Model says that
+	\begin{equation*}
+		P_{0}\should\frac{(1+g)D_{0}}{r-g}=\frac{D_{1}}{r-g}
+	\end{equation*}
+	\item Awesome interpretation!
+	\begin{equation*}
+		\overbrace{\frac{D_{1}}{P_{0}}+g}^{\text{Specific Formula}}\should r\should\overbrace{\underbrace{\frac{D_{1}}{P_{0}}}_{\text{Didend Yield}}+\underbrace{\frac{P_{1}-P_{0}}{P_{0}}}_{\text{Capital Gain Rate}}}^{\text{General Formula}}
+	\end{equation*}
+	\item In this case, the \underline{growth rate} $g$ is the \underline{capital gain rate}
+\end{itemize}
+\end{frame}
+
+% dividend examples
+\begin{frame}{From the Data}
+	\begin{center}
+		\includegraphics[scale=0.5]{V_col}
+	\end{center}
+\end{frame}
+
+% dividend examples
+\begin{frame}{From the Data}
+	\begin{center}
+		\includegraphics[scale=0.5]{XOM_col}
+	\end{center}
+\end{frame}
+
+% dividend examples
+\begin{frame}{From the Data}
+	\begin{center}
+		\includegraphics[scale=0.5]{WMT_col} 
+	\end{center}
+\end{frame}
+
+% dividend examples
+\begin{frame}{From the Data}
+		Does the constant dividend growth assumption comport with reality?
+	\begin{itemize}
+		\item Verizon's dividends are (generally) constant across the four quarters in each year, but increase from the fourth quarter of one year to the first quarter of the next
+		\item Exxon's dividends follow a similar pattern to those of Verizon, \underline{despite} the much greater volatility in its stock price
+		\item Walmart's dividends follow a similar pattern to those of Verizon and Exxon, \underline{but} the annual growth in the dividend rate seems to kink in 2013
+	\end{itemize}
+		There are some issues...
+\end{frame}
+
+% Stock Checklist
+\begin{frame}{Stock Checklist}
+	\begin{itemize}
+		\item[$\checkmark$] The required rate of total return should have the same horizon as that of the dividends, so if returns are quoted in months, say $r_{m}$, compute the quarterly return as follows:
+		\begin{equation}
+			r_{q}=(1+r_{m})^{3}-1
+		\end{equation}
+		\item[$\checkmark$] The growth rate should also have the same horizon as that of the dividends 
+		\item[$\checkmark$] \textbf{Use four decimal places!}
+	\end{itemize}
+\end{frame}
+
+% Constant Dividend Growth
+\iffalse
+\begin{frame}{Constant Dividend Growth: Yearly Increases}
+\begin{itemize}
+	\item During a year, 
+		\begin{equation*}
+			\frac{D}{1+r_{q}}+\frac{D}{(1+r_{q})^{2}}+\frac{D}{(1+r_{q})^{3}}+\frac{D}{(1+r_{q})^{4}}
+		\end{equation*}
+	\item The Dividend Discount Model says that
+	\begin{equation*}
+		P_{0}\should\frac{(1+g)D_{0}}{r-g}=\frac{D_{1}}{r-g}
+	\end{equation*}
+	\item Awesome interpretation!
+	\begin{equation*}
+		\overbrace{\frac{D_{1}}{P_{0}}+g}^{\text{Specific Formula}}\should r\should\overbrace{\underbrace{\frac{D_{1}}{P_{0}}}_{\text{Didend Yield}}+\underbrace{\frac{P_{1}-P_{0}}{P_{0}}}_{\text{Capital Gain Rate}}}^{\text{General Formula}}
+	\end{equation*}
+	\item In this case, the \underline{growth rate} $g$ is the \underline{capital gain rate}
+\end{itemize}
+\end{frame}
+\fi
+
+% example
+\begin{frame}{Example: Stock Price}
+	\input{problems/prob01_020Q}
+	\pause
+	{\color{blue}\input{problems/prob01_020A}}
+\end{frame}
+
+% example
+\iffalse
+\begin{frame}{Example: Stock Price}
+	\input{problems/prob01_021Q}
+	\pause
+	{\color{blue}\input{problems/prob01_021A}}
+\end{frame}
+\fi
+
+% example
+\begin{frame}{Example: Implied Growth Rate}
+	\input{problems/prob01_030Q}
+	\pause
+	{\color{blue}\input{problems/prob01_030A}}
+\end{frame}
+
+% example
+\iffalse
+\begin{frame}{Example: Implied Growth Rate}
+	\input{problems/prob01_031Q}
+	\pause
+	{\color{blue}\input{problems/prob01_031A}}
+\end{frame}
+\fi
+
+% example
+\begin{frame}{Example: Dividend Yield}
+	\input{problems/prob01_040Q}
+	\pause
+	{\color{blue}\input{problems/prob01_040A}}
+\end{frame}
+
+% example
+\iffalse
+\begin{frame}{Example: Dividend Yield}
+	\input{problems/prob01_041Q}
+	\pause
+	{\color{blue}\input{problems/prob01_041A}}
+\end{frame}
+\fi
+
+\end{document}

@@ -1,0 +1,57 @@
+:: prob11_00
+:: stcks
+:: The following data are from {date}. What is the value-weighted return of the portfolio?
+\begin{{center}}
+	\begin{{tabular}}{{l|ll}}
+		\textbf{{Stock}} & \textbf{{Cap}} & \textbf{{Return}} \\ \hline
+		American (AAL) & {AAL_mc} & {AAL_rt}\% \\
+		Alaska (ALK) & {ALK_mc} & {ALK_rt}\% \\
+		Delta (DAL) & {DAL_mc} & {DAL_rt}\% \\
+		Southwest (LUV) & {LUV_mc} & {LUV_rt}\% \\
+		United (UAL) & {UAL_mc} & {UAL_rt}\%\\\hline
+	\end{{tabular}}\\
+	{{\footnotesize market cap in billions of USD, returns monthly total returns}}
+\end{{center}}
+:: To find the value-weighted return...
+\begin{{center}}
+	{{\color{{blue}}
+	\begin{{tabular}}{{l|llll}}
+		\textbf{{Stock}} & \textbf{{Cap}} & \textbf{{W}}eight & \textbf{{R}}eturn & \textbf{{W$\times$R}}\\ \hline
+		American (AAL) & {AAL_mc} & {AAL_wt} & {AAL_rt}\% & {AAL_xx_vw}\% \\
+		Alaska (ALK) & {ALK_mc} & {ALK_wt} & {ALK_rt}\% & {ALK_xx_vw}\% \\
+		Delta (DAL) & {DAL_mc} & {DAL_wt} & {DAL_rt}\% & {DAL_xx_vw}\% \\
+		Southwest (LUV) & {LUV_mc} & {LUV_wt} & {LUV_rt}\% & {LUV_xx_vw}\% \\
+		United (UAL) & {UAL_mc} & {UAL_wt} & {UAL_rt}\% & {UAL_xx_vw}\% \\ \hline 
+		Portfolio & {port_mc} & {port_wt} & & {port_rt_vw}\%\\\hline
+	\end{{tabular}}
+	}}\\
+	{{\footnotesize market cap in billions of USD, returns monthly total returns}}
+\end{{center}}
+
+:: prob11_01
+:: stcks
+:: The following data are from {date}. What is the equal-weighted return of the portfolio?
+\begin{{center}}
+	\begin{{tabular}}{{l|l}}
+		\textbf{{Stock}} & \textbf{{Return}} \\ \hline
+		American (AAL) & {AAL_rt}\% \\
+		Alaska (ALK) & {ALK_rt}\% \\
+		Delta (DAL) & {DAL_rt}\% \\
+		Southwest (LUV) & {LUV_rt}\% \\
+		United (UAL) & {UAL_rt}\%\\\hline
+	\end{{tabular}}
+\end{{center}}
+:: To find the equal-weighted return...
+\begin{{center}}
+	{{\color{{blue}}
+	\begin{{tabular}}{{l|lll}}
+		\textbf{{Stock}} & \textbf{{W}}eight & \textbf{{R}}eturn & \textbf{{W}}$\times$\textbf{{R}}\\ \hline
+		American (AAL) & $1/5$ & {AAL_rt}\% & {AAL_xx_eq}\% \\
+		Alaska (ALK) & $1/5$ & {ALK_rt}\% & {ALK_xx_eq}\% \\
+		Delta (DAL) & $1/5$ & {DAL_rt}\% & {DAL_xx_eq}\% \\
+		Southwest (LUV) & $1/5$ & {LUV_rt}\% & {LUV_xx_eq}\% \\
+		United (UAL) & $1/5$ & {UAL_rt}\% & {UAL_xx_eq}\% \\ \hline 
+		Portfolio & 1 && {port_rt_eq}\% \\\hline
+	\end{{tabular}}
+	}}
+\end{{center}}

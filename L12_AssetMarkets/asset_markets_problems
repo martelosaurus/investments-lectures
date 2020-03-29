@@ -1,0 +1,20 @@
+:: prob12_00
+:: stcks
+:: On {date}, {coname} ({ticker}) traded for {price} USD. Suppose you bought {noshares} shares with {margin0_usd} USD of capital. What was your margin in percent and in USD? Did it satisfy the IMR? By {next_date}, the value of your position changed by {next_ret}\% (accounting for dividends). What was your margin in percent and in USD? Did it satisfy the MMR? Assume you can borrow at 9.569\%.
+:: Your position (assets) was {assets0} USD. You borrowed {liabilities0} USD (liabilities). Your margin is {margin0_usd} USD (equity) or {margin0_pct}\% (equity over assets). Your margin satisfied the IMR. The new value of your position (assets) was {assets1} USD and your new liability was {liabilities1} USD. Your margin is assets minus liabilities (equity): {margin1_usd} USD or {margin1_pct}\%. Your margin satisfied the MMR.
+
+:: prob12_01
+:: bonds
+:: On 2020-01-28, the yield on a one-year T-bill was 1.53\%. The fair price is {price}. Assume that you can borrow from and lend to a counterparty (call it a ``bank'') for a year at {yld}.  What if the T-bill is trading for {misprice} USD? 
+:: Cash Flow Table
+\begin{{table}}
+\begin{{center}}
+\begin{{tabular}}{{lrr}}
+	& \textbf{{2020-01-28}} & \textbf{{2021-01-28}} \\ \hline
+	Buy the T-bill & -97.5082 USD & {tbillsign}100 USD \\
+	Bank & +98.4931 USD & {banksign}100 USD\\ \hline
+	Net Cash Flow & +{profit} USD & 0 USD 
+\end{{tabular}}
+\end{{center}}
+\end{{table}}
+{borrow_lend} {price} USD, use 97.5082 USD of it to buy the T-bill. In one year's time, you'll owe the bank 100 USD but the T-bill will pay you 100 USD

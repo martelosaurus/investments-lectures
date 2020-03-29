@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@sectionintoc {2}{Risk Aversion}{3}{0}{2}
+\beamer@sectionintoc {3}{Risk Premia}{5}{0}{3}
+\beamer@sectionintoc {4}{Sharpe Ratio}{9}{0}{4}

@@ -1,0 +1,67 @@
+:: prob11_00
+:: stcks
+:: The following data are from {date}. What is the value-weighted return of the portfolio?
+<table>
+	<tr>
+		<th> Stock </th> 
+		<th> Market Cap </th> 
+		<th> Return </th>
+	</tr>
+	<tr>
+		<td> Bank of America (BAC) </td>
+		<td> {BAC_mc} </td>
+		<td> {BAC_rt}% </td>
+	</tr>
+	<tr>
+		<td> Citi (C) </td>
+		<td> {C_mc} </td>
+		<td> {C_rt}% </td>
+	</tr>
+	<tr>
+		<td> JP Morgan Chase (JPM) </td>
+		<td> {JPM_mc} </td>
+		<td> {JPM_rt}% </td>
+	</tr>
+	<tr>
+		<td> US Bank (USB) </td>
+		<td> {USB_mc} </td>
+		<td> {USB_rt}% </td>
+	<tr>
+		<td> Wells Fargo (WFC) </td>
+		<td> {WFC_mc} </td>
+		<td> {WFC_rt}% </td>
+	</tr>
+</table>
+Market caps are in billions of USD. Answer {port_rt_vw}.
+:: dev/null
+
+:: prob11_01
+:: stcks
+:: The following data are from {date}. What is the equal-weighted return of the portfolio?
+<table>
+	<tr>
+		<th> Stock </th> 
+		<th> Return </th>
+	</tr>
+	<tr>
+		<td> Bank of America (BAC) </td>
+		<td> {BAC_rt}% </td>
+	</tr>
+	<tr>
+		<td> Citi (C) </td>
+		<td> {C_rt}% </td>
+	</tr>
+	<tr>
+		<td> JP Morgan Chase (JPM) </td>
+		<td> {JPM_rt}% </td>
+	</tr>
+	<tr>
+		<td> US Bank (USB) </td>
+		<td> {USB_rt}% </td>
+	<tr>
+		<td> Wells Fargo (WFC) </td>
+		<td> {WFC_rt}% </td>
+	</tr>
+</table>
+Market caps are in billions of USD. Answer {port_rt_eq}.
+:: dev/null

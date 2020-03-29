@@ -1,0 +1,244 @@
+\documentclass{beamer}
+\begin{document}
+
+\begin{frame}{Bond Prices and Yields}
+\begin{center}
+\includegraphics[scale=.5]{bond}
+\end{center}
+\end{frame}
+
+% A PREVIEW OF CONVEXITY------------------------------------------------------%
+\begin{frame}{Two Relationships}
+    \textbf{Yield Curve:} yields and terms
+    \begin{itemize}
+        \item The yield curve shows the relationship between yields and terms
+        \item Also known as the \textit{term structure}
+    \end{itemize}
+    \textbf{Convexity:} prices and interest rates
+    \begin{itemize}
+        \item Convexity is the sensitivity of a bond's price to interest rates
+        \item We will dig deeper into convexity in our next lecture
+        \item For now, two rules apply:
+            \begin{itemize}
+                \item the longer the time-to-maturity, 
+                \item the lower the coupon, and
+                \item and the deeper the (price) discount,
+            \end{itemize}
+            the higher the sensitivity
+    \end{itemize}
+    We'll focus on yield curves today.
+\end{frame}
+
+% THE YIELD CURVE-------------------------------------------------------------%
+\begin{frame}{The Yield Curve}
+    \begin{itemize}
+        \item Let us assume that we have 4 zero-coupon bonds, each with a par value of \$1,000, as follows:
+            \begin{itemize}
+                \item 1-year bond with a market price of \$925.93;
+                \item 2-year bond with a market price of \$841.75;
+                \item 3-year bond with a market price of \$758.33;
+                \item 4-year bond with a market price of \$683.18.
+            \end{itemize}
+        \item The market prices of these bonds imply the 1, 2, 3 and 4 year interest rates in the economy
+    \end{itemize}
+\end{frame}
+
+% THE YIELD CURVE-------------------------------------------------------------%
+\begin{frame}{The Yield Curve}
+    \begin{itemize}
+         \item 1-year bond with a market price of \$925.93;
+            \begin{equation}
+                \$925.93 = \frac{\$1,000.00}{1+y_{1}}\:\Rightarrow\:y_{1}=8.000\%
+            \end{equation}
+         \item 2-year bond with a market price of \$841.75; 
+            \begin{equation}
+                \$841.75 = \frac{\$1,000.00}{(1+y_{2})^{2}}\:\Rightarrow\:y_{2}=8.995\%
+            \end{equation}
+         \item 3-year bond with a market price of \$758.33;
+            \begin{equation}
+                \$758.33 = \frac{\$1,000.00}{(1+y_{3})^{3}}\:\Rightarrow\:y_{3}=9.660\%
+            \end{equation}
+         \item 4-year bond with a market price of \$683.18.
+            \begin{equation}
+                \$683.18 = \frac{\$1,000.00}{(1+y_{4})^{4}}\:\Rightarrow\:y_{4}=9.993\%
+         \end{equation}
+    \end{itemize}
+\end{frame}
+
+% THE YIELD CURVE-------------------------------------------------------------%
+\begin{frame}{The Yield Curve}
+    \begin{center}
+        \includegraphics[scale=.5]{yield_curve}
+    \end{center}
+\end{frame}
+
+% THE YIELD CURVE-------------------------------------------------------------%
+\begin{frame}{The Yield Curve}
+    \begin{itemize}
+        \item The yield curve is the graphical relationship between yield to maturity and maturity (term)
+        \item Rising yield curves (similar to the one on the previous slide) are the most common, i.e., longer term bonds tend to offer a higher yield to maturity
+        \item But why should bonds of differing maturity offer different yields?
+        \item There are two theories
+    \end{itemize}
+\end{frame}
+
+% THEORY 1: THE UNBIASED EXPECTATIONS THEORY----------------------------------%
+\begin{frame}{The Unbiased Expectations Theory}
+\begin{itemize}
+    \item This theory argues that yields on longer term bonds represent the ‘average’ short term interest rate during the life of the bond
+    \item That is, the two year bond’s yield is the average of the 2 1-year rates: the rates between year 0-1 and year 1-2
+    \item Since interest rates are different in different time periods, these averages will be different as well
+\end{itemize}
+\end{frame}
+        
+% THEORY 1: THE UNBIASED EXPECTATIONS THEORY----------------------------------%
+\begin{frame}{The Unbiased Expectations Theory}
+\begin{itemize}
+    \item The theory therefore implies a no-arbitrage argument. 
+    \item In particular, we will argue that given a specific investment horizon, 
+        \begin{itemize}
+            \item the investor can buy a bond with maturity = the investment horizon
+or alternatively 
+            \item he/she can invest in a short term bond and roll the proceeds into other short term bonds over time
+        \end{itemize}
+    \item For the two alternative strategies to be competitive (arbitrage free), their total return must be the same!
+\end{itemize}
+\end{frame}
+
+% THEORY 1: THE UNBIASED EXPECTATIONS THEORY----------------------------------%
+\begin{frame}{The Unbiased Expectations Theory}
+\begin{itemize}
+    \item Suppose the current one-year interest rate is 8\%
+    \item Everybody believes that the interest rate on one-year bonds will be 10\% in one year
+    \item What does that imply about the proper yield to maturity on 2-year bonds issued today?
+    \item It must be that
+        \begin{equation}
+            (1+y)^{2}=(1+8\%)(1+10\%)
+        \end{equation}
+        which implies that $y=9\%$. 
+\end{itemize}
+\end{frame}
+
+% EXAMPLE---------------------------------------------------------------------%
+\begin{frame}{Example}
+    \begin{itemize}
+        \item A 1-year, \$1,000 zero-coupon bond trades for \$952.38, while a 2-year \$1,000 zero-coupon bond trades for \$826.45. What is the yield curve?
+        \item What does the market expect the 1-year yield to be in one year?
+    \end{itemize}
+\end{frame}
+
+% EXAMPLE---------------------------------------------------------------------%
+\begin{frame}{Example}
+    \begin{itemize}
+        \item The 1-year yield is 5\%, the 2-year is 6\%, and the 3-year is 7\%. For how much will the 3-year trade next year? Assume standard \$1,000 face. 
+    \end{itemize}
+\end{frame}
+
+% THEORY 1: THE UNBIASED EXPECTATIONS THEORY----------------------------------%
+\begin{frame}{The Unbiased Expectations Theory}
+\begin{itemize}
+    \item Let $_{m}r_{n}$ denote the yield of an $n$-period bond that sells on date $m$
+    \item Our no-arbitrage formula says that  
+        \begin{equation}\label{eq:ourformula}
+        (1+_{0}y_{n})^{n}=(1+_{0}y_{m})^{m}(1+_{m}y_{n-m})^{n-m}
+        \end{equation}
+        for any $m=1,2,\ldots,n$. 
+    \item Either you buy the $n$-period bond today and hold it to maturity (left-hand-side), or 
+    \item you buy an $m$-period bond, and on date $m$, roll it over into an  $(n-m)$-period bond (right-hand-side). 
+    \item $_{0}y_{n}$ and $_{0}y_{m}$ come from today's yield curve, while
+    \item $_{m}y_{n-m}$ comes from date $m$'s yield curve
+\end{itemize}
+\end{frame}
+
+% THEORY 1: THE UNBIASED EXPECTATIONS THEORY----------------------------------%
+\begin{frame}{The Unbiased Expectations Theory}
+Using our new notation, we can write out the current and future yield curves
+\begin{table}[H]
+    \begin{center}
+        \begin{tabular}{lccc}
+            Term & Year 0 & Year 1 & Year 2 \\ \hline
+            1-Year & $_{0}y_{1}$ & $_{1}y_{1}$ & $_{2}y_{1}$\\
+            2-Year & $_{0}y_{2}$ & $_{1}y_{2}$ & $\times$ \\
+            3-Year & $_{0}y_{3}$ & $\times$ & $\times$
+        \end{tabular}
+    \end{center}
+\end{table}
+\end{frame}
+
+
+% THEORY 1: THE UNBIASED EXPECTATIONS THEORY----------------------------------%
+\begin{frame}{The Unbiased Expectations Theory}
+    \begin{itemize}
+        \item What can we do?
+\begin{table}[H]
+\begin{center}
+    \begin{tabular}{ll}
+        Path & Future Value \\ \hline
+        $0\mapsto3$ & $(1+_{0}y_{3})^{3}$\\
+        $0\mapsto1\mapsto3$ & $(1+_{0}y_{1})(1+_{1}y_{2})^{2}$\\
+        $0\mapsto2\mapsto3$ & $(1+_{0}y_{2})^{2}(1+_{2}y_{1})$\\
+        $0\mapsto1\mapsto2\mapsto3$ & $(1+_{0}y_{1})(1+_{1}y_{1})(1+_{2}y_{1})$
+\end{tabular}
+\end{center}
+\end{table}
+        \item According to Unbiased Expectations Theory, all FVs should be the same
+    \end{itemize}
+\end{frame}
+
+% EXAMPLE---------------------------------------------------------------------%
+\begin{frame}{Example}
+    \begin{center}
+        Complete the following table:
+    \end{center}
+    
+    \begin{table}[H]
+    \begin{center}
+        \begin{tabular}{lccc}
+            Term & Year 0 & Year 1 & Year 2 \\ \hline
+            1-Year & 5\% & $_{1}y_{1}$ & $_{2}y_{1}$\\
+            2-Year & 10\% & $_{1}y_{2}$ & $\times$ \\
+            3-Year & 15\% & $\times$ & $\times$
+        \end{tabular}
+    \end{center}
+\end{table}
+\end{frame}
+
+% THEORY 1: THE UNBIASED EXPECTATIONS THEORY----------------------------------%
+\begin{frame}{The Unbiased Expectations Theory}
+\begin{itemize}
+\item The unbiased expectations theory leads to an easy interpretation of the yield curve:
+\item A \textbf{rising} term structure indicates that the market expects short-term rates to rise over the future.
+\item A \textbf{flat} term structure reflects an expectation that future short-term rates will remain relatively constant.
+\item A \textbf{falling} term structure reflects an expectations that future short-term rates will decline steadily. 
+\end{itemize}
+\end{frame}
+
+% THEORY 1: THE UNBIASED EXPECTATIONS THEORY----------------------------------%
+\begin{frame}{The Unbiased Expectations Theory}
+\begin{itemize}
+    \item The drawback of the unbiased expectations theory is that it does not consider the risks associated with investing in bonds.
+    \item It can be shown that there is uncertainty about the one-period return from holding a bond that has a maturity longer than one period and the uncertainty about the one-period return increases systematically with the maturity of the bond. 
+    \item Hence, we should expect investors demanding higher returns to hold longer-term instruments. 
+\end{itemize}
+\end{frame}
+
+% THEORY 2: LIQUIDITY PREFERENCE THEORY---------------------------------------%
+\begin{frame}{The Liquidity Preference Theory}
+\begin{itemize}
+    \item Building on the drawbacks of the unbiased expectations theory, the liquidity theory of the term structure states that the implied forward rates will not be an unbiased estimate of the market’s expectations of future interest rates because they embody a liquidity premium. 
+    \item A liquidity premium exists because a given change in interest rates will have a greater effect on the price of long-term bonds than on short-term bonds.
+    \item In other words, there is greater risk of loss with long term bonds…and investors holding these instruments must be adequately rewarded for this risk.
+\end{itemize}
+\end{frame}
+
+% THEORY 2: LIQUIDITY PREFERENCE THEORY---------------------------------------%
+\begin{frame}{The Liquidity Preference Theory}
+\begin{center}
+    \includegraphics[scale=.5]{liquidity}
+\end{center}
+    \begin{center}
+    \item The \textit{liquidity premium} is $y_{2}-y_{1}$. 
+    \end{center}
+\end{frame}
+
+\end{document}
