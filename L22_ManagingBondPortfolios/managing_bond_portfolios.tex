@@ -11,30 +11,7 @@
 % OVERVIEW
 %-----------------------------------------------------------------------------%
 \section{Overview}
-
-\begin{frame}{\ftheader{Yield-to-Maturity}}
-	\begin{itemize}
-		\item In our previous lectures, we saw that market participants borrow/lend at different yields \textit{depending on the term}  
-		\item Rather than carry around an entire yield curve whenever we want to recompute the price of a bond, we summarize this information with the \textit{yield-to-maturity} (YTM), with which you are familiar from your previous coursework
-		\item Example: consider a 1000 USD, 30-year, 5\% T-bond that makes semi-annual payments, and trades for 1011.9610 USD 
-		\item The YTM on this T-bond is the \underline{one} rate that would make the PV of cash-flows equal to the price, namely, 4.9233\%
-	\end{itemize}
-\end{frame}
-
-\begin{frame}{\ftexampl{YTM Example}}
-		Suppose that 1, 2, and 3-year, 100 USD zero-coupon bonds trade for 106.4607, 99.7684, and 93.7438 USD respectively. What should be the YTM of a 3-year, 1000 USD, 10\% coupon bond that makes annual payments? \\
-		\pause
-	{\color{blue}
-
-		First compute what the price should be.
-		\begin{equation*}
-			p_{\text{cpn}}\should 1\times106.4607+1\times99.7684+11\times93.7438=1237.4109\text{ USD}
-		\end{equation*}
-		Then we can compute the YTM using a financial calculator: NPER $=$ 3, PMT $=$ 100 USD, PV $=$ 1237.4109 USD, and FV $=$ 1000 gives us a YTM of 1.7998\%.
-	}
-\end{frame}
-
-\begin{frame}{Today's Lecture}
+\begin{frame}{\ftheader{Today's Lecture}}
 	In this lecture, we're going to study how bond prices change in response to changes in YTM using \underline{duration}. We will:
 \begin{enumerate}
 	\item use duration to compute \%$\Delta$ in price for \%$\Delta$ in YTM;
