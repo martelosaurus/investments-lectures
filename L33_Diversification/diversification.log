@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.12.23)  4 MAR 2020 12:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.1.3)  1 APR 2020 02:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1071,102 +1071,109 @@ Overfull \hbox (297.69954pt too wide) in paragraph at lines 167--167
 [16
 
  <./big_pg.pdf>]
-<tangency.pdf, id=616, 462.52798pt x 346.89601pt>
-File: tangency.pdf Graphic file (type pdf)
-<use tangency.pdf>
-Package pdftex.def Info: tangency.pdf  used on input line 171.
-(pdftex.def)             Requested size: 300.63962pt x 225.47972pt.
-
-Overfull \hbox (224.27928pt too wide) in paragraph at lines 171--171
+Overfull \hbox (297.69954pt too wide) in paragraph at lines 175--175
  []|[][][]  
  []
 
 [17
 
- <./tangency.pdf>]
-Overfull \hbox (297.69954pt too wide) in paragraph at lines 180--180
+]
+<tangency.pdf, id=641, 462.52798pt x 346.89601pt>
+File: tangency.pdf Graphic file (type pdf)
+<use tangency.pdf>
+Package pdftex.def Info: tangency.pdf  used on input line 179.
+(pdftex.def)             Requested size: 300.63962pt x 225.47972pt.
+
+Overfull \hbox (224.27928pt too wide) in paragraph at lines 179--179
  []|[][][]  
  []
 
 [18
 
-]
-Overfull \hbox (91.10678pt too wide) in paragraph at lines 196--196
+ <./tangency.pdf>]
+Overfull \hbox (297.69954pt too wide) in paragraph at lines 188--188
  []|[][][]  
  []
 
 [19
 
 ]
-Overfull \hbox (52.89864pt too wide) in paragraph at lines 214--214
+Overfull \hbox (91.10678pt too wide) in paragraph at lines 204--204
  []|[][][]  
  []
 
 [20
 
 ]
-<correlations.pdf, id=773, 462.52798pt x 346.89601pt>
-File: correlations.pdf Graphic file (type pdf)
-<use correlations.pdf>
-Package pdftex.def Info: correlations.pdf  used on input line 218.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
-
-Overfull \hbox (16.4775pt too wide) in paragraph at lines 218--218
-[][]  
- []
-
-
-Overfull \hbox (45.45863pt too wide) in paragraph at lines 218--218
+Overfull \hbox (52.89864pt too wide) in paragraph at lines 222--222
  []|[][][]  
  []
 
 [21
 
- <./correlations.pdf>]
-Overfull \hbox (56.07065pt too wide) in paragraph at lines 234--234
+]
+<correlations.pdf, id=798, 462.52798pt x 346.89601pt>
+File: correlations.pdf Graphic file (type pdf)
+<use correlations.pdf>
+Package pdftex.def Info: correlations.pdf  used on input line 226.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+
+Overfull \hbox (16.4775pt too wide) in paragraph at lines 226--226
+[][]  
+ []
+
+
+Overfull \hbox (45.45863pt too wide) in paragraph at lines 226--226
  []|[][][]  
  []
 
 [22
 
-]
-Overfull \hbox (35.76659pt too wide) in paragraph at lines 246--246
+ <./correlations.pdf>]
+Overfull \hbox (56.07065pt too wide) in paragraph at lines 242--242
  []|[][][]  
  []
 
 [23
 
 ]
-Overfull \hbox (35.76659pt too wide) in paragraph at lines 246--246
+Overfull \hbox (35.76659pt too wide) in paragraph at lines 254--254
  []|[][][]  
  []
 
 [24
 
 ]
-<div30.pdf, id=914, 462.52798pt x 346.89601pt>
-File: div30.pdf Graphic file (type pdf)
-<use div30.pdf>
-Package pdftex.def Info: div30.pdf  used on input line 250.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
-
-Overfull \hbox (16.4775pt too wide) in paragraph at lines 250--250
-[][]  
- []
-
-
-Overfull \hbox (151.69904pt too wide) in paragraph at lines 250--250
+Overfull \hbox (35.76659pt too wide) in paragraph at lines 254--254
  []|[][][]  
  []
 
 [25
 
- <./div30.pdf>]
-Overfull \hbox (37.63857pt too wide) in paragraph at lines 264--264
+]
+<div30.pdf, id=939, 462.52798pt x 346.89601pt>
+File: div30.pdf Graphic file (type pdf)
+<use div30.pdf>
+Package pdftex.def Info: div30.pdf  used on input line 258.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+
+Overfull \hbox (16.4775pt too wide) in paragraph at lines 258--258
+[][]  
+ []
+
+
+Overfull \hbox (151.69904pt too wide) in paragraph at lines 258--258
  []|[][][]  
  []
 
 [26
+
+ <./div30.pdf>]
+Overfull \hbox (37.63857pt too wide) in paragraph at lines 272--272
+ []|[][][]  
+ []
+
+[27
 
 ]
 \tf@nav=\write6
@@ -1178,21 +1185,21 @@ Overfull \hbox (37.63857pt too wide) in paragraph at lines 264--264
 \tf@snm=\write8
 \openout8 = `diversification.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 265.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 265.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 273.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 273.
  (./diversification.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 265.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 265.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 273.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 273.
 Package rerunfilecheck Info: File `diversification.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 20097 strings out of 494561
- 393455 string characters out of 6177453
- 467026 words of memory out of 5000000
- 23261 multiletter control sequences out of 15000+600000
+ 20099 strings out of 492615
+ 393474 string characters out of 6131391
+ 471986 words of memory out of 5000000
+ 23512 multiletter control sequences out of 15000+600000
  11334 words of font info for 41 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
+ 1141 hyphenation exceptions out of 8191
  56i,14n,55p,814b,560s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
@@ -1203,10 +1210,10 @@ ist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/symbols/msam10.pfb>
-Output written on diversification.pdf (26 pages, 240148 bytes).
+Output written on diversification.pdf (27 pages, 242291 bytes).
 PDF statistics:
- 1059 PDF objects out of 1200 (max. 8388607)
- 720 compressed objects within 8 object streams
- 53 named destinations out of 1000 (max. 500000)
+ 1085 PDF objects out of 1200 (max. 8388607)
+ 745 compressed objects within 8 object streams
+ 55 named destinations out of 1000 (max. 500000)
  78 words of extra memory for PDF output out of 10000 (max. 10000000)
 
