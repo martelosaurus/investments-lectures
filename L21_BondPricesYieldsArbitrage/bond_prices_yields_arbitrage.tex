@@ -1,17 +1,15 @@
 \documentclass{beamer}
 \usepackage{tikz}
-\usetheme{Berlin}
-\title{Bond Prices, Yields, and Arbitrage}
-\author{F303: Investments}
-\date{Jordan Martel}
-\newcommand{\should}{\overset{\text{should}}{=}}
 \newcommand{\zcb}[1]{#1\text{-yr}}
 \renewcommand{\arraystretch}{1.5}
+\newcommand{\should}{\overset{\text{should}}{=}}
+\newcommand{\fttheory}[1]{\fcolorbox{blue}{blue}{\color{white}\textbf{#1}\hspace{\textwidth}}}
+\newcommand{\ftexampl}[1]{\fcolorbox{orange}{orange}{\color{black}\textbf{#1}\hspace{\textwidth}}}
+\newcommand{\ftdata}[1]{\fcolorbox{violet}{violet}{\color{white}\textbf{#1}\hspace{\textwidth}}}
+\newcommand{\ftheader}[1]{\fcolorbox{lightgray}{lightgray}{\color{black}\textbf{#1}\hspace{\textwidth}}}
 \begin{document}
-\maketitle
 
-\section{Overview}
-\begin{frame}
+\begin{frame}{\ftheader{Bond Prices, Yields, and Arbitrage}}
 	\begin{itemize}
 		\item We're going to study the \underline{yield curve}
 		\item Specifically, we're going to study
@@ -23,8 +21,7 @@
 	\end{itemize}
 \end{frame}
 
-\section{Bond Arbitrage}
-\begin{frame}{Arbitrage}
+\begin{frame}{\fttheory{Arbitrage}}
 	\begin{itemize}
 		\item Consider a 1-year, 100 USD, zero-coupon bond that compounds annually
 		\item Suppose that you can borrow and lend for 1 year at 10\% (which compounds annually)
@@ -250,7 +247,7 @@ $_0y_1=1.57\%$ and $_0y_2=1.58\%$. Is the market optimistic or pessimistic about
 	}
 \end{frame}
 
-\begin{frame}{Forward Rates}
+\begin{frame}{\ftexampl{Forward Rates}}
 On 2019-01-01, $_0y_1=2.40\%$ and $_0y_2=2.40\%$. What did the market expect the 1-month yield to be in one month ($_1y_1$)?
 	\pause
 	{\color{blue}
@@ -364,7 +361,7 @@ where $c\geq0$ is the coupon rate (APR) and $F_{\text{cpn}}$ is the face value o
 where $y$ is the yield (APR) and $P_{\zcb{k}}$ is the price of a $k$-year zero coupon bond with face value of $F_{\zcb{k}}$
 \end{frame}
 
-\begin{frame}{Example}
+\begin{frame}{\ftexampl{Example}}
 	\small
 	What is the price of a 3-year, 1000 USD 10\% coupon bond that makes payments annual coupon payments. The 1-year yield is 1.48\%, the 2-year yield is 1.41\%, and the 3-year yield is 1.40\%. What should the 3-year \textit{coupon} bond trade for?
 	\pause
@@ -381,7 +378,7 @@ where $y$ is the yield (APR) and $P_{\zcb{k}}$ is the price of a $k$-year zero c
 		\end{equation}
 	}
 \end{frame}
-\begin{frame}{Example}
+\begin{frame}{\ftexampl{Example}}
 	\small
 	What is the price of a 3-year, 1000 USD 5\% coupon bond that makes payments annual coupon payments. The 1-year yield is 1.59\%, the 2-year yield is 1.58\%, and the 3-year yield is 1.62\%. What should the 3-year \textit{coupon} bond trade for?
 	\pause
@@ -398,4 +395,27 @@ where $y$ is the yield (APR) and $P_{\zcb{k}}$ is the price of a $k$-year zero c
 		\end{equation}
 	}
 \end{frame}
+
+\begin{frame}{\ftheader{Yield-to-Maturity}}
+	\begin{itemize}
+		\item In our previous lectures, we saw that market participants borrow/lend at different yields \textit{depending on the term}  
+		\item Rather than carry around an entire yield curve whenever we want to recompute the price of a bond, we summarize this information with the \textit{yield-to-maturity} (YTM), with which you are familiar from your previous coursework
+		\item Example: consider a 1000 USD, 30-year, 5\% T-bond that makes semi-annual payments, and trades for 1011.9610 USD 
+		\item The YTM on this T-bond is the \underline{one} rate that would make the PV of cash-flows equal to the price, namely, 4.9233\%
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{\ftexampl{YTM Example}}
+		Suppose that 1, 2, and 3-year, 100 USD zero-coupon bonds trade for 106.4607, 99.7684, and 93.7438 USD respectively. What should be the YTM of a 3-year, 1000 USD, 10\% coupon bond that makes annual payments? \\
+		\pause
+	{\color{blue}
+
+		First compute what the price should be.
+		\begin{equation*}
+			p_{\text{cpn}}\should 1\times106.4607+1\times99.7684+11\times93.7438=1237.4109\text{ USD}
+		\end{equation*}
+		Then we can compute the YTM using a financial calculator: NPER $=$ 3, PMT $=$ 100 USD, PV $=$ 1237.4109 USD, and FV $=$ 1000 gives us a YTM of 1.7998\%.
+	}
+\end{frame}
+
 \end{document}
