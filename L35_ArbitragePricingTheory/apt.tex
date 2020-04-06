@@ -1,4 +1,5 @@
 \documentclass{beamer}
+\renewcommand{\arraystretch}{1.5}
 \newcommand{\fttheory}[1]{\fcolorbox{blue}{blue}{\color{white}\textbf{#1}\hspace{\textwidth}}}
 \newcommand{\ftexampl}[1]{\fcolorbox{orange}{orange}{\color{black}\textbf{#1}\hspace{\textwidth}}}
 \newcommand{\ftdata}[1]{\fcolorbox{violet}{violet}{\color{white}\textbf{#1}\hspace{\textwidth}}}
@@ -7,11 +8,70 @@
 
 \begin{frame}{\ftheader{Arbitrage Pricing Theory}}
 	\begin{itemize}
-		\item\textbf{Arbitrage} is the act of exploiting mispricing of two or more securities to achieve either 1) at least zero-profits with certainty 
+		\item\textbf{Arbitrage} is the act of costlessly exploiting mispricing of two or more securities to achieve either 
+			\begin{enumerate}
+				\item non-negative profits with certainty or
+				\item positive profits on average
+			\end{enumerate}
 	\end{itemize}
 \end{frame}
 
+\begin{frame}{\fttheory{Arbitrage Pricing Theory: Long}}
+	Consider a stock that returns
+	\begin{equation}
+		r_{S}=r_{F}+\alpha+\beta(r_{M}-r_{F})+\epsilon
+	\end{equation}
+	Importantly, suppose that $\alpha>0$ (the stock is \underline{under}valued). 
+	\begin{center}
+		\begin{tabular}{l|c|c}
+			Security & Cash Flow at $t=0$ & Cash Flow at $t=1$ \\ \hline
+			Stock & $-1$ & $(1+r_{S})$ \\
+			Market Portfolio & $+\beta$ & $-\beta(1+r_{M})$ \\
+			Risk-Free Security & $1-\beta$ & $(1+r_{F})(1-\beta)$\\ \hline
+			Arbitrage Portfolio & $0$ & $\alpha+\epsilon$\\
+		\end{tabular}
+	\end{center}
+	Here, we have a portfolio that pays $E[\alpha+\epsilon]=\alpha>0$ on average and costs nothing to setup. 
+\end{frame}
+
+\begin{frame}{\fttheory{Arbitrage Pricing Theory: Short}}
+	Same setup as before...
+	\begin{equation}
+		r_{S}=r_{F}+\alpha+\beta(r_{M}-r_{F})+\epsilon
+	\end{equation}
+	...but now suppose that $\alpha<0$ (the stock is \underline{over}valued). 
+	\begin{center}
+		\begin{tabular}{l|c|c}
+			Security & Cash Flow at $t=0$ & Cash Flow at $t=1$ \\ \hline
+			Stock & $+1$ & $-(1+r_{S})$ \\
+			Market Portfolio & $0\beta$ & $+\beta(1+r_{M})$ \\
+			Risk-Free Security & $\beta-1$ & $-(1+r_{F})(1-\beta)$\\ \hline
+			Arbitrage Portfolio & $0$ & $-\alpha+\epsilon$\\
+		\end{tabular}
+	\end{center}
+	We have a portfolio that pays $E[-\alpha+\epsilon]=-\alpha>0$ on average and costs nothing to setup. 
+\end{frame}
+
+\begin{frame}{\fttheory{Recipe}}
+	\begin{enumerate}
+		\item On date $t=0$, 
+			\begin{enumerate}
+				\item 
+			\end{enumerate}
+		\item On date $t=1$, 
+			\begin{enumerate}
+				\item 
+			\end{enumerate}
+	\end{enumerate}
+\end{frame}
+
 \begin{frame}{\ftdata{Fama-French}}
+	\begin{itemize}
+		\item
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{\ftdata{Smart Beta}}
 	\begin{itemize}
 		\item
 	\end{itemize}
