@@ -85,12 +85,16 @@
 	\end{center}
 \end{frame}
 
-\begin{frame}{\fttheory{The Arbitrage Pricing Theory}}
-	\begin{itemize}
-		\item These examples show that if $\alpha\neq0$, then one can costlessly construct a portfolio that pays $|\alpha|$ on average. 
-		\item Suppose, for concreteness, that $\alpha>0$ (as in the Walmart example). Then arbitrageurs start buying the stock. According to the laws of supply and demand, the price will rise (the return will fall) until $\alpha=0$.
-		\item The APT claims that $\alpha=0$ on average:
-	\end{itemize}
+\begin{frame}{\fttheory{Recipe}}
+	\begin{center}
+			\begin{tabular}{ll|ll}
+				\multicolumn{2}{c}{$\alpha>0$} & \multicolumn{2}{c}{$\alpha<0$} \\ \hline
+				\multicolumn{4}{c}{Date $t=1$} \\ \hline	
+				1. & Short $\beta$ of market & & \\ 
+				1. & Short $\beta$ of market & & \\ 
+				\multicolumn{4}{c}{Date $t=1$} \\ \hline	
+			\end{tabular}
+	\end{center}
 \end{frame}
 
 \begin{frame}{\fttheory{The Arbitrage Pricing Theory}}
