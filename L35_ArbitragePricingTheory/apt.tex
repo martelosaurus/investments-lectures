@@ -24,9 +24,9 @@
 	\begin{center}
 		\begin{tabular}{l|c|c}
 			Security & Cash Flow at $t=0$ & Cash Flow at $t=1$ \\ \hline
-			Stock & $-1$ & $(1+r_{S})$ \\
-			Market Portfolio & $\beta$ & $-\beta(1+r_{M})$ \\
-			Risk-Free Security & $1-\beta$ & $-(1+r_{F})(1-\beta)$\\ \hline
+			Stock & $-1$ & $(1+r_{S})\times1$ \\
+			Market Portfolio & $\beta$ & $-(1+r_{M})\times\beta$ \\
+			Risk-Free Security & $1-\beta$ & $-(1+r_{F})\times(1-\beta)$\\ \hline
 			Arbitrage Portfolio & $0$ & $\alpha+\epsilon$\\
 		\end{tabular}
 	\end{center}
@@ -41,11 +41,11 @@
 			1. & Short .3659 USD worth of market.\\
 			2. & Borrow .6341 USD.\\
 			3. & Use your 1 USD to buy 1 USD worth of Walmart. \\ \hline
-			\multicolumn{2}{l}{Date $t=1$} \\ \hline
-			1. & Sell Walmart. \\
-			2. & Repay the loan. \\
-			3. & Cover your short. \\ \hline
-			\multicolumn{2}{l}{You should earn .5450 USD on average.}
+			\multicolumn{2}{l}{Date $t=1$: Suppose $r_{M}=.5\%$, $r_{S}=1\%$ and $r_{F}=.1\%$} \\ \hline
+			1. & Sell Walmart and receive $(1+.01)\times 1=1.01$ USD. \\
+			2. & Repay the loan, which costs $(1+.001)\times.6341=.6347$ USD \\
+			3. & Cover your short, which costs $(1+.005)\times.3659=.3677$ \\ \hline
+			\multicolumn{2}{l}{You earned .0076 USD. You should earn .005450 USD on \underline{average}.}
 		\end{tabular}
 	\end{center}
 \end{frame}
@@ -59,9 +59,9 @@
 	\begin{center}
 		\begin{tabular}{l|c|c}
 			Security & Cash Flow at $t=0$ & Cash Flow at $t=1$ \\ \hline
-			Stock & $1$ & $-(1+r_{S})$ \\
-			Market Portfolio & $-\beta$ & $\beta(1+r_{M})$ \\
-			Risk-Free Security & $\beta-1$ & $(1+r_{F})(1-\beta)$\\ \hline
+			Stock & $1$ & $-(1+r_{S})\times 1$ \\
+			Market Portfolio & $-\beta$ & $(1+r_{M})\times\beta$ \\
+			Risk-Free Security & $\beta-1$ & $-(1+r_{F})\times(\beta-1)$\\ \hline
 			Arbitrage Portfolio & $0$ & $-\alpha+\epsilon$\\
 		\end{tabular}
 	\end{center}
@@ -76,11 +76,11 @@
 			1. & Short 1 USD worth of Walgreen's. \\
 			2. & Borrow .0733 USD. \\
 			3. & Use your 1.0733 USD to buy 1.0733 USD worth of market. \\ \hline
-			\multicolumn{2}{l}{Date $t=1$} \\ \hline
-			1. & Sell the market. \\
-			2. & Repay the loan. \\
-			3. & Cover your short. \\ \hline
-			\multicolumn{2}{l}{You should earn .3471 USD on average.}
+			\multicolumn{2}{l}{Date $t=1$: Suppose $r_{M}=1\%$, $r_{S}=.5\%$ and $r_{F}=.1\%$} \\ \hline
+			1. & Sell the market and receive $(1+.01)\times 1.0733=1.084$ USD. \\
+			2. & Repay the loan, which costs $(1+.001)\times .0733=.0734$ USD. \\
+			3. & Cover your short, which costs $(1+.005)\times 1 = 1.005$ USD. \\ \hline
+			\multicolumn{2}{l}{You earned .0056 USD. You should earn .003471 USD on \underline{average}.}
 		\end{tabular}
 	\end{center}
 \end{frame}

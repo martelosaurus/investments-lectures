@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2020.3.22)  6 APR 2020 21:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2020.3.22)  6 APR 2020 22:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -915,6 +915,11 @@ Overfull \hbox (175.08711pt too wide) in paragraph at lines 34--34
 [2
 
 ]
+Overfull \hbox (10.09396pt too wide) in paragraph at lines 51--51
+ [] 
+ []
+
+
 Overfull \hbox (66.50668pt too wide) in paragraph at lines 51--51
  []|[][][]|  
  []
@@ -929,6 +934,11 @@ Overfull \hbox (178.12714pt too wide) in paragraph at lines 69--69
 [4
 
 ]
+Overfull \hbox (10.09396pt too wide) in paragraph at lines 86--86
+ [] 
+ []
+
+
 Overfull \hbox (69.5467pt too wide) in paragraph at lines 86--86
  []|[][][]|  
  []
@@ -1037,7 +1047,7 @@ dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/symbols/msam10.pfb>
-Output written on apt.pdf (8 pages, 106001 bytes).
+Output written on apt.pdf (8 pages, 106876 bytes).
 PDF statistics:
  265 PDF objects out of 1000 (max. 8388607)
  237 compressed objects within 3 object streams
