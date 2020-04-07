@@ -1,5 +1,5 @@
 \documentclass{beamer}
-\usepackage{multicol}
+\usepackage{multicol,hyperref}
 \renewcommand{\arraystretch}{1.5}
 \newcommand{\fttheory}[1]{\fcolorbox{blue}{blue}{\color{white}\textbf{#1}\hspace{\textwidth}}}
 \newcommand{\ftexampl}[1]{\fcolorbox{orange}{orange}{\color{black}\textbf{#1}\hspace{\textwidth}}}
@@ -11,7 +11,7 @@
 	\begin{itemize}
 		\item \textit{Arbitrage} is the act of costlessly exploiting mispricing of two or more securities to achieve either 1) non-negative profits with certainty or 2) positive profits on average.
 		\item Earlier in the course, we studied arbitrage in the context of risk-free bonds.
-		\item In this lecture, we are going to explore arbitrage in the context of risky securities such as stocks, and in so doing, develop the \textit{Arbitrage Pricing Theory} (APT). 
+		\item In this lecture, we are going to study arbitrage in the context of \textit{risky} securities such as stocks, and in so doing, develop the \textit{Arbitrage Pricing Theory} (APT). 
 	\end{itemize}
 \end{frame}
 
@@ -42,9 +42,9 @@
 			2. & Borrow .6341 USD.\\
 			3. & Use your 1 USD to buy 1 USD worth of Walmart. \\ \hline
 			\multicolumn{2}{l}{Date $t=1$} \\ \hline
-			1. & Buy\\
-			2. &\\
-			3. &\\ \hline
+			1. & Sell Walmart. \\
+			2. & Repay the loan. \\
+			3. & Cover your short. \\ \hline
 			\multicolumn{2}{l}{You should earn .5450 USD on average.}
 		\end{tabular}
 	\end{center}
@@ -77,9 +77,9 @@
 			2. & Borrow .0733 USD. \\
 			3. & Use your 1.0733 USD to buy 1.0733 USD worth of market. \\ \hline
 			\multicolumn{2}{l}{Date $t=1$} \\ \hline
-			1. & Sell the market \\
-			2. & Repay the loan \\
-			3. & Cover your short \\ \hline
+			1. & Sell the market. \\
+			2. & Repay the loan. \\
+			3. & Cover your short. \\ \hline
 			\multicolumn{2}{l}{You should earn .3471 USD on average.}
 		\end{tabular}
 	\end{center}
@@ -88,37 +88,46 @@
 \begin{frame}{\fttheory{The Arbitrage Pricing Theory}}
 	\begin{itemize}
 		\item These examples show that if $\alpha\neq0$, then one can costlessly construct a portfolio that pays $|\alpha|$ on average. 
-		\item Suppose, for concreteness, that $\alpha>0$ (as in the Walmart example). Then arbitrageurs start buying the stock. According to the laws of supply and demand, the price will rise (the return will fall) until $\alpha=0$.
-		\item The APT claims that $\alpha=0$ on average:
-	\end{itemize}
-\end{frame}
-
-\begin{frame}{\fttheory{The Arbitrage Pricing Theory}}
-	\begin{itemize}
-		\item These examples show that if $\alpha\neq0$, then one can costlessly construct a portfolio that pays $|\alpha|$ on average. 
-		\item Suppose, for concreteness, that $\alpha>0$ (as in the Walmart example). Then arbitrageurs start buying the stock. According to the laws of supply and demand, the price will rise (the return will fall) until $\alpha=0$.
+		\item Suppose, for concreteness, that $\alpha>0$ (as in the Walmart example). Then arbitrageurs start buying the stock. 
+		\item According to the laws of supply and demand, the price will rise (the return will fall) until $\alpha=0$.
 		\item The APT claims that $\alpha=0$ on average:
 			\begin{equation}
 				\text{E}[r_{S}-r_{F}]=\beta\text{E}[r_{M}-r_{F}]
 			\end{equation}
 			which is exactly what the CAPM claims. 
 		\item The APT tells us \textit{why} the CAPM should hold and \textit{how} to profit when it breaks.
+		\item Note that these trades involve idiosyncratic risk ($\epsilon$) but \underline{not} systematic risk ($r_{M}$)
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{\ftdata{Application: Fama-French}}
-	\begin{equation}
-		r_{S}-r_{F}=\alpha+\beta_{\text{MKT}}(r_{\text{MKT}}-r_{F})+\beta_{\text{SMB}}r_{\text{SMB}}+\beta_{\text{HML}}r_{\text{HML}}+\epsilon
-	\end{equation}
+\begin{frame}{\fttheory{Multifactor Models}}
+
 	\begin{itemize}
-		\item $r_{\text{SMB}}$ is the return on a portfolio that goes long the (S)mallest 10\% of stocks (by market cap) and goes short the (B)iggest 10\% of stocks
-		\item $r_{\text{HML}}$ is the return on a portfolio that goes long the stocks with the (H)ighest 10\% of stocks (by market cap) and goes short the (L)owest 10\% of stocks
+		\item A multifactor model decomposes a security's return into \textit{factors} $f_{1},f_{2},\ldots,f_{N}$:
+			\begin{equation}\small
+				r_{S}-r_{F}=\alpha+\beta_{1}f_{1}+\beta_{2}f_{2}+\cdots+\beta_{N}f_{N}+\epsilon
+			\end{equation}
+		\item The CAPM is a 1-factor model with $f_{1}=r_{M}-r_{F}$. 
+		\item There are multifactor models for stocks (which we will explore in a moment), bonds, currencies, housing, and other securities. 
+		\item In currencies, for example, the two most popular popular factors are ``value'' and ``carry'', each corresponding to the return on a certain portfolio of currencies. 
+		\item Again, the APT claims that $\alpha=0$ on average:
+			\begin{equation}
+				\text{E}[r_{S}-r_{F}]=\beta_{1}\text{E}[f_{1}]+\beta_{2}\text{E}[f_{2}]+\cdots+\beta_{N}\text{E}[f_{N}]
+			\end{equation}
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{\ftdata{Smart Beta}}
+\begin{frame}{\ftdata{Application: Fama-French 3-Factor Model}}
 	\begin{itemize}
-		\item
+		\item The Fama-French model is a  multifactor model for stocks. 
+		\item It has factors $f_{1}=r_{\text{MKT}}-r_{F}$, $f_{2}=r_{\text{SMB}}$, and $f_{3}=r_{\text{HML}}$.
+		\item SMB is a portfolio that goes long (S)mall stocks and short (or (M)inus) (B)ig stocks (as measured by market cap).
+		\item Smaller firms outperform bigger firms (3.06\% 1927-2019). 
+		\item HML is a portfolio that goes long (H)igh book-to-market stocks and short (or (M)inus) (L)ow book-to-market stocks. 
+		\item Two definitions: \textit{value stocks} are stocks with a (H)igh book-to-market ratio, while \textit{growth stocks} are stocks with a (L)ow book-to-market ratio.  
+		\item Value stocks outperform growth stocks (4.48\% 1927-2019).
+		\item The idea is that smaller stocks and stocks with higher book-to-market are riskier and therefore offer higher returns
+		\item \url{https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html}
 	\end{itemize}
 \end{frame}
 

@@ -1,0 +1,89 @@
+------------------------------------------------------------------------------
+
+Call: 1-Factor Model for Walgreen's (WBA)
+
+lm(formula = ret_rf ~ mkt_rf, data = x)
+
+Coefficients:
+
+             Estimate Std. Error t value Pr(>|t|)    
+
+(Intercept) -0.003515   0.006202  -0.567    0.572    
+
+mkt_rf       1.077227   0.159632   6.748 5.91e-10 ***
+
+---
+
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Multiple R-squared:  0.2785,	Adjusted R-squared:  0.2723 
+
+------------------------------------------------------------------------------
+
+Call: 3-Factor Model for Walgreen's (WBA)
+
+lm(formula = ret_rf ~ mkt_rf + smb + hml, data = x)
+
+Coefficients:
+
+             Estimate Std. Error t value Pr(>|t|)    
+
+(Intercept) -0.004189   0.006303  -0.665    0.508    
+
+mkt_rf       1.152167   0.173541   6.639 1.06e-09 ***
+
+smb         -0.360829   0.287374  -1.256    0.212    
+
+hml          0.103730   0.264052   0.393    0.695    
+
+---
+
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Multiple R-squared:  0.2887,	Adjusted R-squared:  0.2703 
+
+------------------------------------------------------------------------------
+
+Call: 1-Factor Model for Walmart (WMT)
+
+lm(formula = ret_rf ~ mkt_rf, data = x)
+
+Coefficients:
+
+            Estimate Std. Error t value Pr(>|t|)   
+
+(Intercept) 0.005469   0.004343   1.259  0.21045   
+
+mkt_rf      0.364109   0.111788   3.257  0.00147 **
+
+---
+
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Multiple R-squared:  0.08249,	Adjusted R-squared:  0.07471 
+
+------------------------------------------------------------------------------
+
+Call: 3-Factor Model for Walmart (WMT)
+
+lm(formula = ret_rf ~ mkt_rf + smb + hml, data = x)
+
+Coefficients:
+
+             Estimate Std. Error t value Pr(>|t|)    
+
+(Intercept)  0.003466   0.004272   0.811  0.41883    
+
+mkt_rf       0.505790   0.117638   4.300 3.58e-05 ***
+
+smb         -0.569179   0.194802  -2.922  0.00418 ** 
+
+hml         -0.151813   0.178993  -0.848  0.39810    
+
+---
+
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Multiple R-squared:  0.1525,	Adjusted R-squared:  0.1306 
+
+------------------------------------------------------------------------------
