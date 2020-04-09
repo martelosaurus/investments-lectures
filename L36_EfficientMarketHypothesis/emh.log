@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2020.3.22)  8 APR 2020 22:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2020.3.22)  9 APR 2020 03:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -922,21 +922,21 @@ Overfull \hbox (234.33136pt too wide) in paragraph at lines 34--34
 [3
 
 ]
-Overfull \hbox (86.91077pt too wide) in paragraph at lines 43--43
+Overfull \hbox (86.91077pt too wide) in paragraph at lines 44--44
  []|[][][]|  
  []
 
 [4
 
 ]
-Overfull \hbox (86.91077pt too wide) in paragraph at lines 51--51
+Overfull \hbox (86.91077pt too wide) in paragraph at lines 52--52
  []|[][][]|  
  []
 
 [5
 
 ]
-Overfull \hbox (122.3509pt too wide) in paragraph at lines 63--63
+Overfull \hbox (122.3509pt too wide) in paragraph at lines 64--64
  []|[][][]|  
  []
 
@@ -950,21 +950,21 @@ Overfull \hbox (122.3509pt too wide) in paragraph at lines 68--68
 [7
 
 ]
-Overfull \hbox (110.2909pt too wide) in paragraph at lines 74--74
+Overfull \hbox (110.2909pt too wide) in paragraph at lines 75--75
  []|[][][]|  
  []
 
 [8
 
 ]
-Overfull \hbox (110.2909pt too wide) in paragraph at lines 77--77
+Overfull \hbox (110.2909pt too wide) in paragraph at lines 79--79
  []|[][][]|  
  []
 
 [9
 
 ]
-Overfull \hbox (299.03165pt too wide) in paragraph at lines 85--85
+Overfull \hbox (299.03165pt too wide) in paragraph at lines 87--87
  []|[][][]|  
  []
 
@@ -980,11 +980,11 @@ Overfull \hbox (299.03165pt too wide) in paragraph at lines 85--85
 \tf@snm=\write8
 \openout8 = `emh.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 87.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 87.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 89.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 89.
  (./emh.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 87.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 87.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 89.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 89.
 Package rerunfilecheck Info: File `emh.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -996,7 +996,7 @@ LaTeX Font Warning: Size substitutions with differences
 Here is how much of TeX's memory you used:
  16968 strings out of 493013
  321500 string characters out of 6135682
- 398910 words of memory out of 5000000
+ 398909 words of memory out of 5000000
  20102 multiletter control sequences out of 15000+600000
  12374 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1008,7 +1008,7 @@ xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on emh.pdf (10 pages, 87669 bytes).
+Output written on emh.pdf (10 pages, 88306 bytes).
 PDF statistics:
  306 PDF objects out of 1000 (max. 8388607)
  278 compressed objects within 3 object streams
