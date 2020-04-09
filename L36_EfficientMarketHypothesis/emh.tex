@@ -1,0 +1,96 @@
+\documentclass{beamer}
+\usepackage{multicol,hyperref}
+\renewcommand{\arraystretch}{1.5}
+\newcommand{\fttheory}[1]{\fcolorbox{blue}{blue}{\color{white}\textbf{#1}\hspace{\textwidth}}}
+\newcommand{\ftexampl}[1]{\fcolorbox{orange}{orange}{\color{black}\textbf{#1}\hspace{\textwidth}}}
+\newcommand{\ftdata}[1]{\fcolorbox{violet}{violet}{\color{white}\textbf{#1}\hspace{\textwidth}}}
+\newcommand{\ftheader}[1]{\fcolorbox{lightgray}{lightgray}{\color{black}\textbf{#1}\hspace{\textwidth}}}
+\begin{document}
+
+\begin{frame}{\ftheader{The Efficient Market Hypothesis (EMH)}}
+	\begin{itemize}
+		\item The Efficient Market Hypothesis (EMH) states that prices of securities fully reflect available information about securities
+		\item It highlights the difficulties associated with earning abnormal returns using either \textit{fundamental analysis} (predicting returns based on accounting or economic data) or \textit{technical analysis} (predicting returns based on the past history of returns). 
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{\fttheory{The Random Walk}}
+	\begin{enumerate}
+		\item A stock price follows a \textit{random walk} returns are unpredictable.
+		\item Suppose that Apple traded for 266 USD at 12:00 and everyone knew that at the end of the day, it would trade for 270 USD (a risk-free return of 1.5\% in just one afternoon!)
+		\item Everyone would start buying. The price would rise to 267 (a return of 1.13\%), to 268 (.75\%), and so on until at 12:01, when the price would be 270 (0\%). 
+		\item Put differently, all information (such as the fact that the price will be 270 USD by the end of day). 
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}{\fttheory{The Random Walk}}
+	\begin{enumerate}
+		\item The random walk explains why the stock market does well on days when bad news comes out (e.g. the market expected that unemployment would rise by 1\%, traded stocks at price reflecting the expectation that unemployment would rise by 1\%, and then when unemployment rose by .95\%, the stock price rose).
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}{\fttheory{The Efficient Market Hypothesis (EMH)}}
+	There are three forms of the hypothesis, depending on how much information it assumes investors have
+	\begin{enumerate}
+		\item\textbf{Weak Form:} the assertion that stockprices already reflect all information contained in the history of past trading
+		\item\textbf{Semi-Strong Form:} the assertion that stockprices already reflect all publicly available information 
+		\item\textbf{Strong Form:} the assertion that stockprices already reflect all relevant information including inside information
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}{\fttheory{Technical Analysis}}
+	\begin{itemize}
+		\item Technical analysis has its roots in Charles Dow's ``Dow theory'' (Dow, of the Dow Jones Industrial Average and the \text{Wall Street Journal}).
+		\item Technical analysis claims that even if prices on average incorporate all publicly information, they deviate in the short-term in predictable ways.
+		\item It's less about the long-term value of the security and more about its short-term supply and demand
+		\item Technical analysts typically attribute these patterns to market psychology. 
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{\fttheory{Technical Analysis}}
+	\begin{itemize}
+		\item Common concepts in technical analysis include \textit{support} (a price below which a stock's price doesn't typically fall) and \textit{resistence} (a price above which a stock's price doesn't typically rise).  
+		\item It follows that when a stock's price nears its support, one should buy (it can only go up) and when the price nears its resistence, one should sell (it can only go down).
+		\item \textbf{Important Caveat:} one factor identified in research is momentum: specifically the return of a portfolio that goes long stocks that have down well and short stocks that have done poorly. While this certaintly has the flavor of technical analysis, the trading costs of such a strategy are high. 
+		\item Technical analysis generates a lot of false positives (as evidence by the analysis of technicians in one study who made bold predictions about future prices. The prices were random). 
+		\item Another indicator has to do when moving averages cross.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{\ftexampl{Support and Resistence}}
+ 	Consider a stock ($S$) that pays a quarterly dividend of 1.2 USD per share and has a beta of 1.5. Suppose that the equity risk premium is 8\%. According to the CAPM, the discount rate should be
+	\begin{equation}
+		\text{E}[r_{S}]=r_{F}+\beta E[r_{M}-r_{F}]=1.5\times 8\%=12\%. 
+	\end{equation}
+	The dividend discount model predicts that the fair price is
+	\begin{equation}
+		P=\frac{D}{r_{S}}=\frac{1.2\text{ USD}}{12\%}=10\text{ USD}
+	\end{equation}
+	Suppose that the chart shows a support of 9 USD and a resistence of 11 USD and suppose that stock starts paying dividends of 1.8 USD per share. The fair price should now be 15 USD. Continued on next slide...
+\end{frame}
+
+\begin{frame}{\ftexampl{Support and Resistence}}
+	If other traders follow the support/resistence logic, then as soon as the 
+	
+\end{frame}
+
+\begin{frame}{\fttheory{Fundamental Analysis}}
+	\begin{itemize}
+		\item  
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{\ftexampl{Fundamental Analysis}}
+	\item 
+\end{frame}
+
+\begin{frame}{\fttheory{Technical and Fundamental Analyses: A Summary}}
+	\begin{itemize}
+		\item Technical analysis can be easily automated and trading \textit{against} technical analysis is very easy to automate. 
+		\item Technical analysis software need only the stock price data and a few milliseconds of computer time to generate trading orders.
+		\item Example: if everyone sells at an arbitrary resistence level, then submit a limit buy order at that level; if everyone buys at an arbitrary support level, then submit a limit sell order at that level. 
+		\item Fundamental analysis, in constrast, requires much more work, and the people who do that work are compensated for their effort. A casual trader may not be able to generate alpha, but a stock analyst who spends 80 hours a week studying a particular firm may very well be able to.
+	\end{itemize}
+\end{frame}
+
+\end{document}
