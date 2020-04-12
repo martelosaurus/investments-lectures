@@ -1,0 +1,152 @@
+\documentclass{beamer}
+\usepackage{setspace}
+\usepackage{bm,color,float,epstopdf,amsthm,epstopdf}
+\usepackage{multirow}
+\usepackage{tikz}
+\usetikzlibrary{arrows,automata,fit}
+\newtheorem{result}{Result}
+\renewcommand{\arraystretch}{1.5}
+\begin{document}
+
+\begin{frame}{A Quick Note on Forwards}
+   \begin{itemize}
+       \item Suppose you go long a forward that expires in \underline{two} years.
+       \item Step forward one year. 
+       \item Consider a new forward that expires in \underline{one} year.
+       \item How much could you sell your old forward for (say $f_{0}$)? 
+   \end{itemize}
+\end{frame}
+
+\begin{frame}{A Quick Note on Forwards}
+    How do you price anything? Build a replicating portfolio!
+    \begin{center}
+        \begin{tabular}{lccc}
+            Security & Q & CF$_{1}$ & CF$_{2}$ \\ \hline
+            Old Forward ($K_{0}$) & $+1$ & $-f_{0}$ & $S_{2}-K_{0}$ \\ \hline
+            \multicolumn{4}{c}{Replicating Portfolio} \\ \hline
+            New Forward ($K_{1}$) & $+1$ & $0$ & $S_{2}-K_{1}$ \\ 
+            Risk Free & $PV(K_{1}-K_{0})$ & $-PV(K_{1}-K_{0})$ & $K_{1}-K_{0}$ \\ \hline
+            & & $-PV(K_{1}-K_{0})$ & $S_{2}-K_{0}$
+        \end{tabular}
+    \end{center}
+    \begin{equation}
+        \boxed{f_{0}\overset{\text{``should''}}{=}PV(K_{1}-K_{0})}
+    \end{equation}
+\end{frame}
+
+\begin{frame}{A Quick Note on Forwards: Example}
+    \begin{itemize}
+        \item $S_{0}=\$100$, $S_{1}=\$115$, $r=10\%$
+        \item The old and new forward prices are 
+            \begin{align}
+                K_{0}&=S_{0}(1+r)^{2}=\$121\\
+                K_{1}&=S_{1}(1+r)=\$126
+            \end{align}
+        \item The old forward trades for
+            \begin{equation}
+                f_{0}=\frac{K_{1}-K_{0}}{1+r}=\frac{\$126-\$121}{1+.1}=\$4.54
+            \end{equation}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{A Quick Note on Forwards: Example}
+    \begin{itemize}
+        \item $S_{0}=\$100$, $S_{1}=\$110$, $r=10\%$
+        \item The old and new forward prices are 
+            \begin{align}
+                K_{0}&=S_{0}(1+r)^{2}=\$121\\
+                K_{1}&=S_{1}(1+r)=\$121
+            \end{align}
+        \item The old forward trades for
+            \begin{equation}
+                f_{0}=\frac{K_{1}-K_{0}}{1+r}=\frac{\$121-\$121}{1+.1}=\$0
+            \end{equation}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Another Swap Example}
+    \begin{itemize}
+        \item $A$ borrows $p_{A}$, pays coupon $c_{A}$ each period
+        \item $B$ borrows $p_{B}$, pays coupon $c_{B}$ each period
+    \end{itemize}
+\begin{center}
+\begin{tikzpicture}
+    
+    \draw (0,0) -- (4,0);
+    \foreach \x in {0,2,4}
+    \draw(\x cm,3pt) -- (\x cm, -3pt);
+    \draw (0,0) node[above=3pt] {0};
+    \draw (2,0) node[above=3pt] {1};
+    \draw (4,0) node[above=3pt] {2};
+    \draw (-2,0) node[] {Firm $B$};
+    \draw (0,0) node[below=3pt] {$p_{B}$};
+    \draw (2,0) node[below=3pt] {$-c_{B}$};
+    \draw (4,0) node[below=3pt] {$-c_{B}$};
+    
+    \draw (0,2) -- (4,2);
+    \foreach \x in {0,2,4}
+    \draw(\x cm,3pt) -- (\x cm, -3pt);
+    \draw (0,2) node[above=3pt] {0};
+    \draw (2,2) node[above=3pt] {1};
+    \draw (4,2) node[above=3pt] {2};
+    \draw (-2,2) node[] {Firm $A$};
+    \draw (0,2) node[below=3pt] {$p_{A}$};
+    \draw (2,2) node[below=3pt] {$-c_{A}$};
+    \draw (4,2) node[below=3pt] {$-c_{A}$};
+\end{tikzpicture}
+\end{center}
+\end{frame}
+
+\begin{frame}{Another Swap Example}
+    \begin{itemize}
+        \item If we assume that the original debts were priced correctly, 
+            \begin{align}
+                p_{A}&=\frac{c_{A}}{1+y}+\frac{c_{A}}{(1+y)^{2}}\\
+                p_{B}&=\frac{c_{B}}{1+y}+\frac{c_{B}}{(1+y)^{2}} 
+            \end{align}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Interest Rate Swaps}
+    $w_{0}$ is the price of the swap
+    \begin{center}
+        \begin{tabular}{lcccc}
+            Security & Q & CF$_{0}$ & CF$_{1}$ & CF$_{2}$\\ \hline
+            \multicolumn{5}{c}{\textbf{Firm A}} \\ \hline
+            Loan & $+1$ & $+p_{A}$ & $-c_{A}$ & $-c_{A}$\\
+            Swap & $+1$ & $-w_{0}$ & $c_{A}-c_{B}$ & $c_{A}-c_{B}$ \\ \hline
+            & & $p_{A}-w_{0}$ & $-c_{B}$ & $-c_{B}$ \\ \hline
+            \multicolumn{5}{c}{\textbf{Firm B}} \\ \hline
+            Loan & $+1$ & $+p_{B}$ & $-c_{B}$ & $-c_{B}$ \\
+            Swap & $-1$ & $+w_{0}$ & $-(c_{A}-c_{B})$ & $-(c_{A}-c_{B})$ \\ \hline
+            & & $p_{B}+w_{0}$ & $-c_{A}$ & $-c_{A}$
+        \end{tabular}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Interest Rate Swaps: Pricing}
+    $w_{0}$ is the price of the swap
+    \begin{center}
+        \begin{tabular}{lcccc}
+            Security & Q & CF$_{0}$ & CF$_{1}$ & CF$_{2}$\\ \hline
+            Swap & $+1$ & $-w_{0}$ & $c_{A}-c_{B}$ & $c_{A}-c_{B}$ \\ \hline
+            \multicolumn{5}{c}{Replicating Portfolio} \\ \hline
+            Loan $A$ & $+1$ & $-p_{A}$ & $+c_{A}$ & $+c_{A}$ \\ 
+            Loan $B$ & $-1$ & $+p_{B}$ & $-c_{B}$ & $-c_{B}$ \\ \hline
+            & & $-p_{A}+p_{B}$ & $c_{A}-c_{B}$ & $c_{A}-c_{B}$
+        \end{tabular}
+    \end{center}
+    \begin{equation}
+        \boxed{w_{0}\overset{\text{``should''}}{=}p_{A}-p_{B}}
+    \end{equation}
+\end{frame}
+
+\iffalse
+
+\begin{frame}{Board Problem 1}
+    Suppose that the yield on a one-year bond is 5\% ($_{0}y_{1}=5\%$) and the yield on a two-year bond is 10\% ($_{0}y_{2}=10\%$). What should the swap trade for ($w_{0}$)? What if it trades for \$1m? What if trades for \$2m? 
+\end{frame}
+
+\fi
+
+\end{document}
