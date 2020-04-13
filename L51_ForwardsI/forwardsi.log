@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2020.3.22)  12 APR 2020 23:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2020.3.22)  13 APR 2020 00:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -773,20 +773,20 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 ))) (../jordan_header.tex) (./forwardsi.aux)
 \openout1 = `forwardsi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -837,7 +837,7 @@ LaTeX Font Info:    ... okay on input line 8.
 \everyMPtoPDFconversion=\toks48
 ) ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box61
-Package hyperref Info: Link coloring OFF on input line 8.
+Package hyperref Info: Link coloring OFF on input line 7.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -847,68 +847,68 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count171
 )
-LaTeX Info: Redefining \ref on input line 8.
-LaTeX Info: Redefining \pageref on input line 8.
-LaTeX Info: Redefining \nameref on input line 8.
+LaTeX Info: Redefining \ref on input line 7.
+LaTeX Info: Redefining \pageref on input line 7.
+LaTeX Info: Redefining \nameref on input line 7.
 
 (./forwardsi.out) (./forwardsi.out)
 \@outlinefile=\write5
 \openout5 = `forwardsi.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 8.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 7.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 8.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 7.
 \symnumbers=\mathgroup11
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 8.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 7.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/cmss/m/it on input line 8
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/cmss/m/it on input line 7
 .
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/bx/sl --> OT1/cmss/m/it on input line 
-8.
+7.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 8.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 8.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 7.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 7.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 8.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 7.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 8.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 8.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 7.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 7.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 8.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 7.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 8.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 8.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 7.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 7.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 8.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 7.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 8.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 7.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 8.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 7.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 8.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 7.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 8.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 7.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 8.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 7.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 8.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 7.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 8.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 7.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 8.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 8.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 7.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 7.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 8
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 7
 .
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 
-8.
+7.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 8.
+ut line 7.
 
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-bas
 ic-dictionary/translator-basic-dictionary-English.dict
@@ -934,323 +934,330 @@ Dictionary: translator-numbers-dictionary, Language: English
 orem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 8.
+LaTeX Info: Redefining \includegraphics on input line 7.
  (./forwardsi.nav)
-LaTeX Font Info:    Try loading font information for U+msa on input line 25.
+LaTeX Font Info:    Try loading font information for U+msa on input line 20.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 25.
+LaTeX Font Info:    Try loading font information for U+msb on input line 20.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 25.
+line 20.
 
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-Overfull \hbox (19.71854pt too wide) in paragraph at lines 25--25
+Overfull \hbox (19.71854pt too wide) in paragraph at lines 20--20
  []|[][][]|  
  []
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 25.
+(Font)              size <5> substituted on input line 20.
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (87.91881pt too wide) in paragraph at lines 45--45
+Overfull \hbox (39.7866pt too wide) in paragraph at lines 31--31
  []|[][][]|  
  []
 
 [2
 
 ]
-Overfull \hbox (94.15085pt too wide) in paragraph at lines 61--61
+Overfull \hbox (87.91881pt too wide) in paragraph at lines 49--49
  []|[][][]|  
  []
 
 [3
 
-] <longforward.pdf, id=99, 451.8644pt x 353.86528pt>
-File: longforward.pdf Graphic file (type pdf)
- <use longforward.pdf>
-Package pdftex.def Info: longforward.pdf used on input line 70.
-(pdftex.def)             Requested size: 135.56036pt x 106.1604pt.
-
-<shortforward.pdf, id=100, 451.8644pt x 353.86528pt>
-File: shortforward.pdf Graphic file (type pdf)
- <use shortforward.pdf>
-Package pdftex.def Info: shortforward.pdf used on input line 70.
-(pdftex.def)             Requested size: 135.56036pt x 106.1604pt.
-
-Overfull \hbox (126.38696pt too wide) in paragraph at lines 70--70
+]
+Overfull \hbox (94.15085pt too wide) in paragraph at lines 59--59
  []|[][][]|  
  []
 
 [4
+
+] <longforward.pdf, id=124, 451.8644pt x 353.86528pt>
+File: longforward.pdf Graphic file (type pdf)
+ <use longforward.pdf>
+Package pdftex.def Info: longforward.pdf used on input line 68.
+(pdftex.def)             Requested size: 135.56036pt x 106.1604pt.
+
+<shortforward.pdf, id=125, 451.8644pt x 353.86528pt>
+File: shortforward.pdf Graphic file (type pdf)
+ <use shortforward.pdf>
+Package pdftex.def Info: shortforward.pdf used on input line 68.
+(pdftex.def)             Requested size: 135.56036pt x 106.1604pt.
+
+Overfull \hbox (126.38696pt too wide) in paragraph at lines 68--68
+ []|[][][]|  
+ []
+
+[5
 
  <./longforward.pdf> <./shortforward.pdf
 
 pdfTeX warning: pdflatex (file ./shortforward.pdf): PDF inclusion: multiple pdf
 s with page group included in a single page
 >]
-Overfull \hbox (117.5589pt too wide) in paragraph at lines 78--78
- []|[][][]|  
- []
-
-[5
-
-]
-Overfull \hbox (117.5589pt too wide) in paragraph at lines 87--87
+Overfull \hbox (117.5589pt too wide) in paragraph at lines 76--76
  []|[][][]|  
  []
 
 [6
 
-] <swa.png, id=236, 1173.38374pt x 603.25375pt>
-File: swa.png Graphic file (type png)
- <use swa.png>
-Package pdftex.def Info: swa.png used on input line 93.
-(pdftex.def)             Requested size: 352.01784pt x 180.97751pt.
-
-Overfull \hbox (44.72797pt too wide) in paragraph at lines 93--93
- [] 
- []
-
-
-Overfull \hbox (117.5589pt too wide) in paragraph at lines 93--93
+]
+Overfull \hbox (117.5589pt too wide) in paragraph at lines 85--85
  []|[][][]|  
  []
 
 [7
 
- <./swa.png>]
-Overfull \hbox (13.06648pt too wide) in paragraph at lines 108--108
+] <swa.png, id=262, 1173.38374pt x 603.25375pt>
+File: swa.png Graphic file (type png)
+ <use swa.png>
+Package pdftex.def Info: swa.png used on input line 91.
+(pdftex.def)             Requested size: 352.01784pt x 180.97751pt.
+
+Overfull \hbox (44.72797pt too wide) in paragraph at lines 91--91
+ [] 
+ []
+
+
+Overfull \hbox (117.5589pt too wide) in paragraph at lines 91--91
  []|[][][]|  
  []
 
 [8
 
-]
-Overfull \hbox (35.16658pt too wide) in paragraph at lines 112--112
+ <./swa.png>]
+Overfull \hbox (13.06648pt too wide) in paragraph at lines 106--106
  []|[][][]|  
  []
 
 [9
 
 ]
-Overfull \hbox (35.16658pt too wide) in paragraph at lines 124--124
+Overfull \hbox (35.16658pt too wide) in paragraph at lines 110--110
  []|[][][]|  
  []
 
 [10
 
 ]
-Overfull \hbox (143.179pt too wide) in paragraph at lines 133--133
+Overfull \hbox (35.16658pt too wide) in paragraph at lines 122--122
  []|[][][]|  
  []
 
 [11
 
 ]
-Overfull \hbox (143.179pt too wide) in paragraph at lines 150--150
+Overfull \hbox (76.23875pt too wide) in paragraph at lines 131--131
  []|[][][]|  
  []
 
 [12
 
 ]
-Overfull \hbox (210.21925pt too wide) in paragraph at lines 165--165
+Overfull \hbox (76.23875pt too wide) in paragraph at lines 148--148
  []|[][][]|  
  []
 
 [13
 
 ]
-Overfull \hbox (210.21925pt too wide) in paragraph at lines 180--180
+Overfull \hbox (143.279pt too wide) in paragraph at lines 163--163
  []|[][][]|  
  []
 
 [14
 
 ]
-Overfull \hbox (101.65881pt too wide) in paragraph at lines 190--190
+Overfull \hbox (143.279pt too wide) in paragraph at lines 178--178
  []|[][][]|  
  []
 
 [15
 
 ]
-Overfull \hbox (135.42699pt too wide) in paragraph at lines 205--205
+Overfull \hbox (101.65881pt too wide) in paragraph at lines 188--188
  []|[][][]|  
  []
 
 [16
 
 ]
-Overfull \hbox (99.81085pt too wide) in paragraph at lines 214--214
+Overfull \hbox (135.42699pt too wide) in paragraph at lines 203--203
  []|[][][]|  
  []
 
 [17
 
 ]
-Overfull \hbox (99.81085pt too wide) in paragraph at lines 231--231
+Overfull \hbox (99.81085pt too wide) in paragraph at lines 212--212
  []|[][][]|  
  []
 
 [18
 
 ]
-Overfull \hbox (99.81085pt too wide) in paragraph at lines 265--265
+Overfull \hbox (99.81085pt too wide) in paragraph at lines 229--229
  []|[][][]|  
  []
 
 [19
 
 ]
-Overfull \hbox (99.81085pt too wide) in paragraph at lines 276--276
+Overfull \hbox (99.81085pt too wide) in paragraph at lines 263--263
  []|[][][]|  
  []
 
 [20
 
 ]
-Overfull \hbox (99.81085pt too wide) in paragraph at lines 284--284
+Overfull \hbox (99.81085pt too wide) in paragraph at lines 274--274
  []|[][][]|  
  []
 
 [21
 
 ]
-Overfull \hbox (99.81085pt too wide) in paragraph at lines 302--302
+Overfull \hbox (99.81085pt too wide) in paragraph at lines 282--282
  []|[][][]|  
  []
 
 [22
 
 ]
-Overfull \hbox (166.8511pt too wide) in paragraph at lines 335--335
+Overfull \hbox (99.81085pt too wide) in paragraph at lines 300--300
  []|[][][]|  
  []
 
 [23
 
 ]
-Overfull \hbox (166.8511pt too wide) in paragraph at lines 353--353
+Overfull \hbox (166.8511pt too wide) in paragraph at lines 333--333
  []|[][][]|  
  []
 
 [24
 
 ]
-Overfull \hbox (157.35104pt too wide) in paragraph at lines 369--369
+Overfull \hbox (166.8511pt too wide) in paragraph at lines 351--351
  []|[][][]|  
  []
 
 [25
 
 ]
-Overfull \hbox (121.02695pt too wide) in paragraph at lines 438--438
+Overfull \hbox (157.35104pt too wide) in paragraph at lines 367--367
  []|[][][]|  
  []
 
 [26
 
 ]
-Overfull \hbox (121.02695pt too wide) in paragraph at lines 448--448
+Overfull \hbox (121.02695pt too wide) in paragraph at lines 436--436
  []|[][][]|  
  []
 
 [27
 
 ]
-Overfull \hbox (99.81085pt too wide) in paragraph at lines 465--465
+Overfull \hbox (121.02695pt too wide) in paragraph at lines 446--446
  []|[][][]|  
  []
 
 [28
 
 ]
-Overfull \hbox (157.35104pt too wide) in paragraph at lines 482--482
+Overfull \hbox (99.81085pt too wide) in paragraph at lines 463--463
  []|[][][]|  
  []
 
 [29
 
 ]
-Overfull \hbox (170.75906pt too wide) in paragraph at lines 498--498
+Overfull \hbox (157.35104pt too wide) in paragraph at lines 480--480
  []|[][][]|  
  []
 
 [30
 
 ]
-Overfull \hbox (35.47859pt too wide) in paragraph at lines 508--508
+Overfull \hbox (170.75906pt too wide) in paragraph at lines 496--496
  []|[][][]|  
  []
 
 [31
 
 ]
-Overfull \hbox (35.76659pt too wide) in paragraph at lines 517--517
+Overfull \hbox (35.47859pt too wide) in paragraph at lines 506--506
  []|[][][]|  
  []
 
 [32
 
 ]
-Overfull \hbox (35.76659pt too wide) in paragraph at lines 526--526
+Overfull \hbox (35.76659pt too wide) in paragraph at lines 515--515
  []|[][][]|  
  []
 
 [33
 
 ]
-Overfull \hbox (35.76659pt too wide) in paragraph at lines 546--546
+Overfull \hbox (35.76659pt too wide) in paragraph at lines 524--524
  []|[][][]|  
  []
 
 [34
 
 ]
-Overfull \hbox (35.76659pt too wide) in paragraph at lines 558--558
+Overfull \hbox (35.76659pt too wide) in paragraph at lines 544--544
  []|[][][]|  
  []
 
 [35
 
 ]
-Overfull \hbox (79.48677pt too wide) in paragraph at lines 568--568
+Overfull \hbox (35.76659pt too wide) in paragraph at lines 556--556
  []|[][][]|  
  []
 
 [36
 
 ]
-Overfull \hbox (35.76659pt too wide) in paragraph at lines 583--583
+Overfull \hbox (79.48677pt too wide) in paragraph at lines 566--566
  []|[][][]|  
  []
 
 [37
 
-] <bigmac.pdf, id=1030, 361.35pt x 216.81pt>
-File: bigmac.pdf Graphic file (type pdf)
- <use bigmac.pdf>
-Package pdftex.def Info: bigmac.pdf used on input line 590.
-(pdftex.def)             Requested size: 271.01184pt x 162.60709pt.
-
-Overfull \hbox (179.1311pt too wide) in paragraph at lines 590--590
+]
+Overfull \hbox (35.76659pt too wide) in paragraph at lines 581--581
  []|[][][]|  
  []
 
 [38
+
+] <bigmac.pdf, id=1055, 361.35pt x 216.81pt>
+File: bigmac.pdf Graphic file (type pdf)
+ <use bigmac.pdf>
+Package pdftex.def Info: bigmac.pdf used on input line 588.
+(pdftex.def)             Requested size: 271.01184pt x 162.60709pt.
+
+Overfull \hbox (179.1311pt too wide) in paragraph at lines 588--588
+ []|[][][]|  
+ []
+
+[39
 
  <./bigmac.pdf>]
 \tf@nav=\write6
@@ -1262,11 +1269,11 @@ Overfull \hbox (179.1311pt too wide) in paragraph at lines 590--590
 \tf@snm=\write8
 \openout8 = `forwardsi.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 592.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 592.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 590.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 590.
  (./forwardsi.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 592.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 592.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 590.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 590.
 Package rerunfilecheck Info: File `forwardsi.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1276,10 +1283,10 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 20160 strings out of 493013
- 393587 string characters out of 6135682
- 466327 words of memory out of 5000000
- 23148 multiletter control sequences out of 15000+600000
+ 20165 strings out of 493013
+ 393629 string characters out of 6135682
+ 466331 words of memory out of 5000000
+ 23151 multiletter control sequences out of 15000+600000
  19254 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,14n,59p,796b,622s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1293,10 +1300,10 @@ nts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/symbols/msam7.pfb>
-Output written on forwardsi.pdf (38 pages, 245602 bytes).
+Output written on forwardsi.pdf (39 pages, 248082 bytes).
 PDF statistics:
- 1115 PDF objects out of 1200 (max. 8388607)
- 1002 compressed objects within 11 object streams
- 77 named destinations out of 1000 (max. 500000)
+ 1141 PDF objects out of 1200 (max. 8388607)
+ 1027 compressed objects within 11 object streams
+ 79 named destinations out of 1000 (max. 500000)
  63 words of extra memory for PDF output out of 10000 (max. 10000000)
 

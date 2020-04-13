@@ -12,23 +12,28 @@
 		\item We will start with \textit{forwards} 
 		\item Standardized implementations of forwards are called \textit{futures})
 		\item Henceforth, I will refer to everything as a ``forward.''
-		\item We will then use forwards to study (1) swaps and (2) exchange rates
-		\begin{itemize}
-			\item Foreign Currencies
-			\item Agricultural Products
-			\item Metals and Energy
-			\item Interest Rate Futures
-			\item Equity Indexes
-		\end{itemize}
+		\item We will then use forwards to study\\
+			(1) swaps\\ 
+			(2) exchange rates
+		\item Common examples: foreign currencies, agricultural products, metals and energy, interest rate futures, equity indexes
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{\ftvocab{Vocabulary}}
+	\begin{itemize}
+		\item \textit{Underlying}
+		\item A \textit{counter-party}
+		\item \textit{Cash settlement} means delivering the cash value of the underlying asset (rather than the asset itself) to satisfy the contract
+		\item A \textit{forward} is a contract that requires future delivery of asset at agreed-upon price
+		\item The \textit{future price} is the agreed-upon price to be paid on a futures contract at maturity
+		\item The \textit{spot price} is the actual market price of the commodity at the time of the delivery.
 	\end{itemize}
 \end{frame}
 
 \begin{frame}{\fttheory{Trading Strategies}}
 	\begin{itemize}
-		\item Contract that requires future delivery of asset at agreed-upon price
-		\item Long position: commit to purchase asset
-		\item Short position: commit to deliver asset
-		\item Forwards and futures do not have a premium
+		\item Long position: commit to \textit{purchase} asset
+		\item Short position: commit to \textit{deliver} asset
 		\item Positions settled at maturity (no initial cash flow)
         \item Speculation
             \begin{itemize}
@@ -47,12 +52,6 @@
 \begin{frame}{\fttheory{Forwards Contracts}}
 	\begin{itemize}
 		\item The trader in the long position is said to ``buy'' a contract; the short-side trader ``sells'' a contract. 
-		\item At maturity:
-			\begin{itemize}
-				\item Profit to long = Spot price at maturity - Original futures price
-				\item Profit to short = Original futures price - Spot price at maturity
-			\end{itemize}
-		\item The spot price is the actual market price of the commodity at the time of the delivery.
         \item Basis: difference between futures price and spot price $K-S_{t}$
 		\item In practice, traders may be required to post margin. 
 		\item Because \underline{both} parties to a futures contract are exposed to losses, \underline{both} must post margins. 
@@ -122,7 +121,7 @@ Suppose that you buy a one-year forward on 10,000 shares of SPY, which currently
 \end{itemize}
 \end{frame}
 
-\begin{frame}{\fttheory{A Quick Note on Forwards}}
+\begin{frame}{\fttheory{Pricing Forwards}}
    \begin{itemize}
        \item Suppose you go long a forward that expires in \underline{two} years.
        \item Step forward one year. 
@@ -131,7 +130,7 @@ Suppose that you buy a one-year forward on 10,000 shares of SPY, which currently
    \end{itemize}
 \end{frame}
 
-\begin{frame}{\fttheory{A Quick Note on Forwards}}
+\begin{frame}{\fttheory{Pricing Forwards}}
     How do you price anything? Build a replicating portfolio!
     \begin{center}
         \begin{tabular}{lccc}
@@ -148,7 +147,7 @@ Suppose that you buy a one-year forward on 10,000 shares of SPY, which currently
     \end{equation}
 \end{frame}
 
-\begin{frame}{\ftexampl{A Quick Note on Forwards: Example}}
+\begin{frame}{\ftexampl{Pricing Forwards: Example}}
     \begin{itemize}
         \item $S_{0}=\$100$, $S_{1}=\$115$, $r=10\%$
         \item The old and new forward prices are 
@@ -163,7 +162,7 @@ Suppose that you buy a one-year forward on 10,000 shares of SPY, which currently
     \end{itemize}
 \end{frame}
 
-\begin{frame}{\ftexampl{A Quick Note on Forwards: Example}}
+\begin{frame}{\ftexampl{Pricing Forwards: Example}}
     \begin{itemize}
         \item $S_{0}=\$100$, $S_{1}=\$110$, $r=10\%$
         \item The old and new forward prices are 
