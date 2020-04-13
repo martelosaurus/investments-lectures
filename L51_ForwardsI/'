@@ -40,6 +40,11 @@
 		\item Long position: commit to \textit{purchase} asset
 		\item Short position: commit to \textit{deliver} asset
 		\item Positions settled at maturity (no initial cash flow)
+        \item Speculation
+            \begin{itemize}
+                \item Short if you believe price will fall
+                \item Long if you believe price will rise
+            \end{itemize}
         \item Hedging
             \begin{itemize}
                 \item Long: Endowment fund will purchase stock in 3 months; manager buys forwards now to protect against rise in price
@@ -71,25 +76,22 @@
 \end{frame}
 
 %-----------------------------------------------------------------------------%
-% corporate applications: a vignette
-\begin{frame}{\fttheory{Corporate Applications: a Vignette}}
+% corporate applications
+\begin{frame}{\fttheory{Corporate Applications}}
 	\begin{itemize}
-		\item Consider an oil company and an airline.  
-		\item How much will the price of oil be in the future, when they are ready to sell the oil they produced?  
-		\item The revenue of this company depends on oil prices, which are extremely volatile.
-		\item The airline has a problem that mirrors that of the oil production company. 
-		\item How can forwards help these two firms?
+		\item Consider the case of an oil production company.  How much will the price of oil be in the future, when they are ready to sell the oil they produced?  The revenue of this company depends on oil prices, which are extremely volatile!
+		\item On the other hand, consider a company that has to buy oil as one of the inputs in the production process (airline company). This company has a problem that mirrors that of the oil production company. 
+		\item \textbf{Can forwards help these two firms?}
 	\end{itemize}
 \end{frame}
 
 %-----------------------------------------------------------------------------%
-% corporate applications: a vignette
-\begin{frame}{\fttheory{Corporate Applications: a Vignette}}
+% corporate applications
+\begin{frame}{\fttheory{Corporate Applications}}
 	\begin{itemize}
-		\item The two firms can enter into an agreement today that specifies the price at which the oil producer sells the oil to the other company in the future. 
-		\item Such an agreement will reduce the source of risk for both parties!  
-		\item The oil producer delivers oil at a price agreed upon now, regardless of the market price at the time when oil is produced. 
-		\item This requires that both parties be willing to lock in the price to be paid or received for delivery of the commodity. 
+		\item \textbf{Yes!}  The two parties can enter into an agreement today that specifies the price at which the oil producer sells the oil to the other company in the future. 
+		\item Such an agreement will reduce the source of risk for both parties!  The oil producer delivers oil at a price agreed upon now, regardless of the market price at the time when oil is produced. 
+		\item This requires that BOTH parties be willing to lock in the price to be paid or received for delivery of the commodity. 
 		\item This can be achieved using forwards.
 	\end{itemize}
 \end{frame}
@@ -122,9 +124,7 @@
 %-----------------------------------------------------------------------------%
 % pricing new forwards
 \begin{frame}{\ftexampl{Pricing New Forwards}}
-	\textbf{Question:} You're in sales at Goldman. A client wants a five-year forward on \$1m of the S\&P 500. The risk-free rate is 10\%. What should the price $K$ be? How do you hedge the position? What if the client tells you that he is willing to buy the forward for \$2m. What is your profit?\\
-
-	\textbf{Answer:} The
+    You're in sales at Goldman. A client wants a five-year forward on \$1m of the S\&P 500. The risk-free rate is 10\%. What should the price $K$ be? How do you hedge the position? What if the client tells you that he is willing to buy the forward for \$2m. What is your profit?  
 \end{frame}
 
 %-----------------------------------------------------------------------------%
@@ -217,8 +217,6 @@ Suppose that you buy a one-year forward on 10,000 shares of SPY, which currently
 	\end{itemize}
 \end{frame}
 
-%-----------------------------------------------------------------------------%
-% swaps: ibm and the world bank
 \begin{frame}{\ftdata{Swaps: IBM and the World Bank}}
     \begin{itemize}
         \item Salomon Brothers wrote the first swap in 1981
@@ -234,7 +232,207 @@ Suppose that you buy a one-year forward on 10,000 shares of SPY, which currently
     \end{itemize}
 \end{frame}
 
-\begin{frame}{\fttheory{Swaps: Pricing}}
+\begin{frame}{\fttheory{Interest Rate Swaps}}
+    \begin{itemize}
+        \item The Solomon swap was a \textit{currency} swap
+        \item We will start with \textit{interest rate} swaps
+        \item A vanilla swap is ``fixed-for-floating''
+        \item The party who is long the swap receives fixed rate cash flows and pays floating rate cash flows 
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{\fttheory{Interest Rate Swaps}}
+    \begin{center}
+        \begin{tabular}{lcc}
+            Term & Year $0$ & Year $1$ \\ \hline
+            One-Year & $_{0}y_{1}$ & $_{1}y_{1}$ \\
+            Two-Year & $_{0}y_{2}$ & $\times$
+        \end{tabular}
+    \end{center}
+    \begin{itemize}
+        \item Suppose we have the above yield curve
+        \item All bonds on the yield curve are 1k, zero-coupon
+        \item There are two kinds of loans, fixed and floating
+        \item Fixed loan: borrow with \underline{known} coupons $_{0}c_{2}\equiv\:_{0}y_{2}\cdot 1$k in years one and two 
+        \item Floating loan: borrow with \underline{known} coupon $_{0}c_{1}\equiv\:_{0}y_{1}\cdot 1$k in the year one and \underline{unknown} coupon $_{1}c_{1}\equiv\:_{1}y_{1}\cdot 1$k in year two
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{\fttheory{Interest Rate Swaps}}
+    \begin{itemize}
+        \item Consider two firms, $A$ and $B$
+        \item $A$ makes fixed payments on its debt
+        \item $B$ makes floating payments on its debt
+    \end{itemize}
+\begin{center}
+\begin{tikzpicture}
+    
+    \draw (0,0) -- (4,0);
+    \foreach \x in {0,2,4}
+    \draw(\x cm,3pt) -- (\x cm, -3pt);
+    \draw (0,0) node[above=3pt] {0};
+    \draw (2,0) node[above=3pt] {1};
+    \draw (4,0) node[above=3pt] {2};
+    \draw (-2,0) node[] {Firm $B$};
+    \draw (0,0) node[below=3pt] {$p_{B}$};
+    \draw (2,0) node[below=3pt] {$-_{0}c_{1}$};
+    \draw (4,0) node[below=3pt] {$-(1+\:_{1}c_{1})$};
+    
+    \draw (0,2) -- (4,2);
+    \foreach \x in {0,2,4}
+    \draw(\x cm,3pt) -- (\x cm, -3pt);
+    \draw (0,2) node[above=3pt] {0};
+    \draw (2,2) node[above=3pt] {1};
+    \draw (4,2) node[above=3pt] {2};
+    \draw (-2,2) node[] {Firm $A$};
+    \draw (0,2) node[below=3pt] {$p_{A}$};
+    \draw (2,2) node[below=3pt] {$-_{0}c_{2}$};
+    \draw (4,2) node[below=3pt] {$-(1+\:_{0}c_{2})$};
+\end{tikzpicture}
+\end{center}
+\end{frame}
+
+\begin{frame}{\fttheory{Interest Rate Swaps}}
+    \begin{itemize}
+        \item If we assume that the original debts were priced correctly, 
+            \begin{equation}
+                p_{A}=p_{B}=1
+            \end{equation}
+        \item Coupon rate always equals yield, so bond always worth face
+        \item You can show this with a no-arbitrage argument
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{\fttheory{Interest Rate Swaps}}
+    \begin{itemize}
+        \item $A$ \underline{makes} fixed payments and \underline{wants} floating payments
+        \item $B$ \underline{makes} floating payments and \underline{wants} fixed payments
+        \item Solution: $A$ sells a swap to $B$ 
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{\fttheory{Interest Rate Swaps}}
+    $W_{0}$ is the price of the swap
+    \begin{center}
+        \begin{tabular}{lcccc}
+            Security & Q & CF$_{0}$ & CF$_{1}$ & CF$_{2}$\\ \hline
+            \multicolumn{5}{c}{\textbf{Firm A}} \\ \hline
+            Loan (Fixed) & $+1$ & $+p_{A}$ & $-\:_{0}c_{2}$ & $-(1+\:_{0}c_{2})$\\
+            Swap & $+1$ & $-w_{0}$ & $_{0}c_{2}-\:_{0}c_{1}$ & $_{0}c_{2}-\:_{1}c_{1}$ \\ \hline
+            & & $p_{A}-w_{0}$ & $-\:_{0}c_{1}$ & $-(1+\:_{1}c_{1}$) \\ \hline
+            \multicolumn{5}{c}{\textbf{Firm B}} \\ \hline
+            Loan (Floating) & $+1$ & $+p_{B}$ & $-\:_{0}c_{1}$ & $-(1+\:_{1}c_{1})$ \\
+            Swap & $-1$ & $+w_{0}$ & $-(_{0}c_{2}-\:_{0}c_{1})$ & $-(_{0}c_{2}-\:_{1}c_{1})$ \\ \hline
+            & & $p_{B}+w_{0}$ & $-\:_{0}c_{2}$ & $-(1+\:_{0}c_{2})$
+        \end{tabular}
+    \end{center}
+    $A$'s payments are now floating and $B$'s payments are now fixed
+\end{frame}
+
+\begin{frame}{\ftexampl{Interest Rate Swaps: Example}}
+    \begin{itemize}
+        \item The rate on two-year debt is 10\% this year
+        \item The rate on one-year debt is 10\% this year, but the rate on one-year debt could either be 5\% or 15\% next year. 
+    \end{itemize}
+    \begin{center}
+        \begin{tikzpicture}
+            
+            \draw (0,3) -- (4,3);
+            \draw (-2,3) node[] {Firm $A$};
+            \draw (0,3) node[above=3pt] {0};
+            \draw (2,3) node[above=3pt] {1};
+            \draw (4,3) node[above=3pt] {2};
+            \draw (0,3) node[below=3pt] {\$$1$m};
+            \draw (2,3) node[below=3pt] {\$$-.1$m};
+            \draw (4,3) node[below=3pt] {\$$-1.1$m};
+            
+            \draw (0,0) -- (2,0);
+            \draw (2,0) -- (4,1);
+            \draw (2,0) -- (4,-1);
+            \draw (-2,0) node[] {Firm $B$};
+            \draw (0,0) node[above=3pt] {0};
+            \draw (2,0) node[above=3pt] {1};
+            \draw (4,1) node[above=3pt] {2};
+            \draw (4,-1) node[above=3pt] {2};
+            \draw (0,0) node[below=3pt] {\$$1$m};
+            \draw (2,0) node[below=3pt] {\$$-.1$m};
+            \draw (4,1) node[right=3pt] {\$$-1.15$m};
+            \draw (4,-1) node[right=3pt] {\$$-1.05$m};
+        \end{tikzpicture}
+    \end{center}
+\end{frame}
+
+\begin{frame}{\ftexampl{Interest Rate Swaps: Example}}
+    Suppose that $w_{0}=0$. Units are millions of USD.
+    \begin{center}
+        \begin{tabular}{lccccc}
+            Security & Q & CF$_{0}$ & CF$_{1}$ & CF$_{2,u}$ & CF$_{2,d}$\\ \hline
+            \multicolumn{6}{c}{\textbf{Firm A}} \\ \hline
+            Loan (Fixed) & $+1$ & $+1$ & $-.1$ & $-1.1$ & $-1.1$ \\
+            Swap & $+1$ & $0$ & $0$ & $-.05$ & $+.05$ \\ \hline
+            & & $+1$ & $-.1$ & $-1.15$ & $-1.05$\\ \hline
+            \multicolumn{6}{c}{\textbf{Firm B}} \\ \hline
+            Loan (Floating) & $+1$ & $+1$ & $-.1$ & $-1.15$ & $-1.05$ \\
+            Swap & $-1$ & $0$ & $0$ & $+.05$ & $-.05$ \\ \hline
+            & & $+1$ & $-.1$ & $-1.1$ & $-1.1$
+        \end{tabular}
+    \end{center}
+    $A$'s payments are now floating and $B$'s payments are now fixed
+\end{frame}
+
+\begin{frame}{\fttheory{Interest Rate Swaps: Pricing}}
+    $w_{0}$ is the price of the swap
+    \begin{center}
+        \begin{tabular}{lcccc}
+            Security & Q & CF$_{0}$ & CF$_{1}$ & CF$_{2}$\\ \hline
+            Swap & $+1$ & $-w_{0}$ & $_{0}c_{2}-\:_{0}c_{1}$ & $_{0}c_{2}-\:_{1}c_{1}$ \\ \hline
+            \multicolumn{5}{c}{Replicating Portfolio} \\ \hline
+            $_{0}c_{2}$ & $+1$ & $-1$ & $_{0}c_{2}$ & $1+\:_{0}c_{2}$ \\
+            $_{0}c_{1}$ & $-1$ & $+1$ & $-(1+\:_{0}c_{1})$ & $\times$ \\
+            $_{1}c_{1}$ & $-1$ & $\times$ & $+1$ & $-(1+\:_{1}c_{1})$\\ \hline
+            & & $0$ & $_{0}c_{2}-\:_{0}c_{1}$ & $_{0}c_{2}-\:_{1}c_{1}$
+        \end{tabular}
+    \end{center}
+    Absent arbitrage, $w_{0}=0$. 
+\end{frame}
+
+\iffalse
+
+\begin{frame}{Interest Rate Swaps: Arbitrage (Long)}
+    $W_{0}$ is the price of the swap
+    \begin{center}
+        \begin{tabular}{lcccc}
+            Security & Q & CF$_{0}$ & CF$_{1}$ & CF$_{2}$\\ \hline
+            Swap & $+1$ & $-w_{0}$ & $_{0}c_{2}-\:_{0}c_{1}$ & $_{0}c_{2}-\:_{1}c_{1}$ \\
+            $_{0}c_{2}$ & $+1$ & $-_{0}p_{2}$ & $_{0}c_{2}$ & $1+\:_{0}c_{2}$ \\
+            $_{0}c_{1}$ & $-1$ & $+1$ & $-(1+\:_{0}c_{1})$ & $\times$ \\
+            $_{1}c_{1}$ & $-1$ & $\times$ & $+1$ & $-(1+\:_{1}c_{1})$ \\ \hline 
+            & & $1-\:_{0}p_{2}$ & $0$ & $0$
+        \end{tabular}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Interest Rate Swaps: Arbitrage (Short)}
+    $W_{0}$ is the price of the swap
+    \begin{center}
+        \begin{tabular}{lcccc}
+            Security & Q & CF$_{0}$ & CF$_{1}$ & CF$_{2}$\\ \hline
+            Swap & $+1$ & $-w_{0}$ & $_{0}c_{2}-\:_{0}c_{1}$ & $_{0}c_{2}-\:_{1}c_{1}$ \\
+            $_{0}c_{2}$ & $+1$ & $-_{0}p_{2}$ & $_{0}c_{2}$ & $1+\:_{0}c_{2}$ \\
+            $_{0}c_{1}$ & $-1$ & $+1$ & $-(1+\:_{0}c_{1})$ & $\times$ \\
+            $_{1}c_{1}$ & $-1$ & $\times$ & $+1$ & $-(1+\:_{1}c_{1})$ \\ \hline 
+            & & $1-\:_{0}p_{2}$ & $0$ & $0$
+        \end{tabular}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Board Problem 1}
+    Suppose that the yield on a one-year bond is 5\% ($_{0}y_{1}=5\%$) and the yield on a two-year bond is 10\% ($_{0}y_{2}=10\%$). What should the swap trade for ($w_{0}$)? What if it trades for \$1m? What if trades for \$2m? 
+\end{frame}
+
+\fi
+
+\begin{frame}{\fttheory{Another Swap Example}}
     \begin{itemize}
         \item $A$ borrows $p_{A}$, pays coupon $c_{A}$ each period
         \item $B$ borrows $p_{B}$, pays coupon $c_{B}$ each period
@@ -320,19 +518,24 @@ Suppose that you buy a one-year forward on 10,000 shares of SPY, which currently
 \fi
 
 \begin{frame}{\ftheader{Application II: Exchange Rates}}
-	\begin{itemize}
-  	\item International finance is a large and rich topic
-		\item Today, we're going to price currencies
-		\item We're going to study a couple of practical examples
+   \begin{itemize}
+       \item International finance is a large and rich topic
+       \item Today, we're going to price currencies
+       \item We're going to study a couple of practical examples
+   \end{itemize}
+\end{frame}
+
+\begin{frame}{\ftexampl{Currencies}}
+    \begin{itemize}
         \item Currencies are like tacos
         \item I go to 3 Amigos and buy tacos, I go to Chase and buy pesos
         \item In both cases, I pay with dollars
         \item Let $E$ denote the price of foreign currency
-		\item E.g. a Mexican peso sells for $E=.04$ \text{USD}
+        \item E.g. a peso sells for $E=\$.05$ 
     \end{itemize}
 \end{frame}
 
-\begin{frame}{\ftexampl{Interest Rate Parity}}
+\begin{frame}{\ftexampl{Example 1}}
     \begin{itemize}
         \item Two countries, domestic ($D$) and foreign ($F$)
         \item $r_{D}$ is the risk-free rate in $D$, $r_{F}$ in $F$
@@ -341,7 +544,7 @@ Suppose that you buy a one-year forward on 10,000 shares of SPY, which currently
     \end{itemize}
 \end{frame}
 
-\begin{frame}{\ftexampl{Interest Rate Parity}}
+\begin{frame}{\ftexampl{Example 1}}
     \begin{enumerate}
         \item Borrow $\$_{D}1$m in $D$
         \item Buy $\$_{D}1\text{m}/E_{0}$ of $F$'s currency (in $\$_{F}$)
@@ -350,7 +553,7 @@ Suppose that you buy a one-year forward on 10,000 shares of SPY, which currently
     \end{enumerate}
 \end{frame}
 
-\begin{frame}{\ftexampl{Interest Rate Parity}}
+\begin{frame}{\ftexampl{Example 1}}
     \begin{enumerate}\addtocounter{enumi}{4}
         \item In one year, we get  
             \begin{equation}
@@ -370,18 +573,19 @@ Suppose that you buy a one-year forward on 10,000 shares of SPY, which currently
     \end{enumerate}
 \end{frame}
 
-\begin{frame}{\fttheory{Interest Rate Parity}}
+\begin{frame}{\ftexampl{Example 1}}
     \begin{itemize}
-		\item \textit{Interest Rate Parity} occurs when
+        \item You should \underline{not} be able to make money from this trade
+        \item It requires no money down
+        \item We conclude that
             \begin{equation}
-				\boxed{1+r_{D}=(1+r_{F})\cdot\frac{K_{0}}{E_{0}}}
+                1+r_{D}\overset{\text{``should''}}{=}(1+r_{F})\cdot\frac{K_{0}}{E_{0}}
             \end{equation}
-		\item Put differently, you should not be able to make more money on a Euro denominated risk-free asset (e.g. German bunds) than on a Dollar denominated risk-free asset (e.g. US Treasuries)
         \item\textbf{Warning:} the forward price on a $D$ asset is $K_{0}=S_{0}(1+r_{D})$. $F$'s currency is \underline{not} a $D$ asset (it has its own rate $r_{F}$). The forward price on an $F$ asset is its own thing. 
     \end{itemize}
 \end{frame}
 
-\begin{frame}{\ftexampl{Interest Rate Parity}}
+\begin{frame}{\ftexampl{Board Problem 1}}
         Suppose that
         \begin{enumerate}
             \item the risk-free rate is $r_{D}=5\%$ in the US 
@@ -391,10 +595,7 @@ Suppose that you buy a one-year forward on 10,000 shares of SPY, which currently
         What should the risk-free rate be in the EU? What arbitrage opportunity is available to you if the risk-free rate in the EU is $r_{F}=10\%$? 
 \end{frame}
 
-\begin{frame}{\ftexampl{Interest Rate Parity vs. Purchasing Power Parity}}
-	\begin{itemize}
-		\item \textit{Purchasing power parity} refers to the ability to buy the same basket of goods/services around the world for the same price
-	\end{itemize}
+\begin{frame}{\ftexampl{Example 2}}
     \begin{itemize}
         \item A taco in the US sells for USD\$3
         \item A taco in Mexico sells for MEX\$20
@@ -409,14 +610,11 @@ Suppose that you buy a one-year forward on 10,000 shares of SPY, which currently
     \end{enumerate}
 \end{frame}
 
-%-----------------------------------------------------------------------------%
-% the economist's big-mac index
-% TODO: eventually, I'd like to do bigmac on one side, interest rates on other
 \begin{frame}{\ftdata{The Economist's Big-Mac Index}}
     \begin{center}
         \includegraphics[scale=.75]{bigmac}
     \end{center}
-	\noindent Although interest rate partity tends to hold in the data, does not. This is call the Penn effect and it is due to (1) limits to arbitrage and (2) differences in economic development. \\
+    $\dagger$Courtesy of The Economist. 
 \end{frame}
 
 \end{document}
