@@ -25,6 +25,7 @@
 % vocabulary
 \begin{frame}{\ftvocab{Vocabulary}}
 	\begin{itemize}
+		\item A \textit{derivative} is a security whose payoff depend on the payoff of other securities
 		\item \textit{Cash settlement} means delivering the cash value of the underlying asset (rather than the asset itself) to satisfy the contract
 		\item A \textit{forward} is a contract that requires future delivery of asset at agreed-upon price
 		\item The \textit{underlying} security (stock, bond, currency, commodity) on which the forward is written
@@ -35,28 +36,12 @@
 
 %-----------------------------------------------------------------------------%
 % strategies
-\begin{frame}{\fttheory{Trading Strategies}}
+\begin{frame}{\fttheory{Mechanics}}
 	\begin{itemize}
-		\item Long position: commit to \textit{purchase} asset
-		\item Short position: commit to \textit{deliver} asset
-		\item Positions settled at maturity (no initial cash flow)
-        \item Hedging
-            \begin{itemize}
-                \item Long: Endowment fund will purchase stock in 3 months; manager buys forwards now to protect against rise in price
-                \item Short: Hedge fund invests in long-term bonds; manager worries interest rates may increase and sells forwards
-            \end{itemize}
+		\item If you are \textit{long} a forward, then you commit to \textit{sell} the security, while if you are short, you commit to \textit{buy} the security
+		\item With cash settlement, the party who is short does not have to literally sell the underlying security to her counterparty; rather, she can just pay her counterparty the difference between the spot price and the future price in cash
+		\item Since positions are settled at maturity, so there is no initial cash flow
     \end{itemize}
-\end{frame}
-
-%-----------------------------------------------------------------------------%
-% forward contracts
-\begin{frame}{\fttheory{Forward Contracts}}
-	\begin{itemize}
-		\item The trader in the long position is said to ``buy'' a contract; the short-side trader ``sells'' a contract. 
-        \item Basis: difference between futures price and spot price $K-S_{t}$
-		\item In practice, traders may be required to post margin. 
-		\item Because \underline{both} parties to a futures contract are exposed to losses, \underline{both} must post margins. 
-	\end{itemize}
 \end{frame}
 
 %-----------------------------------------------------------------------------%
@@ -68,6 +53,18 @@
             \includegraphics[scale=.3]{longforward} & \includegraphics[scale=.3]{shortforward}
         \end{tabular}
     \end{center}
+	\begin{itemize}
+		\item The trader in the long position is said to ``buy'' a contract; the short-side trader ``sells'' a contract. 
+        \item Basis: difference between futures price and spot price $K-S$
+		\item In practice, traders may be required to post margin. 
+		\item Because \underline{both} parties to a futures contract are exposed to losses, \underline{both} must post margins. 
+	\end{itemize}
+\end{frame}
+
+%-----------------------------------------------------------------------------%
+% payoffs
+\begin{frame}{\ftexampl{Payoffs}}
+	\textbf{Problem.} Suppose Apple (AAPL) trades for 270 \usd. James Simons (Renaissance Technologies) is going to write a 3-year 
 \end{frame}
 
 %-----------------------------------------------------------------------------%
@@ -104,51 +101,74 @@
 
 %-----------------------------------------------------------------------------%
 % pricing new forwards
-\begin{frame}{\fttheory{Pricing New Forwards}}
+\begin{frame}{\fttheory{Spot-Futures Parity}}
 \begin{itemize}
-    \item Spot-Futures Parity-Theorem $K\overset{\text{``should''}}{=}S_{0}(1+r_{F})^{T}$
+	\item Having looked at the mechanics and applications of forwards, we know consider their pricing
+	\item $T$ is the term, $S_{0}$ is the spot price on date $0$, $S_{T}$ is the spot price on date $T$, and $K$ is the future price
+    \item Spot-Futures Parity $K\overset{\text{``should''}}{=}S_{0}(1+r_{F})^{T}$
 \end{itemize}
     \begin{center}
         \begin{tabular}{lccc}
             Security & Q & CF$_{0}$ & CF$_{T}$ \\ \hline
             Forward & 1 & 0 & $S_{T}-K$ \\ \hline\hline
             Stock & 1 & $-S_{0}$ & $S_{T}$ \\
-            Risk-Free & $-K/(1+r)^{T}$ & $K/(1+r)^{T}$ & $-K$ \\ \hline
-            & & $-S_{0}+K/(1+r)^{T}$ & $S_{T}-K$
+			Risk-Free & $-K/(1+r_{F})^{T}$ & $K/(1+r_{F})^{T}$ & $-K$ \\ \hline
+			& & $-S_{0}+K/(1+r_{F})^{T}$ & $S_{T}-K$
         \end{tabular}
     \end{center}
 \end{frame}
 
 %-----------------------------------------------------------------------------%
 % pricing new forwards
-\begin{frame}{\ftexampl{Pricing New Forwards}}
-	\textbf{Question:} You're in sales at Goldman. A client wants a five-year forward on \$1m of the S\&P 500. The risk-free rate is 10\%. What should the price $K$ be? How do you hedge the position? What if the client tells you that he is willing to buy the forward for \$2m. What is your profit?\\
-
-	\textbf{Answer:} The
+\begin{frame}{\ftexampl{Spot-Futures Parity: Hedging}}
+	\textbf{Problem:} You're in sales at Goldman. A client wants a five-year forward on 1\musd of the S\&P 500. The risk-free rate is .25\%. What should the price $K$ be? How do you hedge the position?\\
+ \textbf{Solution:} The futures price is
+	\begin{equation}
+		K=S_{0}(1+r_{F})^{T}=(1\musd)(1+.0025)^{5}=1.0126\musd
+	\end{equation}
 \end{frame}
 
 %-----------------------------------------------------------------------------%
 % pricing new forwards
-\begin{frame}{\ftexampl{Pricing New Forwards}}
-Suppose that you buy a one-year forward on 10,000 shares of SPY, which currently sells for \$275. The risk-free rate is 10\%. You are required to post an initial margin of 20\% and meet a maintenance margin of 10\%
-	\begin{itemize}
+\begin{frame}{\ftexampl{Spot-Futures Parity: Margin}}
+	\textbf{Problem.} Suppose that you buy a one-year forward on 10,000 shares of SPY, which currently sells for 275\usd. The risk-free rate is .25\%. You are required to post an initial margin of 50\%.  \begin{enumerate}
 		\item What should the forward price be? 
-		\item How much margin (\$) must you post?  
-		\item If SPY drops by 5\% tomorrow, what will the new forward price be?           
+		\item How much margin (USD) must you post?  
+		\item If SPY drops by 5\% tomorrow, what will the new forward price be (approximately)?           
 		\item How much margin (\%) do you have left? 
-		\item Will you receive a margin call?  
 		\item What is your return?
-	\end{itemize}
+	\end{enumerate}
+\end{frame}
+
+%-----------------------------------------------------------------------------%
+% pricing new forwards
+\begin{frame}{\ftexampl{Spot-Futures Parity: Margin}}
+	\textbf{Solution.} 
+	\begin{enumerate}
+		\item The forward price (per share) is
+			\begin{equation}\small
+				K=S_{0}(1+r_{F})^{T}=(275\usd)(1+.0025)=275.6875\usd
+			\end{equation}
+		\item You must post 
+		\item Suppose that SPY drops by 5\% tomorrow: $S_{0}=(95\%)(275\usd)=261.25\usd$. If ignoring the 1 day that has past, 
+			\begin{equation}\small
+				K=S_{0}(1+r_{F})^{T}=(261.25\usd)(1+.0025)=261.9031\usd
+			\end{equation}
+		\item How much margin (\%) do you have left? 
+		\item What is your return?
+	\end{enumerate}
 \end{frame}
 
 %-----------------------------------------------------------------------------%
 % pricing existing forwards
 \begin{frame}{\fttheory{Pricing Existing Forwards}}
    \begin{itemize}
+	   \item Forwards, like all of the derivatives we will study, can be sold in a secondary market
        \item Suppose you go long a forward that expires in \underline{two} years.
        \item Step forward one year. 
        \item Consider a new forward that expires in \underline{one} year.
        \item How much could you sell your old forward for (say $f_{0}$)? 
+	   \item This is the problem of pricing an existing forward
    \end{itemize}
 \end{frame}
 
@@ -157,13 +177,13 @@ Suppose that you buy a one-year forward on 10,000 shares of SPY, which currently
 \begin{frame}{\fttheory{Pricing Existing Forwards}}
     How do you price anything? Build a replicating portfolio!
     \begin{center}
-        \begin{tabular}{lccc}
-            Security & Q & CF$_{1}$ & CF$_{2}$ \\ \hline
-            Old Forward ($K_{0}$) & $+1$ & $-f_{0}$ & $S_{2}-K_{0}$ \\ \hline
-            \multicolumn{4}{c}{Replicating Portfolio} \\ \hline
-            New Forward ($K_{1}$) & $+1$ & $0$ & $S_{2}-K_{1}$ \\ 
-            Risk Free & $PV(K_{1}-K_{0})$ & $-PV(K_{1}-K_{0})$ & $K_{1}-K_{0}$ \\ \hline
-            & & $-PV(K_{1}-K_{0})$ & $S_{2}-K_{0}$
+        \begin{tabular}{lcc}
+            Security & CF$_{1}$ & CF$_{2}$ \\ \hline
+            Old Forward ($K_{0}$) &  $-f_{0}$ & $S_{2}-K_{0}$ \\ \hline
+            \multicolumn{3}{c}{Replicating Portfolio} \\ \hline
+            New Forward ($K_{1}$) & $S_{2}-K_{1}$ \\ 
+            Risk Free &  $-PV(K_{1}-K_{0})$ & $K_{1}-K_{0}$ \\ \hline
+            & $-PV(K_{1}-K_{0})$ & $S_{2}-K_{0}$
         \end{tabular}
     \end{center}
     \begin{equation}
@@ -174,16 +194,17 @@ Suppose that you buy a one-year forward on 10,000 shares of SPY, which currently
 %-----------------------------------------------------------------------------%
 % pricing existing forwards
 \begin{frame}{\ftexampl{Pricing Existing Forwards}}
-    \begin{itemize}
-        \item $S_{0}=\$100$, $S_{1}=\$115$, $r=10\%$
+	\textbf{Problem.} $S_{0}=100\usd$, $S_{1}=115\usd$, $r=10\%$\\
+	\textbf{Solution.}
+	\begin{itemize}
         \item The old and new forward prices are 
             \begin{align}
-                K_{0}&=S_{0}(1+r)^{2}=\$121\\
-                K_{1}&=S_{1}(1+r)=\$126
+                K_{0}&=S_{0}(1+r)^{2}=121\usd\\
+                K_{1}&=S_{1}(1+r)=126\usd
             \end{align}
         \item The old forward trades for
             \begin{equation}
-                f_{0}=\frac{K_{1}-K_{0}}{1+r}=\frac{\$126-\$121}{1+.1}=\$4.54
+                f_{0}=\frac{K_{1}-K_{0}}{1+r}=\frac{126\usd-121\usd}{1+.1}=4.54\usd
             \end{equation}
     \end{itemize}
 \end{frame}
@@ -191,16 +212,17 @@ Suppose that you buy a one-year forward on 10,000 shares of SPY, which currently
 %-----------------------------------------------------------------------------%
 % pricing existing forwards
 \begin{frame}{\ftexampl{Pricing Existing Forwards}}
+	\textbf{Problem.} $S_{0}=100\usd$, $S_{1}=110\usd$, $r=10\%$\\
+	\textbf{Solution.}
     \begin{itemize}
-        \item $S_{0}=\$100$, $S_{1}=\$110$, $r=10\%$
-        \item The old and new forward prices are 
+		\item The old and new forward prices are 
             \begin{align}
-                K_{0}&=S_{0}(1+r)^{2}=\$121\\
-                K_{1}&=S_{1}(1+r)=\$121
+                K_{0}&=S_{0}(1+r)^{2}=121\usd\\
+                K_{1}&=S_{1}(1+r)=121\usd
             \end{align}
         \item The old forward trades for
             \begin{equation}
-                f_{0}=\frac{K_{1}-K_{0}}{1+r}=\frac{\$121-\$121}{1+.1}=\$0
+                f_{0}=\frac{K_{1}-K_{0}}{1+r}=\frac{121\usd-121\usd}{1+.1}=0\usd
             \end{equation}
     \end{itemize}
 \end{frame}
@@ -265,16 +287,11 @@ Suppose that you buy a one-year forward on 10,000 shares of SPY, which currently
     \draw (4,2) node[below=3pt] {$-c_{A}$};
 \end{tikzpicture}
 \end{center}
-\end{frame}
-
-\begin{frame}{\fttheory{Another Swap Example}}
-    \begin{itemize}
-        \item If we assume that the original debts were priced correctly, 
-            \begin{align}
-                p_{A}&=\frac{c_{A}}{1+y}+\frac{c_{A}}{(1+y)^{2}}\\
-                p_{B}&=\frac{c_{B}}{1+y}+\frac{c_{B}}{(1+y)^{2}} 
-            \end{align}
-    \end{itemize}
+	for some yield $y$, 
+	\begin{align}
+		p_{A}&=\frac{c_{A}}{1+y}+\frac{c_{A}}{(1+y)^{2}}\\
+		p_{B}&=\frac{c_{B}}{1+y}+\frac{c_{B}}{(1+y)^{2}} 
+	\end{align}
 \end{frame}
 
 \begin{frame}{\fttheory{Interest Rate Swaps}}
@@ -332,26 +349,34 @@ Suppose that you buy a one-year forward on 10,000 shares of SPY, which currently
     \end{itemize}
 \end{frame}
 
-\begin{frame}{\ftexampl{Interest Rate Parity}}
+\begin{frame}{\fttheory{Interest Rate Parity}}
     \begin{itemize}
-        \item Two countries, domestic ($D$) and foreign ($F$)
-        \item $r_{D}$ is the risk-free rate in $D$, $r_{F}$ in $F$
-        \item $E_{0}$ is the spot price of $F$'s currency
-        \item $K_{0}$ is the price of a forward on $F$'s currency
+        \item Two countries, domestic ($D$) and foreign ($F$), $r_{D}$ is the risk-free rate in $D$, $r_{F}$ in $F$, $E_{0}$ is the spot price of $F$'s currency, and $K_{0}$ is the price of a forward on $F$'s currency
+		\item \textit{Interest Rate Parity} occurs when
+            \begin{equation}
+				\boxed{1+r_{D}=(1+r_{F})\cdot\frac{K_{0}}{E_{0}}}
+            \end{equation}
+		\item Put differently, you should not be able to make more money on a Euro denominated risk-free asset (e.g. German bunds) than on a Dollar denominated risk-free asset (e.g. US Treasuries)
+        \item\textbf{Warning:} the forward price on a $D$ asset is $K_{0}=S_{0}(1+r_{D})$. $F$'s currency is \underline{not} a $D$ asset (it has its own rate $r_{F}$). The forward price on an $F$ asset is its own thing. 
     \end{itemize}
 \end{frame}
 
 \begin{frame}{\ftexampl{Interest Rate Parity}}
-    \begin{enumerate}
-        \item Borrow $\$_{D}1$m in $D$
-        \item Buy $\$_{D}1\text{m}/E_{0}$ of $F$'s currency (in $\$_{F}$)
-        \item Buy $\$_{D}1\text{m}/E_{0}$ of $F$'s risk-free 
-        \item Sell a forward in $F$ with price $K_{0}$ (in $\$_{D}$)
-    \end{enumerate}
+	\textbf{Problem.} Suppose that
+        \begin{enumerate}
+            \item the risk-free rate is $r_{D}=5\%$ in the US 
+            \item a euro sells for $E_{0}=\$.05$
+            \item the forward price on pesos is 
+        \end{enumerate}
+        What should the risk-free rate be in the EU? What arbitrage opportunity is available to you if the risk-free rate in the EU is $r_{F}=10\%$? 
 \end{frame}
 
 \begin{frame}{\ftexampl{Interest Rate Parity}}
-    \begin{enumerate}\addtocounter{enumi}{4}
+    \begin{enumerate}
+        \item Borrow $1\musd$ in $D$
+        \item Buy $\$_{D}1\text{m}/E_{0}$ of $F$'s currency (in $\$_{F}$)
+        \item Buy $\$_{D}1\text{m}/E_{0}$ of $F$'s risk-free 
+        \item Sell a forward in $F$ with price $K_{0}$ (in $\$_{D}$)
         \item In one year, we get  
             \begin{equation}
                 (1+r_{F})\cdot (\$_{D}1\text{m}/E_{0})
@@ -368,27 +393,6 @@ Suppose that you buy a one-year forward on 10,000 shares of SPY, which currently
             \end{equation}
             in $\$_{D}$
     \end{enumerate}
-\end{frame}
-
-\begin{frame}{\fttheory{Interest Rate Parity}}
-    \begin{itemize}
-		\item \textit{Interest Rate Parity} occurs when
-            \begin{equation}
-				\boxed{1+r_{D}=(1+r_{F})\cdot\frac{K_{0}}{E_{0}}}
-            \end{equation}
-		\item Put differently, you should not be able to make more money on a Euro denominated risk-free asset (e.g. German bunds) than on a Dollar denominated risk-free asset (e.g. US Treasuries)
-        \item\textbf{Warning:} the forward price on a $D$ asset is $K_{0}=S_{0}(1+r_{D})$. $F$'s currency is \underline{not} a $D$ asset (it has its own rate $r_{F}$). The forward price on an $F$ asset is its own thing. 
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{\ftexampl{Interest Rate Parity}}
-        Suppose that
-        \begin{enumerate}
-            \item the risk-free rate is $r_{D}=5\%$ in the US 
-            \item a euro sells for $E_{0}=\$.05$
-            \item the forward price on pesos is 
-        \end{enumerate}
-        What should the risk-free rate be in the EU? What arbitrage opportunity is available to you if the risk-free rate in the EU is $r_{F}=10\%$? 
 \end{frame}
 
 \begin{frame}{\ftexampl{Interest Rate Parity vs. Purchasing Power Parity}}
