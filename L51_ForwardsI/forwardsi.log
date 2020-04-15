@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2020.3.22)  15 APR 2020 02:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2020.3.22)  15 APR 2020 04:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -971,7 +971,7 @@ Overfull \hbox (39.7866pt too wide) in paragraph at lines 33--33
 [2
 
 ]
-Overfull \hbox (93.27884pt too wide) in paragraph at lines 43--43
+Overfull \hbox (93.27884pt too wide) in paragraph at lines 44--44
  []|[][][]|  
  []
 
@@ -980,16 +980,16 @@ Overfull \hbox (93.27884pt too wide) in paragraph at lines 43--43
 ] <longforward.pdf, id=95, 451.8644pt x 353.86528pt>
 File: longforward.pdf Graphic file (type pdf)
  <use longforward.pdf>
-Package pdftex.def Info: longforward.pdf used on input line 59.
+Package pdftex.def Info: longforward.pdf used on input line 60.
 (pdftex.def)             Requested size: 135.56036pt x 106.1604pt.
 
 <shortforward.pdf, id=96, 451.8644pt x 353.86528pt>
 File: shortforward.pdf Graphic file (type pdf)
  <use shortforward.pdf>
-Package pdftex.def Info: shortforward.pdf used on input line 59.
+Package pdftex.def Info: shortforward.pdf used on input line 60.
 (pdftex.def)             Requested size: 135.56036pt x 106.1604pt.
 
-Overfull \hbox (71.07875pt too wide) in paragraph at lines 59--59
+Overfull \hbox (71.07875pt too wide) in paragraph at lines 60--60
  []|[][][]|  
  []
 
@@ -1000,21 +1000,21 @@ Overfull \hbox (71.07875pt too wide) in paragraph at lines 59--59
 pdfTeX warning: pdflatex (file ./shortforward.pdf): PDF inclusion: multiple pdf
 s with page group included in a single page
 >]
-Overfull \hbox (150.71904pt too wide) in paragraph at lines 67--67
+Overfull \hbox (150.71904pt too wide) in paragraph at lines 68--68
  []|[][][]|  
  []
 
 [5
 
 ]
-Overfull \hbox (198.4392pt too wide) in paragraph at lines 79--79
+Overfull \hbox (198.4392pt too wide) in paragraph at lines 80--80
  []|[][][]|  
  []
 
 [6
 
 ]
-Overfull \hbox (198.4392pt too wide) in paragraph at lines 91--91
+Overfull \hbox (198.4392pt too wide) in paragraph at lines 92--92
  []|[][][]|  
  []
 
@@ -1023,207 +1023,208 @@ Overfull \hbox (198.4392pt too wide) in paragraph at lines 91--91
 ] <swa.png, id=262, 1173.38374pt x 603.25375pt>
 File: swa.png Graphic file (type png)
  <use swa.png>
-Package pdftex.def Info: swa.png used on input line 99.
+Package pdftex.def Info: swa.png used on input line 100.
 (pdftex.def)             Requested size: 352.01784pt x 180.97751pt.
 
-Overfull \hbox (44.72797pt too wide) in paragraph at lines 99--99
+Overfull \hbox (44.72797pt too wide) in paragraph at lines 100--100
  [] 
  []
 
 
-Overfull \hbox (117.5589pt too wide) in paragraph at lines 99--99
+Overfull \hbox (117.5589pt too wide) in paragraph at lines 100--100
  []|[][][]|  
  []
 
 [8
 
  <./swa.png>]
-Overfull \hbox (96.35881pt too wide) in paragraph at lines 120--120
+Overfull \hbox (96.35881pt too wide) in paragraph at lines 121--121
  []|[][][]|  
  []
 
 [9
 
 ]
-Overfull \hbox (222.33928pt too wide) in paragraph at lines 132--132
+Overfull \hbox (222.33928pt too wide) in paragraph at lines 133--133
  []|[][][]|  
  []
 
 [10
 
 ]
-Overfull \hbox (214.09927pt too wide) in paragraph at lines 146--146
+Overfull \hbox (214.09927pt too wide) in paragraph at lines 145--145
  []|[][][]|  
  []
 
 [11
 
 ]
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 165.
-
-LaTeX Font Info:    Calculating math sizes for size <> on input line 165.
-
-LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <> not available
-(Font)              size <5> substituted on input line 165.
-
-
-LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <0.7> not available
-(Font)              size <5> substituted on input line 165.
-
-
-LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <0.5> not available
-(Font)              size <5> substituted on input line 165.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <> not available
-(Font)              size <5> substituted on input line 165.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <0.7> not available
-(Font)              size <5> substituted on input line 165.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <0.5> not available
-(Font)              size <5> substituted on input line 165.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <> not available
-(Font)              size <5> substituted on input line 165.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <0.7> not available
-(Font)              size <5> substituted on input line 165.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <0.5> not available
-(Font)              size <5> substituted on input line 165.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <> not available
-(Font)              size <5> substituted on input line 165.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <0.7> not available
-(Font)              size <5> substituted on input line 165.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <0.5> not available
-(Font)              size <5> substituted on input line 165.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <> not available
-(Font)              size <5> substituted on input line 165.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <0.7> not available
-(Font)              size <5> substituted on input line 165.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <0.5> not available
-(Font)              size <5> substituted on input line 165.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <> not available
-(Font)              size <5> substituted on input line 165.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <0.7> not available
-(Font)              size <5> substituted on input line 165.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <0.5> not available
-(Font)              size <5> substituted on input line 165.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 165.
-
-
-Overfull \hbox (214.09927pt too wide) in paragraph at lines 165--165
+Overfull \hbox (214.09927pt too wide) in paragraph at lines 159--159
  []|[][][]|  
  []
 
 [12
 
 ]
-Overfull \hbox (133.21095pt too wide) in paragraph at lines 178--178
+Overfull \hbox (133.21095pt too wide) in paragraph at lines 172--172
  []|[][][]|  
  []
 
 [13
 
 ]
-Overfull \hbox (133.21095pt too wide) in paragraph at lines 197--197
+Overfull \hbox (133.21095pt too wide) in paragraph at lines 191--191
  []|[][][]|  
  []
 
 [14
 
 ]
-Overfull \hbox (212.85124pt too wide) in paragraph at lines 216--216
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 210.
+
+LaTeX Font Info:    Calculating math sizes for size <> on input line 210.
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <> not available
+(Font)              size <5> substituted on input line 210.
+
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <0.7> not available
+(Font)              size <5> substituted on input line 210.
+
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <0.5> not available
+(Font)              size <5> substituted on input line 210.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <> not available
+(Font)              size <5> substituted on input line 210.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <0.7> not available
+(Font)              size <5> substituted on input line 210.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <0.5> not available
+(Font)              size <5> substituted on input line 210.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <> not available
+(Font)              size <5> substituted on input line 210.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <0.7> not available
+(Font)              size <5> substituted on input line 210.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <0.5> not available
+(Font)              size <5> substituted on input line 210.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <> not available
+(Font)              size <5> substituted on input line 210.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <0.7> not available
+(Font)              size <5> substituted on input line 210.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <0.5> not available
+(Font)              size <5> substituted on input line 210.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <> not available
+(Font)              size <5> substituted on input line 210.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <0.7> not available
+(Font)              size <5> substituted on input line 210.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <0.5> not available
+(Font)              size <5> substituted on input line 210.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <> not available
+(Font)              size <5> substituted on input line 210.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <0.7> not available
+(Font)              size <5> substituted on input line 210.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <0.5> not available
+(Font)              size <5> substituted on input line 210.
+
+
+Overfull \hbox (212.85124pt too wide) in paragraph at lines 210--210
  []|[][][]|  
  []
 
 [15
 
 ]
-Overfull \hbox (212.85124pt too wide) in paragraph at lines 235--235
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 229.
+
+
+Overfull \hbox (212.85124pt too wide) in paragraph at lines 229--229
  []|[][][]|  
  []
 
 [16
 
 ]
-Overfull \hbox (101.65881pt too wide) in paragraph at lines 245--245
+Overfull \hbox (101.65881pt too wide) in paragraph at lines 239--239
  []|[][][]|  
  []
 
 [17
 
 ]
-Overfull \hbox (187.65918pt too wide) in paragraph at lines 262--262
+Overfull \hbox (187.65918pt too wide) in paragraph at lines 256--256
  []|[][][]|  
  []
 
 [18
 
 ]
-Overfull \hbox (166.2511pt too wide) in paragraph at lines 270--270
+Overfull \hbox (166.2511pt too wide) in paragraph at lines 264--264
  []|[][][]|  
  []
 
 [19
 
 ]
-Overfull \hbox (170.75906pt too wide) in paragraph at lines 285--285
+Overfull \hbox (170.75906pt too wide) in paragraph at lines 279--279
  []|[][][]|  
  []
 
 [20
 
 ]
-Overfull \hbox (97.65884pt too wide) in paragraph at lines 298--298
+Overfull \hbox (97.65884pt too wide) in paragraph at lines 292--292
  []|[][][]|  
  []
 
 [21
 
 ]
-Overfull \hbox (163.87909pt too wide) in paragraph at lines 310--310
+Overfull \hbox (163.87909pt too wide) in paragraph at lines 304--304
  []|[][][]|  
  []
 
 [22
 
 ]
-Overfull \hbox (163.87909pt too wide) in paragraph at lines 331--331
+Overfull \hbox (163.87909pt too wide) in paragraph at lines 325--325
  []|[][][]|  
  []
 
 [23
 
 ]
-Overfull \hbox (288.78358pt too wide) in paragraph at lines 343--343
+Overfull \hbox (288.78358pt too wide) in paragraph at lines 337--337
  []|[][][]|  
  []
 
@@ -1232,17 +1233,17 @@ Overfull \hbox (288.78358pt too wide) in paragraph at lines 343--343
 ] <bigmac.pdf, id=705, 361.35pt x 216.81pt>
 File: bigmac.pdf Graphic file (type pdf)
  <use bigmac.pdf>
-Package pdftex.def Info: bigmac.pdf used on input line 353.
+Package pdftex.def Info: bigmac.pdf used on input line 347.
 (pdftex.def)             Requested size: 271.01184pt x 162.60709pt.
 
-Overfull \hbox (179.1311pt too wide) in paragraph at lines 353--353
+Overfull \hbox (179.1311pt too wide) in paragraph at lines 347--347
  []|[][][]|  
  []
 
 [25
 
  <./bigmac.pdf>]
-Overfull \hbox (28.03856pt too wide) in paragraph at lines 365--365
+Overfull \hbox (28.03856pt too wide) in paragraph at lines 359--359
  []|[][][]|  
  []
 
@@ -1258,11 +1259,11 @@ Overfull \hbox (28.03856pt too wide) in paragraph at lines 365--365
 \tf@snm=\write8
 \openout8 = `forwardsi.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 366.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 366.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 360.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 360.
  (./forwardsi.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 366.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 366.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 360.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 360.
 Package rerunfilecheck Info: File `forwardsi.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1274,7 +1275,7 @@ LaTeX Font Warning: Size substitutions with differences
 Here is how much of TeX's memory you used:
  20136 strings out of 493013
  392973 string characters out of 6135682
- 464422 words of memory out of 5000000
+ 463422 words of memory out of 5000000
  23138 multiletter control sequences out of 15000+600000
  29979 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1287,7 +1288,7 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msam10.pfb>
-Output written on forwardsi.pdf (26 pages, 211733 bytes).
+Output written on forwardsi.pdf (26 pages, 212428 bytes).
 PDF statistics:
  810 PDF objects out of 1000 (max. 8388607)
  714 compressed objects within 8 object streams

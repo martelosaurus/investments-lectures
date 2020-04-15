@@ -38,6 +38,7 @@
 	\begin{itemize}
 		\item The trader who is long ``buys'' the forward and must buy the underlying security from her counterparty at the forward price at maturity
 		\item The trader who is short ``sells'' or ``writes'' the forward and must sell the underlying security to her counterparty at the forward price at maturity
+		\item \textit{Physical settlement} occurs when the long and short traders exchange ownership  of the security, where \textit{cash settlement} occurs when they exchange the cash value of the security instead of ownership of the security itself 
 		\item Since positions are settled at maturity, there is no initial cash flow: everything happens ``in the future''
     \end{itemize}
 \end{frame}
@@ -61,9 +62,9 @@
 %-----------------------------------------------------------------------------%
 % payoffs
 \begin{frame}{\ftexampl{\hypertarget{frame:payoffs1}{Forward Payoffs: Problem 1}}}
-	\textbf{Problem.} Apple (AAPL) is trading for (about) $270\usd$ a share. James Simons (Renaissance Technologies) writes (sells) a three-year forward contract with a forward price of $300\usd$ to Ray Dalio (Bridgewater). What are the obligations-of and payoffs-to each of the traders if the spot price is (1) $310\usd$ or (2) $290\usd$ at maturity?\\ 
+	\textbf{Problem.} Apple (AAPL) is trading for (about) $270\usd$ a share. James Simons (Renaissance Technologies) writes (sells) a five-year forward contract with a forward price of $300\usd$ to Ray Dalio (Bridgewater). What are the obligations-of and payoffs-to each of the traders if the spot price is (1) $310\usd$ or (2) $290\usd$ at maturity?\\ 
 \vfill
-	\textbf{Solution.} Simons is obligated to sell Apple shares to Dalio at $300\usd$ a share. If the spot price in three-years is $310\usd$ a share, then Simons buys Apple shares in the market for $310\usd$ a share and then sells them to Dalio for $300\usd$ at a loss of $10\usd$. Dalio buys the shares from Simons for $300\usd$ and then sells them in the market for $310\usd$ at a profit of $10\usd$. If the price in three-years is $290\usd$, then the losses/profits just flip: Simons gains $10\usd$ and Dalio loses $10\usd$. Rather than deal with the shares, Simons can just pay Dalio (or Dalio Simons) $10\usd$. 
+	\textbf{Solution.} Simons is obligated to sell Apple shares to Dalio at $300\usd$ a share. If the spot price in three-years is $310\usd$, then Simons buys Apple shares in the market for $310\usd$ and then sells them to Dalio for $300\usd$ at a loss of $10\usd$. Dalio buys the shares from Simons for $300\usd$ and then sells them in the market for $310\usd$ at a profit of $10\usd$. If the price in three-years is $290\usd$, then the losses/profits just flip: Simons gains $10\usd$ and Dalio loses $10\usd$. Rather than deal with the shares, Simons can just pay Dalio (or Dalio Simons) $10\usd$. 
 \end{frame}
 
 %-----------------------------------------------------------------------------%
@@ -122,26 +123,24 @@
 %-----------------------------------------------------------------------------%
 % pricing new forwards
 \begin{frame}{\ftexampl{\hypertarget{frame:spotfuturesparityhedging}{Spot-Futures Parity: Hedging Problem}}}
-	\textbf{Problem:} You're in sales at Goldman Sachs. A client wants a five-year forward on 1\musd of Apple, which currently sells for 270\usd. The annually compounded risk-free rate is .25\%. What should the price $K$ be? How do you hedge the position?\\
+	\textbf{Problem:} Consider again Simons and Dalio. Suppose that the annually compounded risk-free rate is 2.1296\%. What should the forward price $K$ be? How does Simons hedge the position?\\
 \vfill
  \textbf{Solution:} The forward price is
 	\begin{equation}
-		K=S_{0}(1+r_{F})^{T}=(1\musd)(1+.0025)^{5}=1.0126\musd
+		K=S_{0}(1+r_{F})^{T}=(270\usd)(1+.021296)^{5}=300\usd
 	\end{equation}
-	This means that in five years, Goldman Sachs is obligated to sell the client $(1\musd/270\usd)=$ shares of Apple for a total of 1.0136\musd. In order to hedge this transaction, Goldman Sachs can buy
+	In order to hedge his short position in the forward, Simons can buy Apple stock by borrowing $270\usd$ at the risk-free rate. At maturity, he can sell his shares to Dalio for $300\usd$ and repay his loan (the balance of which has grown to $300\usd$).
 \end{frame}
 
 %-----------------------------------------------------------------------------%
 % pricing new forwards
 \begin{frame}{\ftexampl{\hypertarget{frame:spotfuturesparitymargin}{Spot-Futures Parity: Margin Problem}}}
-	\textbf{Motivation.} Because both parties to a forward contract are exposed to losses, both must post margins.\\
+	\textbf{Motivation.} In practice, both traders must post margin because both are exposed to losses. Margin requirements are computed using the forward price. For futures, profits and losses are \textit{marked-to-market} (credit profits to margin account, debit losses).
 	\vfill
-	\textbf{Problem.} Suppose that you buy a one-year forward on 10k shares of SPY, which currently sells for 275\usd. The risk-free rate is .25\%. You are required to post an initial margin of 50\%.  \begin{enumerate}
-		\item What should the forward price be? 
-		\item How much margin (USD) must you post?  
-		\item If SPY drops by 5\% tomorrow, what will the new forward price be (approximately)?           
-		\item How much margin do you have left? 
-		\item What is your return?
+	\textbf{Problem.} 
+	\begin{enumerate}
+		\item If the initial margin requirement is 20\%, how much margin (USD) must Simon and Dalio post? What are Simon's and Dalio's returns be if Apple falls the next morning to $261\usd$ (ignoring compounding effects)?
+		\item What if the initial margin requirement is 10\%?
 	\end{enumerate}
 \end{frame}
 
@@ -150,17 +149,12 @@
 \begin{frame}{\ftexampl{Spot-Futures Parity: Margin Problem}}
 	\textbf{Solution.} 
 	\begin{enumerate}
-		\item The forward price (per share) is
-			\begin{equation}\small
-				K=S_{0}(1+r_{F})^{T}=(275\usd)(1+.0025)=275.6875\usd
-			\end{equation}
-		\item You must post 
-		\item Suppose that SPY drops by 5\% tomorrow: $S_{0}=(95\%)(275\usd)=261.25\usd$. If ignoring the 1 day that has past, 
-			\begin{equation}\small
-				K=S_{0}(1+r_{F})^{T}=(261.25\usd)(1+.0025)=261.9031\usd
-			\end{equation}
-		\item How much margin do you have left? 
-		\item What is your return?
+		\item The forward price is $300\usd$, so Simon and Dalio must post $60\usd$. If Apple falls to $261\usd$ (a decline of about 3.33\%), the new forward price is
+		\begin{equation}
+			K=S_{0}(1+r_{F})^{T}=(261\usd)(1+.021296)^{5}=290\usd
+		\end{equation}
+			The forward price falls by $10\usd$, so Simon's margin grows from $60\usd$ to $70\usd$ (a return of 16.67\%) while Dalio's margin falls from $60\usd$ to $50\usd$ (a return of -16.67\%). 
+		\item If the margin requirement is 10\%, then Simon's return is 33.33\% and Dalio's return is -33.33\%.  
 	\end{enumerate}
 \end{frame}
 
@@ -199,18 +193,18 @@
 %-----------------------------------------------------------------------------%
 % pricing existing forwards: problem 1
 \begin{frame}{\ftexampl{\hypertarget{frame:pricingexistingforwards1}{Pricing Existing Forwards: Problem 1}}}
-	\textbf{Problem.} Suppose that the stock price was $S_{0}=100\usd$ a year ago and the stock price is $S_{1}=101.50\usd$ today. What is the forward price of a two-year forward written a year ago? Suppose that the annually compounded risk-free rate is $r_{F}=1.5\%$\\
+	\textbf{Problem.} Suppose that the spot price was $S_{0}=100\usd$ a year ago and is $S_{1}=105\usd$ today. What is the forward price of a two-year forward written a year ago? Suppose that the annually compounded risk-free rate is $r_{F}=1.5\%$\\
 	\vfill
 	\textbf{Solution.}
 	\begin{itemize}
         \item The old and new forward prices are 
             \begin{align}
-				K_{0}&=S_{0}(1+r_{F})^{2}=121\usd\\
-				K_{1}&=S_{1}(1+r_{F})=126\usd
+				K_{0}&=S_{0}(1+r_{F})^{2}=103.0225\usd\\
+				K_{1}&=S_{1}(1+r_{F})=106.5750\usd
             \end{align}
         \item The old forward trades now trades for
-            \begin{equation}
-				f_{0}=\frac{K_{1}-K_{0}}{1+r_{F}}=\frac{126\usd-121\usd}{1+.1}=4.54\usd
+            \begin{equation}\small
+				f_{0}=\frac{K_{1}-K_{0}}{1+r_{F}}=\frac{106.5750\usd-103.0225\usd}{1+.015}=3.50\usd
             \end{equation}
     \end{itemize}
 \end{frame}
@@ -218,18 +212,18 @@
 %-----------------------------------------------------------------------------%
 % pricing existing forwards: problem 2
 \begin{frame}{\ftexampl{\hypertarget{frame:pricingexistingforwards2}{Pricing Existing Forwards: Problem 2}}}
-	\textbf{Problem.} $S_{0}=100\usd$, $S_{1}=110\usd$, $r=10\%$\\
+	\textbf{Problem.} What if the spot price is $S_{1}=101.5\usd$ today?
 	\vfill
 	\textbf{Solution.}
     \begin{itemize}
 		\item The old and new forward prices are 
             \begin{align}
-				K_{0}&=S_{0}(1+r_{F})^{2}=121\usd\\
-				K_{1}&=S_{1}(1+r_{F})=121\usd
+				K_{0}&=S_{0}(1+r_{F})^{2}=103.0225\usd\\
+				K_{1}&=S_{1}(1+r_{F})=103.0225\usd
             \end{align}
         \item The old forward trades for
-            \begin{equation}
-				f_{0}=\frac{K_{1}-K_{0}}{1+r_{F}}=\frac{121\usd-121\usd}{1+.1}=0\usd
+            \begin{equation}\small
+				f_{0}=\frac{K_{1}-K_{0}}{1+r_{F}}=\frac{103.0225\usd-103.0225\usd}{1+.015}=0\usd
             \end{equation}
     \end{itemize}
 \end{frame}
@@ -239,7 +233,7 @@
 \begin{frame}{\ftheader{Application I: Swaps}}
 	\begin{itemize}
 		\item A swap is a contract in which parties ``swap'' cash-flows. 
-		\item A typical contract involves one party that makes \textit{floating} payments on its debt swapping its obligations with those of another party that makes \textit{fixed} payments.
+		\item A typical contract involves one party that makes \textit{floating} payments on its debt swapping its obligations with those of another party that makes \textit{fixed} payments on its debt
 		\item Swaps are portfolios of forwards. 
 	\end{itemize}
 \end{frame}
@@ -264,9 +258,9 @@
 %-----------------------------------------------------------------------------%
 % interest rate swaps: problem
 \begin{frame}{\ftexampl{\hypertarget{frame:interestrateswaps}{Interest Rate Swaps: Problem}}}
-	\textbf{Problem.} Suppose company $A$ borrowed $1\musd$ for one year at a fixed rate of 3\% and company $B$ borrowed $1\musd$ for one year at a floating rate tied to the prime rate (say the rate will either be 2\% or 4\% with equal probability). The risk-free rate is 1\%.\\
+	\textbf{Problem.} Suppose company $A$ borrowed $1\musd$ for one year at a fixed rate of 3\% and company $B$ borrowed $1\musd$ for one year at a floating rate (say the rate will either be 2\% or 4\%). Describe the forward contract that lets $A$ and $B$ swap their obligations.\\
 	\vfill
-	\textbf{Solution.} $A$ owes $1.03\musd$ in one year, while $B$ will owe either $1.02\musd$ or $1.04\musd$ in one year. For reasons not enumerated in the problem, $B$ would like to owe $1.03\musd$ and $A$ would like to owe either $1.02\musd$ or $1.04\musd$ in one year. 
+	\textbf{Solution.} $A$ owes $1.03\musd$ in one year, while $B$ will owe either $1.02\musd$ or $1.04\musd$ in one year. Rather than exchange a security like a T-note, $A$ and $B$ can cash settle. So if the floating rate is 2\%, $B$ pays $A$ $.01\musd$ whereas if the floating rate is 4\%, $A$ pays $B$ $.01\musd$. By doing so, $B$ always ``owes'' $1.03\musd$ and $A$ ``owes'' $1.02\musd$ when the rate is 2\% or $1.04\musd$ when the rate if 4\%.
 \end{frame}
 
 %-----------------------------------------------------------------------------%
