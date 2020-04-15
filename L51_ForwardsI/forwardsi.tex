@@ -7,16 +7,16 @@
 \begin{document}
 
 %-----------------------------------------------------------------------------%
-% fowards
+% forward
 \begin{frame}{\ftheader{Fowards}}
 	\begin{itemize}
 		\item In this lecture, we begin our study of derivatives 
 		\item We will start with \textit{forwards} 
 		\item Standardized implementations of forwards are called \textit{futures}
-		\item Henceforth, I will refer to everything as a ``forward''
 		\item We will then use forwards to study\\
 			(1) swaps\\ 
 			(2) exchange rates
+		\item Read Satyajit Das's book \textit{Traders, Guns, \& Money}
 	\end{itemize}
 \end{frame}
 
@@ -24,21 +24,20 @@
 % vocabulary
 \begin{frame}{\ftvocab{Vocabulary}}
 	\begin{itemize}
-		\item A \textit{derivative} is a security whose payoff depend on the payoff of other securities
-		\item A \textit{forward} is a contract that requires future delivery of asset at agreed-upon price
-		\item \textit{Cash settlement} means delivering the cash value of the underlying asset (rather than the asset itself) to satisfy the contract
-		\item The \textit{underlying} security (stock, bond, currency, commodity) on which the forward is written
-		\item The \textit{future price} is the agreed-upon price to be paid on a futures contract at maturity
-		\item The \textit{spot price} is the actual market price of the security 
+		\item A \textit{counterparty} is a trader with whom one trades
+		\item A \textit{derivative} is a security for which the payoff depends on the payoff of other securities (called \textit{underlying} securities)
+		\item A \textit{forward} is a contract that specifies the date and price at which one trader buys a security from another (the date is called the \textit{maturity} and the price is called the \textit{forward price}) 
+		\item The \textit{spot price} is the market price of the security 
+		\item The \textit{basis} is the difference between the forward and spot prices 
 	\end{itemize}
 \end{frame}
 
 %-----------------------------------------------------------------------------%
 % strategies
-\begin{frame}{\fttheory{Mechanics}}
+\begin{frame}{\fttheory{Forward Mechanics}}
 	\begin{itemize}
-		\item If you are \textit{long} a forward, then you commit to \textit{sell} the security, while if you are short, you commit to \textit{buy} the security
-		\item With cash settlement, the party who is short does not have to literally sell the underlying security to her counterparty; rather, she can just pay her counterparty the difference between the spot price and the future price in cash
+		\item The trader who is long ``buys'' the forward and must buy the underlying security from her counterparty at the forward price at maturity
+		\item The trader who is short ``sells'' or ``writes'' the forward and must sell the underlying security to her counterparty at the forward price at maturity
 		\item Since positions are settled at maturity, there is no initial cash flow: everything happens ``in the future''
     \end{itemize}
 \end{frame}
@@ -53,15 +52,18 @@
         \end{tabular}
     \end{center}
 	\begin{itemize}
-		\item The trader in the long position is said to ``buy'' a contract; the short-side trader ``sells'' a contract. 
-        \item Basis: difference between futures price and spot price $K-S$
+		\item $S$ is the spot price at maturity and $K$ is the forward price.
+		\item Long trader buys underlying for $K$ from short trader, sells for $S$ to market, and makes $S-K$ (bullish)
+		\item Short trader buys underlying for $S$ from market, sells for $K$ to long trader, and makes $K-S$ (bearish)
 	\end{itemize}
 \end{frame}
 
 %-----------------------------------------------------------------------------%
 % payoffs
 \begin{frame}{\ftexampl{\hypertarget{frame:payoffs1}{Forward Payoffs: Problem 1}}}
-	\textbf{Problem.} Suppose Apple (AAPL) trades for $270\usd$. James Simons (Renaissance Technologies) is going to write a 3-year 
+	\textbf{Problem.} Apple (AAPL) is trading for (about) $270\usd$ a share. James Simons (Renaissance Technologies) writes (sells) a three-year forward contract with a forward price of $300\usd$ to Ray Dalio (Bridgewater). What are the obligations-of and payoffs-to each of the traders if the spot price is (1) $310\usd$ or (2) $290\usd$ at maturity?\\ 
+\vfill
+	\textbf{Solution.} Simons is obligated to sell Apple shares to Dalio at $300\usd$ a share. If the spot price in three-years is $310\usd$ a share, then Simons buys Apple shares in the market for $310\usd$ a share and then sells them to Dalio for $300\usd$ at a loss of $10\usd$. Dalio buys the shares from Simons for $300\usd$ and then sells them in the market for $310\usd$ at a profit of $10\usd$. If the price in three-years is $290\usd$, then the losses/profits just flip: Simons gains $10\usd$ and Dalio loses $10\usd$. Rather than deal with the shares, Simons can just pay Dalio (or Dalio Simons) $10\usd$. 
 \end{frame}
 
 %-----------------------------------------------------------------------------%
@@ -100,9 +102,8 @@
 % pricing new forwards
 \begin{frame}{\fttheory{Spot-Futures Parity}}
 \begin{itemize}
-	\item Having looked at the mechanics and applications of forwards, we know consider their pricing
-	\item $T$ is the term, $S_{0}$ is the spot price on date $0$, $S_{T}$ is the spot price on date $T$, and $K$ is the future price
-    \item Spot-Futures Parity $K\overset{\text{``should''}}{=}S_{0}(1+r_{F})^{T}$
+	\item $T$ is the term, $S_{0}$ is the spot price on date $0$, $S_{T}$ is the spot price on date $T$, and $K$ is the forward price
+    \item Spot-Futures Parity 
 \end{itemize}
     \begin{center}
         \begin{tabular}{lccc}
@@ -113,14 +114,17 @@
 			& & $-S_{0}+K/(1+r_{F})^{T}$ & $S_{T}-K$
         \end{tabular}
     \end{center}
+	\begin{equation}
+		\boxed{K\overset{\text{``should''}}{=}S_{0}(1+r_{F})^{T}}
+	\end{equation}
 \end{frame}
 
 %-----------------------------------------------------------------------------%
 % pricing new forwards
 \begin{frame}{\ftexampl{\hypertarget{frame:spotfuturesparityhedging}{Spot-Futures Parity: Hedging Problem}}}
 	\textbf{Problem:} You're in sales at Goldman Sachs. A client wants a five-year forward on 1\musd of Apple, which currently sells for 270\usd. The annually compounded risk-free rate is .25\%. What should the price $K$ be? How do you hedge the position?\\
-
- \textbf{Solution:} The futures price is
+\vfill
+ \textbf{Solution:} The forward price is
 	\begin{equation}
 		K=S_{0}(1+r_{F})^{T}=(1\musd)(1+.0025)^{5}=1.0126\musd
 	\end{equation}
@@ -130,8 +134,8 @@
 %-----------------------------------------------------------------------------%
 % pricing new forwards
 \begin{frame}{\ftexampl{\hypertarget{frame:spotfuturesparitymargin}{Spot-Futures Parity: Margin Problem}}}
-	\textbf{Motivation.} Because both parties to a futures contract are exposed to losses, both must post margins.\\
-
+	\textbf{Motivation.} Because both parties to a forward contract are exposed to losses, both must post margins.\\
+	\vfill
 	\textbf{Problem.} Suppose that you buy a one-year forward on 10k shares of SPY, which currently sells for 275\usd. The risk-free rate is .25\%. You are required to post an initial margin of 50\%.  \begin{enumerate}
 		\item What should the forward price be? 
 		\item How much margin (USD) must you post?  
@@ -195,7 +199,7 @@
 %-----------------------------------------------------------------------------%
 % pricing existing forwards: problem 1
 \begin{frame}{\ftexampl{\hypertarget{frame:pricingexistingforwards1}{Pricing Existing Forwards: Problem 1}}}
-	\textbf{Problem.} Suppose that the stock price was $S_{0}=100\usd$ a year ago and the stock price is $S_{1}=101.50\usd$ today. What is the future price of a two-year forward written a year ago? Suppose that the annually compounded risk-free rate is $r_{F}=1.5\%$\\
+	\textbf{Problem.} Suppose that the stock price was $S_{0}=100\usd$ a year ago and the stock price is $S_{1}=101.50\usd$ today. What is the forward price of a two-year forward written a year ago? Suppose that the annually compounded risk-free rate is $r_{F}=1.5\%$\\
 	\vfill
 	\textbf{Solution.}
 	\begin{itemize}
@@ -235,10 +239,8 @@
 \begin{frame}{\ftheader{Application I: Swaps}}
 	\begin{itemize}
 		\item A swap is a contract in which parties ``swap'' cash-flows. 
-		\item Party $A$ has cash flows $c_{1}^{A},c_{2}^{A},\ldots$
-		\item Party $B$ has cash flows $c_{1}^{B},c_{2}^{B},\ldots$
-		\item $A$ and $B$ swap: $B$ pays $A$ $c_{1}^{B},c_{2}^{B},\ldots$ and $A$ pays $B$ $c_{1}^{A},c_{2}^{A},\ldots$
-		\item Swaps are technically portfolios of forwards
+		\item A typical contract involves one party that makes \textit{floating} payments on its debt swapping its obligations with those of another party that makes \textit{fixed} payments.
+		\item Swaps are portfolios of forwards. 
 	\end{itemize}
 \end{frame}
 
@@ -260,90 +262,11 @@
 \end{frame}
 
 %-----------------------------------------------------------------------------%
-% swaps: pricing
-\begin{frame}{\fttheory{Swaps: Pricing}}
-    \begin{itemize}
-        \item $A$ borrows $p_{A}$, pays coupon $c_{A}$ each period
-        \item $B$ borrows $p_{B}$, pays coupon $c_{B}$ each period
-    \end{itemize}
-\begin{center}
-\begin{tikzpicture}
-    
-	\draw (0,0) -- (4.5,0) node[anchor=west]{$\cdots$};
-    \foreach \x in {0,2,4}
-    \draw(\x,-.1) -- (\x, .1);
-    \draw (0,0) node[above=3pt] {0};
-    \draw (2,0) node[above=3pt] {1};
-    \draw (4,0) node[above=3pt] {2};
-    \draw (-2,0) node[] {Firm $B$};
-    \draw (0,0) node[below=3pt] {$p_{B}$};
-    \draw (2,0) node[below=3pt] {$-c_{B}$};
-    \draw (4,0) node[below=3pt] {$-c_{B}$};
-    
-    \draw (0,2) -- (4.5,2) node[anchor=west]{$\cdots$};
-    \foreach \x in {0,2,4}
-    \draw(\x,1.9) -- (\x,2.1);
-    \draw (0,2) node[above=3pt] {0};
-    \draw (2,2) node[above=3pt] {1};
-    \draw (4,2) node[above=3pt] {2};
-    \draw (-2,2) node[] {Firm $A$};
-    \draw (0,2) node[below=3pt] {$p_{A}$};
-    \draw (2,2) node[below=3pt] {$-c_{A}$};
-    \draw (4,2) node[below=3pt] {$-c_{A}$};
-
-\end{tikzpicture}
-\end{center}
-	\begin{itemize}
-		\item If the loans are priced correctly, then for rates $r_{A}$ and $r_{B}$,
-		\begin{align}
-			p_{A}&=\frac{c_{A}}{1+r_{F}}+\frac{c_{A}}{(1+r_{F})^{2}}+\cdots\\
-			p_{B}&=\frac{c_{B}}{1+r_{F}}+\frac{c_{B}}{(1+r_{F})^{2}}+\cdots
-		\end{align}
-	\end{itemize}
-\end{frame}
-
-%-----------------------------------------------------------------------------%
-% interest rate swaps
-\begin{frame}{\fttheory{Interest Rate Swaps}}
-    $w_{0}$ is the price of the swap
-    \begin{center}
-        \begin{tabular}{lccc}
-            Security &  CF$_{0}$ & CF$_{1}$ & CF$_{2}$\\ \hline
-            \multicolumn{4}{c}{\textbf{Firm A}} \\ \hline
-            Loan & $+p_{A}$ & $-c_{A}$ & $-c_{A}$\\
-            Swap & $-w_{0}$ & $c_{A}-c_{B}$ & $c_{A}-c_{B}$ \\ \hline
-            & $p_{A}-w_{0}$ & $-c_{B}$ & $-c_{B}$ \\ \hline
-            \multicolumn{4}{c}{\textbf{Firm B}} \\ \hline
-            Loan & $+p_{B}$ & $-c_{B}$ & $-c_{B}$ \\
-            Swap & $+w_{0}$ & $-(c_{A}-c_{B})$ & $-(c_{A}-c_{B})$ \\ \hline
-            & $p_{B}+w_{0}$ & $-c_{A}$ & $-c_{A}$
-        \end{tabular}
-    \end{center}
-\end{frame}
-
-%-----------------------------------------------------------------------------%
-% interest rate swaps
-\begin{frame}{\fttheory{Interest Rate Swaps: Pricing}}
-    $w_{0}$ is the price of the swap
-    \begin{center}
-        \begin{tabular}{lccc}
-            Security & CF$_{0}$ & CF$_{1}$ & CF$_{2}$\\ \hline
-            Swap & $-w_{0}$ & $c_{A}-c_{B}$ & $c_{A}-c_{B}$ \\ \hline
-            \multicolumn{4}{c}{Replicating Portfolio} \\ \hline
-            Loan $A$ & $-p_{A}$ & $+c_{A}$ & $+c_{A}$ \\ 
-            Loan $B$ & $+p_{B}$ & $-c_{B}$ & $-c_{B}$ \\ \hline
-            & $-p_{A}+p_{B}$ & $c_{A}-c_{B}$ & $c_{A}-c_{B}$
-        \end{tabular}
-    \end{center}
-    \begin{equation}
-        \boxed{w_{0}\overset{\text{``should''}}{=}p_{A}-p_{B}}
-    \end{equation}
-\end{frame}
-
-%-----------------------------------------------------------------------------%
 % interest rate swaps: problem
 \begin{frame}{\ftexampl{\hypertarget{frame:interestrateswaps}{Interest Rate Swaps: Problem}}}
-    Suppose that the yield on a one-year bond is 5\% ($_{0}y_{1}=5\%$) and the yield on a two-year bond is 10\% ($_{0}y_{2}=10\%$). What should the swap trade for ($w_{0}$)? 
+	\textbf{Problem.} Suppose company $A$ borrowed $1\musd$ for one year at a fixed rate of 3\% and company $B$ borrowed $1\musd$ for one year at a floating rate tied to the prime rate (say the rate will either be 2\% or 4\% with equal probability). The risk-free rate is 1\%.\\
+	\vfill
+	\textbf{Solution.} $A$ owes $1.03\musd$ in one year, while $B$ will owe either $1.02\musd$ or $1.04\musd$ in one year. For reasons not enumerated in the problem, $B$ would like to owe $1.03\musd$ and $A$ would like to owe either $1.02\musd$ or $1.04\musd$ in one year. 
 \end{frame}
 
 %-----------------------------------------------------------------------------%
