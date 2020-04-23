@@ -1,0 +1,38 @@
+\documentclass{beamer}
+\usepackage{setspace}
+\usepackage{bm,color,float,epstopdf,amsthm,epstopdf}
+\usepackage{multirow,tikz}
+\input{../jordan_header}
+\renewcommand{\arraystretch}{1.5}
+\begin{document}
+
+% Factors Affecting Option Prices
+\begin{frame}{\fttheory{Factors Affecting Option Prices}}
+	\begin{itemize}
+		\item \textbf{Strike Price and Stock Price:} the value of a call is \underline{decreasing} in the strike price (the higher the strike, the lower the value); the value of a call is \underline{increasing} in the price of the stock (the higher the price of the stock, the higher the value). 
+		\item \textbf{Arbitrage Bounds on Option Prices:} 
+		\begin{itemize}
+			\item an American option carries all of the same rights and privileges as an otherwise equivalent European option. The American option can't be worth less. 
+			\item a put option can't be worth more than its strike price and a call can't be worth more than the stock itself.
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+% Factors Affecting Option Prices
+\begin{frame}{\fttheory{Factors Affecting Option Prices}}
+	\begin{itemize}
+		\item \textbf{Option Prices and the Exercise Date:} 
+		\begin{itemize}
+			\item (for American options,) the longer the time to the exercise date, the more valuable the option.
+			\item An American option with a later exercise date cannot be worth less than an otherwise identical American option with an earlier exercise date.
+			\item These arguments \underline{do not} carry through for European options.
+		\end{itemize}
+		\item \textbf{Option Prices and Volatility:} 
+		\begin{itemize}
+			\item The value of an option generally increases with the volatility of the stock.
+			\item Increasing the volatility of the stock increases the likelihood that the stock will take on extreme values (which is where options are valuable).
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\end{document}
