@@ -6,56 +6,61 @@
 \renewcommand{\arraystretch}{1.5}
 \begin{document}
 
-% The B_{c}inomial Option Pricing Formula
+% The Binomial Option Pricing Formula
 \begin{frame}{\ftheader{Option Pricing}}
 	\begin{itemize}
-		\item The key insight of option pricing theory is that option payoffs can be replicated exactly by constructing a portfolio out of the risk-free asset and the underlying stock
-		\item We'll use this insight to price and hedge options
-		\item To make things simply, we are going to assume that at maturity, the stock price can take on only two possible values (this is called digital or binomial option pricing)
+		\item We'll price options by making the simplifying assumption that at the end of the next period, the stock price has only two possible values.\item The key insight of the Black-Scholes-Merton formula is that option payoffs can be replicated exactly by constructing a portfolio out of a risk-free bond and the underlying stock.
+		\item We'll begin by constructing a \textit{replicating portfolio}, a portfolio that has exactly the same payoffs as the option.
+		\item By the law of one price, the price of the option should be the same as the price of the replicating portfolio. 
+	\end{itemize}
+\end{frame}
+
+% The Binomial Pricing Formula
+\begin{frame}{\fttheory{The Binomial Pricing Formula}}
+	\begin{itemize}
+		\item Suppose the current stock price is $S$, and the stock price will either go up to $S_{u}$ or down to $S_{d}$.
+		\item The risk-free rate is $r_{F}$. 
+		\item The option has value $C_{u}$ if the stock goes up and $C_{d}$ if the stock goes down.
+	\end{itemize}
+\end{frame}
+
+% The Binomial Pricing Formula
+\begin{frame}{\fttheory{Binomial Options Pricing: Pricing}}
+	\begin{itemize}
+		\item The solution is
+		\begin{align}
+			&\Delta=\frac{C_{u}-C_{d}}{S_{u}-S_{d}}\\
+			&B=\frac{C_{d}-S_{d}\Delta}{1+r_{F}}
+		\end{align}
+		\item The option premium is
+		\begin{equation}
+			C=\Delta\times S+B.
+		\end{equation}
+		\item $\Delta$ is the hedge ratio
 	\end{itemize}
 \end{frame}
 
 %-----------------------------------------------------------------------------%
-% binomial options: calls
-\begin{frame}{\fttheory{Binomial Options: Calls}}
-	$S_{0}$ is the spot price on date $0$. On date $1$, the price is either $S_{u}$ (up) or $S_{d}$ (down), $K$ is the strike price, and $C_{0}$ is the premium
+% binomial option pricing
+\begin{frame}{\fttheory{Binomial Options Pricing: Hedging}}
+	\begin{itemize}
+		\item $S_{0}$ is the spot price on date $0$. On date $1$, the price is either $S_{u}$ (up) or $S_{d}$ (down), and $K$ is the strike price
+	\end{itemize}
     \begin{center}
         \begin{tabular}{lcccc}
-			Security & Quantity & CF$_{0}$ & CF$_{u}$ & CF$_{d}$ \\ \hline\hline
-			Call & Long & $-C_{0}$ & $S_{u}-K$ &$0$\\ \hline\hline
-			Stock & Long $\Delta_{c}$  & $-\Delta_{c} S_{0}$ & $\Delta_{c} S_{u}$ & $\Delta_{c} S_{d}$ \\
-			Risk-Free & Short $B_{c}$ & $B_{c}$ & $-K$ & $-K$\\ \hline
-			& & $-\Delta_{c} S_{0}+B_{c}$ & $S_{u}-K$ & $0$ \\ \hline\hline
+			Security & Q & CF$_{0}$ & CF$_{u}$ & CF$_{d}$ \\ \hline
+			Option & 1 & $-C$ & $S_{u}-K$ &$0$\\ \hline\hline
+			Stock & $\Delta$  & $-\Delta S_{0}$ & $S_{u}$ & $S_{d}$ \\
+			Risk-Free & $-B$ & $B$ & $-K$ \\ \hline
+			& & $-S_{0}+B$ & $S_{T}-K$
         \end{tabular}
     \end{center}
-	\begin{equation}
-		\boxed{\Delta_{c}=\frac{S_{u}-K}{S_{u}-S_{d}},\:B_{c}=-\frac{S_{d}\Delta_{c}}{1+r_{F}},\:C_{0}=\Delta_{c}S_{0}-B_{c}}
-	\end{equation}
-	To hedge, short $\Delta_{c}$ of the stock and save $B_{c}$ at the risk-free rate.
 \end{frame}
 
 %-----------------------------------------------------------------------------%
 % example: call pricing and hedging 
 \begin{frame}{\ftexampl{Example: Call Pricing and Hedging}}
 
-\end{frame}
-
-%-----------------------------------------------------------------------------%
-% binomial options: calls
-\begin{frame}{\fttheory{Binomial Options: Put}}
-	$S_{0}$ is the spot price on date $0$. On date $1$, the price is either $S_{u}$ (up) or $S_{d}$ (down), $K$ is the strike price, and $P_{0}$ is the premium
-    \begin{center}
-        \begin{tabular}{lcccc}
-			Security & Position & CF$_{0}$ & CF$_{u}$ & CF$_{d}$ \\ \hline\hline
-			Put & Long & $-P_{0}$ & $0$ &$K-S_{d}$\\ \hline\hline
-			Stock & Short $\Delta_{p}$ & $\Delta_{p} S_{0}$ & $-\Delta_{p} S_{u}$ & $-\Delta_{p} S_{d}$ \\
-			Risk-Free & Log $B_{p}$ & $-B_{p}$ & $K$ & $K$\\ \hline
-			& & $\Delta_{p} S_{0}-B_{p}$ & $0$ & $K-S_{u}$ \\ \hline\hline
-        \end{tabular}
-    \end{center}
-	\begin{equation}
-		\boxed{\Delta_{p}=\frac{K-S_{d}}{S_{u}-S_{d}},\:B_{p}=\frac{S_{d}\Delta_{p}}{1+r_{F}},\:P_{0}=B_{p}-\Delta_{p}S_{0}}
-	\end{equation}
 \end{frame}
 
 %-----------------------------------------------------------------------------%

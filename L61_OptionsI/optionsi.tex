@@ -6,30 +6,13 @@
 \renewcommand{\arraystretch}{1.5}
 \begin{document}
 
-% Options on Other Financial Securities
-\begin{frame}{\ftheader{Options on Other Financial Securities}}
-	\begin{itemize}
-		\item There are options on the S\&P 500, the DIJA, etc. 
-		\item Index puts allow investors to protect themselves against market downturns. 
-		\item If you use an option to reduce risk, you are said to \textit{hedge}.
-		\item If you use an option to bet on market movements, you are said to \textit{speculate}.
-	\end{itemize}
-\end{frame}
-
 % Option Basics
 \begin{frame}{\ftheader{Option Basics}}
 	\begin{itemize}
-	\item Financial options are one of the most important and actively traded financial assets and important tools for corporate financial managers. 
-	\item A \textit{financial option} is a contract that gives its owner the \underline{right} (but not the \underline{obligation}) to purchase or sell an asset at a fixed price at some future date. 
-	\item There are two kinds of options:
-	\begin{itemize}
-		\item a \textit{call option} gives the owner the right to \underline{buy} the asset;
-		\item a \textit{put option} gives the owner the right to \underline{sell} the asset. 
-	\end{itemize}
-	\item For every owner, there is a \textit{option writer}. 
-	\item Disney trades for \$95.72. 
-	\item You can buy the option to \underline{buy} Disney for \$90.00 on or before Jul. 1, for \$10.00.
-	\item You can buy the option to \underline{sell} Disney for \$90.00 on or before Jul. 1 for \$0.24.  
+	\item A \textit{financial option} is a contract that gives its owner the \underline{right} (but not the \underline{obligation}) to purchase or sell an asset at a pre-specified price at some future date
+	\item a \textit{call option} gives the owner the \underline{right} to \underline{buy} the asset
+	\item a \textit{put option} gives the owner the \underline{right} to \underline{sell} the asset 
+	\item (the owner of a \textit{forward} is \underline{obligated} to buy the asset)
 	\end{itemize}
 \end{frame}
 
@@ -43,7 +26,7 @@
 			\item American options allow their holders to exercise the option on any date up to and including the \textit{expiration date};
 			\item European options allow their holders to exercise the option only on the expiration date. 
 		\end{itemize}
-		\item Option owners are said to be \textit{long} and option writers are said to be \textit{short}. 
+		\item Option owners are \textit{long} and option writers are \textit{short}. 
 		\item Options are not free. When you sell an option, you get paid for it. The market price of the option is also called the \textit{option premium}. 
 		\item More vocabulary: an option is said to be
 		\begin{itemize}
@@ -58,24 +41,25 @@
 % Long Position in a Call
 \begin{frame}{\fttheory{Long Position in a Call}}
 Let $S$ denote the stock price at expiration, $K$ the strike price, and $C$ the value of the call option. The value of a \textbf{long position} in the \textbf{call option} at expiration is 
-\begin{equation*}
+\begin{equation}
 \text{Value of Long Call}=C=\max\{S-K,0\}. 
-\end{equation*}
+\end{equation}
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=.4]{longcall}
+	\end{center}
+\end{figure}
 \end{frame}
 
 \begin{frame}{\ftexampl{Examples: Long Call}}
-You purchase one MBI July 120 call contract (equaling 100 shares) for a premium of \$5. You hold the option until the expiration date, when MBI stock sells for \$123 per share. What is your profit/loss? \\
-\vspace{.5in}
-\pause
-Long call profit = $\max$\{0, (\$123 - \$120)(100)\} - \$500 = -\$200
 \end{frame}
 
 % Long Position in a Put
 \begin{frame}{\fttheory{Long Position in a Put}}
 Let $S$ denote the stock price at expiration, $K$ the strike price, and $P$ the value of the put option. The value of a \textbf{long position} in the \textbf{put option} at expiration is 
-\begin{equation*}
+\begin{equation}
 \text{Value of Long Put}=P=\max\{K-S,0\}. 
-\end{equation*}
+\end{equation}
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=.4]{longput}
@@ -84,18 +68,14 @@ Let $S$ denote the stock price at expiration, $K$ the strike price, and $P$ the 
 \end{frame}
 
 \begin{frame}{\ftexampl{Examples: Long Put}}
-You purchase one MBI July 120 put contract (equaling 100 shares) for a premium of \$3. You hold the option until the expiration date, when MBI stock sells for \$123 per share. What is your profit/loss?\\
-\vspace{.5in}
-\pause
-Long put profit = $\max$\{0, (\$120 - \$123)(100)\} - \$300 = -\$300
 \end{frame}
 
 % Short Position in a Call
 \begin{frame}{\fttheory{Short Position in a Call}}
 Let $S$ denote the stock price at expiration, $K$ the strike price, and $C$ the value of the call option. The value of a \textbf{short position} in the \textbf{call option} at expiration is 
-\begin{equation*}
+\begin{equation}
 \text{Value of Short Call}=-C=-\max\{S-K,0\}. 
-\end{equation*}
+\end{equation}
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=.4]{shortcall}
@@ -104,18 +84,14 @@ Let $S$ denote the stock price at expiration, $K$ the strike price, and $C$ the 
 \end{frame}
 
 \begin{frame}{\ftexampl{Examples: Short Call}}
-You write one MBI July 120 call contract (equaling 100 shares) for a premium of \$4. You hold the option until the expiration date, when MBI stock sells for \$121 per share. What is your profit/loss?\\
-\vspace{.5in}
-\pause
-Short call profit = $\min$\{0, (\$120 - \$121)(100)\} + \$400 = \$300
 \end{frame}
 
 % Short Position in a Put
 \begin{frame}{\fttheory{Short Position in a Put}}
 Let $S$ denote the stock price at expiration, $K$ the strike price, and $P$ the value of the put option. The value of a \textbf{short position} in the \textbf{put option} at expiration is 
-\begin{equation*}
+\begin{equation}
 \text{Value of Short Put}=-P=-\max\{K-S,0\}. 
-\end{equation*}
+\end{equation}
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=.4]{shortput}
@@ -123,12 +99,15 @@ Let $S$ denote the stock price at expiration, $K$ the strike price, and $P$ the 
 \end{figure}
 \end{frame}
 
+\begin{frame}{\ftexampl{Examples: Short Put}}
+\end{frame}
+
 % The Covered Call
 \begin{frame}{\fttheory{The Covered Call}}
 Let $S$ denote the stock price at expiration, $K$ the strike price, and $C$ the value of the call option. A \textbf{covered call} is \textbf{long} the \textbf{underlying} and \textbf{short} a \textbf{call}. Its value at expiration is
-\begin{equation*}
+\begin{equation}
 \text{Value of Covered Call}=S-C(S;K)=\min\{S,K\}
-\end{equation*}
+\end{equation}
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=.4]{coveredcall}
@@ -139,9 +118,9 @@ Let $S$ denote the stock price at expiration, $K$ the strike price, and $C$ the 
 % The Married Put
 \begin{frame}{\fttheory{The Married Put}}
 Let $S$ denote the stock price at expiration, $K$ the strike price, and $P$ the value of the put option. A \textbf{married put} is \textbf{long} the \textbf{underlying} and \textbf{long} a \textbf{put}. Its value at expiration is
-\begin{equation*}
+\begin{equation}
 \text{Value of Married Put}=S+P(S;K)=\max\{K,S\}.  
-\end{equation*}
+\end{equation}
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=.4]{marriedput}
@@ -151,10 +130,10 @@ Let $S$ denote the stock price at expiration, $K$ the strike price, and $P$ the 
 
 % The Structured Product
 \begin{frame}{\fttheory{The Structured Product}}
-The Minions' structured product was \textbf{long} the \textbf{risk-free asset} and \textbf{long} a \textbf{call}. Its value at expiration was
-\begin{equation*}
+A structured product is \textbf{long} the \textbf{risk-free asset} and \textbf{long} a \textbf{call}. Its value at expiration is
+\begin{equation}
 \text{Value of Structured Product}=K+C(S;K)=\max\{S,K\}.  
-\end{equation*}
+\end{equation}
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=.4]{structuredproduct}
@@ -165,51 +144,25 @@ The Minions' structured product was \textbf{long} the \textbf{risk-free asset} a
 % Put-Call Parity
 \begin{frame}{\fttheory{Put-Call Parity}}
 \begin{itemize}
-\item Hmmm...the Structured Product  has the same payoff as the Married Put. 
-\item Two securities with the same cash flows must have the same price. 
+\item The Structured Product has same payoff as the Married Put
+\item Two securities with same cash flows must have the same price
 \item \textbf{Put-Call Parity} says that
-\begin{equation*}
+\begin{equation}
 \overbrace{S+P}^{\text{Married Put}}=\overbrace{PV(K)+C}^{\text{Structured Product}}
-\end{equation*}
+\end{equation}
 \item Put-call parity gives the price of a call in terms of the price of a put, the underlying stock, and a zero-coupon bond. 
 \end{itemize}
 \end{frame}
 
-% Factors Affecting Option Prices
-\begin{frame}{\fttheory{Factors Affecting Option Prices}}
-\begin{itemize}
-\item \textbf{Strike Price and Stock Price:} the value of a call is \underline{decreasing} in the strike price (the higher the strike, the lower the value); the value of a call is \underline{increasing} in the price of the stock (the higher the price of the stock, the higher the value). 
-\item \textbf{Arbitrage Bounds on Option Prices:} 
-\begin{itemize}
-\item an American option carries all of the same rights and privileges as an otherwise equivalent European option. The American option can't be worth less. 
-\item a put option can't be worth more than its strike price and a call can't be worth more than the stock itself.
-\end{itemize}
-\end{itemize}
-\end{frame}
-
-% Factors Affecting Option Prices
-\begin{frame}{\fttheory{Factors Affecting Option Prices}}
-\begin{itemize}
-\item \textbf{Option Prices and the Exercise Date:} 
-\begin{itemize}
-\item (for American options,) the longer the time to the exercise date, the more valuable the option.
-\item An American option with a later exercise date cannot be worth less than an otherwise identical American option with an earlier exercise date.
-\item These arguments \underline{do not} carry through for European options.
-\end{itemize}
-\item \textbf{Option Prices and Volatility:} 
-\begin{itemize}
-\item The value of an option generally increases with the volatility of the stock.
-\item Increasing the volatility of the stock increases the likelihood that the stock will take on extreme values (which is where options are valuable).
-\end{itemize}
-\end{itemize}
+\begin{frame}{\ftexampl{Examples: Put-Call Parity}}
 \end{frame}
 
 % Equity as a Call Option
 \begin{frame}{\fttheory{Equity as a Call Option}}
-Consider a firm with \$10m in debt. It will only operate for one year. At the end of the year, its assets maybe worth anywhere from \$0m to \$40m. What's the payoff to \textbf{equityholders}?
-\begin{equation*}
-E=\max\{A-K,0\}\overset{!}{=}\max\{A-\$10m,0\}. 
-\end{equation*}
+Consider a firm with 10m USD in debt. It will only operate for one year. At the end of the year, its assets maybe worth anywhere from 0m USD to 40m USD. What's the payoff to \textbf{equityholders}?
+\begin{equation}
+	E=\max\{A-K,0\}\overset{!}{=}\max\{A-10\text{m USD},0\}. 
+\end{equation}
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=.4]{equity}
@@ -219,10 +172,10 @@ E=\max\{A-K,0\}\overset{!}{=}\max\{A-\$10m,0\}.
 
 % Debt as a Covered Call
 \begin{frame}{\fttheory{Debt as a Covered Call}}
-Consider a firm with \$10m in debt. It will only operate for one year. At the end of the year, its assets maybe worth anywhere from \$0m to \$40m. What's the payoff to \textbf{debtholders}?
-\begin{equation*}
-D=\min\{A,K\}\overset{!}{=}\min\{A,\$10m\}. 
-\end{equation*}
+Consider a firm with 10m USD in debt. It will only operate for one year. At the end of the year, its assets maybe worth anywhere from 0m USD to 40m USD. What's the payoff to \textbf{debtholders}?
+\begin{equation}
+	D=\min\{A,K\}\overset{!}{=}\min\{A,10\text{m USD}\}. 
+\end{equation}
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=.4]{debt}
@@ -233,27 +186,14 @@ D=\min\{A,K\}\overset{!}{=}\min\{A,\$10m\}.
 % The Total Payoff
 \begin{frame}{\fttheory{The Total Payoff}}
 Now what's the \textbf{total payoff}?
-\begin{equation*}
+\begin{equation}
 E+D=\max\{A-K,0\}+\min\{A,K\}=A
-\end{equation*}
+\end{equation}
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=.4]{debtequity}
 	\end{center}
 \end{figure}
-\end{frame}
-
-% The Total Payoff
-\begin{frame}{\fttheory{The Total Payoff}}
-	Now what's the \textbf{total payoff}?
-	\begin{equation*}
-		E+D=\max\{A-K,0\}+\min\{A,K\}=A
-	\end{equation*}
-	\begin{figure}[H]
-		\begin{center}
-			\includegraphics[scale=.4]{debtequity2}
-		\end{center}
-	\end{figure}
 \end{frame}
 
 \end{document}

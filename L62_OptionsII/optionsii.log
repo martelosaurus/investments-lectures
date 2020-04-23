@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2020.3.22)  22 APR 2020 20:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2020.3.22)  23 APR 2020 01:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -770,8 +770,7 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
-))) (../jordan_header.tex)
-No file optionsii.aux.
+))) (../jordan_header.tex) (./optionsii.aux)
 \openout1 = `optionsii.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -788,6 +787,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -850,6 +850,8 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 7.
 LaTeX Info: Redefining \pageref on input line 7.
 LaTeX Info: Redefining \nameref on input line 7.
+
+(./optionsii.out) (./optionsii.out)
 \@outlinefile=\write5
 \openout5 = `optionsii.out'.
 
@@ -933,40 +935,75 @@ orem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
 LaTeX Info: Redefining \includegraphics on input line 7.
+ (./optionsii.nav)
+LaTeX Font Info:    Try loading font information for U+msa on input line 16.
 
-No file optionsii.nav.
-LaTeX Font Info:    Try loading font information for U+msa on input line 19.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 19.
+LaTeX Font Info:    Try loading font information for U+msb on input line 16.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 19.
+line 16.
 
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-Overfull \hbox (174.8511pt too wide) in paragraph at lines 19--19
+Overfull \hbox (63.36667pt too wide) in paragraph at lines 16--16
  []|[][][]|  
  []
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 19.
+(Font)              size <5> substituted on input line 16.
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (174.8511pt too wide) in paragraph at lines 36--36
+Overfull \hbox (123.53088pt too wide) in paragraph at lines 35--35
  []|[][][]|  
  []
 
 [2
+
+]
+Overfull \hbox (199.1872pt too wide) in paragraph at lines 41--41
+ []|[][][]|  
+ []
+
+[3
+
+]
+Overfull \hbox (116.43886pt too wide) in paragraph at lines 59--59
+ []|[][][]|  
+ []
+
+[4
+
+]
+Overfull \hbox (198.16719pt too wide) in paragraph at lines 65--65
+ []|[][][]|  
+ []
+
+[5
+
+]
+Overfull \hbox (174.8511pt too wide) in paragraph at lines 78--78
+ []|[][][]|  
+ []
+
+[6
+
+]
+Overfull \hbox (174.8511pt too wide) in paragraph at lines 96--96
+ []|[][][]|  
+ []
+
+[7
 
 ]
 \tf@nav=\write6
@@ -978,41 +1015,40 @@ Overfull \hbox (174.8511pt too wide) in paragraph at lines 36--36
 \tf@snm=\write8
 \openout8 = `optionsii.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 38.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 38.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 98.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 98.
  (./optionsii.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 38.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 38.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 98.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 98.
+Package rerunfilecheck Info: File `optionsii.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
-
-Package rerunfilecheck Warning: File `optionsii.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `optionsii.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 19959 strings out of 493013
- 390946 string characters out of 6135682
- 462316 words of memory out of 5000000
- 23030 multiletter control sequences out of 15000+600000
+ 20010 strings out of 493013
+ 391681 string characters out of 6135682
+ 464422 words of memory out of 5000000
+ 23063 multiletter control sequences out of 15000+600000
  24325 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,14n,59p,796b,547s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on optionsii.pdf (2 pages, 43228 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/symbols/msam7.pfb>
+Output written on optionsii.pdf (7 pages, 91770 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
- 69 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 500000)
+ 236 PDF objects out of 1000 (max. 8388607)
+ 209 compressed objects within 3 object streams
+ 15 named destinations out of 1000 (max. 500000)
  43 words of extra memory for PDF output out of 10000 (max. 10000000)
 

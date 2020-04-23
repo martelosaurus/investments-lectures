@@ -1,0 +1,29 @@
+import datetime
+import pandas as pd
+from alpha_vantage.timeseries import TimeSeries
+
+key = input('API key: ')
+ts = TimeSeries(key, output_format='pandas')
+
+tickers = ['AAPL','DIS','MSFT','NKE']
+rF = .001 # risk-free rate
+
+class Stock:
+
+    def __init__(self,date,Sd,Su):
+        self.date = date
+        self.Sd = 
+        self.Su = 
+
+    def pricing(self)
+        pass
+
+    def hedging(self) 
+        pass
+
+for ticker in tickers:
+    tick_data, _ = ts.get_monthly_adjusted(symbol=ticker)
+    tick_data = tick_data.sort_index()
+    tick_data = tick_data[-3:-1] # pull the last two observations
+    strike
+
