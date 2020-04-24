@@ -21,47 +21,48 @@
 	$S_{0}$ is the spot price on date $0$. On date $1$, the price is either $S_{u}$ (up) or $S_{d}$ (down), $K$ is the strike price, and $C_{0}$ is the premium
     \begin{center}
         \begin{tabular}{lcccc}
-			Security & Quantity & CF$_{0}$ & CF$_{u}$ & CF$_{d}$ \\ \hline\hline
+			Security & Notes & CF$_{0}$ & CF$_{u}$ & CF$_{d}$ \\ \hline\hline
 			Call & Long & $-C_{0}$ & $S_{u}-K$ &$0$\\ \hline\hline
 			Stock & Long $\Delta_{c}$  & $-\Delta_{c} S_{0}$ & $\Delta_{c} S_{u}$ & $\Delta_{c} S_{d}$ \\
-			Risk-Free & Short $B_{c}$ & $B_{c}$ & $-K$ & $-K$\\ \hline
+			Risk-Free & Borrow & $B_{c}$ & $-(1+r_{F})B_{c}$ & $-(1+r_{F})B_{c}$\\ \hline
 			& & $-\Delta_{c} S_{0}+B_{c}$ & $S_{u}-K$ & $0$ \\ \hline\hline
         \end{tabular}
     \end{center}
 	\begin{equation}
-		\boxed{\Delta_{c}=\frac{S_{u}-K}{S_{u}-S_{d}},\:B_{c}=-\frac{S_{d}\Delta_{c}}{1+r_{F}},\:C_{0}=\Delta_{c}S_{0}-B_{c}}
+		\boxed{\Delta_{c}=\frac{S_{u}-K}{S_{u}-S_{d}},\:B_{c}=\frac{\Delta_{c}S_{d}}{1+r_{F}},\:C_{0}=\Delta_{c}S_{0}-B_{c}}
 	\end{equation}
-	To hedge, short $\Delta_{c}$ of the stock and save $B_{c}$ at the risk-free rate.
+	$\Rightarrow$ To hedge long call, short $\Delta_{c}$ of stock and save $B_{c}$.
 \end{frame}
 
 %-----------------------------------------------------------------------------%
 % example: call pricing and hedging 
 \begin{frame}{\ftexampl{Example: Call Pricing and Hedging}}
-
+	\input{price_AAPL_long_call}
 \end{frame}
 
 %-----------------------------------------------------------------------------%
-% binomial options: calls
+% binomial options: put
 \begin{frame}{\fttheory{Binomial Options: Put}}
 	$S_{0}$ is the spot price on date $0$. On date $1$, the price is either $S_{u}$ (up) or $S_{d}$ (down), $K$ is the strike price, and $P_{0}$ is the premium
     \begin{center}
         \begin{tabular}{lcccc}
-			Security & Position & CF$_{0}$ & CF$_{u}$ & CF$_{d}$ \\ \hline\hline
+			Security & Notes & CF$_{0}$ & CF$_{u}$ & CF$_{d}$ \\ \hline\hline
 			Put & Long & $-P_{0}$ & $0$ &$K-S_{d}$\\ \hline\hline
 			Stock & Short $\Delta_{p}$ & $\Delta_{p} S_{0}$ & $-\Delta_{p} S_{u}$ & $-\Delta_{p} S_{d}$ \\
-			Risk-Free & Log $B_{p}$ & $-B_{p}$ & $K$ & $K$\\ \hline
+			Risk-Free & Save & $-B_{p}$ & $(1+r_{F})B_{p}$ & $(1+r_{F})B_{p}$\\ \hline
 			& & $\Delta_{p} S_{0}-B_{p}$ & $0$ & $K-S_{u}$ \\ \hline\hline
         \end{tabular}
     \end{center}
 	\begin{equation}
-		\boxed{\Delta_{p}=\frac{K-S_{d}}{S_{u}-S_{d}},\:B_{p}=\frac{S_{d}\Delta_{p}}{1+r_{F}},\:P_{0}=B_{p}-\Delta_{p}S_{0}}
+		\boxed{\Delta_{p}=\frac{K-S_{d}}{S_{u}-S_{d}},\:B_{p}=\frac{\Delta_{p}S_{u}}{1+r_{F}},\:P_{0}=B_{p}-\Delta_{p}S_{0}}
 	\end{equation}
+	$\Rightarrow$ To hedge long put, borrow $B_{p}$ and long $\Delta_{p}$ of stock 
 \end{frame}
 
 %-----------------------------------------------------------------------------%
 % example: put pricing and hedging 
 \begin{frame}{\ftexampl{Example: Put Pricing and Hedging}}
-
+	\input{price_AAPL_long_put}
 \end{frame}
 
 %-----------------------------------------------------------------------------%

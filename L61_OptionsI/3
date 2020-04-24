@@ -52,7 +52,7 @@
 \end{frame}
 
 \begin{frame}{\ftexampl{Examples: Long Call}}
-	\input{payoff_NKE_long_call}
+	\input{payoff_AAPL_long_call}
 \end{frame}
 
 % Long Position in a Put
@@ -69,7 +69,7 @@ Let $S$ denote the stock price at expiration, $K$ the strike price, and $P$ the 
 \end{frame}
 
 \begin{frame}{\ftexampl{Examples: Long Put}}
-	\input{payoff_NKE_long_put}
+	\input{payoff_AAPL_long_put}}
 \end{frame}
 
 % Short Position in a Call
@@ -86,7 +86,6 @@ Let $S$ denote the stock price at expiration, $K$ the strike price, and $C$ the 
 \end{frame}
 
 \begin{frame}{\ftexampl{Examples: Short Call}}
-	\input{payoff_NKE_short_call}
 \end{frame}
 
 % Short Position in a Put
@@ -103,7 +102,6 @@ Let $S$ denote the stock price at expiration, $K$ the strike price, and $P$ the 
 \end{frame}
 
 \begin{frame}{\ftexampl{Examples: Short Put}}
-	\input{payoff_NKE_short_put}
 \end{frame}
 
 % The Covered Call
@@ -156,6 +154,9 @@ A structured product is \textbf{long} the \textbf{risk-free asset} and \textbf{l
 \end{equation}
 \item Put-call parity gives the price of a call in terms of the price of a put, the underlying stock, and a zero-coupon bond. 
 \end{itemize}
+\end{frame}
+
+\begin{frame}{\ftexampl{Examples: Put-Call Parity}}
 \end{frame}
 
 % Equity as a Call Option
