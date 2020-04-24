@@ -48,11 +48,16 @@
 		\begin{center}
 			\includegraphics[scale=.4]{longcall}
 		\end{center}
+	$K=20$
 	\end{figure}
 \end{frame}
 
 \begin{frame}{\ftexampl{Examples: Long Call}}
 	\input{payoff_NKE_long_call}
+\end{frame}
+
+\begin{frame}{\ftexampl{Examples: Long Call}}
+	\input{payoff_MSFT_long_call}
 \end{frame}
 
 % Long Position in a Put
@@ -65,11 +70,16 @@ Let $S$ denote the stock price at expiration, $K$ the strike price, and $P$ the 
 	\begin{center}
 		\includegraphics[scale=.4]{longput}
 	\end{center}
+	$K=20$
 \end{figure}
 \end{frame}
 
 \begin{frame}{\ftexampl{Examples: Long Put}}
 	\input{payoff_NKE_long_put}
+\end{frame}
+
+\begin{frame}{\ftexampl{Examples: Long Put}}
+	\input{payoff_MSFT_long_put}
 \end{frame}
 
 % Short Position in a Call
@@ -82,11 +92,16 @@ Let $S$ denote the stock price at expiration, $K$ the strike price, and $C$ the 
 	\begin{center}
 		\includegraphics[scale=.4]{shortcall}
 	\end{center}
+	$K=20$
 \end{figure}
 \end{frame}
 
 \begin{frame}{\ftexampl{Examples: Short Call}}
 	\input{payoff_NKE_short_call}
+\end{frame}
+
+\begin{frame}{\ftexampl{Examples: Short Call}}
+	\input{payoff_MSFT_short_call}
 \end{frame}
 
 % Short Position in a Put
@@ -99,11 +114,16 @@ Let $S$ denote the stock price at expiration, $K$ the strike price, and $P$ the 
 	\begin{center}
 		\includegraphics[scale=.4]{shortput}
 	\end{center}
+	$K=20$
 \end{figure}
 \end{frame}
 
 \begin{frame}{\ftexampl{Examples: Short Put}}
 	\input{payoff_NKE_short_put}
+\end{frame}
+
+\begin{frame}{\ftexampl{Examples: Short Put}}
+	\input{payoff_MSFT_short_put}
 \end{frame}
 
 % The Covered Call
@@ -116,6 +136,7 @@ Let $S$ denote the stock price at expiration, $K$ the strike price, and $C$ the 
 	\begin{center}
 		\includegraphics[scale=.4]{coveredcall}
 	\end{center}
+	$K=20$
 \end{figure}
 \end{frame}
 
@@ -129,6 +150,7 @@ Let $S$ denote the stock price at expiration, $K$ the strike price, and $P$ the 
 	\begin{center}
 		\includegraphics[scale=.4]{marriedput}
 	\end{center}
+	$K=20$
 \end{figure}
 \end{frame}
 
@@ -142,6 +164,7 @@ A structured product is \textbf{long} the \textbf{risk-free asset} and \textbf{l
 	\begin{center}
 		\includegraphics[scale=.4]{structuredproduct}
 	\end{center}
+	$K=20$
 \end{figure}
 \end{frame}
 
@@ -152,12 +175,14 @@ A structured product is \textbf{long} the \textbf{risk-free asset} and \textbf{l
 \item Two securities with same cash flows must have the same price
 \item \textbf{Put-Call Parity} says that
 \begin{equation}
-\overbrace{S+P}^{\text{Married Put}}=\overbrace{PV(K)+C}^{\text{Structured Product}}
+	\overbrace{S_{0}+P_{0}}^{\text{Married Put}}=\overbrace{PV(K)+C_{0}}^{\text{Structured Product}}
 \end{equation}
+		where $S_{0}$ is the spot price of the stock, $P_{0}$ is the put premium, $C_{0}$ is the call premium, and $PV(K)$ is the price of a zero-coupon bond that pays $K$ at expiration
 \item Put-call parity gives the price of a call in terms of the price of a put, the underlying stock, and a zero-coupon bond. 
 \end{itemize}
 \end{frame}
 
+\iffalse
 % Equity as a Call Option
 \begin{frame}{\fttheory{Equity as a Call Option}}
 Consider a firm with 10m USD in debt. It will only operate for one year. At the end of the year, its assets maybe worth anywhere from 0m USD to 40m USD. What's the payoff to \textbf{equityholders}?
@@ -196,5 +221,6 @@ E+D=\max\{A-K,0\}+\min\{A,K\}=A
 	\end{center}
 \end{figure}
 \end{frame}
+\fi
 
 \end{document}

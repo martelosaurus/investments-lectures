@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2020.3.22)  23 APR 2020 23:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2020.3.22)  24 APR 2020 01:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -973,162 +973,153 @@ Overfull \hbox (58.25066pt too wide) in paragraph at lines 39--39
 ] <longcall.pdf, id=71, 385.44pt x 307.1475pt>
 File: longcall.pdf Graphic file (type pdf)
  <use longcall.pdf>
-Package pdftex.def Info: longcall.pdf used on input line 52.
+Package pdftex.def Info: longcall.pdf used on input line 53.
 (pdftex.def)             Requested size: 154.17326pt x 122.85681pt.
 
-Overfull \hbox (117.57886pt too wide) in paragraph at lines 52--52
+Overfull \hbox (117.57886pt too wide) in paragraph at lines 53--53
  []|[][][]|  
  []
 
 [3
 
  <./longcall.pdf>] (./payoff_NKE_long_call.tex)
-Overfull \hbox (102.67882pt too wide) in paragraph at lines 56--56
+Overfull \hbox (102.67882pt too wide) in paragraph at lines 57--57
  []|[][][]|  
  []
 
 [4
 
-] <longput.pdf, id=130, 385.44pt x 307.1475pt>
-File: longput.pdf Graphic file (type pdf)
- <use longput.pdf>
-Package pdftex.def Info: longput.pdf used on input line 69.
-(pdftex.def)             Requested size: 154.17326pt x 122.85681pt.
-
-Overfull \hbox (116.55885pt too wide) in paragraph at lines 69--69
+] (./payoff_MSFT_long_call.tex)
+Overfull \hbox (102.67882pt too wide) in paragraph at lines 61--61
  []|[][][]|  
  []
 
 [5
 
- <./longput.pdf>] (./payoff_NKE_long_put.tex)
-Overfull \hbox (101.65881pt too wide) in paragraph at lines 73--73
+] <longput.pdf, id=155, 385.44pt x 307.1475pt>
+File: longput.pdf Graphic file (type pdf)
+ <use longput.pdf>
+Package pdftex.def Info: longput.pdf used on input line 75.
+(pdftex.def)             Requested size: 154.17326pt x 122.85681pt.
+
+Overfull \hbox (116.55885pt too wide) in paragraph at lines 75--75
  []|[][][]|  
  []
 
 [6
 
-] <shortcall.pdf, id=185, 385.44pt x 307.1475pt>
-File: shortcall.pdf Graphic file (type pdf)
- <use shortcall.pdf>
-Package pdftex.def Info: shortcall.pdf used on input line 86.
-(pdftex.def)             Requested size: 154.17326pt x 122.85681pt.
-
-Overfull \hbox (120.83888pt too wide) in paragraph at lines 86--86
+ <./longput.pdf>] (./payoff_NKE_long_put.tex)
+Overfull \hbox (101.65881pt too wide) in paragraph at lines 79--79
  []|[][][]|  
  []
 
 [7
 
- <./shortcall.pdf>] (./payoff_NKE_short_call.tex)
-Overfull \hbox (105.93884pt too wide) in paragraph at lines 90--90
+] (./payoff_MSFT_long_put.tex)
+Overfull \hbox (101.65881pt too wide) in paragraph at lines 83--83
  []|[][][]|  
  []
 
 [8
 
-] <shortput.pdf, id=242, 385.44pt x 307.1475pt>
-File: shortput.pdf Graphic file (type pdf)
- <use shortput.pdf>
-Package pdftex.def Info: shortput.pdf used on input line 103.
+] <shortcall.pdf, id=237, 385.44pt x 307.1475pt>
+File: shortcall.pdf Graphic file (type pdf)
+ <use shortcall.pdf>
+Package pdftex.def Info: shortcall.pdf used on input line 97.
 (pdftex.def)             Requested size: 154.17326pt x 122.85681pt.
 
-Overfull \hbox (119.81888pt too wide) in paragraph at lines 103--103
+Overfull \hbox (120.83888pt too wide) in paragraph at lines 97--97
  []|[][][]|  
  []
 
 [9
 
- <./shortput.pdf>] (./payoff_NKE_short_put.tex)
-Overfull \hbox (104.91884pt too wide) in paragraph at lines 107--107
+ <./shortcall.pdf>] (./payoff_NKE_short_call.tex)
+Overfull \hbox (105.93884pt too wide) in paragraph at lines 101--101
  []|[][][]|  
  []
 
 [10
 
-] <coveredcall.pdf, id=297, 385.44pt x 307.1475pt>
-File: coveredcall.pdf Graphic file (type pdf)
- <use coveredcall.pdf>
-Package pdftex.def Info: coveredcall.pdf used on input line 120.
-(pdftex.def)             Requested size: 154.17326pt x 122.85681pt.
-
-Overfull \hbox (81.96677pt too wide) in paragraph at lines 120--120
+] (./payoff_MSFT_short_call.tex)
+Overfull \hbox (105.93884pt too wide) in paragraph at lines 105--105
  []|[][][]|  
  []
 
 [11
 
- <./coveredcall.pdf>] <marriedput.pdf, id=327, 385.44pt x 307.1475pt>
-File: marriedput.pdf Graphic file (type pdf)
-
-<use marriedput.pdf>
-Package pdftex.def Info: marriedput.pdf used on input line 133.
+] <shortput.pdf, id=317, 385.44pt x 307.1475pt>
+File: shortput.pdf Graphic file (type pdf)
+ <use shortput.pdf>
+Package pdftex.def Info: shortput.pdf used on input line 119.
 (pdftex.def)             Requested size: 154.17326pt x 122.85681pt.
 
-Overfull \hbox (78.58678pt too wide) in paragraph at lines 133--133
+Overfull \hbox (119.81888pt too wide) in paragraph at lines 119--119
  []|[][][]|  
  []
 
 [12
 
- <./marriedput.pdf>] <structuredproduct.pdf, id=358, 385.44pt x 307.1475pt>
-File: structuredproduct.pdf Graphic file (type pdf)
-
-<use structuredproduct.pdf>
-Package pdftex.def Info: structuredproduct.pdf used on input line 146.
-(pdftex.def)             Requested size: 154.17326pt x 122.85681pt.
-
-Overfull \hbox (126.18694pt too wide) in paragraph at lines 146--146
+ <./shortput.pdf>] (./payoff_NKE_short_put.tex)
+Overfull \hbox (104.91884pt too wide) in paragraph at lines 123--123
  []|[][][]|  
  []
 
 [13
 
- <./structuredproduct.pdf>]
-Overfull \hbox (65.2267pt too wide) in paragraph at lines 159--159
+] (./payoff_MSFT_short_put.tex)
+Overfull \hbox (104.91884pt too wide) in paragraph at lines 127--127
  []|[][][]|  
  []
 
 [14
 
-] <equity.pdf, id=416, 385.44pt x 303.1325pt>
-File: equity.pdf Graphic file (type pdf)
- <use equity.pdf>
-Package pdftex.def Info: equity.pdf used on input line 172.
-(pdftex.def)             Requested size: 154.17326pt x 121.25084pt.
+] <coveredcall.pdf, id=399, 385.44pt x 307.1475pt>
+File: coveredcall.pdf Graphic file (type pdf)
+ <use coveredcall.pdf>
+Package pdftex.def Info: coveredcall.pdf used on input line 141.
+(pdftex.def)             Requested size: 154.17326pt x 122.85681pt.
 
-Overfull \hbox (120.9989pt too wide) in paragraph at lines 172--172
+Overfull \hbox (81.96677pt too wide) in paragraph at lines 141--141
  []|[][][]|  
  []
 
 [15
 
- <./equity.pdf>] <debt.pdf, id=446, 385.44pt x 303.1325pt>
-File: debt.pdf Graphic file (type pdf)
- <use debt.pdf>
-Package pdftex.def Info: debt.pdf used on input line 185.
-(pdftex.def)             Requested size: 154.17326pt x 121.25084pt.
+ <./coveredcall.pdf>] <marriedput.pdf, id=429, 385.44pt x 307.1475pt>
+File: marriedput.pdf Graphic file (type pdf)
 
-Overfull \hbox (120.41893pt too wide) in paragraph at lines 185--185
+<use marriedput.pdf>
+Package pdftex.def Info: marriedput.pdf used on input line 155.
+(pdftex.def)             Requested size: 154.17326pt x 122.85681pt.
+
+Overfull \hbox (78.58678pt too wide) in paragraph at lines 155--155
  []|[][][]|  
  []
 
 [16
 
- <./debt.pdf>] <debtequity.pdf, id=476, 385.44pt x 303.1325pt>
-File: debtequity.pdf Graphic file (type pdf)
+ <./marriedput.pdf>] <structuredproduct.pdf, id=460, 385.44pt x 307.1475pt>
+File: structuredproduct.pdf Graphic file (type pdf)
 
-<use debtequity.pdf>
-Package pdftex.def Info: debtequity.pdf used on input line 198.
-(pdftex.def)             Requested size: 154.17326pt x 121.25084pt.
+<use structuredproduct.pdf>
+Package pdftex.def Info: structuredproduct.pdf used on input line 169.
+(pdftex.def)             Requested size: 154.17326pt x 122.85681pt.
 
-Overfull \hbox (79.56676pt too wide) in paragraph at lines 198--198
+Overfull \hbox (126.18694pt too wide) in paragraph at lines 169--169
  []|[][][]|  
  []
 
 [17
 
- <./debtequity.pdf>]
+ <./structuredproduct.pdf>]
+Overfull \hbox (65.2267pt too wide) in paragraph at lines 183--183
+ []|[][][]|  
+ []
+
+[18
+
+]
 \tf@nav=\write6
 \openout6 = `optionsi.nav'.
 
@@ -1138,11 +1129,11 @@ Overfull \hbox (79.56676pt too wide) in paragraph at lines 198--198
 \tf@snm=\write8
 \openout8 = `optionsi.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 200.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 200.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 226.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 226.
  (./optionsi.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 200.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 200.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 226.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 226.
 Package rerunfilecheck Info: File `optionsi.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1152,10 +1143,10 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 20101 strings out of 493013
- 393059 string characters out of 6135682
- 463419 words of memory out of 5000000
- 23113 multiletter control sequences out of 15000+600000
+ 20102 strings out of 493013
+ 393169 string characters out of 6135682
+ 463418 words of memory out of 5000000
+ 23103 multiletter control sequences out of 15000+600000
  19548 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,14n,59p,795b,547s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1168,10 +1159,10 @@ ist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/symbols/msam7.pfb>
-Output written on optionsi.pdf (17 pages, 135560 bytes).
+Output written on optionsi.pdf (18 pages, 129969 bytes).
 PDF statistics:
- 544 PDF objects out of 1000 (max. 8388607)
- 495 compressed objects within 5 object streams
- 35 named destinations out of 1000 (max. 500000)
- 93 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 558 PDF objects out of 1000 (max. 8388607)
+ 510 compressed objects within 6 object streams
+ 37 named destinations out of 1000 (max. 500000)
+ 78 words of extra memory for PDF output out of 10000 (max. 10000000)
 
