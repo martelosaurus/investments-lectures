@@ -1,24 +1,54 @@
 \documentclass{beamer}
-\title{Welcome to Investments!}
+\input{../jordan_header}
 \begin{document}
-\maketitle
 
-\section{Pricing vs. Forecasting}
+\begin{frame}{\ftheader{Investments}}
+	\begin{itemize}
+		\item \underline{Finance} is the study of investment/divestment decisions
+		\item E.g. buy a stock, sell a house, build a factory
+		\item We use the Net Present Value (NPV) to make such decisions 
+		\item E.g. consider a security that pays $1\musd$ in one year and $1\musd$ in two years (could be a stock paying dividends or a bond paying coupons). You know that 
+		\begin{equation}
+			\text{NPV}=-.75\musd+\frac{1\musd}{1.02} + \frac{1\musd}{1.02^{2}}=>0.
+		\end{equation}
+		You should invest. You can either invest in the project, or earn 2\% on the alternative 
+		\item Stocks, bonds, and derivatives are not so simple
+	\end{itemize}
+\end{frame}
 
-\begin{frame}{Asset Prices}
+\begin{frame}{\ftexampl{Q1: What if the NPV is negative?}}
+	\begin{itemize}
+		\item You can't sell a factory that you don't own, but you \textit{can} sell a stock/bond/derivative that you don't own. This is \textit{shorting}.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{\ftexampl{Q2: What if you finance your investment with debt?}}
+
+\end{frame}
+
+\begin{frame}{\ftexampl{Q3: What if different terms have different yields?}}
+
+\end{frame}
+
+\begin{frame}{\ftexampl{Q4: What if cash-flows are risky?}}
+
+\end{frame}
+
+\begin{frame}{\ftexampl{Q5: What if cash-flows are correlated with other cash-flows?}}
+
+\end{frame}
+
+\begin{frame}{\ftvocab{Asset Prices}}
 	\begin{itemize}
 		\item An \underline{asset} is anything that produces something in the future
-		\item Examples: stock, bond, tractor, milk cow
+		\item Examples: tractor, milk cow
 		\item A \underline{security} is a claim to the output of an asset
-		\item The study and practice of investments is about \underline{pricing forecasts}, not \underline{forecasting prices}! 
-		\item Example: Caterpillar (CAT) was paying quarterly dividends of \$0.86 per share. Will it continue to pay \$0.86 per share? What is the fair price of a claim to Caterpillar’s dividends (a share of stock)? Is the current market price the fair price?
+		\item Examples: stock, bond
 		\item I will often refer to the study of investments as asset pricing
 	\end{itemize}
 \end{frame}
 
-\section{Trading vs. Investing}
-
-\begin{frame}{Two Hats}
+\begin{frame}{\fttheory{Two Hats}}
 	\begin{itemize}
 		\item Think about wearing one of two hats:  \underline{investor} or \underline{speculator}
 		\item Investors want to passively earn a return on their investments
@@ -28,7 +58,7 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{Speculator Hat: \textit{where do trading profits come from?}}
+\begin{frame}{\fttheory{Speculator Hat: \textit{where do trading profits come from?}}}
 	\begin{itemize}
 		\item Trading (as typically understood) is a zero-sum game
 		\item Ann \underline{knows} that stock $X$ is worth \$20
@@ -40,7 +70,7 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{Investor Hat: \textit{does that mean trading is bad? No.}}
+\begin{frame}{\ftexampl{Investor Hat: \textit{does that mean trading is bad? No.}}}
 	\begin{center}
 		\renewcommand{\arraystretch}{1.5}
 		\begin{tabular}{cc|cc}
@@ -56,7 +86,7 @@ Which do you prefer?
 \end{center}
 \end{frame}
 
-\begin{frame}{Investor Hat: \textit{does that mean trading is bad? No.}}
+\begin{frame}{\ftexampl{Investor Hat: \textit{does that mean trading is bad? No.}}}
 	\begin{itemize}
 		\item Trading allows people to \underline{share risk}
 		\item 100\% of Ann’s portfolio is in Exxon Mobil (XOM)
@@ -66,17 +96,4 @@ Which do you prefer?
 	\end{itemize}
 \end{frame}
 
-\section{Summary}
-
-\begin{frame}{Summary}
-	\begin{itemize}
-		\item An asset is anything that produces something in the future
-		\item A security is a claim to the output of an asset
-		\item Think about two types of people: investors and speculators
-		\item Investors want to passively earn a return on their investments
-		\item They trade so that they can share risk with other investors
-		\item Speculators want to exploit small mispricings (hard to find)
-		\item They trade so that they can buy from (sell to) other speculators or investors with worse information
-	\end{itemize}
-\end{frame}
 \end{document}

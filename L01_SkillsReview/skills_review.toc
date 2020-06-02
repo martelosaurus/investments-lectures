@@ -1,3 +1,1 @@
-\beamer@sectionintoc {1}{Overview}{2}{0}{1}
-\beamer@sectionintoc {2}{Bonds}{3}{0}{2}
-\beamer@sectionintoc {3}{Stocks}{10}{0}{3}
+\beamer@sectionintoc {1}{Stocks}{9}{0}{1}

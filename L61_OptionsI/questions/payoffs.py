@@ -1,3 +1,4 @@
+import string, random 
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -25,7 +26,9 @@ def driver(name,payoff):
     plt.axis([0.,2*K,-2*K,2*K])
     #plt.axis([0,2*K,-K,K])
     plt.grid()
-    plt.savefig(name+".pdf",bbox_inches='tight')
+    tit = titles.pop()
+    plt.title(tit,fontsize=sz)
+    plt.savefig(name+tit+".png",bbox_inches='tight')
     plt.close()
 
 def option_plot(name,payoff):
@@ -34,11 +37,12 @@ def option_plot(name,payoff):
     driver("short"+name,-payoff)
 
 # plot------------------------------------------------------------------------#
-option_plot("stock",S)               
-option_plot("riskfree",K+0.*S-.025)            
+n = 8
+titles = random.sample(list(string.ascii_uppercase[:n]),n)
+driver("stock",S)               
+driver("riskfree",K+0.*S-.025)            
 option_plot("call",call(S,K))          
 option_plot("put",put(S,K))           
-option_plot("straddle",call(S,K)+put(S,K)) 
-option_plot("coveredcall",S-call(S,K))    
-option_plot("protectiveput",S+put(S,K))  
-option_plot("forward",S-K)
+driver("coveredcall",S-call(S,K))    
+driver("protectiveput",S+put(S,K))  
+#option_plot("forward",S-K)

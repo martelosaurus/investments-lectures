@@ -1,21 +1,14 @@
 \documentclass{beamer}
 \usepackage{tikz,amsmath,comment,multirow}
-\usepackage[usenames,dvipsnames]{xcolor}
 \title{Skills Review}
 \newcommand{\should}{\overset{\text{should}}{=}}
-\newcommand{\theory}[1]{\colorbox{green}{\color{white}Theory: #1}}
+\input{../jordan_header}
 \begin{document}
-\maketitle
 
 %-----------------------------------------------------------------------------%
 % OVERVIEW
 %-----------------------------------------------------------------------------%
-\section{Overview}
-
-%-----------------------------------------------------------------------------%
-% OVERVIEW
-%-----------------------------------------------------------------------------%
-\begin{frame}{Objectives}
+\begin{frame}{\ftheader{Objectives}}
 	\begin{enumerate}
 		\item For a \underline{bond}, compute the
 			\begin{itemize}
@@ -33,10 +26,9 @@
 %-----------------------------------------------------------------------------%
 % BONDS
 %-----------------------------------------------------------------------------%
-\section{Bonds}
 
 % Annuities
-\begin{frame}{\theory{Treasuries}}
+\begin{frame}{\fttheory{Treasuries}}
 	A $T$-year Treasury makes semi-annual payments.
 	\begin{figure}[H]
 		\begin{center}
@@ -67,14 +59,14 @@ where $y$ is the yield (APR).
 \end{frame}
 
 % dividend examples
-\begin{frame}{From the Data}
+\begin{frame}{\ftdata{From the Data}}
 	\begin{center}
 		\includegraphics[scale=0.5]{CUSIP_912828HR_col}
 	\end{center}
 \end{frame}
 
 % Bond Checklist
-\begin{frame}{Treasury Checklist}
+\begin{frame}{\fttheory{Treasury Checklist}}
 	\begin{itemize}
 		\item[$\checkmark$] Yields and coupon rates are quoted as APRs, so divide them by the number of payments per year to get the per-period rate
 		\item[$\checkmark$] Multiply the number of years by the number of payments per year to get the number of periods
@@ -85,14 +77,14 @@ where $y$ is the yield (APR).
 \end{frame}
 
 % question 1
-\begin{frame}{Example}
+\begin{frame}{\ftexampl{Example}}
 	\input{problems/prob01_000Q}
 	\pause
 	{\color{blue}\input{problems/prob01_000A}}
 \end{frame}
 \iffalse
 % question 2
-\begin{frame}{Example}
+\begin{frame}{\ftexampl{Example}}
 	\input{problems/prob01_001Q}
 	\pause
 	{\color{blue}\input{problems/prob01_001A}}
@@ -100,14 +92,14 @@ where $y$ is the yield (APR).
 \fi
 
 % question 3
-\begin{frame}{Example}
+\begin{frame}{\ftexampl{Example}}
 	\input{problems/prob01_010Q}
 	\pause
 	{\color{blue}\input{problems/prob01_010A}}
 \end{frame}
 \iffalse
 % question 4
-\begin{frame}{Example}
+\begin{frame}{\ftexampl{Example}}
 	\input{problems/prob01_011Q}
 	\pause
 	{\color{blue}\input{problems/prob01_011A}}
@@ -120,7 +112,7 @@ where $y$ is the yield (APR).
 \section{Stocks}
 
 % A One Year Investor
-\begin{frame}{Stocks}
+\begin{frame}{\fttheory{Stocks}}
 	\begin{figure}[H]
 		\begin{center}
 			\begin{tikzpicture}
@@ -146,7 +138,7 @@ where $y$ is the yield (APR).
 \end{frame}
 
 % Dividend Yields, Capital Gains, and Total Returns
-\begin{frame}{Didend Yields, Capital Gains, and Total Returns}
+\begin{frame}{\fttheory{Didend Yields, Capital Gains, and Total Returns}}
 \begin{equation*}
 r\should\frac{D_{1}+P_{1}}{P_{0}}-1=\underbrace{\frac{D_{1}}{P_{0}}}_{\text{Didend Yield}}+\underbrace{\frac{P_{1}-P_{0}}{P_{0}}}_{\text{Capital Gain Rate}}
 \end{equation*}
@@ -158,7 +150,7 @@ r\should\frac{D_{1}+P_{1}}{P_{0}}-1=\underbrace{\frac{D_{1}}{P_{0}}}_{\text{Dide
 \end{frame}
 
 % A Multiyear Investor
-\begin{frame}{Stocks}
+\begin{frame}{\fttheory{Stocks}}
 	\begin{figure}[H]
 		\begin{center}
 			\begin{tikzpicture}
@@ -187,7 +179,7 @@ r\should\frac{D_{1}+P_{1}}{P_{0}}-1=\underbrace{\frac{D_{1}}{P_{0}}}_{\text{Dide
 \end{frame}
 
 % Dividend Discount Model Equation
-\begin{frame}{The Dividend Discount Model}
+\begin{frame}{\fttheory{The Dividend Discount Model}}
 	\begin{itemize}
 		\item It doesn't matter whether the investor wants to hold the stock for one quarter, two quarters, or infinitely many quarters: she is always willing to pay the same price $P_{0}$
 		\item In particular, the investor who holds the stock for infinitely many periods is willing to pay 
@@ -200,7 +192,7 @@ r\should\frac{D_{1}+P_{1}}{P_{0}}-1=\underbrace{\frac{D_{1}}{P_{0}}}_{\text{Dide
 \end{frame}
 
 % Growing Perpetuities
-\begin{frame}{Constant Dividend Growth}
+\begin{frame}{\fttheory{Constant Dividend Growth}}
 Simple model: dividends grow at a constant rate $g$ 
 \begin{figure}[H]
 	\begin{center}
@@ -229,7 +221,7 @@ where $D_{0}$ is the dividend that was \underline{just} paid
 \end{frame}
 
 % Constant Dividend Growth
-\begin{frame}{Constant Dividend Growth}
+\begin{frame}{\fttheory{Constant Dividend Growth}}
 \begin{itemize}
 	\item The Dividend Discount Model says that
 	\begin{equation*}
@@ -244,28 +236,28 @@ where $D_{0}$ is the dividend that was \underline{just} paid
 \end{frame}
 
 % dividend examples
-\begin{frame}{From the Data}
+\begin{frame}{\ftdata{From the Data}}
 	\begin{center}
 		\includegraphics[scale=0.5]{V_col}
 	\end{center}
 \end{frame}
 
 % dividend examples
-\begin{frame}{From the Data}
+\begin{frame}{\ftdata{From the Data}}
 	\begin{center}
 		\includegraphics[scale=0.5]{XOM_col}
 	\end{center}
 \end{frame}
 
 % dividend examples
-\begin{frame}{From the Data}
+\begin{frame}{\ftdata{From the Data}}
 	\begin{center}
 		\includegraphics[scale=0.5]{WMT_col} 
 	\end{center}
 \end{frame}
 
 % dividend examples
-\begin{frame}{From the Data}
+\begin{frame}{\ftdata{From the Data}}
 		Does the constant dividend growth assumption comport with reality?
 	\begin{itemize}
 		\item Verizon's dividends are (generally) constant across the four quarters in each year, but increase from the fourth quarter of one year to the first quarter of the next
@@ -276,7 +268,7 @@ where $D_{0}$ is the dividend that was \underline{just} paid
 \end{frame}
 
 % Stock Checklist
-\begin{frame}{Stock Checklist}
+\begin{frame}{\fttheory{Stock Checklist}}
 	\begin{itemize}
 		\item[$\checkmark$] The required rate of total return should have the same horizon as that of the dividends, so if returns are quoted in months, say $r_{m}$, compute the quarterly return as follows:
 		\begin{equation}
@@ -288,8 +280,7 @@ where $D_{0}$ is the dividend that was \underline{just} paid
 \end{frame}
 
 % Constant Dividend Growth
-\iffalse
-\begin{frame}{Constant Dividend Growth: Yearly Increases}
+\begin{frame}{\fttheory{Constant Dividend Growth: Yearly Increases}}
 \begin{itemize}
 	\item During a year, 
 		\begin{equation*}
@@ -306,10 +297,9 @@ where $D_{0}$ is the dividend that was \underline{just} paid
 	\item In this case, the \underline{growth rate} $g$ is the \underline{capital gain rate}
 \end{itemize}
 \end{frame}
-\fi
 
 % example
-\begin{frame}{Example: Stock Price}
+\begin{frame}{\ftexampl{Example: Stock Price}}
 	\input{problems/prob01_020Q}
 	\pause
 	{\color{blue}\input{problems/prob01_020A}}
@@ -317,7 +307,7 @@ where $D_{0}$ is the dividend that was \underline{just} paid
 
 % example
 \iffalse
-\begin{frame}{Example: Stock Price}
+\begin{frame}{\ftexampl{Example: Stock Price}}
 	\input{problems/prob01_021Q}
 	\pause
 	{\color{blue}\input{problems/prob01_021A}}
@@ -325,7 +315,7 @@ where $D_{0}$ is the dividend that was \underline{just} paid
 \fi
 
 % example
-\begin{frame}{Example: Implied Growth Rate}
+\begin{frame}{\ftexampl{Example: Implied Growth Rate}}
 	\input{problems/prob01_030Q}
 	\pause
 	{\color{blue}\input{problems/prob01_030A}}
@@ -333,7 +323,7 @@ where $D_{0}$ is the dividend that was \underline{just} paid
 
 % example
 \iffalse
-\begin{frame}{Example: Implied Growth Rate}
+\begin{frame}{\ftexampl{Example: Implied Growth Rate}}
 	\input{problems/prob01_031Q}
 	\pause
 	{\color{blue}\input{problems/prob01_031A}}
@@ -341,7 +331,7 @@ where $D_{0}$ is the dividend that was \underline{just} paid
 \fi
 
 % example
-\begin{frame}{Example: Dividend Yield}
+\begin{frame}{\ftexampl{Example: Dividend Yield}}
 	\input{problems/prob01_040Q}
 	\pause
 	{\color{blue}\input{problems/prob01_040A}}
@@ -349,7 +339,7 @@ where $D_{0}$ is the dividend that was \underline{just} paid
 
 % example
 \iffalse
-\begin{frame}{Example: Dividend Yield}
+\begin{frame}{\ftexampl{Example: Dividend Yield}}
 	\input{problems/prob01_041Q}
 	\pause
 	{\color{blue}\input{problems/prob01_041A}}
