@@ -1,5 +1,5 @@
 \documentclass{beamer}
-\usepackage{tikz}
+\usepackage{tikz,amsmath,amssymb,amsfonts}
 \newcommand{\ju}{{\scriptsize m USD }}
 \renewcommand{\arraystretch}{1.5}
 \input{../jordan_header}
@@ -32,11 +32,13 @@ Introduction
 		\item \underline{Finance} is the study of investment/divestment decisions
 		\item E.g. buy a stock, sell a house, build a factory
 		\item We use the Net Present Value (NPV) to make such decisions 
-		\item E.g. consider a security that pays $1\musd$ in one year and $1\musd$ in two years (could be a stock paying dividends or a bond paying coupons). You know that 
+		\item E.g. consider a security that pays $10\musd$ in one year (could be a stock paying dividends or a bond paying coupons). It costs $7.5\musd$ and the rate of return on another security of equivalent risk is $2\%$. You know that 
 		\begin{equation}
-			\text{NPV}=-.75\musd+\frac{1\musd}{1.02}.
+			\boxed{
+			\text{NPV}=-7.5\musd+\frac{10\musd}{1.02}
+			}
 		\end{equation}
-		You should invest. You can either invest in the project, or earn 2\% on the alternative 
+		You should invest. 
 		\item Stocks, bonds, and derivatives are not so simple
 	\end{itemize}
 \end{frame}
@@ -44,11 +46,16 @@ Introduction
 \begin{frame}{\fttheory{Q1: What if the NPV is negative?}}
 	\begin{itemize}
 		\item You can't sell a factory that you don't own, but you \textit{can} sell a stock/bond/derivative that you don't own
-		\item Just ``borrow'' the security from someone (Sally), sell it for $.75\musd$, invest the proceeds at $2\%$; in one year, pay Sally $1\musd$
-		\item In this case,
+		\item Suppose instead that the security costs $10\musd$
+		\item The NPV would seem to be negative
+		\item Solution: ``borrow'' the security, sell it for $7.5\musd$, invest the proceeds at $2\%$. In one year, repay the lender $10\musd$.
+		\item In this case, the NPV is 
 		\begin{equation}
-			\text{NPV}=.75\musd-\frac{1\musd}{1.02}>0
+			\boxed{
+			\text{NPV}=+10\musd-\frac{10\musd}{1.02}>0
+			}
 		\end{equation}
+		\item This is called \textit{shorting}
 	\end{itemize}
 \end{frame}
 
@@ -56,9 +63,12 @@ Introduction
 	\begin{itemize}
 	\item In this case,
 		\begin{equation}
-			\text{NPV}=-.75\musd+\frac{1\musd}{1.02}.
+			\boxed{
+			\text{NPV}=-7.5\musd+\frac{10\musd}{1.02}
+			}
 		\end{equation}
-	\item (what if instead of $1\musd$, the investment only produces $0.5\musd$?)
+	\item (what if instead of $10\musd$, the investment only produces $0.5\musd$?)
+	\item This is called \textit{leverage} (or \textit{margin})
 	\end{itemize}
 \end{frame}
 
@@ -66,8 +76,11 @@ Introduction
 	\begin{itemize}
 	\item In this case,
 		\begin{equation}
-			\text{NPV}=-.75\musd+\frac{1\musd}{1.01}+\frac{1\musd}{1.03^2}.
+			\boxed{
+			\text{NPV}=-7.5\musd+\frac{10\musd}{1.01}+\frac{10\musd}{1.03^2}.
+			}
 		\end{equation}
+	\item This is called \textit{the term-structure} (or \textit{yield curve})
 	\end{itemize}
 \end{frame}
 
@@ -76,7 +89,7 @@ Introduction
 	\item Tesla is much riskier than Kroger 
 	\item In this case,
 		\begin{equation}
-			\text{NPV}=-.75\musd+\frac{???\musd}{1.02}.
+			\text{NPV}=-7.5\musd+\frac{???\musd}{1.02}.
 		\end{equation}
 	\end{itemize}
 \end{frame}
@@ -86,20 +99,23 @@ Introduction
 	\item Tiffany's (TIF) cash-flows are much more correlated with the economy than are those of Wal-Mart (WMT). 
 	\item In this case,
 		\begin{equation}
-			\text{NPV}=-.75\musd+\frac{1\musd}{1.02}.
+			\text{NPV}=-7.5\musd+\frac{10\musd}{1.02}.
 		\end{equation}
 	\end{itemize}
 \end{frame}
 
 \begin{frame}{\fttheory{Q6: What if everyone wants the investment?}}
 	\begin{itemize}
-	\item In this case,
+	\item Consider the original example:
 		\begin{equation}
-			\text{NPV}=-.75\musd+\frac{1\musd}{1.02}>0.
+			\boxed{
+			\text{NPV}=-7.5\musd+\frac{10\musd}{1.02}>0.
+			}
 		\end{equation}
-	\item If someone invested $85\musd$ instead of $75\musd$, their NPV would still be positive
+	\item If someone invested $85\musd$ instead of $7.5\musd$, their NPV would still be positive
 	\item In fact, if someone invested $99.9\musd$, their NPV would still be positive!
-	\item This observation will enable us to compute the prices of all sorts of financial securities, including forwards (futures) and options
+	\item This observation will enable us to compute the prices of all sorts of financial securities, including derivatives
+	\item This is called \textit{no-arbitrage pricing}
 	\end{itemize}
 \end{frame}
 
@@ -147,7 +163,10 @@ Introduction
 Which do you prefer?
 \end{center}
 \pause
-If you preferred \textbf{Bet A} to bet \textbf{Bet B} you are \underline{risk-averse}, \textbf{Bet B} to bet \textbf{Bet A}, you are \underline{risk-loving}, while if you were indifferent, you are \underline{risk-neutral}
+\begin{itemize}
+	\item If you preferred \textbf{Bet B} to bet \textbf{Bet A} you are \underline{risk-averse}, \textbf{Bet A} to bet \textbf{Bet B}, you are \underline{risk-loving}, while if you were indifferent, you are \underline{risk-neutral}
+	\item Our theory of investments rests on the observation that investors are risk-averse
+\end{itemize}
 \end{frame}
 
 \begin{frame}{\fttheory{Investor Hat}}
@@ -307,50 +326,6 @@ If you preferred \textbf{Bet A} to bet \textbf{Bet B} you are \underline{risk-av
 	\end{enumerate}
 \end{frame}
 
-%============================================================================%
-%   SHORTING                                                                 %
-%============================================================================% 
-\begin{frame}{\fttheory{Shorting}}
-\begin{itemize}
-\item \underline{Shorting} involves borrowing a security, selling it, buying it again, and returning it to its owner
-\item Long position
-\begin{itemize}
-\item Buy first, sell later
-\item Bullish: bet on price increase, buy low, sell high
-\end{itemize}
-\item Short position
-\begin{itemize}
-\item Sell first, buy later
-\item Bearish: bet on price decrease, sell high, buy low
-\end{itemize}
-\item \textit{It should be as if the person who lent you the security never lent you the security. All dividends, coupon payments, etc. should paid to the lender during the life of the trade.}
-\end{itemize}
-\end{frame}
-
-%============================================================================%
-%   SHORTING                                                                 %
-%============================================================================% 
-\section{Shorting}
-\begin{frame}{\ftdata{Shorting: Implementation}}
-\begin{itemize}
-\item In the real-world, 
-\item Borrow security from institution; must post margin
-\item Institution sells security, deposits proceeds, margin in margin account (you cannot withdraw proceeds until you ``cover'')
-\item Cover position: buy security, return to institution 
-\end{itemize}
-\end{frame}
-
-%=============================================================================%
-%   CLEARINGHOUSE                                                             %
-%=============================================================================%
-\iffalse
-\begin{frame}{Application: Clearinghouses}
-	\begin{center}
-		\textbf{TODO: include discussion (possible figure) about clearinghouse from Chapter 17 (pg. 551)}
-	\end{center}
-\end{frame}
-\fi
-
 %=============================================================================%
 %   MARGIN                                                                    %
 %=============================================================================%
@@ -385,13 +360,25 @@ If you preferred \textbf{Bet A} to bet \textbf{Bet B} you are \underline{risk-av
 \end{itemize}
 \end{frame}
 
+\begin{frame}{\ftexampl{Leverage}}
+	\small
+	Let's start with a toy example. Suppose you have 50 USD and you want to buy a 100 USD stock. You can borrow at 10\% for one year. What happens if the stock rises to 120 USD in one year? What if it falls to 80 USD? Describe the balance sheet.
+		\pause
+		\begin{itemize}
+			\item{\color{blue} Initially, you have 100 USD in assets, 50 USD in liabilities, and 50 USD in equity (margin).}
+			\item{\color{blue} If the stock rises to 120 USD ($+20\%$), then your have 120 USD in assets, 55 USD in liabilities, and 65 USD in equity (margin). Your return was $(65-50)/50=+30\%$ (compare with $+20\%$).}
+			\item{\color{blue} If the stock falls to 80 USD ($-20\%$), then your have 80 USD in assets, 55 USD in liabilities, and 25 USD in equity (margin). Your return was $(25-50)/50=-50\%$ (compare with $-20\%$).}
+			\item{\color{blue} Conclusion: leverage magnifies returns}
+		\end{itemize}
+\end{frame}
+
 %============================================================================%
 %   MARGIN                                                                   %
 %============================================================================% 
 \iffalse
 \begin{frame}{\ftexampl{Leverage}}
 	\small
-	On 2008-01-31, Microsoft (MSFT) traded for 32.6 USD. Suppose you bought 1,000 shares with 20,000 USD of capital. What was your margin in percent and in USD? Did it satisfy the IMR? As of 2008-02-29, the value of your position fell 16.2273\% (accounting for dividends). What was your margin in percent and in USD? Did it satisfy the MMR? Assume you can borrow at 9.569\%\footnote{This (example) rate comes from TD}.  
+	On 2008-01-31, Microsoft (MSFT) traded for 32.6 USD. Suppose you bought 1,000 shares with 20,000 USD of capital. What was your margin in percent and in USD? Did it satisfy the IMR? As of 2008-02-29, the value of your position fell 16.2273\% (accounting for dividends). What was your margin in percent and in USD? Did it satisfy the MMR? What was your return in percent? Assume you can borrow at 9.569\% APR\footnote{This (example) rate comes from TD. Remember to divide by 12.}.  
 	\pause
 		\begin{enumerate}
 			\item{\color{blue}Your position (assets) was 32,600 USD. You borrowed 12,600 USD (liabilities). Your margin is 20,000 USD (equity) or 61.3497\% (equity over assets). Your margin satisfied the IMR.}
@@ -408,6 +395,61 @@ If you preferred \textbf{Bet A} to bet \textbf{Bet B} you are \underline{risk-av
 			\item{\color{blue}The new value of your position (assets) was 27,309.9002 USD and your new liability was 12,700.4745 USD. Your margin is assets minus liabilities (equity): 14,609.4257 USD or 53.495\%. Your margin satisfied the MMR.}
 		\end{enumerate}
 \end{frame}
+
+
+%============================================================================%
+%   SHORTING                                                                 %
+%============================================================================% 
+\begin{frame}{\fttheory{Shorting}}
+\begin{itemize}
+\item \underline{Shorting} involves borrowing a security, selling it, buying it again, and returning it to its owner
+\item Long position
+\begin{itemize}
+\item Buy first, sell later
+\item Bullish: bet on price increase, buy low, sell high
+\end{itemize}
+\item Short position
+\begin{itemize}
+\item Sell first, buy later
+\item Bearish: bet on price decrease, sell high, buy low
+\end{itemize}
+\item \textit{It should be as if the person who lent you the security never lent you the security. All dividends, coupon payments, etc. should paid to the lender during the life of the trade.}
+\end{itemize}
+\end{frame}
+
+%============================================================================%
+%   SHORTING                                                                 %
+%============================================================================% 
+\section{Shorting}
+\begin{frame}{\ftdata{Shorting: Practical Considerations}}
+\begin{itemize}
+\item In the real-world, 
+\item Borrow security from institution; must post margin
+\item Institution sells security, deposits proceeds, margin in margin account (you cannot withdraw proceeds until you ``cover'')
+\item Cover position: buy security, return to institution 
+\end{itemize}
+\end{frame}
+
+%============================================================================%
+%   SHORTING                                                                 %
+%============================================================================% 
+\begin{frame}{\ftexampl{Shorting}}
+	\small
+	Let's continue with the Microsoft example. Recall that on 2008-01-31, Microsoft traded for 32.6 USD. Suppose you bought 1,000 shares. On 2008-, MSFT traded for. What was your profit/loss?
+	\pause
+	{\color{blue} You made a profit of $=$}
+\end{frame}
+
+%=============================================================================%
+%   CLEARINGHOUSE                                                             %
+%=============================================================================%
+\iffalse
+\begin{frame}{Application: Clearinghouses}
+	\begin{center}
+		\textbf{TODO: include discussion (possible figure) about clearinghouse from Chapter 17 (pg. 551)}
+	\end{center}
+\end{frame}
+\fi
 
 %============================================================================%
 %   ARBITRAGE                                                                %
@@ -426,7 +468,7 @@ If you preferred \textbf{Bet A} to bet \textbf{Bet B} you are \underline{risk-av
 %============================================================================%
 \begin{frame}{\ftexampl{Arbitrage}}
 \begin{itemize}
-\item On 2020-01-28, the yield on a one-year T-bill was 1.53\%. 
+\item On 2020-01-28, the yield on a one year T-bill was 1.53\%. 
 \item What's the fair price?
 \begin{align*}
 	\text{price}=\frac{100\text{ USD}}{1+.0153}=98.4931\text{ USD}
