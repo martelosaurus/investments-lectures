@@ -14,10 +14,10 @@ Introduction
 
 \begin{frame}{\ftheader{Lecture 0.1: Introduction}}
 	\begin{itemize}
-		\item Revisit and Revamp NPV
+		\item Revisit and revamp NPV
 		\item Distinguish speculation from investing
-		\item Asset classes and the markets in which they trade
-		\item Basic market operations (shorting, leverage, arbitrage)
+		\item Explore asset classes and the markets in which they trade
+		\item Discuss basic market operations (shorting, leverage, arbitrage)
 	\end{itemize}
 \end{frame}
 
@@ -35,76 +35,31 @@ Introduction
 		\item E.g. consider a security that pays $10\musd$ in one year (could be a stock paying dividends or a bond paying coupons). It costs $7.5\musd$ and the rate of return on another security of equivalent risk is $2\%$. You know that 
 		\begin{equation}
 			\boxed{
-			\text{NPV}=-7.5\musd+\frac{10\musd}{1.02}
+			\text{NPV}=-7.5\musd+\frac{10\musd}{1.02}\approx 2.3\musd
 			}
 		\end{equation}
-		You should invest. 
+		You should invest ($10\musd$ vs. $1.02\times7.5\musd$) 
 		\item Stocks, bonds, and derivatives are not so simple
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{\fttheory{Q1: What if the NPV is negative?}}
+\begin{frame}{\fttheory{What if the NPV is negative?}}
 	\begin{itemize}
 		\item You can't sell a factory that you don't own, but you \textit{can} sell a stock/bond/derivative that you don't own
-		\item Suppose instead that the security costs $10\musd$
+		\item Suppose that the security costs $12\musd$
 		\item The NPV would seem to be negative
-		\item Solution: ``borrow'' the security, sell it for $7.5\musd$, invest the proceeds at $2\%$. In one year, repay the lender $10\musd$.
+		\item Solution: borrow the security, sell it for $12\musd$, invest the proceeds at $2\%$. In one year, repay the lender $10\musd$.
 		\item In this case, the NPV is 
 		\begin{equation}
 			\boxed{
-			\text{NPV}=+10\musd-\frac{10\musd}{1.02}>0
+			\text{NPV}=+12\musd-\frac{10\musd}{1.02}\approx2.2\musd
 			}
 		\end{equation}
 		\item This is called \textit{shorting}
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{\fttheory{Q2: What if you finance your investment with debt?}}
-	\begin{itemize}
-	\item In this case,
-		\begin{equation}
-			\boxed{
-			\text{NPV}=-7.5\musd+\frac{10\musd}{1.02}
-			}
-		\end{equation}
-	\item (what if instead of $10\musd$, the investment only produces $0.5\musd$?)
-	\item This is called \textit{leverage} (or \textit{margin})
-	\end{itemize}
-\end{frame}
-
-\begin{frame}{\fttheory{Q3: What if different terms have different yields?}}
-	\begin{itemize}
-	\item In this case,
-		\begin{equation}
-			\boxed{
-			\text{NPV}=-7.5\musd+\frac{10\musd}{1.01}+\frac{10\musd}{1.03^2}.
-			}
-		\end{equation}
-	\item This is called \textit{the term-structure} (or \textit{yield curve})
-	\end{itemize}
-\end{frame}
-
-\begin{frame}{\fttheory{Q4: What if cash-flows are risky?}}
-	\begin{itemize}
-	\item Tesla is much riskier than Kroger 
-	\item In this case,
-		\begin{equation}
-			\text{NPV}=-7.5\musd+\frac{???\musd}{1.02}.
-		\end{equation}
-	\end{itemize}
-\end{frame}
-
-\begin{frame}{\fttheory{Q5: What about the economy?}}
-	\begin{itemize}
-	\item Tiffany's (TIF) cash-flows are much more correlated with the economy than are those of Wal-Mart (WMT). 
-	\item In this case,
-		\begin{equation}
-			\text{NPV}=-7.5\musd+\frac{10\musd}{1.02}.
-		\end{equation}
-	\end{itemize}
-\end{frame}
-
-\begin{frame}{\fttheory{Q6: What if everyone wants the investment?}}
+\begin{frame}{\fttheory{What if everyone wants the investment?}}
 	\begin{itemize}
 	\item Consider the original example:
 		\begin{equation}
@@ -112,12 +67,36 @@ Introduction
 			\text{NPV}=-7.5\musd+\frac{10\musd}{1.02}>0.
 			}
 		\end{equation}
-	\item If someone invested $85\musd$ instead of $7.5\musd$, their NPV would still be positive
-	\item In fact, if someone invested $99.9\musd$, their NPV would still be positive!
+	\item The $7.5\musd$ is the price of the investment
+	\item If someone paid $8.5\musd$ instead of $7.5\musd$, their NPV would still be positive
+	\item In fact, an investor could pay up to $\approx9.8\musd$ and their NPV would still be positive 
 	\item This observation will enable us to compute the prices of all sorts of financial securities, including derivatives
 	\item This is called \textit{no-arbitrage pricing}
 	\end{itemize}
 \end{frame}
+
+\begin{frame}{\fttheory{What if different terms have different yields?}}
+	\begin{itemize}
+	\item Suppose instead that the security pays $10\musd$ in one year and $10\musd$ in two years
+	\item What rate do we use?
+	\item If the return on one-year debt is 1\% and the return on two-year debt is 3\%, then 
+		\begin{equation}
+			\boxed{
+			\text{NPV}=-7.5\musd+\frac{10\musd}{1.01}+\frac{10\musd}{1.03^2}
+			}
+		\end{equation}
+	\item This is called \textit{the term-structure} (or \textit{yield curve})
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{\fttheory{Other questions}}
+	\begin{itemize}
+		\item What if you finance your investment with debt?
+		\item What if cash-flows are risky?
+		\item What about the state of the economy?
+	\end{itemize}
+\end{frame}
+
 
 \begin{frame}
 \begin{center}
@@ -241,7 +220,7 @@ Which do you prefer?
 			\draw[dashed,ultra thick,color=magenta] (6,-.25) -- (6,4.5);
 			\draw (6,1) node[anchor=west]{\color{magenta}Asset Value (75\ju)};
 			% cash
-			\draw[ultra thick] (0,2) -- (8,2) node[anchor=west]{Cash (25\ju)};
+			\draw[ultra thick] (0,2) -- (8,2) node[anchor=west]{Cash};
 			% bonds
 			\draw[ultra thick,color=blue] (0,0) -- (4,4);
 			\draw[ultra thick,color=blue] (4,4) -- (9,4);
@@ -266,7 +245,7 @@ Which do you prefer?
 			\draw[dashed,ultra thick,color=magenta] (2,-.25) -- (2,4.5);
 			\draw (2,4.5) node[anchor=west]{\color{magenta}Asset Value (25\ju)};
 			% cash
-			\draw[ultra thick] (0,2) -- (8,2) node[anchor=west]{Cash (25\ju)};
+			\draw[ultra thick] (0,2) -- (8,2) node[anchor=west]{Cash};
 			% bonds
 			\draw[ultra thick,color=blue] (0,0) -- (4,4);
 			\draw[ultra thick,color=blue] (4,4) -- (9,4);
@@ -332,7 +311,8 @@ Which do you prefer?
 \begin{frame}{\fttheory{Leverage}}
 \begin{itemize}
 \item Investors can borrow from financial institutions to finance the purchase of securities
-\item We call this buying on margin
+\item Investors who do so are said to be using \underline{leverage} 
+\item Historically, buying stocks with leverage has been referred to as \textit{buying on margin} where \underline{margin} refers to the equity the investor contributes to the purchase
 \end{itemize}
 \end{frame}
 
@@ -403,17 +383,9 @@ Which do you prefer?
 \begin{frame}{\fttheory{Shorting}}
 \begin{itemize}
 \item \underline{Shorting} involves borrowing a security, selling it, buying it again, and returning it to its owner
-\item Long position
-\begin{itemize}
-\item Buy first, sell later
-\item Bullish: bet on price increase, buy low, sell high
-\end{itemize}
-\item Short position
-\begin{itemize}
-\item Sell first, buy later
-\item Bearish: bet on price decrease, sell high, buy low
-\end{itemize}
 \item \textit{It should be as if the person who lent you the security never lent you the security. All dividends, coupon payments, etc. should paid to the lender during the life of the trade.}
+\item \underline{Long position}: buy first, sell later; bullish: bet on price increase, buy low, sell high
+\item \underline{Short position}: sell first, buy later; bearish: bet on price decrease, sell high, buy low
 \end{itemize}
 \end{frame}
 
@@ -423,10 +395,11 @@ Which do you prefer?
 \section{Shorting}
 \begin{frame}{\ftdata{Shorting: Practical Considerations}}
 \begin{itemize}
-\item In the real-world, 
-\item Borrow security from institution; must post margin
-\item Institution sells security, deposits proceeds, margin in margin account (you cannot withdraw proceeds until you ``cover'')
-\item Cover position: buy security, return to institution 
+\item If you borrow the security from an institution, you will most likely need to post margin 
+\item The institution sells the security, deposits the proceeds, and deposits your margin into a margin account 
+\item You cannot withdraw the proceeds until you ``cover'' 
+\item When you \underline{cover} your position, you buy the security in the market and transfer it to the institution 
+\item We will abstract from these issues in much of the course
 \end{itemize}
 \end{frame}
 
@@ -435,9 +408,14 @@ Which do you prefer?
 %============================================================================% 
 \begin{frame}{\ftexampl{Shorting}}
 	\small
-	Let's continue with the Microsoft example. Recall that on 2008-01-31, Microsoft traded for 32.6 USD. Suppose you bought 1,000 shares. On 2008-, MSFT traded for. What was your profit/loss?
+	Let's continue with the Microsoft example. Recall that on 2008-01-31, Microsoft traded for 32.6 USD. On 2008-02-29, MSFT traded for 27.2 USD and had paid a dividend of 0.11 USD. What was your profit/loss per share? What if Microsoft had risen to 35 USD?
+
 	\pause
-	{\color{blue} You made a profit of $=$}
+	\begin{itemize}
+		\item {\color{blue} You made a profit of $32.6\text{ USD}-27.2\text{ USD}-0.11\text{ USD}=5.29\text{ USD}$}
+		\item {\color{blue} If the stock had risen to 35 USD, you would have suffered a loss of $32.6\text{ USD}-35\text{ USD}-0.11\text{ USD}=-2.51\text{ USD}$}
+		\item {\color{blue}In both cases, the institution from which you borrowed the shares received the same cash flows it would have received had it not lent you the shares}
+	\end{itemize}
 \end{frame}
 
 %=============================================================================%
