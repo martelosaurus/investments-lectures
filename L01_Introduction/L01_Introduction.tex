@@ -14,20 +14,10 @@ Introduction
 
 \begin{frame}{\ftheader{Lecture 0.1: Introduction}}
 	\begin{itemize}
-		\item Lay down some basic vocabulary
+		\item Revisit and Revamp NPV
 		\item Distinguish speculation from investing
 		\item Asset classes and the markets in which they trade
 		\item Basic market operations (shorting, leverage, arbitrage)
-	\end{itemize}
-\end{frame}
-
-\begin{frame}{\ftvocab{Basic Vocabulary}}
-	\begin{itemize}
-		\item An \underline{asset} is anything that produces something in the future
-		\item Examples: tractor, milk cow
-		\item A \underline{security} is a claim to the output of an asset
-		\item Examples: stock, bond
-		\item I will often refer to the study of investments as asset pricing
 	\end{itemize}
 \end{frame}
 
@@ -37,7 +27,7 @@ Introduction
 \end{center}
 \end{frame}
 
-\begin{frame}{\ftheader{NPV Revisited}}
+\begin{frame}{\fttheory{NPV Revisited}}
 	\begin{itemize}
 		\item \underline{Finance} is the study of investment/divestment decisions
 		\item E.g. buy a stock, sell a house, build a factory
@@ -51,9 +41,10 @@ Introduction
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{\ftexampl{Q1: What if the NPV is negative?}}
+\begin{frame}{\fttheory{Q1: What if the NPV is negative?}}
 	\begin{itemize}
-		\item You can't sell a factory that you don't own, but you \textit{can} sell a stock/bond/derivative that you don't own. This is \textit{shorting}.
+		\item You can't sell a factory that you don't own, but you \textit{can} sell a stock/bond/derivative that you don't own
+		\item Just ``borrow'' the security from someone (Sally), sell it for $.75\musd$, invest the proceeds at $2\%$; in one year, pay Sally $1\musd$
 		\item In this case,
 		\begin{equation}
 			\text{NPV}=.75\musd-\frac{1\musd}{1.02}>0
@@ -61,8 +52,38 @@ Introduction
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{\ftexampl{Q2: What if you finance your investment with debt?}}
+\begin{frame}{\fttheory{Q2: What if you finance your investment with debt?}}
 	\begin{itemize}
+	\item In this case,
+		\begin{equation}
+			\text{NPV}=-.75\musd+\frac{1\musd}{1.02}.
+		\end{equation}
+	\item (what if instead of $1\musd$, the investment only produces $0.5\musd$?)
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{\fttheory{Q3: What if different terms have different yields?}}
+	\begin{itemize}
+	\item In this case,
+		\begin{equation}
+			\text{NPV}=-.75\musd+\frac{1\musd}{1.01}+\frac{1\musd}{1.03^2}.
+		\end{equation}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{\fttheory{Q4: What if cash-flows are risky?}}
+	\begin{itemize}
+	\item Tesla is much riskier than Kroger 
+	\item In this case,
+		\begin{equation}
+			\text{NPV}=-.75\musd+\frac{???\musd}{1.02}.
+		\end{equation}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{\fttheory{Q5: What about the economy?}}
+	\begin{itemize}
+	\item Tiffany's (TIF) cash-flows are much more correlated with the economy than are those of Wal-Mart (WMT). 
 	\item In this case,
 		\begin{equation}
 			\text{NPV}=-.75\musd+\frac{1\musd}{1.02}.
@@ -70,30 +91,15 @@ Introduction
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{\ftexampl{Q3: What if different terms have different yields?}}
+\begin{frame}{\fttheory{Q6: What if everyone wants the investment?}}
 	\begin{itemize}
 	\item In this case,
 		\begin{equation}
-			\text{NPV}=-.75\musd+\frac{1\musd}{1.01}+\frac{1\musd}{1.03}.
+			\text{NPV}=-.75\musd+\frac{1\musd}{1.02}>0.
 		\end{equation}
-	\end{itemize}
-\end{frame}
-
-\begin{frame}{\ftexampl{Q4: What if cash-flows are risky?}}
-	\begin{itemize}
-	\item In this case,
-		\begin{equation}
-			\text{NPV}=-.75\musd+\frac{1\musd}{1.02}.
-		\end{equation}
-	\end{itemize}
-\end{frame}
-
-\begin{frame}{\ftexampl{Q5: What about the economy?}}
-	\begin{itemize}
-	\item In this case,
-		\begin{equation}
-			\text{NPV}=-.75\musd+\frac{1\musd}{1.02}.
-		\end{equation}
+	\item If someone invested $85\musd$ instead of $75\musd$, their NPV would still be positive
+	\item In fact, if someone invested $99.9\musd$, their NPV would still be positive!
+	\item This observation will enable us to compute the prices of all sorts of financial securities, including forwards (futures) and options
 	\end{itemize}
 \end{frame}
 
@@ -126,7 +132,7 @@ Introduction
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{\ftexampl{Investor Hat: \textit{does that mean trading is bad? No.}}}
+\begin{frame}{\fttheory{Investor Hat}}
 	\begin{center}
 		\renewcommand{\arraystretch}{1.5}
 		\begin{tabular}{cc|cc}
@@ -140,9 +146,11 @@ Introduction
 \begin{center}
 Which do you prefer?
 \end{center}
+\pause
+If you preferred \textbf{Bet A} to bet \textbf{Bet B} you are \underline{risk-averse}, \textbf{Bet B} to bet \textbf{Bet A}, you are \underline{risk-loving}, while if you were indifferent, you are \underline{risk-neutral}
 \end{frame}
 
-\begin{frame}{\ftexampl{Investor Hat: \textit{does that mean trading is bad? No.}}}
+\begin{frame}{\fttheory{Investor Hat}}
 	\begin{itemize}
 		\item Trading allows people to \underline{share risk}
 		\item 100\% of Ann’s portfolio is in Exxon Mobil (XOM)
@@ -154,8 +162,18 @@ Which do you prefer?
 
 \begin{frame}
 \begin{center}
-\Huge Asset Classes
+\Huge ``Asset'' Classes
 \end{center}
+\end{frame}
+
+\begin{frame}{\ftvocab{Basic Vocabulary}}
+	\begin{itemize}
+		\item An \underline{asset} is anything that produces something in the future
+		\item Examples: tractor, milk cow
+		\item A \underline{security} is a claim to the output of an asset
+		\item Examples: stock, bond
+		\item I will often refer to the study of investments as asset pricing
+	\end{itemize}
 \end{frame}
 
 %-------------------------------------------------------------------------%
@@ -191,13 +209,7 @@ Which do you prefer?
 		\end{tikzpicture}
 	\end{center}
 \end{frame}
-\begin{frame}{\ftexampl{Example}}
-	\begin{itemize}
-			\item The investor has a cash balance of 10\ju and owns 40\% of the firm's stock and 60\% of its bonds
-			\item The firm owes 50\ju (principal and interest) to bondholders and its asset are worth 75\ju
-			\item How much is her portfolio worth?
-	\end{itemize}
-\end{frame}
+
 \begin{frame}{\fttheory{Cash-Bonds-Stocks: An Asset-Based Perspective}}
 	\begin{center}
 		\begin{tikzpicture}
@@ -222,20 +234,6 @@ Which do you prefer?
 		\end{tikzpicture}
 	\end{center}
 \end{frame}
-\begin{frame}{\ftexampl{Example}}
-	\begin{itemize}
-			\item The firm pays 50\ju to bondholders, and the remaining 25\ju to stockholders
-			\item The investor keeps her cash balance of 10\ju and receives 60\%$\times$50\ju$=$30\ju from the firm's bonds and 40\%$\times$25\ju$=$10\ju from the firm's stock
-			\item Her portfolio is worth 50\ju
-	\end{itemize}
-\end{frame}
-\begin{frame}{\ftexampl{Example}}
-	\begin{itemize}
-			\item The investor has a cash balance of 10\ju and owns 40\% of the firm's stock and 60\% of its bonds
-			\item The firm owes 50\ju (principal and interest) to bondholders and its asset are worth 25\ju
-			\item How much is her portfolio worth?
-	\end{itemize}
-\end{frame}
 
 \begin{frame}{\fttheory{Cash-Bonds-Stocks: An Asset-Based Perspective}}
 	\begin{center}
@@ -249,7 +247,7 @@ Which do you prefer?
 			\draw[dashed,ultra thick,color=magenta] (2,-.25) -- (2,4.5);
 			\draw (2,4.5) node[anchor=west]{\color{magenta}Asset Value (25\ju)};
 			% cash
-			\draw[ultra thick] (0,2) -- (8,2) node[anchor=west]{Cash (10\ju)};
+			\draw[ultra thick] (0,2) -- (8,2) node[anchor=west]{Cash (25\ju)};
 			% bonds
 			\draw[ultra thick,color=blue] (0,0) -- (4,4);
 			\draw[ultra thick,color=blue] (4,4) -- (9,4);
@@ -260,13 +258,6 @@ Which do you prefer?
 			\draw (7.5,3) node[anchor=west]{\color{red}Stocks};
 		\end{tikzpicture}
 	\end{center}
-\end{frame}
-\begin{frame}{\ftexampl{Example}}
-	\begin{itemize}
-			\item The firm pays 25\ju to bondholders and the stockholders get nothing 
-			\item The investor keeps her cash balance of 10\ju and receives 60\%$\times$25\ju$=$15\ju from the firm's bonds and 40\%$\times$0\ju$=$0\ju from the firm's stock
-			\item Her portfolio is worth 25\ju
-	\end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -282,10 +273,10 @@ Which do you prefer?
 	In this section, we cover different types of markets and basic market operations
 	\begin{enumerate}
 		\item\textbf{Types of Markets}: direct search, brokered, dealer, and auction markets
-		\item\textbf{Shorting} means borrowing a security, selling it, buying it again, and returning it to its owner
-		\item\textbf{Orders}: market, limit buy/sell, stop-loss buy/sell
 		\item\textbf{Leverage} involves borrowing money to finance the purchase of a security
+		\item\textbf{Shorting} means borrowing a security, selling it, buying it again, and returning it to its owner
 		\item\textbf{Arbitrage} means profiting from the mispricing of two or more securities
+		\item\textbf{Orders}: market, limit buy/sell, stop-loss buy/sell
 	\end{enumerate}
 \end{frame}
 
@@ -361,72 +352,24 @@ Which do you prefer?
 \fi
 
 %=============================================================================%
-%   HOW SECURITIES ARE TRADED: ORDER TYPES                                    %
-%=============================================================================%
-\begin{frame}{\ftdata{Order Execution}}
-\begin{itemize}
-\item Dealers buy securities at the \textit{bid} price and sell at the \textit{ask} price
-\item The \textit{spread} is the cost of trading with the dealer:
-\begin{equation*}
-\text{Spread}=\text{Price}_{\text{Ask}}-\text{Price}_{\text{Bid}}
-\end{equation*}
-\item The two main order types are market and limit/stop.
-\begin{enumerate}
-\item\textbf{Market Order:} execute immediately at best price
-\item\textbf{Limit/Stop Orders:} buy or sell at a specified price or better
-\end{enumerate}
-\end{itemize}
-\end{frame}
-
-%=============================================================================%
-%   PRICE-CONTINGENT ORDERS                                                   %
-%=============================================================================%
-\begin{frame}{\ftdata{Limit/Stop Orders}}
-\begin{center}
-\begin{tabular}{l|ll}
-& \textbf{Price falls below limit} & \textbf{Price rises above limit} \\ \hline
-\textbf{Buy} & 1. Limit buy order & 2. Stop-buy order \\
-\textbf{Sell} & 3. Stop-loss order & 4. Limit sell order
-\end{tabular}
-\end{center}
-\begin{enumerate}
-	\item buy (long) when the stock's price falls below its value
-	\item if already short, cover when the price rises (cut your loss)
-	\item if already long, sell when the stock's price falls (cut your loss)
-	\item sell (short) when the stock's price rises above its value
-\end{enumerate}
-\end{frame}
-
-%=============================================================================%
 %   MARGIN                                                                    %
 %=============================================================================%
 \begin{frame}{\fttheory{Leverage}}
 \begin{itemize}
 \item Investors can borrow from financial institutions to finance the purchase of securities
 \item We call this buying on margin
-\item There are two margin requirements
-\item [1.] Initial Margin Requirement (IMR)
-\begin{itemize}
-\item Minimum percent of initial investor equity
-\item Set by Fed under Reg T, currently 50\% for stocks
-\end{itemize}
-\item [2.] Maintenance Margin Requirement (MMR)
-\begin{itemize}
-\item Minimum amount equity can be before additional funds must be put into account
-\item Exchanges mandate minimum MMR of 25\%
-\end{itemize}
-\item A broker makes a margin call when she informs the investor that he must either put up additional equity or liquidate his position
 \end{itemize}
 \end{frame}
 
 %=============================================================================%
 %   MARGIN                                                                    %
 %=============================================================================%
-\begin{frame}{\ftdata{Leverage: Implementation}}
+\begin{frame}{\ftdata{Leverage: Practical Considerations}}
 \begin{itemize}
-\item Investors can borrow from financial institutions to finance the purchase of securities
-\item We call this buying on margin
+\item Retail investors face \underline{margin requirements} that restrict the amount that they can borrow
+\item Institutional investors (e.g. pension, mutual, hedge funds) negotiate terms with the institutions from which they borrow
 \item There are two margin requirements
+\vfill
 \item [1.] Initial Margin Requirement (IMR)
 \begin{itemize}
 \item Minimum percent of initial investor equity
@@ -437,7 +380,8 @@ Which do you prefer?
 \item Minimum amount equity can be before additional funds must be put into account
 \item Exchanges mandate minimum MMR of 25\%
 \end{itemize}
-\item A broker makes a margin call when she informs the investor that he must either put up additional equity or liquidate his position
+\vfill
+\item A broker makes a \underline{margin call} when she informs the investor that he must either put up more equity or liquidate his position
 \end{itemize}
 \end{frame}
 
@@ -513,6 +457,7 @@ Which do you prefer?
 \item In one year's time, you'll owe the bank 100 USD but the T-bill will pay you 100 USD
 \end{itemize}
 \end{frame}
+
 %============================================================================%
 %   ARBITRAGE                                                                %
 %============================================================================%
@@ -537,4 +482,41 @@ Net Cash Flow & +.9849 USD & 0 USD
 \end{description}
 \end{itemize}
 \end{frame}
+
+%=============================================================================%
+%   HOW SECURITIES ARE TRADED: ORDER TYPES                                    %
+%=============================================================================%
+\begin{frame}{\ftdata{Order Execution and Order Types}}
+\begin{itemize}
+\item Although we will abstract from the details of order execution and types of orders, it's important to know the basics
+\item Dealers buy securities at the \underline{bid} price and sell at the \underline{ask} price
+\item The \underline{spread} is the cost of trading with the dealer:
+\begin{equation*}
+\text{Spread}=\text{Price}_{\text{Ask}}-\text{Price}_{\text{Bid}}
+\end{equation*}
+\item The two main order types are market and limit/stop
+\item\underline{Market Order:} execute immediately at best price
+\item\underline{Limit or Stop Orders:} buy or sell at a specified price or better
+\end{itemize}
+\end{frame}
+
+%=============================================================================%
+%   PRICE-CONTINGENT ORDERS                                                   %
+%=============================================================================%
+\begin{frame}{\ftdata{Limit/Stop Orders}}
+\begin{center}
+\begin{tabular}{l|ll}
+& \textbf{Price falls below limit} & \textbf{Price rises above limit} \\ \hline
+\textbf{Buy} & 1. Limit buy order & 2. Stop-buy order \\
+\textbf{Sell} & 3. Stop-loss order & 4. Limit sell order
+\end{tabular}
+\end{center}
+\begin{enumerate}
+	\item buy (long) when the stock's price falls below its value
+	\item if already short, cover when the price rises (cut your loss)
+	\item if already long, sell when the stock's price falls (cut your loss)
+	\item sell (short) when the stock's price rises above its value
+\end{enumerate}
+\end{frame}
+
 \end{document}
