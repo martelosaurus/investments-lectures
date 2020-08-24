@@ -1,15 +1,50 @@
 \documentclass{beamer}
+\usepackage{tikz}
+\newcommand{\ju}{{\scriptsize m USD }}
+\renewcommand{\arraystretch}{1.5}
 \input{../jordan_header}
 \begin{document}
 
-\begin{frame}{\ftheader{Investments}}
+\begin{frame}
+\begin{center}
+\Huge Lecture 0.1: \\
+Introduction
+\end{center}
+\end{frame}
+
+\begin{frame}{\ftheader{Lecture 0.1: Introduction}}
+	\begin{itemize}
+		\item Lay down some basic vocabulary
+		\item Distinguish speculation from investing
+		\item Asset classes and the markets in which they trade
+		\item Basic market operations (shorting, leverage, arbitrage)
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{\ftvocab{Basic Vocabulary}}
+	\begin{itemize}
+		\item An \underline{asset} is anything that produces something in the future
+		\item Examples: tractor, milk cow
+		\item A \underline{security} is a claim to the output of an asset
+		\item Examples: stock, bond
+		\item I will often refer to the study of investments as asset pricing
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\Huge NPV Revisited
+\end{center}
+\end{frame}
+
+\begin{frame}{\ftheader{NPV Revisited}}
 	\begin{itemize}
 		\item \underline{Finance} is the study of investment/divestment decisions
 		\item E.g. buy a stock, sell a house, build a factory
 		\item We use the Net Present Value (NPV) to make such decisions 
 		\item E.g. consider a security that pays $1\musd$ in one year and $1\musd$ in two years (could be a stock paying dividends or a bond paying coupons). You know that 
 		\begin{equation}
-			\text{NPV}=-.75\musd+\frac{1\musd}{1.02} + \frac{1\musd}{1.02^{2}}=>0.
+			\text{NPV}=-.75\musd+\frac{1\musd}{1.02}.
 		\end{equation}
 		You should invest. You can either invest in the project, or earn 2\% on the alternative 
 		\item Stocks, bonds, and derivatives are not so simple
@@ -19,34 +54,55 @@
 \begin{frame}{\ftexampl{Q1: What if the NPV is negative?}}
 	\begin{itemize}
 		\item You can't sell a factory that you don't own, but you \textit{can} sell a stock/bond/derivative that you don't own. This is \textit{shorting}.
+		\item In this case,
+		\begin{equation}
+			\text{NPV}=.75\musd-\frac{1\musd}{1.02}>0
+		\end{equation}
 	\end{itemize}
 \end{frame}
 
 \begin{frame}{\ftexampl{Q2: What if you finance your investment with debt?}}
-
+	\begin{itemize}
+	\item In this case,
+		\begin{equation}
+			\text{NPV}=-.75\musd+\frac{1\musd}{1.02}.
+		\end{equation}
+	\end{itemize}
 \end{frame}
 
 \begin{frame}{\ftexampl{Q3: What if different terms have different yields?}}
-
+	\begin{itemize}
+	\item In this case,
+		\begin{equation}
+			\text{NPV}=-.75\musd+\frac{1\musd}{1.01}+\frac{1\musd}{1.03}.
+		\end{equation}
+	\end{itemize}
 \end{frame}
 
 \begin{frame}{\ftexampl{Q4: What if cash-flows are risky?}}
-
-\end{frame}
-
-\begin{frame}{\ftexampl{Q5: What if cash-flows are correlated with other cash-flows?}}
-
-\end{frame}
-
-\begin{frame}{\ftvocab{Asset Prices}}
 	\begin{itemize}
-		\item An \underline{asset} is anything that produces something in the future
-		\item Examples: tractor, milk cow
-		\item A \underline{security} is a claim to the output of an asset
-		\item Examples: stock, bond
-		\item I will often refer to the study of investments as asset pricing
+	\item In this case,
+		\begin{equation}
+			\text{NPV}=-.75\musd+\frac{1\musd}{1.02}.
+		\end{equation}
 	\end{itemize}
 \end{frame}
+
+\begin{frame}{\ftexampl{Q5: What about the economy?}}
+	\begin{itemize}
+	\item In this case,
+		\begin{equation}
+			\text{NPV}=-.75\musd+\frac{1\musd}{1.02}.
+		\end{equation}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\Huge Speculation vs. Investing
+\end{center}
+\end{frame}
+
 
 \begin{frame}{\fttheory{Two Hats}}
 	\begin{itemize}
@@ -96,4 +152,389 @@ Which do you prefer?
 	\end{itemize}
 \end{frame}
 
+\begin{frame}
+\begin{center}
+\Huge Asset Classes
+\end{center}
+\end{frame}
+
+%-------------------------------------------------------------------------%
+% overview
+%-------------------------------------------------------------------------%
+\begin{frame}{\fttheory{Cash-Bonds-Stocks: An Asset-Based Perspective}}
+	\begin{itemize}
+		\item Remember that \underline{assets} produce something of value, while \underline{securities} are claims to the output of the asset
+		\item The value of a firm's assets is uncertain, and depends on how well the firm performs, the state of the economy, and so on
+		\item Suppose an investor's portfolio contains some cash, some of the firm's bonds, and some of its stock
+		\item How does the value of her portfolio vary with the value of the firm's assets?
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{\fttheory{Cash-Bonds-Stocks: An Asset-Based Perspective}}
+	\begin{center}
+		\begin{tikzpicture}
+			\draw[->] (-.25,0) -- (8,0) node[anchor=west]{Asset Value};
+			\draw[->] (0,-.25) -- (0,4.5);
+			\draw[dashed] (4,0) node[anchor=north]{Debt} -- (4,4.5);
+			\draw[dashed] (0,0) -- (9,4.5);
+			\draw (-.25,2) node[rotate=90]{Security Payoff};
+			% cash
+			\draw[ultra thick] (0,2) -- (8,2) node[anchor=west]{Cash};
+			% bonds
+			\draw[ultra thick,color=blue] (0,0) -- (4,4);
+			\draw[ultra thick,color=blue] (4,4) -- (9,4);
+			\draw (1.5,3) node[anchor=west]{\color{blue}Bonds};
+			% stocks
+			\draw[ultra thick,color=red] (0,0) -- (4,0);
+			\draw[ultra thick,color=red] (4,0) -- (9,5);
+			\draw (7.5,3) node[anchor=west]{\color{red}Stocks};
+		\end{tikzpicture}
+	\end{center}
+\end{frame}
+\begin{frame}{\ftexampl{Example}}
+	\begin{itemize}
+			\item The investor has a cash balance of 10\ju and owns 40\% of the firm's stock and 60\% of its bonds
+			\item The firm owes 50\ju (principal and interest) to bondholders and its asset are worth 75\ju
+			\item How much is her portfolio worth?
+	\end{itemize}
+\end{frame}
+\begin{frame}{\fttheory{Cash-Bonds-Stocks: An Asset-Based Perspective}}
+	\begin{center}
+		\begin{tikzpicture}
+			\draw[->] (-.25,0) -- (8,0) node[anchor=west]{Asset Value};
+			\draw[->] (0,-.25) -- (0,4.5);
+			\draw[dashed] (4,0) node[anchor=north]{Debt (50\ju)} -- (4,4.5);
+			\draw[dashed] (0,0) -- (9,4.5);
+			\draw (-.25,2) node[rotate=90]{Security Payoff};
+			% asset value
+			\draw[dashed,ultra thick,color=magenta] (6,-.25) -- (6,4.5);
+			\draw (6,1) node[anchor=west]{\color{magenta}Asset Value (75\ju)};
+			% cash
+			\draw[ultra thick] (0,2) -- (8,2) node[anchor=west]{Cash (25\ju)};
+			% bonds
+			\draw[ultra thick,color=blue] (0,0) -- (4,4);
+			\draw[ultra thick,color=blue] (4,4) -- (9,4);
+			\draw (1.5,3) node{\color{blue}Bonds};
+			% stocks
+			\draw[ultra thick,color=red] (0,0) -- (4,0);
+			\draw[ultra thick,color=red] (4,0) -- (9,5);
+			\draw (7.5,3) node[anchor=west]{\color{red}Stocks};
+		\end{tikzpicture}
+	\end{center}
+\end{frame}
+\begin{frame}{\ftexampl{Example}}
+	\begin{itemize}
+			\item The firm pays 50\ju to bondholders, and the remaining 25\ju to stockholders
+			\item The investor keeps her cash balance of 10\ju and receives 60\%$\times$50\ju$=$30\ju from the firm's bonds and 40\%$\times$25\ju$=$10\ju from the firm's stock
+			\item Her portfolio is worth 50\ju
+	\end{itemize}
+\end{frame}
+\begin{frame}{\ftexampl{Example}}
+	\begin{itemize}
+			\item The investor has a cash balance of 10\ju and owns 40\% of the firm's stock and 60\% of its bonds
+			\item The firm owes 50\ju (principal and interest) to bondholders and its asset are worth 25\ju
+			\item How much is her portfolio worth?
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{\fttheory{Cash-Bonds-Stocks: An Asset-Based Perspective}}
+	\begin{center}
+		\begin{tikzpicture}
+			\draw[->] (-.25,0) -- (8,0) node[anchor=west]{Asset Value};
+			\draw[->] (0,-.25) -- (0,4.5);
+			\draw[dashed] (4,0) node[anchor=north]{Debt (50\ju)} -- (4,4.5);
+			\draw[dashed] (0,0) -- (9,4.5);
+			\draw (-.25,2) node[rotate=90]{Security Payoff};
+			% asset value
+			\draw[dashed,ultra thick,color=magenta] (2,-.25) -- (2,4.5);
+			\draw (2,4.5) node[anchor=west]{\color{magenta}Asset Value (25\ju)};
+			% cash
+			\draw[ultra thick] (0,2) -- (8,2) node[anchor=west]{Cash (10\ju)};
+			% bonds
+			\draw[ultra thick,color=blue] (0,0) -- (4,4);
+			\draw[ultra thick,color=blue] (4,4) -- (9,4);
+			\draw (1.5,3) node{\color{blue}Bonds};
+			% stocks
+			\draw[ultra thick,color=red] (0,0) -- (4,0);
+			\draw[ultra thick,color=red] (4,0) -- (9,5);
+			\draw (7.5,3) node[anchor=west]{\color{red}Stocks};
+		\end{tikzpicture}
+	\end{center}
+\end{frame}
+\begin{frame}{\ftexampl{Example}}
+	\begin{itemize}
+			\item The firm pays 25\ju to bondholders and the stockholders get nothing 
+			\item The investor keeps her cash balance of 10\ju and receives 60\%$\times$25\ju$=$15\ju from the firm's bonds and 40\%$\times$0\ju$=$0\ju from the firm's stock
+			\item Her portfolio is worth 25\ju
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\Huge Asset Markets
+\end{center}
+\end{frame}
+
+%=============================================================================%
+%   MARGIN, SHORTING, AND ARBITRAGE                                           %
+%=============================================================================%
+\begin{frame}{\fttheory{Asset Markets}}
+	In this section, we cover different types of markets and basic market operations
+	\begin{enumerate}
+		\item\textbf{Types of Markets}: direct search, brokered, dealer, and auction markets
+		\item\textbf{Shorting} means borrowing a security, selling it, buying it again, and returning it to its owner
+		\item\textbf{Orders}: market, limit buy/sell, stop-loss buy/sell
+		\item\textbf{Leverage} involves borrowing money to finance the purchase of a security
+		\item\textbf{Arbitrage} means profiting from the mispricing of two or more securities
+	\end{enumerate}
+\end{frame}
+
+%=============================================================================%
+%   SECURITIES MARKETS                                                        %
+%=============================================================================%
+\begin{frame}{\fttheory{Types of Markets}}
+	\begin{enumerate}
+		\item \textbf{Direct Search Markets}
+		\begin{itemize}
+			\item Buyers and sellers locate one another on their own 
+		\end{itemize}
+			\item \textbf{Brokered Markets}
+		\begin{itemize}
+			\item Third party assists in locating buyer or seller (e.g. realtors in housing, investment banks in corporate transactions)
+			\item Does not hold inventory
+		\end{itemize}
+		\item \textbf{Dealer Markets}
+		\begin{itemize}
+			\item Third party acts as intermediate buyer or seller (e.g. cars, corporate bonds)
+			\item Holds inventory
+		\end{itemize}
+		\item \textbf{Auction Markets}
+		\begin{itemize}
+			\item Brokers and dealers trade in one location (e.g. stocks, currencies, Treasuries)
+			\item Trading is more or less continuous
+		\end{itemize}
+	\end{enumerate}
+\end{frame}
+
+%============================================================================%
+%   SHORTING                                                                 %
+%============================================================================% 
+\begin{frame}{\fttheory{Shorting}}
+\begin{itemize}
+\item \underline{Shorting} involves borrowing a security, selling it, buying it again, and returning it to its owner
+\item Long position
+\begin{itemize}
+\item Buy first, sell later
+\item Bullish: bet on price increase, buy low, sell high
+\end{itemize}
+\item Short position
+\begin{itemize}
+\item Sell first, buy later
+\item Bearish: bet on price decrease, sell high, buy low
+\end{itemize}
+\item \textit{It should be as if the person who lent you the security never lent you the security. All dividends, coupon payments, etc. should paid to the lender during the life of the trade.}
+\end{itemize}
+\end{frame}
+
+%============================================================================%
+%   SHORTING                                                                 %
+%============================================================================% 
+\section{Shorting}
+\begin{frame}{\ftdata{Shorting: Implementation}}
+\begin{itemize}
+\item In the real-world, 
+\item Borrow security from institution; must post margin
+\item Institution sells security, deposits proceeds, margin in margin account (you cannot withdraw proceeds until you ``cover'')
+\item Cover position: buy security, return to institution 
+\end{itemize}
+\end{frame}
+
+%=============================================================================%
+%   CLEARINGHOUSE                                                             %
+%=============================================================================%
+\iffalse
+\begin{frame}{Application: Clearinghouses}
+	\begin{center}
+		\textbf{TODO: include discussion (possible figure) about clearinghouse from Chapter 17 (pg. 551)}
+	\end{center}
+\end{frame}
+\fi
+
+%=============================================================================%
+%   HOW SECURITIES ARE TRADED: ORDER TYPES                                    %
+%=============================================================================%
+\begin{frame}{\ftdata{Order Execution}}
+\begin{itemize}
+\item Dealers buy securities at the \textit{bid} price and sell at the \textit{ask} price
+\item The \textit{spread} is the cost of trading with the dealer:
+\begin{equation*}
+\text{Spread}=\text{Price}_{\text{Ask}}-\text{Price}_{\text{Bid}}
+\end{equation*}
+\item The two main order types are market and limit/stop.
+\begin{enumerate}
+\item\textbf{Market Order:} execute immediately at best price
+\item\textbf{Limit/Stop Orders:} buy or sell at a specified price or better
+\end{enumerate}
+\end{itemize}
+\end{frame}
+
+%=============================================================================%
+%   PRICE-CONTINGENT ORDERS                                                   %
+%=============================================================================%
+\begin{frame}{\ftdata{Limit/Stop Orders}}
+\begin{center}
+\begin{tabular}{l|ll}
+& \textbf{Price falls below limit} & \textbf{Price rises above limit} \\ \hline
+\textbf{Buy} & 1. Limit buy order & 2. Stop-buy order \\
+\textbf{Sell} & 3. Stop-loss order & 4. Limit sell order
+\end{tabular}
+\end{center}
+\begin{enumerate}
+	\item buy (long) when the stock's price falls below its value
+	\item if already short, cover when the price rises (cut your loss)
+	\item if already long, sell when the stock's price falls (cut your loss)
+	\item sell (short) when the stock's price rises above its value
+\end{enumerate}
+\end{frame}
+
+%=============================================================================%
+%   MARGIN                                                                    %
+%=============================================================================%
+\begin{frame}{\fttheory{Leverage}}
+\begin{itemize}
+\item Investors can borrow from financial institutions to finance the purchase of securities
+\item We call this buying on margin
+\item There are two margin requirements
+\item [1.] Initial Margin Requirement (IMR)
+\begin{itemize}
+\item Minimum percent of initial investor equity
+\item Set by Fed under Reg T, currently 50\% for stocks
+\end{itemize}
+\item [2.] Maintenance Margin Requirement (MMR)
+\begin{itemize}
+\item Minimum amount equity can be before additional funds must be put into account
+\item Exchanges mandate minimum MMR of 25\%
+\end{itemize}
+\item A broker makes a margin call when she informs the investor that he must either put up additional equity or liquidate his position
+\end{itemize}
+\end{frame}
+
+%=============================================================================%
+%   MARGIN                                                                    %
+%=============================================================================%
+\begin{frame}{\ftdata{Leverage: Implementation}}
+\begin{itemize}
+\item Investors can borrow from financial institutions to finance the purchase of securities
+\item We call this buying on margin
+\item There are two margin requirements
+\item [1.] Initial Margin Requirement (IMR)
+\begin{itemize}
+\item Minimum percent of initial investor equity
+\item Set by Fed under Reg T, currently 50\% for stocks
+\end{itemize}
+\item [2.] Maintenance Margin Requirement (MMR)
+\begin{itemize}
+\item Minimum amount equity can be before additional funds must be put into account
+\item Exchanges mandate minimum MMR of 25\%
+\end{itemize}
+\item A broker makes a margin call when she informs the investor that he must either put up additional equity or liquidate his position
+\end{itemize}
+\end{frame}
+
+%============================================================================%
+%   MARGIN                                                                   %
+%============================================================================% 
+\iffalse
+\begin{frame}{\ftexampl{Leverage}}
+	\small
+	On 2008-01-31, Microsoft (MSFT) traded for 32.6 USD. Suppose you bought 1,000 shares with 20,000 USD of capital. What was your margin in percent and in USD? Did it satisfy the IMR? As of 2008-02-29, the value of your position fell 16.2273\% (accounting for dividends). What was your margin in percent and in USD? Did it satisfy the MMR? Assume you can borrow at 9.569\%\footnote{This (example) rate comes from TD}.  
+	\pause
+		\begin{enumerate}
+			\item{\color{blue}Your position (assets) was 32,600 USD. You borrowed 12,600 USD (liabilities). Your margin is 20,000 USD (equity) or 61.3497\% (equity over assets). Your margin satisfied the IMR.}
+			\item{\color{blue}The new value of your position (assets) was 27,309.9002 USD and your new liability was 20,159.4833. Your margin is assets minus liabilities (equity): 7150.4169 USD or 26.1825\%. Your margin satisfied the MMR.}
+		\end{enumerate}
+\end{frame}
+\fi
+\begin{frame}{\ftexampl{Leverage}}
+	\small
+	On 2008-01-31, Microsoft (MSFT) traded for 32.6 USD. Suppose you bought 1,000 shares with 20,000 USD of capital. What was your margin in percent and in USD? Did it satisfy the IMR? As of 2008-02-29, the value of your position fell 16.2273\% (accounting for dividends). What was your margin in percent and in USD? Did it satisfy the MMR? Assume you can borrow at 9.569\%\footnote{This (example) rate comes from TD}.  
+	\pause
+		\begin{enumerate}
+			\item{\color{blue}Your position (assets) was 32,600 USD. You borrowed 12,600 USD (liabilities). Your margin is 20,000 USD (equity) or 61.3497\% (equity over assets). Your margin satisfied the IMR.}
+			\item{\color{blue}The new value of your position (assets) was 27,309.9002 USD and your new liability was 12,700.4745 USD. Your margin is assets minus liabilities (equity): 14,609.4257 USD or 53.495\%. Your margin satisfied the MMR.}
+		\end{enumerate}
+\end{frame}
+
+%============================================================================%
+%   ARBITRAGE                                                                %
+%============================================================================% 
+\begin{frame}{\fttheory{Arbitrage}}
+\begin{itemize}
+\item What if the same security trades for different prices in different markets?
+\item Suppose gold trades for 850 in New York and 900 in London.
+\item You \underline{buy} for 850 in New York, \underline{sell} for 900 in London, make 50. 
+\item New York is flooded with buy orders and London is flooded with sell orders. Prices eventually equalize.
+\end{itemize}
+\end{frame}
+
+%============================================================================%
+%   ARBITRAGE                                                                %
+%============================================================================%
+\begin{frame}{\ftexampl{Arbitrage}}
+\begin{itemize}
+\item On 2020-01-28, the yield on a one-year T-bill was 1.53\%. 
+\item What's the fair price?
+\begin{align*}
+	\text{price}=\frac{100\text{ USD}}{1+.0153}=98.4931\text{ USD}
+\end{align*}
+\item Because T-bills are risk-free, we ignore margin requirements
+\item Assume that you can borrow from and lend to a counterparty (call it a ``bank'') for a year at 1.53\%
+\end{itemize}
+\end{frame}
+
+%============================================================================%
+%   ARBITRAGE                                                                %
+%============================================================================%
+\begin{frame}{\ftexampl{Arbitrage}}
+\begin{itemize}
+\item What if the T-bill is trading for 97.5082 USD? 
+\item Cash Flow Table
+\begin{table}
+\begin{center}
+\begin{tabular}{lrr}
+	& \textbf{2020-01-28} & \textbf{2021-01-28} \\ \hline
+	Buy the T-bill & -97.5082 USD & +100 USD \\
+	Bank & +98.4931 USD & -100 USD\\ \hline
+	Net Cash Flow & +.9849 USD & 0 USD 
+\end{tabular}
+\end{center}
+\end{table}
+\item Borrow 98.4931 USD, use 97.5082 USD of it to buy the T-bill
+\item In one year's time, you'll owe the bank 100 USD but the T-bill will pay you 100 USD
+\end{itemize}
+\end{frame}
+%============================================================================%
+%   ARBITRAGE                                                                %
+%============================================================================%
+\begin{frame}{\ftexampl{Arbitrage}}
+\begin{itemize}
+\item What if the T-bill is trading for 99.4780 USD?
+\item Cash Flow Table
+\begin{table}
+\begin{center}
+\begin{tabular}{lrr}
+& \textbf{2020-01-28} & \textbf{2021-01-28} \\ \hline
+Sell the Bond & +99.4780 USD & -100 USD \\
+Deposit the Proceeds & -98.4931 USD & +100 USD \\ \hline
+Net Cash Flow & +.9849 USD & 0 USD
+\end{tabular}
+\end{center}
+\end{table}
+\item Your friend Eva at the bank owns the T-bill 
+\begin{description}
+\item[You:] Hey Eva, can I borrow your T-bill? 
+\item[Eva:] You bet. Just pay me 100 USD in one year
+\end{description}
+\end{itemize}
+\end{frame}
 \end{document}
