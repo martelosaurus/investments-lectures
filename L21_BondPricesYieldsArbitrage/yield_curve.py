@@ -1,3 +1,9 @@
+"""
+Yield curve
+
+Currently performs a cubic approximation on the reported yields
+"""
+
 def y11_fun(y01,y02):
 	y01 = y01/100.
 	y02 = y02/100.
@@ -6,6 +12,9 @@ def y11_fun(y01,y02):
 
 def prc(yld,trm):
 	return round(100./(1.+trm*yld/100.),4)
+
+for t in T:
+	
 
 Y = [1.72,1.47,1.38]
 T = list(range(1,4))
