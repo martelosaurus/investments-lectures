@@ -9,6 +9,47 @@
 \newcommand{\ftheader}[1]{\fcolorbox{lightgray}{lightgray}{\color{black}\textbf{#1}\hspace{\textwidth}}}
 \begin{document}
 
+\begin{frame}{\ftdata{Treasury Bills\footnote{Language from BKM}}}
+	\begin{itemize}
+		\item Most marketable of all money market instruments
+		\item Investors buy the bills at a discount from the face value
+		\item At maturity, the government pays the investor the face value of the bill
+		\item The difference between the purchase price and the face value is the investor's earnings
+		\item T-bills are issued with maturities of 4, 13, 26, and 52 weeks
+		\item T-bills are \underline{highly} liquid
+		\item The income earned on T-bills is taxable at the federal level, it is exempt from state and local taxes
+	\end{itemize}
+\end{frame}
+
+%-----------------------------------------------------------------------------%
+%   THE BOND MARKET                                                           %
+%-----------------------------------------------------------------------------%
+\begin{frame}{\ftdata{Government Debt}}
+\begin{itemize}
+\item Treasury Notes and Bonds
+\begin{itemize}
+\item Notes: up to (and including) 10 year maturities
+\item Bonds: up to (and including) 30 year maturities
+\end{itemize}
+\item Treasury Inflation Protected Securities (TIPS).
+\begin{itemize}
+\item Principal adjusted for changes in the CPI
+\item Marked with a trailing ``i'' in quote sheets
+\end{itemize}
+\item Municipal Bonds.
+\begin{itemize}
+\item Issued by state and local governments to finance capital improvement projects (e.g. roads, schools, parks). 
+\item Interest income is exempt from state and local taxation.
+\end{itemize}
+\item Federal Agency Debt.
+\begin{itemize}
+\item Bonds issued by Government Sponsored Enterprises (GSEs) to finance purchase of consumer debt
+\item Most are home-mortgage-related: FNMA (``Fannie''), FHLMC (''Freddie''), GNMA (``Ginnie'')
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
 \begin{frame}{\ftheader{Bond Prices, Yields, and Arbitrage}}
 	\begin{itemize}
 		\item We're going to study the \underline{yield curve}
@@ -21,58 +62,25 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{\fttheory{Arbitrage}}
-	\begin{itemize}
-		\item Consider a 1-year, 100 USD, zero-coupon bond that compounds annually
-		\item Suppose that you can borrow and lend for 1 year at 10\% (which compounds annually)
-		\item Now
-		\begin{equation}
-			p_{0}\overset{\text{``should''}}{=}\frac{100\text{ USD}}{1+0.1}=90.9091
-		\end{equation}
-		\item Suppose that $p_{0}\overset{\text{``actual''}}{=}100$. 
-	\end{itemize}
+\begin{frame}
+	\begin{center}
+		\textbf{\Large Bond Arbitrage}
+	\end{center}
 \end{frame}
 
-\begin{frame}{Arbitrage}
-	\begin{itemize}
-		\item Suppose that $p_{0}\overset{\text{``actual''}}{=}90$. 
-		\begin{center}
-		\begin{tabular}{l|rr}
-			\textbf{Security} & \textbf{CF}$_{0}$ & \textbf{CF}$_{1}$ \\ \hline
-			Bond & $-90.0000$ & +100\\
-			Borrow & $+90.9091$ & -100\\ \hline
-				& $+0.9091$ & 0
-		\end{tabular}
-		\end{center}
-		\item On date 0 (today), borrow 90.9091 USD, use 90 of it to buy the bond, pocket the .9091. On date 1 (in one year), collect the 100 from the bond and use it to pay off your loan.
-	\end{itemize}
-\end{frame}
-
-\begin{frame}{Arbitrage}
-	\begin{itemize}
-		\item Suppose that $p_{0}\overset{\text{``actual''}}{=}91$. 
-		\begin{center}
-		\begin{tabular}{l|rr}
-			\textbf{Security} & \textbf{CF}$_{0}$ & \textbf{CF}$_{1}$ \\ \hline
-			Bond & $+91.0000$ & -100\\
-			Lend & $-90.9091$ & +100\\ \hline
-				& $0.9091$ & 0
-		\end{tabular}
-		\end{center}
-		\item On date 0 (today), short the bond, collect 91 USD, lend 90.9091 of it, and pocket the .9091. On date 1 (in one year), collect the 100 USD from your loan and pay 100 to the person whose bond you shorted.
-	\end{itemize}
+\begin{frame}{\fttheory{Bond Arbitrage}}
+	\begin{center}
+		\textbf{\Large See introductory lecture}
+	\end{center}
 \end{frame}
 
 \begin{frame}
-	\begin{itemize}
-		\item These portfolios were ``free'' in the sense that they did not require any up-front capital
-		\item If one trader observes the mispricing, she will be able to exploit it and earn arbitrage profits
-		\item As more and more traders enter the market to buy (or sell) the bond, the price converges to its ``should'' price
-	\end{itemize}
+	\begin{center}
+		\textbf{\Large The Yield Curve}
+	\end{center}
 \end{frame}
 
-\section{Yield Curve}
-\begin{frame}
+\begin{frame}{\fttheory{Yield Curve}}
 	\begin{itemize}
 		\item For each term (e.g. 1 month, 1 year, 30 years), the yield curve tells us the yield of the corresponding zero-coupon bond
 		\item Example 1: if the 10-year yield is 1.61\% (as read from the yield curve), then a 10-year zero coupon bond should have yield 1.61\% and should trade for
@@ -87,19 +95,19 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{A typical yield curve}
-\begin{center}
-	\includegraphics[scale=.55]{xs20190131}
-\end{center}
+\begin{frame}{\ftdata{A typical yield curve}}
+	\begin{center}
+		\includegraphics[scale=.55]{xs20190131}
+	\end{center}
 \end{frame}
 
-\begin{frame}{Entering recession}
+\begin{frame}{\ftdata{Entering a recession}}
 	\begin{center}
 		\includegraphics[scale=.55]{xs20070501}
 	\end{center}
 \end{frame}
 
-\begin{frame}{Why are there different rates?} 
+\begin{frame}{\fttheory{Why are there different rates?}}
 	\begin{itemize}
 		\item Why are there different rates? Why isn't there just one rate for all terms?
 		\item The shape of the yield curve is pinned-down by something called a \emph{stochatic discount factor}, the discussion of which is beyond the scope of this course\footnote{The interested student should study \textit{Optimal Control Theory}}
@@ -108,10 +116,10 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{In the time-series...}
-\begin{center}
-	\includegraphics[scale=.55]{ts12240}
-\end{center}
+\begin{frame}{\ftdata{In the time-series...}}
+	\begin{center}
+		\includegraphics[scale=.55]{ts12240}
+	\end{center}
 \end{frame}
 
 % Reference
@@ -177,7 +185,7 @@
 \fi
 
 % A Multiyear Investor
-\begin{frame}{Forward Rates (One-Month)}
+\begin{frame}{\fttheory{Forward Rates (One-Month)}}
 	\begin{figure}[H]
 		\begin{center}
 			\begin{tikzpicture}
@@ -207,7 +215,7 @@
 \end{frame}
 
 % A Multiyear Investor
-\begin{frame}{Forward Rates (One-Month)}
+\begin{frame}{\fttheory{Forward Rates (One-Month)}}
 	\begin{figure}[H]
 		\begin{center}
 			\begin{tikzpicture}
@@ -237,7 +245,7 @@
 	\end{itemize}
 	}
 \end{frame}
-\begin{frame}{Forward Rates}
+\begin{frame}{\ftexampl{Forward Rates}}
 $_0y_1=1.57\%$ and $_0y_2=1.58\%$. Is the market optimistic or pessimistic about the economy (in the short-term)? What did the market expect the 1-month yield to be in one month ($_1y_1$)?
 	\pause
 	{\color{blue}
