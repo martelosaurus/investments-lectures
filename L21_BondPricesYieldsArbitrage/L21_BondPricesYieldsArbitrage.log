@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.6.6)  30 AUG 2020 18:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.6.6)  30 AUG 2020 18:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -891,38 +891,38 @@ Dictionary: translator-theorem-dictionary, Language: English
 ) (./L21_BondPricesYieldsArbitrage.nav) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for U+msa on input line 30.
+LaTeX Font Info:    Try loading font information for U+msa on input line 35.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 30.
+LaTeX Font Info:    Try loading font information for U+msb on input line 35.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 30.
+line 35.
 
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-Overfull \hbox (196.0112pt too wide) in paragraph at lines 30--30
+Overfull \hbox (196.0112pt too wide) in paragraph at lines 35--35
  []|[][][]  
  []
 
 [2
 
 ]
-Overfull \hbox (56.15067pt too wide) in paragraph at lines 42--42
+Overfull \hbox (56.15067pt too wide) in paragraph at lines 47--47
  []|[][][]  
  []
 
 [3
 
 ]
-Overfull \hbox (85.1668pt too wide) in paragraph at lines 70--70
+Overfull \hbox (85.1668pt too wide) in paragraph at lines 75--75
  []|[][][]  
  []
 
@@ -932,16 +932,16 @@ Overfull \hbox (85.1668pt too wide) in paragraph at lines 70--70
 <R_20200813_3.pdf, id=120, 614.295pt x 794.97pt>
 File: R_20200813_3.pdf Graphic file (type pdf)
 <use R_20200813_3.pdf>
-Package pdftex.def Info: R_20200813_3.pdf  used on input line 76.
+Package pdftex.def Info: R_20200813_3.pdf  used on input line 81.
 (pdftex.def)             Requested size: 307.14674pt x 397.48402pt.
 
-Overfull \vbox (137.3374pt too high) detected at line 76
+Overfull \vbox (137.3374pt too high) detected at line 81
  []
 
 [5
 
  <./R_20200813_3.pdf>]
-Overfull \hbox (33.1106pt too wide) in paragraph at lines 108--108
+Overfull \hbox (33.1106pt too wide) in paragraph at lines 113--113
  []|[][][]  
  []
 
@@ -951,45 +951,45 @@ Overfull \hbox (33.1106pt too wide) in paragraph at lines 108--108
 <CUSIP_912828HR_col.pdf, id=188, 462.52798pt x 346.89601pt>
 File: CUSIP_912828HR_col.pdf Graphic file (type pdf)
 <use CUSIP_912828HR_col.pdf>
-Package pdftex.def Info: CUSIP_912828HR_col.pdf  used on input line 115.
+Package pdftex.def Info: CUSIP_912828HR_col.pdf  used on input line 120.
 (pdftex.def)             Requested size: 231.26341pt x 173.44757pt.
 
-Overfull \hbox (134.65898pt too wide) in paragraph at lines 115--115
+Overfull \hbox (134.65898pt too wide) in paragraph at lines 120--120
  []|[][][]  
  []
 
 [7
 
  <./CUSIP_912828HR_col.pdf>]
-Overfull \hbox (87.9708pt too wide) in paragraph at lines 126--126
+Overfull \hbox (87.9708pt too wide) in paragraph at lines 131--131
  []|[][][]  
  []
 
 [8
 
 ] (./problems/prob01_000Q.tex) (./problems/prob01_000A.tex)
-Overfull \hbox (22.56654pt too wide) in paragraph at lines 133--133
+Overfull \hbox (22.56654pt too wide) in paragraph at lines 138--138
  []|[][][]  
  []
 
 [9
 
 ] (./problems/prob01_000Q.tex) (./problems/prob01_000A.tex)
-Overfull \hbox (22.56654pt too wide) in paragraph at lines 133--133
+Overfull \hbox (22.56654pt too wide) in paragraph at lines 138--138
  []|[][][]  
  []
 
 [10
 
 ] (./problems/prob01_010Q.tex) (./problems/prob01_010A.tex)
-Overfull \hbox (22.56654pt too wide) in paragraph at lines 140--140
+Overfull \hbox (22.56654pt too wide) in paragraph at lines 145--145
  []|[][][]  
  []
 
 [11
 
 ] (./problems/prob01_010Q.tex) (./problems/prob01_010A.tex)
-Overfull \hbox (22.56654pt too wide) in paragraph at lines 140--140
+Overfull \hbox (22.56654pt too wide) in paragraph at lines 145--145
  []|[][][]  
  []
 
@@ -998,21 +998,21 @@ Overfull \hbox (22.56654pt too wide) in paragraph at lines 140--140
 ] [13
 
 ]
-Overfull \hbox (28.66658pt too wide) in paragraph at lines 162--162
+Overfull \hbox (28.66658pt too wide) in paragraph at lines 167--167
  []|[][][]  
  []
 
 [14
 
 ]
-Overfull \hbox (28.66658pt too wide) in paragraph at lines 184--184
+Overfull \hbox (28.66658pt too wide) in paragraph at lines 189--189
  []|[][][]  
  []
 
 [15
 
 ]
-Overfull \hbox (28.66658pt too wide) in paragraph at lines 209--209
+Overfull \hbox (28.66658pt too wide) in paragraph at lines 214--214
  []|[][][]  
  []
 
@@ -1021,7 +1021,7 @@ Overfull \hbox (28.66658pt too wide) in paragraph at lines 209--209
 ] [17
 
 ]
-Overfull \hbox (75.00673pt too wide) in paragraph at lines 234--234
+Overfull \hbox (75.00673pt too wide) in paragraph at lines 239--239
  []|[][][]  
  []
 
@@ -1031,10 +1031,10 @@ Overfull \hbox (75.00673pt too wide) in paragraph at lines 234--234
 <xs20190131.pdf, id=541, 462.52798pt x 346.89601pt>
 File: xs20190131.pdf Graphic file (type pdf)
 <use xs20190131.pdf>
-Package pdftex.def Info: xs20190131.pdf  used on input line 240.
+Package pdftex.def Info: xs20190131.pdf  used on input line 245.
 (pdftex.def)             Requested size: 254.39116pt x 190.79338pt.
 
-Overfull \hbox (101.02681pt too wide) in paragraph at lines 240--240
+Overfull \hbox (101.02681pt too wide) in paragraph at lines 245--245
  []|[][][]  
  []
 
@@ -1044,17 +1044,17 @@ Overfull \hbox (101.02681pt too wide) in paragraph at lines 240--240
 <xs20070501.pdf, id=606, 462.52798pt x 346.89601pt>
 File: xs20070501.pdf Graphic file (type pdf)
 <use xs20070501.pdf>
-Package pdftex.def Info: xs20070501.pdf  used on input line 246.
+Package pdftex.def Info: xs20070501.pdf  used on input line 251.
 (pdftex.def)             Requested size: 254.39116pt x 190.79338pt.
 
-Overfull \hbox (99.57083pt too wide) in paragraph at lines 246--246
+Overfull \hbox (99.57083pt too wide) in paragraph at lines 251--251
  []|[][][]  
  []
 
 [20
 
  <./xs20070501.pdf>]
-Overfull \hbox (166.77914pt too wide) in paragraph at lines 253--253
+Overfull \hbox (166.77914pt too wide) in paragraph at lines 258--258
  []|[][][]  
  []
 
@@ -1064,87 +1064,87 @@ Overfull \hbox (166.77914pt too wide) in paragraph at lines 253--253
 <ts12240.pdf, id=696, 462.52798pt x 346.89601pt>
 File: ts12240.pdf Graphic file (type pdf)
 <use ts12240.pdf>
-Package pdftex.def Info: ts12240.pdf  used on input line 259.
+Package pdftex.def Info: ts12240.pdf  used on input line 264.
 (pdftex.def)             Requested size: 254.39116pt x 190.79338pt.
 
-Overfull \hbox (95.35077pt too wide) in paragraph at lines 259--259
+Overfull \hbox (95.35077pt too wide) in paragraph at lines 264--264
  []|[][][]  
  []
 
 [22
 
  <./ts12240.pdf>]
-Overfull \hbox (154.95908pt too wide) in paragraph at lines 351--351
+Overfull \hbox (61.21872pt too wide) in paragraph at lines 356--356
  []|[][][]  
  []
 
 [23
 
 ]
-Overfull \hbox (39.49861pt too wide) in paragraph at lines 359--359
+Overfull \hbox (39.49861pt too wide) in paragraph at lines 364--364
  []|[][][]  
  []
 
 [24
 
 ]
-Overfull \hbox (22.56654pt too wide) in paragraph at lines 377--377
+Overfull \hbox (61.21872pt too wide) in paragraph at lines 382--382
  []|[][][]  
  []
 
 [25
 
 ]
-Overfull \hbox (22.56654pt too wide) in paragraph at lines 377--377
+Overfull \hbox (61.21872pt too wide) in paragraph at lines 382--382
  []|[][][]  
  []
 
 [26
 
 ]
-Overfull \hbox (154.95908pt too wide) in paragraph at lines 409--409
+Overfull \hbox (61.21872pt too wide) in paragraph at lines 414--414
  []|[][][]  
  []
 
 [27
 
 ]
-Overfull \hbox (61.21872pt too wide) in paragraph at lines 418--418
+Overfull \hbox (61.21872pt too wide) in paragraph at lines 423--423
  []|[][][]  
  []
 
 [28
 
 ]
-Overfull \hbox (61.21872pt too wide) in paragraph at lines 418--418
+Overfull \hbox (61.21872pt too wide) in paragraph at lines 423--423
  []|[][][]  
  []
 
 [29
 
 ]
-Overfull \hbox (61.21872pt too wide) in paragraph at lines 428--428
+Overfull \hbox (61.21872pt too wide) in paragraph at lines 433--433
  []|[][][]  
  []
 
 [30
 
 ]
-Overfull \hbox (61.21872pt too wide) in paragraph at lines 428--428
+Overfull \hbox (61.21872pt too wide) in paragraph at lines 433--433
  []|[][][]  
  []
 
 [31
 
 ]
-Overfull \hbox (134.58696pt too wide) in paragraph at lines 437--437
+Overfull \hbox (134.58696pt too wide) in paragraph at lines 442--442
  []|[][][]  
  []
 
 [32
 
 ]
-Overfull \hbox (4.4548pt too wide) detected at line 450
+Overfull \hbox (4.4548pt too wide) detected at line 455
 \OT1/mathkerncmss/m/sl/10.95 p[] [] \OT1/cmss/m/n/10.95 1 \OMS/cmsy/m/n/10.95 ^
 ^B \OT1/cmss/m/n/10.95 106\OML/cmm/m/it/10.95 :\OT1/cmss/m/n/10.95 4607 + 1 \OM
 S/cmsy/m/n/10.95 ^^B \OT1/cmss/m/n/10.95 99\OML/cmm/m/it/10.95 :\OT1/cmss/m/n/1
@@ -1154,14 +1154,14 @@ S/cmsy/m/n/10.95 ^^B \OT1/cmss/m/n/10.95 99\OML/cmm/m/it/10.95 :\OT1/cmss/m/n/1
  []
 
 
-Overfull \hbox (63.0467pt too wide) in paragraph at lines 450--450
+Overfull \hbox (134.58696pt too wide) in paragraph at lines 455--455
  []|[][][]  
  []
 
 [33
 
 ]
-Overfull \hbox (4.4548pt too wide) detected at line 450
+Overfull \hbox (4.4548pt too wide) detected at line 455
 \OT1/mathkerncmss/m/sl/10.95 p[] [] \OT1/cmss/m/n/10.95 1 \OMS/cmsy/m/n/10.95 ^
 ^B \OT1/cmss/m/n/10.95 106\OML/cmm/m/it/10.95 :\OT1/cmss/m/n/10.95 4607 + 1 \OM
 S/cmsy/m/n/10.95 ^^B \OT1/cmss/m/n/10.95 99\OML/cmm/m/it/10.95 :\OT1/cmss/m/n/1
@@ -1171,7 +1171,7 @@ S/cmsy/m/n/10.95 ^^B \OT1/cmss/m/n/10.95 99\OML/cmm/m/it/10.95 :\OT1/cmss/m/n/1
  []
 
 
-Overfull \hbox (63.0467pt too wide) in paragraph at lines 450--450
+Overfull \hbox (134.58696pt too wide) in paragraph at lines 455--455
  []|[][][]  
  []
 
@@ -1187,21 +1187,21 @@ Overfull \hbox (63.0467pt too wide) in paragraph at lines 450--450
 \tf@snm=\write8
 \openout8 = `L21_BondPricesYieldsArbitrage.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 452.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 452.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 457.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 457.
  (./L21_BondPricesYieldsArbitrage.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 452.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 452.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 457.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 457.
 Package rerunfilecheck Info: File `L21_BondPricesYieldsArbitrage.out' has not c
 hanged.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 20152 strings out of 492615
- 395717 string characters out of 6131391
+ 20151 strings out of 492615
+ 395698 string characters out of 6131391
  471884 words of memory out of 5000000
- 23531 multiletter control sequences out of 15000+600000
- 17911 words of font info for 65 fonts, out of 8000000 for 9000
+ 23530 multiletter control sequences out of 15000+600000
+ 17555 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,14n,55p,809b,705s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
@@ -1218,7 +1218,7 @@ onts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on L21_BondPricesYieldsArbitrage.pdf (34 pages, 360618 bytes).
+Output written on L21_BondPricesYieldsArbitrage.pdf (34 pages, 360426 bytes).
 PDF statistics:
  1125 PDF objects out of 1200 (max. 8388607)
  923 compressed objects within 10 object streams

@@ -24,8 +24,13 @@
 			\item What current yields tell us about future yields
 			\item How to price bonds using the yield curve
 		\end{enumerate}
-		\item We're going to focus on \underline{US Treasuries}
-		\item Unlike corporate bonds (or bonds from the developing world), US Treasuries are considered to be risk-free
+		\item We're going to focus on \underline{US Treasuries} because unlike corporate bonds or government bonds from the developing world, US Treasuries are considered to be risk-free
+		\item We will use the yield curve to compute
+		\begin{enumerate}
+			\item zero rates,
+			\item forward rates, and 
+			\item yield-to-maturity 
+		\end{enumerate}
 	\end{itemize}
 \end{frame}
 
@@ -258,70 +263,8 @@ Net Cash Flow & +.9849 USD & 0 USD
 	\end{center}
 \end{frame}
 
-% Reference
-\iffalse
-\begin{frame}{Forward Rates (Reference)}
-	\small
-	\begin{figure}[H]
-		\begin{center}
-			\begin{tikzpicture}
-				\draw (0,0) -- (8,0);
-				\foreach \x in {0,4,8}
-				\draw(\x cm,3pt) -- (\x cm, -3pt);
-				\draw (0,0) node[above=3pt] {0};
-				\draw (4,0) node[above=3pt] {$m$};
-				\draw (8,0) node[above=3pt,anchor=south west] {$m+n$};
-				\draw[->] (0,0) to[bend left] (3.75,.25);
-				\draw[->] (4,0) to[bend left] (7.75,.25);
-				\draw[->] (0,0) to[bend right] (7.75,-.25);
-				\draw (2,.25) node{$1+\:_{0}y_{m}(m/12)$};
-				\draw (6,.25) node{$1+\:_{m}y_{n}(m/12)$};
-				\draw (4,-.75) node{$1+\:_{0}y_{m+n}(m+n)/12$};
-			\end{tikzpicture}
-		\end{center}
-	\end{figure}
-	\vfill
-	\begin{itemize}
-		\item $_{0}y_{m}$ is the yield today (date 0) on a $m$-month zero coupon bond that matures in $m$ months (date $m$)
-		\item $_{0}y_{m+n}$ is the yield today (date 0) on a $m+n$-month zero coupon bond that matures in $m+n$ months (date $m+n$)
-		\item $_{m}y_{n}$ is the yield in $m$ months (date $m$) on a $n$-month zero coupon bond that matures in $m+n$ months (date $m+n$)
-	\end{itemize}
-\end{frame}
-
 % A Multiyear Investor
-\begin{frame}{Forward Rates (Reference)}
-	\small
-	\begin{figure}[H]
-		\begin{center}
-			\begin{tikzpicture}
-				\draw (0,0) -- (8,0);
-				\foreach \x in {0,4,8}
-				\draw(\x cm,3pt) -- (\x cm, -3pt);
-				\draw (0,0) node[above=3pt] {0};
-				\draw (4,0) node[above=3pt] {$m$};
-				\draw (8,0) node[above=3pt,anchor=south west] {$m+n$};
-				\draw[->] (0,0) to[bend left] (3.75,.25);
-				\draw[->] (4,0) to[bend left] (7.75,.25);
-				\draw[->] (0,0) to[bend right] (7.75,-.25);
-				\draw (2,.25) node{$1+\:_{0}y_{m}(m/12)$};
-				\draw (6,.25) node{$1+\:_{m}y_{n}(m/12)$};
-				\draw (4,-.75) node{$1+\:_{0}y_{m+n}(m+n)/12$};
-			\end{tikzpicture}
-		\end{center}
-	\end{figure}
-	\vfill
-	\begin{equation}
-		(1+\:_{0}y_{1}(m/12)(1+\:_{1}y_{1}(n/12)\should1+\:_{0}y_{2}/6. 
-	\end{equation}
-	\begin{itemize}
-		\item The current yield curve ($_{0}y_{1},_{0}y_{2}$) predicts the future short-term yield ($_{1}y_{1}$), which we call the \textit{forward rate}
-		\item This relationship between current and future yields is known as the \emph{expectations hypothesis}
-	\end{itemize}
-\end{frame}
-\fi
-
-% A Multiyear Investor
-\begin{frame}{\fttheory{Forward Rates (One-Month)}}
+\begin{frame}{\fttheory{Forward Rates}}
 	\begin{figure}[H]
 		\begin{center}
 			\begin{tikzpicture}
@@ -358,7 +301,7 @@ Net Cash Flow & +.9849 USD & 0 USD
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{\ftexampl{Example}}
+\begin{frame}{\ftexampl{Forward Rates}}
 	\small
 	What is the price of a 3-year, 1000 USD 10\% coupon bond that makes payments annual coupon payments. The 1-year yield is 1.48\%, the 2-year yield is 1.41\%, and the 3-year yield is 1.40\%. What should the 3-year \textit{coupon} bond trade for?
 	\pause
@@ -377,7 +320,7 @@ Net Cash Flow & +.9849 USD & 0 USD
 \end{frame}
 
 % A Multiyear Investor
-\begin{frame}{\fttheory{Forward Rates (One-Month)}}
+\begin{frame}{\fttheory{Forward Rates}}
 	\begin{figure}[H]
 		\begin{center}
 			\begin{tikzpicture}
@@ -430,13 +373,13 @@ On 2019-01-01, $_0y_1=2.40\%$ and $_0y_2=2.40\%$. What did the market expect the
 
 \begin{frame}{\fttheory{Yield-to-Maturity (YTM)}}
 	\begin{itemize}
-		\item Rather than carry around an entire yield curve whenever we want to recompute the price of a bond, we summarize this information with the \textit{yield-to-maturity} (YTM), with which you are familiar from your previous coursework
+		\item Rather than carry around an entire yield curve whenever we want to recompute the price of a bond, we summarize the information with the \underline{yield-to-maturity} (YTM), with which you are familiar from your previous coursework
 		\item Example: consider a 1000 USD, 30-year, 5\% T-bond that makes semi-annual payments, and trades for 1011.9610 USD 
 		\item The YTM on this T-bond is the \underline{one} rate that would make the PV of cash-flows equal to the price, namely, 4.9233\%
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{\ftexampl{YTM Example}}
+\begin{frame}{\ftexampl{Yield-to-Maturity (YTM)}}
 		Suppose that 1, 2, and 3-year, 100 USD zero-coupon bonds trade for 106.4607, 99.7684, and 93.7438 USD respectively. What should be the YTM of a 3-year, 1000 USD, 10\% coupon bond that makes annual payments? \\
 		\pause
 	{\color{blue}
