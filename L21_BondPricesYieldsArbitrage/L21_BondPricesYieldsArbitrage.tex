@@ -9,7 +9,20 @@
 \newcommand{\ftheader}[1]{\fcolorbox{lightgray}{lightgray}{\color{black}\textbf{#1}\hspace{\textwidth}}}
 \begin{document}
 
-\begin{frame}{\ftdata{Treasury Bills\footnote{Language from BKM}}}
+\begin{frame}{\ftheader{Bond Prices, Yields, and Arbitrage}}
+	\begin{itemize}
+		\item Specifically, we're going to study the \underline{yield curve}
+		\begin{enumerate}
+			\item What the yield curve can tell us about the economy
+			\item What current yields tell us about future yields
+			\item How to price bonds using the yield curve
+		\end{enumerate}
+		\item We're going to focus on \underline{US Treasuries}
+		\item Unlike corporate bonds (or bonds from the developing world), US Treasuries are considered to be risk-free
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{\ftdata{Treasury Bills}}
 	\begin{itemize}
 		\item Most marketable of all money market instruments
 		\item Investors buy the bills at a discount from the face value
@@ -49,18 +62,92 @@
 \end{itemize}
 \end{frame}
 
+\begin{frame}
+\begin{center}
+\includegraphics[scale=.5]{R_20200813_3}
+\end{center}
+\end{frame}
 
-\begin{frame}{\ftheader{Bond Prices, Yields, and Arbitrage}}
+
+% Annuities
+\begin{frame}{\fttheory{Treasuries}}
+	A $T$-year Treasury makes semi-annual payments.
+	\begin{figure}[H]
+		\begin{center}
+			\begin{tikzpicture}
+				\draw (0,0) -- (8,0);
+				\foreach \x in {0,2,4,8}
+				\draw(\x cm,3pt) -- (\x cm, -3pt);
+				\draw (0,0) node[above=3pt] {0};
+				\draw (2,0) node[above=3pt] {1};
+				\draw (4,0) node[above=3pt] {2};
+				\draw (8,0) node[above=3pt] {$2T$};
+				\draw (0,0) node[below=3pt] {$-P$};
+				\draw (2,0) node[below=3pt] {$cF/2$};
+				\draw (4,0) node[below=3pt] {$cF/2$};
+				\draw (6,0) node[above=3pt, align=center] {$\cdots$};
+				\draw (6,0) node[below=3pt, align=center] {$\cdots$};
+				\draw (8,0) node[below=3pt] {$cF/2+F$};
+			\end{tikzpicture}
+		\end{center}
+	\end{figure}
+where $c\geq0$ is the coupon rate (APR) 
+{\scriptsize
+\begin{align*}
+	P&\should\frac{cF/2}{(1+y/2)}+\frac{cF/2}{(1+y/2)^2}+\frac{cF/2}{(1+y/2)^3}+\cdots+\frac{cF/2}{(1+y/2)^{2T}}+\frac{F}{(1+y/2)^{2T}}\\
+	&=\frac{cF/2}{y/2}\left(1-\frac{1}{(1+y/2)^{2T}}\right)+\frac{F}{(1+y/2)^{2T}}
+\end{align*}}
+where $y$ is the yield (APR). 
+\end{frame}
+
+% dividend examples
+\begin{frame}{\ftdata{The Life a Treasury Note}}
+	\begin{center}
+		\includegraphics[scale=0.5]{CUSIP_912828HR_col}
+	\end{center}
+\end{frame}
+
+% Bond Checklist
+\begin{frame}{\fttheory{Treasury Checklist}}
 	\begin{itemize}
-		\item We're going to study the \underline{yield curve}
-		\item Specifically, we're going to study
-		\begin{enumerate}
-			\item What the yield curve can tell us about the economy
-			\item What current yields tell us about future yields
-			\item How to price bonds using the yield curve
-		\end{enumerate}
+		\item[$\checkmark$] Yields and coupon rates are quoted as APRs, so divide them by the number of payments per year to get the per-period rate
+		\item[$\checkmark$] Multiply the number of years by the number of payments per year to get the number of periods
+		\item[$\checkmark$] The future value is the face value
+		\item[$\checkmark$] \underline{Remember}: if the coupon rate is greater than (less than) the yield, the price is greater than (less than) the face value
+		\item[$\checkmark$] \textbf{Use four decimal places!}
 	\end{itemize}
 \end{frame}
+
+% question 1
+\begin{frame}{\ftexampl{Example}}
+	\input{problems/prob01_000Q}
+	\pause
+	{\color{blue}\input{problems/prob01_000A}}
+\end{frame}
+\iffalse
+% question 2
+\begin{frame}{\ftexampl{Example}}
+	\input{problems/prob01_001Q}
+	\pause
+	{\color{blue}\input{problems/prob01_001A}}
+\end{frame}
+\fi
+
+% question 3
+\begin{frame}{\ftexampl{Example}}
+	\input{problems/prob01_010Q}
+	\pause
+	{\color{blue}\input{problems/prob01_010A}}
+\end{frame}
+\iffalse
+% question 4
+\begin{frame}{\ftexampl{Example}}
+	\input{problems/prob01_011Q}
+	\pause
+	{\color{blue}\input{problems/prob01_011A}}
+\end{frame}
+\fi
+
 
 \begin{frame}
 	\begin{center}
@@ -68,11 +155,68 @@
 	\end{center}
 \end{frame}
 
-\begin{frame}{\fttheory{Bond Arbitrage}}
-	\begin{center}
-		\textbf{\Large See introductory lecture}
-	\end{center}
+%============================================================================%
+%   ARBITRAGE                                                                %
+%============================================================================%
+\begin{frame}{\ftexampl{Arbitrage}}
+\begin{itemize}
+\item On 2020-01-28, the yield on a one year T-bill was 1.53\%. 
+\item What's the fair price?
+\begin{align*}
+	\text{price}=\frac{100\text{ USD}}{1+.0153}=98.4931\text{ USD}
+\end{align*}
+\item Because T-bills are risk-free, we ignore margin requirements
+\item Assume that you can borrow from and lend to a counterparty (call it a ``bank'') for a year at 1.53\%
+\end{itemize}
 \end{frame}
+
+%============================================================================%
+%   ARBITRAGE                                                                %
+%============================================================================%
+\begin{frame}{\ftexampl{Arbitrage}}
+\begin{itemize}
+\item What if the T-bill is trading for 97.5082 USD? 
+\item Cash Flow Table
+\begin{table}
+\begin{center}
+\begin{tabular}{lrr}
+	& \textbf{2020-01-28} & \textbf{2021-01-28} \\ \hline
+	Buy the T-bill & -97.5082 USD & +100 USD \\
+	Bank & +98.4931 USD & -100 USD\\ \hline
+	Net Cash Flow & +.9849 USD & 0 USD 
+\end{tabular}
+\end{center}
+\end{table}
+\item Borrow 98.4931 USD, use 97.5082 USD of it to buy the T-bill
+\item In one year's time, you'll owe the bank 100 USD but the T-bill will pay you 100 USD
+\end{itemize}
+\end{frame}
+
+%============================================================================%
+%   ARBITRAGE                                                                %
+%============================================================================%
+\begin{frame}{\ftexampl{Arbitrage}}
+\begin{itemize}
+\item What if the T-bill is trading for 99.4780 USD?
+\item Cash Flow Table
+\begin{table}
+\begin{center}
+\begin{tabular}{lrr}
+& \textbf{2020-01-28} & \textbf{2021-01-28} \\ \hline
+Sell the Bond & +99.4780 USD & -100 USD \\
+Deposit the Proceeds & -98.4931 USD & +100 USD \\ \hline
+Net Cash Flow & +.9849 USD & 0 USD
+\end{tabular}
+\end{center}
+\end{table}
+\item Your friend Eva at the bank owns the T-bill 
+\begin{description}
+\item[You:] Hey Eva, can I borrow your T-bill? 
+\item[Eva:] You bet. Just pay me 100 USD in one year
+\end{description}
+\end{itemize}
+\end{frame}
+
 
 \begin{frame}
 	\begin{center}
@@ -80,18 +224,21 @@
 	\end{center}
 \end{frame}
 
-\begin{frame}{\fttheory{Yield Curve}}
+\begin{frame}{\fttheory{The Yield Curve}}
+	\begin{table}
+		\begin{center}
+			\footnotesize
+			\begin{tabular}{cccccccccccc}
+				\multicolumn{9}{c}{Yield Curve on 2020-08-28}\\ \hline
+				6mo & 1yr & 2yr & 3yr & 5yr & 7yr & 10yr & 20yr & 30yr \\
+				0.11 & 0.12 & 0.14 & 0.16 & 0.28 & 0.51 & 0.74 & 1.29 & 1.52
+			\end{tabular}
+		\end{center}
+	\end{table}
 	\begin{itemize}
-		\item For each term (e.g. 1 month, 1 year, 30 years), the yield curve tells us the yield of the corresponding zero-coupon bond
-		\item Example 1: if the 10-year yield is 1.61\% (as read from the yield curve), then a 10-year zero coupon bond should have yield 1.61\% and should trade for
-			\begin{equation}
-				P=\frac{100\text{ USD }}{1+10\times0.0161}=86.1326\text{ USD}
-			\end{equation}
-		\item It is \underline{not} the yield on a 10-year Treasury note (because the note's yield depends on its coupon rate)
-		\item Example 2: if the 1-month yield is 1.55\% (as read from the yield curve), then a 1-month zero coupon bond should have yield 1.55\% and should trade for
-			\begin{equation}
-				P=\frac{100\text{ USD }}{1+0.0155/12}=99.8710\text{ USD}
-			\end{equation}
+		\item The yield curve can be found in many places, but the best place is directly from the Treasury (\url{treasury.gov/data})
+		\item The yield is the yield on a bond issued at par
+		\item For example, the 30-year yield is the yield-to-maturity of a 30-year T-bond that is issued at par  
 	\end{itemize}
 \end{frame}
 
@@ -110,9 +257,7 @@
 \begin{frame}{\fttheory{Why are there different rates?}}
 	\begin{itemize}
 		\item Why are there different rates? Why isn't there just one rate for all terms?
-		\item The shape of the yield curve is pinned-down by something called a \emph{stochatic discount factor}, the discussion of which is beyond the scope of this course\footnote{The interested student should study \textit{Optimal Control Theory}}
 		\item When conditions are expected to improve, the curve is upward sloping; when they are expected to deteriorate, the curve is downward sloping
-		\item Application: banks borrow short and lend long
 	\end{itemize}
 \end{frame}
 
@@ -335,38 +480,21 @@ $_0y_1=1.57\%$ and $_0y_3=1.56. $Is the market optimistic or pessimistic about t
 \end{frame}
 \fi
 
-%-----------------------------------------------------------------------------%
-% BOND PRICES
-%-----------------------------------------------------------------------------%
-\section{Prices}
-
-% Annuities
-\begin{frame}{Coupon Bonds}
-	We can use the yield curve to compute the price of a coupon bond. A $T$-year coupon bond makes annual payments
-	\begin{figure}[H]
+\begin{frame}{\fttheory{Zero Rates}}
+	\begin{table}
 		\begin{center}
-			\begin{tikzpicture}
-				\draw (0,0) -- (8,0);
-				\foreach \x in {0,2,4,8}
-				\draw(\x cm,3pt) -- (\x cm, -3pt);
-				\draw (0,0) node[above=3pt] {0};
-				\draw (2,0) node[above=3pt] {1};
-				\draw (4,0) node[above=3pt] {2};
-				\draw (8,0) node[above=3pt] {$T$};
-				\draw (0,0) node[below=3pt] {$-P_{\text{cpn}}$};
-				\draw (2,0) node[below=3pt] {$cF_{\text{cpn}}$};
-				\draw (4,0) node[below=3pt] {$cF_{\text{cpn}}$};
-				\draw (6,0) node[above=3pt, align=center] {$\cdots$};
-				\draw (6,0) node[below=3pt, align=center] {$\cdots$};
-				\draw (8,0) node[below=3pt] {$cF_{\text{cpn}}+F_{\text{cpn}}$};
-			\end{tikzpicture}
+			\footnotesize
+			\begin{tabular}{ccccccccccccc}
+				\multicolumn{10}{c}{Yield Curve on 2020-08-28}\\ \hline
+				Term & 6mo & 1yr & 2yr & 3yr & 5yr & 7yr & 10yr & 20yr & 30yr \\
+				CMT & 0.11 & 0.12 & 0.14 & 0.16 & 0.28 & 0.51 & 0.74 & 1.29 & 1.52 \\
+				Zero Rate & & & & & & & & & &
+			\end{tabular}
 		\end{center}
-	\end{figure}
-where $c\geq0$ is the coupon rate (APR) and $F_{\text{cpn}}$ is the face value of the coupon bond
-\begin{align*}
-	P_{\text{cpn}}&\should \left[\frac{cF_{\text{cpn}}}{F_{\zcb{1}}}\right]P_{\zcb{1}}+\left[\frac{cF_{\text{cpn}}}{F_{\zcb{1}}}\right]P_{\zcb{2}}+\cdots+\left[\frac{(1+c)F_{\text{cpn}}}{F_{\zcb{T}}}\right]P_{\zcb{T}}
-\end{align*}
-where $y$ is the yield (APR) and $P_{\zcb{k}}$ is the price of a $k$-year zero coupon bond with face value of $F_{\zcb{k}}$
+	\end{table}
+	\begin{itemize}
+		\item We can use this information to price bonds
+	\end{itemize}
 \end{frame}
 
 \begin{frame}{\ftexampl{Example}}
@@ -386,6 +514,8 @@ where $y$ is the yield (APR) and $P_{\zcb{k}}$ is the price of a $k$-year zero c
 		\end{equation}
 	}
 \end{frame}
+
+\iffalse
 \begin{frame}{\ftexampl{Example}}
 	\small
 	What is the price of a 3-year, 1000 USD 5\% coupon bond that makes payments annual coupon payments. The 1-year yield is 1.59\%, the 2-year yield is 1.58\%, and the 3-year yield is 1.62\%. What should the 3-year \textit{coupon} bond trade for?
@@ -403,10 +533,10 @@ where $y$ is the yield (APR) and $P_{\zcb{k}}$ is the price of a $k$-year zero c
 		\end{equation}
 	}
 \end{frame}
+\fi
 
-\begin{frame}{\ftheader{Yield-to-Maturity}}
+\begin{frame}{\fttheory{Yield-to-Maturity (YTM)}}
 	\begin{itemize}
-		\item In our previous lectures, we saw that market participants borrow/lend at different yields \textit{depending on the term}  
 		\item Rather than carry around an entire yield curve whenever we want to recompute the price of a bond, we summarize this information with the \textit{yield-to-maturity} (YTM), with which you are familiar from your previous coursework
 		\item Example: consider a 1000 USD, 30-year, 5\% T-bond that makes semi-annual payments, and trades for 1011.9610 USD 
 		\item The YTM on this T-bond is the \underline{one} rate that would make the PV of cash-flows equal to the price, namely, 4.9233\%
