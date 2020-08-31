@@ -35,52 +35,20 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{\ftdata{Treasury Bills}}
+\begin{frame}{\ftdata{Treasury Bills, Notes, and Bonds}}
 	\begin{itemize}
 		\item Most marketable of all money market instruments
-		\item Investors buy the bills at a discount from the face value
-		\item At maturity, the government pays the investor the face value of the bill
-		\item The difference between the purchase price and the face value is the investor's earnings
-		\item T-bills are issued with maturities of 4, 13, 26, and 52 weeks
-		\item T-bills are \underline{highly} liquid
-		\item The income earned on T-bills is taxable at the federal level, it is exempt from state and local taxes
+		\item Terms:
+			\begin{itemize}
+				\item Bills: 1, 2, 3, 6, 12 months
+				\item Notes: 2, 3, 5, 7, 10 years
+				\item Bonds: 20, 30 years
+			\end{itemize}
+		\item Notes and bonds pay coupons, bills do not (zero-coupon)
+		\item Treasuries are \underline{highly} liquid
+		\item The income earned on Treasuries is taxable at the federal level, it is exempt from state and local taxes
 	\end{itemize}
 \end{frame}
-
-%-----------------------------------------------------------------------------%
-%   THE BOND MARKET                                                           %
-%-----------------------------------------------------------------------------%
-\begin{frame}{\ftdata{Government Debt}}
-\begin{itemize}
-\item Treasury Notes and Bonds
-\begin{itemize}
-\item Notes: up to (and including) 10 year maturities
-\item Bonds: up to (and including) 30 year maturities
-\end{itemize}
-\item Treasury Inflation Protected Securities (TIPS).
-\begin{itemize}
-\item Principal adjusted for changes in the CPI
-\item Marked with a trailing ``i'' in quote sheets
-\end{itemize}
-\item Municipal Bonds.
-\begin{itemize}
-\item Issued by state and local governments to finance capital improvement projects (e.g. roads, schools, parks). 
-\item Interest income is exempt from state and local taxation.
-\end{itemize}
-\item Federal Agency Debt.
-\begin{itemize}
-\item Bonds issued by Government Sponsored Enterprises (GSEs) to finance purchase of consumer debt
-\item Most are home-mortgage-related: FNMA (``Fannie''), FHLMC (''Freddie''), GNMA (``Ginnie'')
-\end{itemize}
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\begin{center}
-\includegraphics[scale=.5]{R_20200813_3}
-\end{center}
-\end{frame}
-
 
 % Annuities
 \begin{frame}{\fttheory{Treasuries}}
@@ -111,6 +79,12 @@ where $c\geq0$ is the coupon rate (APR)
 	&=\frac{cF/2}{y/2}\left(1-\frac{1}{(1+y/2)^{2T}}\right)+\frac{F}{(1+y/2)^{2T}}
 \end{align*}}
 where $y$ is the yield (APR). 
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\includegraphics[scale=.5]{R_20200813_3}
+\end{center}
 \end{frame}
 
 % dividend examples
@@ -234,8 +208,8 @@ Net Cash Flow & +.9849 USD & 0 USD
 	\end{table}
 	\begin{itemize}
 		\item The yield curve can be found in many places, but the best place is directly from the Treasury (\url{treasury.gov/data})
-		\item The yield is the yield on a bond issued at par
-		\item For example, the 30-year yield is the yield-to-maturity of a 30-year T-bond that is issued at par  
+		\item The yield is the yield on a bond trades at par
+		\item For example, the 30-year yield is the yield-to-maturity of a 100 USD 30-year T-bond that trades for 100 USD
 	\end{itemize}
 \end{frame}
 
@@ -255,6 +229,8 @@ Net Cash Flow & +.9849 USD & 0 USD
 	\begin{itemize}
 		\item Why are there different rates? Why isn't there just one rate for all terms?
 		\item When conditions are expected to improve, the curve is upward sloping; when they are expected to deteriorate, the curve is downward sloping
+		\item Usually, the curve is upward sloping
+		\item When long-term rates (e.g. 20 year) fall below short-term rates (e.g. 1 year), we say that the yield curve has \underline{inverted}
 	\end{itemize}
 \end{frame}
 
