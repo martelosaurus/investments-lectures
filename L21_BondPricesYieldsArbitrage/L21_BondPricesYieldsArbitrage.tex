@@ -116,7 +116,16 @@ where $y$ is the yield (APR).
 \begin{frame}{\ftexampl{Example}}
 	\input{problems/prob01_010Q}
 	\pause
-	{\color{blue}\input{problems/prob01_010A}}
+	{\color{blue}
+	\begin{align*}
+	y_{0}&\should2\times\text{RATE}(\\
+		&\hspace{.5in}\text{N}=2.0,\\
+		&\hspace{.5in}\text{PV}=-103.1758,\\
+		&\hspace{.5in}\text{PMT}=(3.375\%\times 100)/2,\\
+		&\hspace{.5in}\text{FV}=100)\\
+		&=0.1946\%
+	\end{align*}
+	}
 \end{frame}
 
 
@@ -242,23 +251,38 @@ Net Cash Flow & +.9849 USD & 0 USD
 
 \begin{frame}
 	\begin{center}
-		\Huge Zero Rates, Forward Rates, and Yield-to-Maturity
+		\Huge Zero and Forward Rates
 	\end{center}
 \end{frame}
 
 \begin{frame}{\fttheory{Zero Rates}}
 	\begin{itemize}
-		\item While the yield curve is useful in understanding rates, 
-		\item We can use this information to price bonds
+		\item We can use the yield curve to compute the rates on zero-coupon bonds of various terms called \underline{zero rates} through a process known as \underline{bootstrapping}
+		\item $y_{1}$, $y_{2}$ are the 6-and 12-month yields from the yield curve
+		\item $z_{1}$, $z_{2}$ are the 6-and 12-month zero rates
+		\item The 6-month zero rate is the 6-month yield from the yield curve: $z_{1}=y_{1}$
+		\item Solve for $z_{2}$:
+			\begin{equation*}
+				P=F=\frac{{y_{2}}F/2}{1+{z_{1}}/2}+\frac{{y_{2}}F/2}{(1+{z_{2}/2})^{2}}+\frac{F}{(1+{z_{2}/2})^{2}}
+			\end{equation*}
+		\item This equation says that $z_{2}$ is the zero rate for a 12-month, semi-annual coupon bond that trades at par
 	\end{itemize}
 \end{frame}
 
 \begin{frame}{\ftexampl{Zero Rates}}
 	\small
-	Question
+	$y_{1}=.11\%$ (11 bps) and $y_{2}=.12\%$ (12 bps). What are the zero rates?\\
 	\pause
 	{\color{blue}
-	Answer
+		$z_{1}=y_{1}=.11\%$. Use the following equation for $z_{2}$
+		\begin{align*}
+		z_{2}&=2\times\text{RATE}(\\
+			&\hspace{.5in}\text{N}=2,\\
+			&\hspace{.5in}\text{PV}=-(1-(y_{2}/2)/(1+z_{1}/2))=,\\
+			&\hspace{.5in}\text{PMT}=0,\\
+			&\hspace{.5in}\text{FV}=y_{2}/2+1=)\\
+			&=4.3307\%
+		\end{align*}
 	}
 \end{frame}
 
@@ -276,38 +300,19 @@ Net Cash Flow & +.9849 USD & 0 USD
 				\draw[->] (0,0) to[bend left] (3.75,.25);
 				\draw[->] (4,0) to[bend left] (7.75,.25);
 				\draw[->] (0,0) to[bend right] (7.75,-.25);
-				\draw (2,.25) node{$1+\:_{0}y_{1}/12$};
-				\draw (6,.25) node{$1+\:_{1}y_{1}/12$};
-				\draw (4,-.75) node{$1+\:_{0}y_{2}/6$};
+				\draw (2,.25) node{$1+\:_{0}z_{1}/2$};
+				\draw (6,.25) node{$1+\:_{1}z_{1}/2$};
+				\draw (4,-.75) node{$(1+\:_{0}z_{2}/2)^{2}$};
 			\end{tikzpicture}
 		\end{center}
 	\end{figure}
 	\vfill
 	{\small
 	\begin{itemize}
-		\item $_{0}y_{1}$ is the yield today (date 0) on a 1-month zero coupon bond that matures in one month (date 1)
-		\item $_{0}y_{2}$ is the yield today (date 0) on a 2-month zero coupon bond that matures in two months (date 2)
-		\item $_{1}y_{1}$ is the yield in one month (date 1) on a 1-month zero coupon bond that matures in two months (date 2)
+		\item $_{0}z_{1}$ is the yield today (date 0) on a 6-month zero coupon bond that matures in six months (date 1)
+		\item $_{0}z_{2}$ is the yield today (date 0) on a 12-month zero coupon bond that matures in one year (date 2)
+		\item $_{1}z_{1}$ is the yield in six months (date 1) on a 6-month zero coupon bond that matures in one year (date 2)
 	\end{itemize}
-	}
-\end{frame}
-
-
-\begin{frame}{\ftexampl{Forward Rates}}
-	\small
-	What is the price of a 3-year, 1000 USD 10\% coupon bond that makes payments annual coupon payments. The 1-year yield is 1.48\%, the 2-year yield is 1.41\%, and the 3-year yield is 1.40\%. What should the 3-year \textit{coupon} bond trade for?
-	\pause
-	{\color{blue}
-		First, compute the prices of the zero-coupon bonds:
-		\begin{align}
-			p_{1}&=\frac{100\text{ USD}}{1+1\times0.0148}=98.5416\text{ USD}\\
-			p_{2}&=\frac{100\text{ USD}}{1+2\times0.0141}=97.2373\text{ USD}\\
-			p_{3}&=\frac{100\text{ USD}}{1+3\times0.0140}=95.9693\text{ USD}
-		\end{align}	
-		Next, note that the cash-flows from the zero coupon bond are 100 USD, 100 USD, and 1100 USD.
-		\begin{equation}
-			p_{\text{cpn}}=1\times p_{1}+1\times p_{2}+11\times p_{3}=1251.4612\text{ USD}
-		\end{equation}
 	}
 \end{frame}
 
@@ -325,43 +330,92 @@ Net Cash Flow & +.9849 USD & 0 USD
 				\draw[->] (0,0) to[bend left] (3.75,.25);
 				\draw[->] (4,0) to[bend left] (7.75,.25);
 				\draw[->] (0,0) to[bend right] (7.75,-.25);
-				\draw (2,.25) node{$1+\:_{0}y_{1}/12$};
-				\draw (6,.25) node{$1+\:_{1}y_{1}/12$};
-				\draw (4,-.75) node{$1+\:_{0}y_{2}/6$};
+				\draw (2,.25) node{$1+\:_{0}z_{1}/2$};
+				\draw (6,.25) node{$1+\:_{1}z_{1}/2$};
+				\draw (4,-.75) node{$(1+\:_{0}z_{2}/2)^{2}$};
 			\end{tikzpicture}
 		\end{center}
 	\end{figure}
 	\vfill
 	\begin{equation}
-		(1+\:_{0}y_{1}/12)(1+\:_{1}y_{1}/12)\should1+\:_{0}y_{2}/6. 
+		(1+\:_{0}z_{1}/2)(1+\:_{1}z_{1}/2)\should(1+\:_{0}z_{2}/2)^{2} 
 	\end{equation}
 	{\small
 	\begin{itemize}
-		\item The current yield curve ($_{0}y_{1},_{0}y_{2}$) predicts the future short-term yield ($_{1}y_{1}$), which we call the \textit{forward rate}
-		\item This relationship between current yields and future yields is called the \textit{expectations hypothesis}
+		\item The current yield curve (${_{0}z_{1}},{_{0}z_{2}}$) predicts the future short-term yield ($_{1}z_{1}$), which we call the \underline{forward rate}
+		\item This relationship between current yields and future yields is called the \underline{expectations hypothesis}
 	\end{itemize}
 	}
 \end{frame}
+
 \begin{frame}{\ftexampl{Forward Rates}}
-$_0y_1=1.57\%$ and $_0y_2=1.58\%$. Is the market optimistic or pessimistic about the economy (in the short-term)? What did the market expect the 1-month yield to be in one month ($_1y_1$)?
+$_0z_1=1.57\%$ and $_0z_2=1.58\%$.  What did the market expect the six-month yield to be in six months ($_1z_1$)?
 	\pause
 	{\color{blue}
 		\begin{equation}
-			_{1}y_{1}=12\left(\frac{1+_0y_2/6}{1+_0y_1/12}-1\right)=1.5879\%
+			_{1}z_{1}=2\left(\frac{(1+{_0z_2}/2)^{2}}{(1+{_0z_1}/2)^{\color{white}1}}-1\right)=1.5879\%
 		\end{equation}
 	}
 \end{frame}
 
-\begin{frame}{\ftexampl{Forward Rates}}
-On 2019-01-01, $_0y_1=2.40\%$ and $_0y_2=2.40\%$. What did the market expect the 1-month yield to be in one month ($_1y_1$)?
-	\pause
-	{\color{blue}
-		\begin{equation}
-			_{1}y_{1}=12\left(\frac{1+_0y_2/6}{1+_0y_1/12}-1\right)=2.3952\%
-		\end{equation}
-	}
+\begin{frame}
+	\begin{center}
+		\Huge Prices and Yields Revisited
+	\end{center}
 \end{frame}
 
+\begin{frame}{\fttheory{Using the Yield Curve to Price Bonds}}
+	Consider a $T$-year stream of semi-annual cash-flows.
+	\begin{figure}[H]
+		\begin{center}
+			\begin{tikzpicture}
+				\draw (0,0) -- (8,0);
+				\foreach \x in {0,2,4,8}
+				\draw(\x cm,3pt) -- (\x cm, -3pt);
+				\draw (0,0) node[above=3pt] {0};
+				\draw (2,0) node[above=3pt] {1};
+				\draw (4,0) node[above=3pt] {2};
+				\draw (8,0) node[above=3pt] {$2T$};
+				\draw (0,0) node[below=3pt] {$-P$};
+				\draw (2,0) node[below=3pt] {$c_{1}$};
+				\draw (4,0) node[below=3pt] {$c_{2}$};
+				\draw (6,0) node[above=3pt, align=center] {$\cdots$};
+				\draw (6,0) node[below=3pt, align=center] {$\cdots$};
+				\draw (8,0) node[below=3pt] {$c_{2T}$};
+			\end{tikzpicture}
+		\end{center}
+	\end{figure}
+	\noindent where $c_{1}$ is the six-month (0.5 year) cash-flow, $c_{2}$ twelve-month (1 year), $c_{3}$ eighteen-month (1.5 year), and so on
+{\scriptsize
+\begin{align*}
+	P&\should\frac{c_{1}}{(1+z_{1}/2)}+\frac{c_{2}}{(1+z_{2}/2)^2}+\frac{c_{3}}{(1+z_{3}/2)^3}+\cdots+\frac{c_{2T}}{(1+z_{2T}/2)^{2T}}
+\end{align*}
+}
+\noindent where $z_{1}$ is the six-month (0.5 year) zero-coupon yield (APR), $z_{2}$ twelve-month (1 year), $z_{3}$ eighteen-month (1.5 year), and so on
+\end{frame}
+
+\begin{frame}{\ftexampl{Using the Yield Curve to Price Bonds}}
+	\small
+	What is the \textbf{price} of a 2-year, 1000 USD 20\% coupon bond that makes semi-annual coupon payments. Suppose that the 6, 12, 18, and 24 month zero rates are 1\%, 3\%, 4\%, and 4.5\% respectively. What should the 2-year bond trade for?\\
+	\pause
+	{\color{blue}
+		First, compute the present values:
+		{\scriptsize
+		\begin{align}
+			\text{pv}_{1}&=\frac{100\text{ USD}}{(1+0.010/2)^{1}}=99.5025\text{ USD}\\
+			\text{pv}_{2}&=\frac{100\text{ USD}}{(1+0.030/2)^{2}}=97.0662\text{ USD}\\
+			\text{pv}_{3}&=\frac{100\text{ USD}}{(1+0.040/2)^{3}}=94.2322\text{ USD}\\
+			\text{pv}_{4}&=\frac{100\text{ USD}}{(1+0.045/2)^{4}}=91.4843\text{ USD}
+		\end{align}	
+		}
+		Next, note that the cash-flows from the zero coupon bond are 100 USD, 100 USD, 100 USD, and 1100 USD.
+		{\scriptsize
+		\begin{equation}
+			\text{pv}_{\text{cpn}}=1\times \text{pv}_{1}+1\times \text{pv}_{2}+1\times \text{pv}_{3}+11\times \text{pv}_{4}=1297.1286\text{ USD}
+		\end{equation}
+		}
+	}
+\end{frame}
 
 \begin{frame}{\fttheory{Yield-to-Maturity (YTM)}}
 	\begin{itemize}
@@ -372,16 +426,18 @@ On 2019-01-01, $_0y_1=2.40\%$ and $_0y_2=2.40\%$. What did the market expect the
 \end{frame}
 
 \begin{frame}{\ftexampl{Yield-to-Maturity (YTM)}}
-		Suppose that 1, 2, and 3-year, 100 USD zero-coupon bonds trade for 106.4607, 99.7684, and 93.7438 USD respectively. What should be the YTM of a 3-year, 1000 USD, 10\% coupon bond that makes annual payments? \\
+	What is the \textbf{yield} of a 2-year, 1000 USD 20\% coupon bond that makes semi-annual coupon payments. Suppose that the 6, 12, 18, and 24 month zero rates are 1\%, 3\%, 4\%, and 4.5\% respectively. What should the 2-year bond trade for?\\
 		\pause
 	{\color{blue}
-
-		First compute what the price should be.
-		\begin{equation*}
-			p_{\text{cpn}}\should 1\times106.4607+1\times99.7684+11\times93.7438=1237.4109\text{ USD}
-		\end{equation*}
-		Then we can compute the YTM using a financial calculator: NPER $=$ 3, PMT $=$ 100 USD, PV $=$ 1237.4109 USD, and FV $=$ 1000 gives us a YTM of 1.7998\%.
+		From the previous problem, 
+		\begin{align*}
+		y_{0}&=2\times\text{RATE}(\\
+			&\hspace{.5in}\text{N}=4,\\
+			&\hspace{.5in}\text{PV}=-1297.1286,\\
+			&\hspace{.5in}\text{PMT}=(20\%\times 100)/2,\\
+			&\hspace{.5in}\text{FV}=1000)\\
+			&=4.3307\%
+		\end{align*}
 	}
 \end{frame}
-
 \end{document}
