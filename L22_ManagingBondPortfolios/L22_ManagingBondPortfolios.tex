@@ -7,17 +7,27 @@
 \newcommand{\ftheader}[1]{\fcolorbox{lightgray}{lightgray}{\color{black}\textbf{#1}\hspace{\textwidth}}}
 \begin{document}
 
+\begin{frame}
+	\begin{center}
+		\Huge Lecture 2.2:\\ Managing Bond Portfolios
+	\end{center}
+\end{frame}
+
 %-----------------------------------------------------------------------------%
 % OVERVIEW
 %-----------------------------------------------------------------------------%
 \section{Overview}
-\begin{frame}{\ftheader{Today's Lecture}}
-	In this lecture, we're going to study how bond prices change in response to changes in YTM using \underline{duration}. We will:
-\begin{enumerate}
-	\item use duration to compute \%$\Delta$ in price for \%$\Delta$ in YTM;
-	\item compute duration of coupon bond;
-	\item compute duration of a portfolio of bonds.
-\end{enumerate}
+\begin{frame}{\ftheader{Managing Bond Portfolios}}
+	\begin{enumerate}
+		\item In our last lecture, we computed zero rates, which we then compute forward rates (which told us about future short-term rates) and the yield-to-maturity
+		\item In this lecture, we're going to use the yield-to-maturity to say something else about the future: if the yield-to-maturity is expected to change by a certain amount, then by how much does the bond's price change?
+		\item The duration will allow us to do this
+		\begin{enumerate}
+			\item use duration to compute \%$\Delta$ in price for \%$\Delta$ in YTM;
+			\item compute duration of coupon bond;
+			\item compute duration of a portfolio of bonds.
+		\end{enumerate}
+	\end{enumerate}
 \end{frame}
 
 %-----------------------------------------------------------------------------%
@@ -27,7 +37,11 @@
 
 % DURATION--------------------------------------------------------------------%
 \begin{frame}{\fttheory{Duration}}
-	\textbf{Duration}: The weighted average of the times at each coupon or principal payment is made by the bond. It provides an `weighted average' of the times when you will receive your cash flows. Even though you will receive your bond payments spread over time, duration \underline{one hypothetical point in time} when you will receive your cash-flows.
+	\textbf{Duration}: The weighted average of the times at each coupon or principal payment is made by the bond. 
+	\begin{enumerate}
+		\item It provides an `weighted average' of the times when you will receive your cash flows. Even though you will receive your bond payments spread over time, duration \underline{one hypothetical point in time} when you will receive your cash-flows.
+		\item It is a measure of the sensitivity of a bond's price to its YTM.
+	\end{enumerate}
 \end{frame}
 
 % Annuities
@@ -55,18 +69,24 @@
 where $c\geq0$ is the coupon rate (APR) 
 {\scriptsize
 \begin{equation*}
-	P{\color{red}(y)}\should\frac{cF/2}{(1+y/2)}+\frac{cF/2}{(1+y/2)^2}+\frac{cF/2}{(1+y/2)^3}+\cdots+\frac{cF/2}{(1+y/2)^{2T}}+\frac{F}{(1+y/2)^{2T}}
+	\scriptsize P{\color{red}(y)}\should\frac{cF/2}{(1+y/2)}+\frac{cF/2}{(1+y/2)^2}+\frac{cF/2}{(1+y/2)^3}+\cdots+\frac{cF/2}{(1+y/2)^{2T}}+\frac{F}{(1+y/2)^{2T}}
 \end{equation*}
 }
-where $y$ is the YTM. 
+\noindent where $y$ is the yield-to-maturity (which depends on the coupon rate $c$). 
+\end{frame}
+
+\begin{frame}
+\begin{center}
+	\Huge Using Duration
+\end{center}
 \end{frame}
 
 \begin{frame}{\fttheory{Bond Price Changes}}
 Bond price volatility is proportional to the bond's duration; therefore duration becomes a natural measure of interest rate exposure.
 \begin{equation*}
-	\boxed{\frac{\Delta P}{P}\approx-D\times \frac{y'-y}{(1+y/2)^{2}}}
+	\boxed{\frac{\Delta P}{P}\approx-D\times \frac{y'-y}{1+y/2}}
 \end{equation*}
-where $y$ is the current YTM (APR), $y'$ is the new YTM (APR) and $D$ is the duration expressed in years. Note that this is for \underline{semi-annual compounding}.
+where $y$ is the current YTM (APR), $y'$ is the new YTM (APR) and $D$ is the duration expressed in years. 
 \end{frame}
 
 % DURATION--------------------------------------------------------------------%
@@ -76,16 +96,22 @@ where $y$ is the current YTM (APR), $y'$ is the new YTM (APR) and $D$ is the dur
 \end{center}
 \end{frame}
 
-\begin{frame}{Duration Problem 1}
+\begin{frame}{\ftexampl{Duration}}
 Suppose that the duration of a bond is 1.5 years. The YTM is currently 4\% (APR). If the YTM shifts up by 0.5\% in a few days, will there be a gain or a loss? Calculate it.\\
 \pause
 {\color{blue}
 \begin{align*}
-	\frac{\Delta P}{P}&\approx-D\times \frac{y'-y}{(1+y/2)^{2}}\\
-	&=-1.5\times\frac{0.005}{(1+0.02)^{2}}\times \\
+	\frac{\Delta P}{P}&\approx-D\times \frac{y'-y}{1+y/2}\\
+	&=-1.5\times\frac{0.005}{1+0.02}\times \\
 	&=-0.7209\%
 \end{align*}
 }
+\end{frame}
+
+\begin{frame}
+	\begin{center}
+		\Huge Computing Duration
+	\end{center}
 \end{frame}
 
 % DURATION--------------------------------------------------------------------%
@@ -154,6 +180,12 @@ Suppose that the duration of a bond is 1.5 years. The YTM is currently 4\% (APR)
 	}
 \end{frame}
 
+\begin{frame}
+	\begin{center}
+		\Huge Duration of a Portfolio
+	\end{center}
+\end{frame}
+
 \begin{frame}{\fttheory{Duration of a Portfolio}}
 \begin{itemize}
 	\item The duration of a portfolio is the portfolio of the duration, meaning:
@@ -191,6 +223,12 @@ A banker's dream come true!
 
 \section{Heterogeneity}
 
+\begin{frame}
+	\begin{center}
+		\Huge Heterogeneity
+	\end{center}
+\end{frame}
+
 % DURATION AND THE COUPON RATE------------------------------------------------%
 \begin{frame}{\fttheory{Duration Heterogeneity}}
     \begin{itemize}
@@ -211,6 +249,12 @@ A banker's dream come true!
     \begin{center}
         \includegraphics[scale=.55]{term}
     \end{center}
+\end{frame}
+
+\begin{frame}
+	\begin{center}
+		\Huge Immunization
+	\end{center}
 \end{frame}
 
 % IMMUNIZATION----------------------------------------------------------------%
