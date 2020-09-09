@@ -1,4 +1,4 @@
 \beamer@sectionintoc {1}{Overview}{2}{0}{1}
 \beamer@sectionintoc {2}{Duration}{3}{0}{2}
-\beamer@sectionintoc {3}{Heterogeneity}{22}{0}{3}
+\beamer@sectionintoc {3}{Heterogeneity}{16}{0}{3}
 \beamer@sectionintoc {4}{Immunization}{27}{0}{4}
