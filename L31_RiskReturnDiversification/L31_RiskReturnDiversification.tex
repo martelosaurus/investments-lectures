@@ -11,7 +11,7 @@ Risk, Return, and Diversification
 \end{center}
 \end{frame}
 
-\begin{frame}{\ftheader{Risk and Return}}
+\begin{frame}{\ftheader{Risk, Return, and Diversification}}
 	\begin{itemize}
 		\item Investors prefer more return and less risk
 		\item In this lecture, we will focus on two concepts related to investors' preferences over return and risk
@@ -19,6 +19,16 @@ Risk, Return, and Diversification
 			\item The risk premium, which is the return we expect to receive for taking a certain amount of risk
 			\item The Sharpe ratio, which tells us how much return we receive for each unit of risk we take
 		\end{enumerate}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{\fttheory{Computing Returns}}
+	\begin{itemize}
+		\item We will let $R_{s,t}$ denote the random return of stock $s$ on date $t$
+			\begin{equation}
+				R_{s,t}=\frac{P_{s,t}+D_{s,t}-P_{s,t-1}}{P_{s,t-1}}
+			\end{equation}
+		\item We will focus on monthly returns, although you can just as well think of hourly, daily, weekly, monthly, yearly returns 
 	\end{itemize}
 \end{frame}
 
@@ -32,8 +42,6 @@ Risk, Return, and Diversification
 			\item the standard deviation (volatility) of each stock;
 			\item the covariance between each pair of stocks.
 		\end{enumerate}
-		\item We will let $R_{s,t}$ denote the random return of stock $s$ on date $t$
-		\item We will focus on monthly returns, although you can just as well think of hourly, daily, weekly, monthly, yearly returns 
 	\end{itemize}
 \end{frame}
 
@@ -242,6 +250,12 @@ Risk, Return, and Diversification
 %-----------------------------------------------------------------------------%
 %   INDICES                                                                   %
 %-----------------------------------------------------------------------------%
+\begin{frame}
+\begin{center}
+\Huge Stock Indices
+\end{center}
+\end{frame}
+
 \begin{frame}{\fttheory{Return on Value-Weighted Index (E.g. S\&P 500)}}
 	\begin{itemize}
 		\item $N$ stocks, $j=1,2,\ldots,N$; $p_{j,t}$ price of stock $j$ on date $t$; $r_{j,t}$ total return on stock $j$ from date $t$ to date $t+1$; $n_{j}$ number of shares of stock $j$
@@ -309,6 +323,12 @@ Risk, Return, and Diversification
 	\end{center}
 \end{frame}
 
+\begin{frame}
+\begin{center}
+\Huge Diversification
+\end{center}
+\end{frame}
+
 \begin{frame}{\ftheader{Introduction: Diversification}}
 	\begin{itemize}
 		\item In this lecture, we begin our study of portfolio design
@@ -319,7 +339,7 @@ Risk, Return, and Diversification
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{\ftexampl{Example 1}}
+\begin{frame}{\ftexampl{Moral \#1}}
 	Suppose that $R_{F}=0$. Consider two stocks, $A$ and $B$: 
 	\begin{table}[H]
 		\begin{center}
@@ -333,7 +353,7 @@ Risk, Return, and Diversification
 	Stock $B$'s Sharpe ratio is smaller than that of stock $A$. Why would anyone \underline{ever} buy stock $B$?
 \end{frame}
 
-\begin{frame}{\ftexampl{Example 1}}
+\begin{frame}{\ftexampl{Moral \#1}}
 	Suppose that $A$ and $B$ have a correlation of $0.5$. Then
 	\begin{align*}
 		\text{Var}[R_{P}]&=x_{A}^{2}\text{SD}[R_{A}]^{2}+x_{B}^{2}\text{SD}[R_{B}]^{2}+2x_{A}x_{B}\text{Cov}[R_{A},R_{B}]\\
@@ -345,7 +365,7 @@ Risk, Return, and Diversification
 	and hence $\text{SD}[R_{P}]=17.3205\%$. 
 \end{frame}
 
-\begin{frame}{\ftexampl{Example 1}}
+\begin{frame}{\ftexampl{Moral \#1}}
 	Take a portfolio-based perspective:
 	\begin{table}[H]
 		\begin{center}
@@ -362,7 +382,7 @@ Risk, Return, and Diversification
  	\noindent\textbf{Moral:} a low-Sharpe ratio stock can increase the portfolio-Sharpe ratio above the Sharpe ratios of any of the constituent stocks
 \end{frame}
 
-\begin{frame}{\ftexampl{Example 2}}
+\begin{frame}{\ftexampl{Moral \#2}}
 	Suppose that $R_{F}=0$. Consider three stocks: $A$, $B$, and $C$. For each stock, $E[R]=5\%$ and $SD[R]=20\%$. Therefore, all stocks have a Sharpe ratio of 0.25. The correlations are 
 	\begin{align*}
 		\text{Corr}[R_{A},R_{B}]&=0.75\\
@@ -372,7 +392,7 @@ Risk, Return, and Diversification
 	Suppose you can only pick two of the three stocks. Which pair would you choose? Suppose that you invest equally in the two stocks. 
 \end{frame}
 
-\begin{frame}{\ftexampl{Example 2}}
+\begin{frame}{\ftexampl{Moral \#2}}
 	Let's compute the Sharpe ratios of each of the three portfolios.
 	\begin{table}[H]
 		\begin{center}
@@ -389,7 +409,7 @@ Risk, Return, and Diversification
  	\noindent\textbf{Moral:} By choosing less correlated stocks, we can increase the portfolio-Sharpe ratio \underline{without} sacrificing return.
 \end{frame}
 
-\begin{frame}{\ftexampl{Example 3}}
+\begin{frame}{\ftexampl{Moral \#3}}
 	Suppose that $R_{F}=0$. Consider three stocks: $A$, $B$, and $C$. For each stock, $E[R]=5\%$ and $SD[R]=20\%$. Therefore, all stocks have a Sharpe ratio of 0.25. The correlations are 
 	\begin{align*}
 		\text{Corr}[R_{A},R_{B}]&=+1\\
@@ -398,7 +418,7 @@ Risk, Return, and Diversification
 	What are the expected returns, volatilities, and Sharpe ratios of each of the pairs?
 \end{frame}
 
-\begin{frame}{\ftexampl{Example 3}}
+\begin{frame}{\ftexampl{Moral \#3}}
 	Let's compute the Sharpe ratios of each of the three portfolios.
 	\begin{table}[H]
 		\begin{center}
@@ -449,7 +469,7 @@ Risk, Return, and Diversification
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{\ftexampl{Example 4}}
+\begin{frame}{\ftexampl{Moral \#4}}
 	Suppose you construct a portfolio that is $+150\%$ in AAPL and $-50\%$ in PG. Discuss the sequence of cash flows when you initiate the position. \\
 	\pause
 	{\color{blue}
