@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.6.6)  23 AUG 2020 16:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.6.6)  13 SEP 2020 16:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -730,14 +730,8 @@ File: pgfmodulematrix.code.tex 2019/02/02 v3.1.1 (3.1.1)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2019/02/02 v3.1.1 (3.1.1)
-)))
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeBerlin.sty
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthememiniframes.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemerectangles.sty)
-)
-No file L31_RiskReturnDiversification.aux.
+))) (../jordan_header.tex)
+(./L31_RiskReturnDiversification.aux)
 \openout1 = `L31_RiskReturnDiversification.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
@@ -754,6 +748,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -833,6 +828,8 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 5.
 LaTeX Info: Redefining \pageref on input line 5.
 LaTeX Info: Redefining \nameref on input line 5.
+
+(./L31_RiskReturnDiversification.out) (./L31_RiskReturnDiversification.out)
 \@outlinefile=\write5
 \openout5 = `L31_RiskReturnDiversification.out'.
 
@@ -912,49 +909,507 @@ Dictionary: translator-numbers-dictionary, Language: English
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-theorem-dictiona
 ry-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-)
-No file L31_RiskReturnDiversification.nav.
-[1
+) (./L31_RiskReturnDiversification.nav) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
-
-]
-LaTeX Font Info:    Try loading font information for U+msa on input line 36.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Try loading font information for U+msa on input line 23.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 36.
+LaTeX Font Info:    Try loading font information for U+msb on input line 23.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 36.
+line 23.
 
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-[3
+Overfull \hbox (73.57874pt too wide) in paragraph at lines 23--23
+ []|[][][]  
+ []
 
-] [4
-
-] [5
-
-] [6
-
-] [7
-
-] [8
-
-] [9
-
-] [10
-
-] [11
+[2
 
 ]
+Overfull \hbox (129.23895pt too wide) in paragraph at lines 38--38
+ []|[][][]  
+ []
+
+[3
+
+]
+<myth.pdf, id=98, 462.52798pt x 346.89601pt>
+File: myth.pdf Graphic file (type pdf)
+<use myth.pdf>
+Package pdftex.def Info: myth.pdf  used on input line 42.
+(pdftex.def)             Requested size: 254.39116pt x 190.79338pt.
+
+Overfull \hbox (129.23895pt too wide) in paragraph at lines 42--42
+ []|[][][]  
+ []
+
+[4
+
+ <./myth.pdf>]
+<apple.pdf, id=161, 462.52798pt x 346.89601pt>
+File: apple.pdf Graphic file (type pdf)
+<use apple.pdf>
+Package pdftex.def Info: apple.pdf  used on input line 46.
+(pdftex.def)             Requested size: 254.39116pt x 190.79338pt.
+
+Overfull \hbox (129.23895pt too wide) in paragraph at lines 46--46
+ []|[][][]  
+ []
+
+[5
+
+ <./apple.pdf>]
+Overfull \hbox (4.04648pt too wide) in paragraph at lines 60--60
+ []|[][][]  
+ []
+
+[6
+
+]
+Overfull \hbox (23.28656pt too wide) in paragraph at lines 73--73
+ []|[][][]  
+ []
+
+[7
+
+]
+Overfull \hbox (93.88684pt too wide) in paragraph at lines 85--85
+ []|[][][]  
+ []
+
+[8
+
+]
+Overfull \hbox (93.88684pt too wide) in paragraph at lines 85--85
+ []|[][][]  
+ []
+
+[9
+
+]
+Overfull \hbox (38.40662pt too wide) in paragraph at lines 98--98
+ []|[][][]  
+ []
+
+[10
+
+]
+Overfull \hbox (39.38661pt too wide) in paragraph at lines 116--116
+ []|[][][]  
+ []
+
+[11
+
+]
+Overfull \hbox (39.38661pt too wide) in paragraph at lines 116--116
+ []|[][][]  
+ []
+
+[12
+
+]
+Overfull \hbox (39.38661pt too wide) in paragraph at lines 120--120
+ []|[][][]  
+ []
+
+[13
+
+]
+Overfull \hbox (124.43886pt too wide) in paragraph at lines 135--135
+ []|[][][]  
+ []
+
+[14
+
+]
+Overfull \hbox (97.26683pt too wide) in paragraph at lines 152--152
+ []|[][][]  
+ []
+
+[15
+
+]
+Overfull \hbox (1.57259pt too wide) detected at line 174
+[]
+ []
+
+
+Overfull \hbox (97.26683pt too wide) in paragraph at lines 174--174
+ []|[][][]  
+ []
+
+[16
+
+]
+Overfull \hbox (1.57259pt too wide) detected at line 174
+[]
+ []
+
+
+Overfull \hbox (97.26683pt too wide) in paragraph at lines 174--174
+ []|[][][]  
+ []
+
+[17
+
+] [18
+
+]
+Overfull \hbox (69.3627pt too wide) in paragraph at lines 189--189
+ []|[][][]  
+ []
+
+[19
+
+]
+Overfull \hbox (46.31863pt too wide) in paragraph at lines 200--200
+ []|[][][]  
+ []
+
+[20
+
+]
+Overfull \hbox (46.31863pt too wide) in paragraph at lines 212--212
+ []|[][][]  
+ []
+
+[21
+
+]
+Overfull \hbox (46.31863pt too wide) in paragraph at lines 212--212
+ []|[][][]  
+ []
+
+[22
+
+] [23
+
+]
+Overfull \hbox (58.65868pt too wide) in paragraph at lines 229--229
+ []|[][][]  
+ []
+
+[24
+
+]
+Overfull \hbox (58.65868pt too wide) in paragraph at lines 240--240
+ []|[][][]  
+ []
+
+[25
+
+]
+Overfull \hbox (58.65868pt too wide) in paragraph at lines 240--240
+ []|[][][]  
+ []
+
+[26
+
+]
+Overfull \hbox (294.52754pt too wide) in paragraph at lines 259--259
+ []|[][][]  
+ []
+
+[27
+
+]
+<airlines.pdf, id=791, 462.52798pt x 346.89601pt>
+File: airlines.pdf Graphic file (type pdf)
+<use airlines.pdf>
+Package pdftex.def Info: airlines.pdf  used on input line 265.
+(pdftex.def)             Requested size: 254.39116pt x 190.79338pt.
+
+Overfull \hbox (15.43849pt too wide) in paragraph at lines 265--265
+ []|[][][]  
+ []
+
+[28
+
+ <./airlines.pdf>]
+<bigtech.pdf, id=853, 462.52798pt x 346.89601pt>
+File: bigtech.pdf Graphic file (type pdf)
+<use bigtech.pdf>
+Package pdftex.def Info: bigtech.pdf  used on input line 271.
+(pdftex.def)             Requested size: 254.39116pt x 190.79338pt.
+
+Overfull \hbox (26.12653pt too wide) in paragraph at lines 271--271
+ []|[][][]  
+ []
+
+[29
+
+ <./bigtech.pdf>]
+<banks.pdf, id=917, 462.52798pt x 346.89601pt>
+File: banks.pdf Graphic file (type pdf)
+<use banks.pdf>
+Package pdftex.def Info: banks.pdf  used on input line 277.
+(pdftex.def)             Requested size: 254.39116pt x 190.79338pt.
+
+Overfull \hbox (6.87848pt too wide) in paragraph at lines 277--277
+ []|[][][]  
+ []
+
+[30
+
+ <./banks.pdf>]
+Overfull \hbox (22.56654pt too wide) in paragraph at lines 292--292
+ []|[][][]  
+ []
+
+[31
+
+]
+Overfull \hbox (22.56654pt too wide) in paragraph at lines 310--310
+ []|[][][]  
+ []
+
+[32
+
+]
+Overfull \hbox (152.819pt too wide) in paragraph at lines 320--320
+ []|[][][]  
+ []
+
+[33
+
+]
+Overfull \hbox (35.76659pt too wide) in paragraph at lines 334--334
+ []|[][][]  
+ []
+
+[34
+
+]
+Overfull \hbox (35.76659pt too wide) in paragraph at lines 346--346
+ []|[][][]  
+ []
+
+[35
+
+]
+Overfull \hbox (35.76659pt too wide) in paragraph at lines 363--363
+ []|[][][]  
+ []
+
+[36
+
+]
+Overfull \hbox (35.76659pt too wide) in paragraph at lines 373--373
+ []|[][][]  
+ []
+
+[37
+
+]
+Overfull \hbox (35.76659pt too wide) in paragraph at lines 390--390
+ []|[][][]  
+ []
+
+[38
+
+]
+Overfull \hbox (35.76659pt too wide) in paragraph at lines 399--399
+ []|[][][]  
+ []
+
+[39
+
+]
+Overfull \hbox (35.76659pt too wide) in paragraph at lines 415--415
+ []|[][][]  
+ []
+
+[40
+
+]
+Overfull \hbox (88.69879pt too wide) in paragraph at lines 434--434
+ []|[][][]  
+ []
+
+[41
+
+]
+<blank.pdf, id=1260, 462.52798pt x 346.89601pt>
+File: blank.pdf Graphic file (type pdf)
+<use blank.pdf>
+Package pdftex.def Info: blank.pdf  used on input line 438.
+(pdftex.def)             Requested size: 300.63962pt x 225.47972pt.
+
+Overfull \hbox (88.69879pt too wide) in paragraph at lines 438--438
+ []|[][][]  
+ []
+
+[42
+
+ <./blank.pdf>]
+<frontier.pdf, id=1326, 462.52798pt x 346.89601pt>
+File: frontier.pdf Graphic file (type pdf)
+<use frontier.pdf>
+Package pdftex.def Info: frontier.pdf  used on input line 442.
+(pdftex.def)             Requested size: 300.63962pt x 225.47972pt.
+
+Overfull \hbox (211.63927pt too wide) in paragraph at lines 442--442
+ []|[][][]  
+ []
+
+[43
+
+ <./frontier.pdf>]
+Overfull \hbox (211.63927pt too wide) in paragraph at lines 450--450
+ []|[][][]  
+ []
+
+[44
+
+]
+Overfull \hbox (35.76659pt too wide) in paragraph at lines 458--458
+ []|[][][]  
+ []
+
+[45
+
+]
+Overfull \hbox (35.76659pt too wide) in paragraph at lines 458--458
+ []|[][][]  
+ []
+
+[46
+
+]
+<big_aapl.pdf, id=1473, 462.52798pt x 346.89601pt>
+File: big_aapl.pdf Graphic file (type pdf)
+<use big_aapl.pdf>
+Package pdftex.def Info: big_aapl.pdf  used on input line 462.
+(pdftex.def)             Requested size: 300.63962pt x 225.47972pt.
+
+Overfull \hbox (297.69954pt too wide) in paragraph at lines 462--462
+ []|[][][]  
+ []
+
+[47
+
+ <./big_aapl.pdf>]
+<big_pg.pdf, id=1548, 462.52798pt x 346.89601pt>
+File: big_pg.pdf Graphic file (type pdf)
+<use big_pg.pdf>
+Package pdftex.def Info: big_pg.pdf  used on input line 466.
+(pdftex.def)             Requested size: 300.63962pt x 225.47972pt.
+
+Overfull \hbox (297.69954pt too wide) in paragraph at lines 466--466
+ []|[][][]  
+ []
+
+[48
+
+ <./big_pg.pdf>]
+Overfull \hbox (297.69954pt too wide) in paragraph at lines 474--474
+ []|[][][]  
+ []
+
+[49
+
+]
+<tangency.pdf, id=1650, 462.52798pt x 346.89601pt>
+File: tangency.pdf Graphic file (type pdf)
+<use tangency.pdf>
+Package pdftex.def Info: tangency.pdf  used on input line 478.
+(pdftex.def)             Requested size: 300.63962pt x 225.47972pt.
+
+Overfull \hbox (224.27928pt too wide) in paragraph at lines 478--478
+ []|[][][]  
+ []
+
+[50
+
+ <./tangency.pdf>]
+Overfull \hbox (297.69954pt too wide) in paragraph at lines 487--487
+ []|[][][]  
+ []
+
+[51
+
+]
+Overfull \hbox (91.10678pt too wide) in paragraph at lines 503--503
+ []|[][][]  
+ []
+
+[52
+
+]
+Overfull \hbox (52.89864pt too wide) in paragraph at lines 521--521
+ []|[][][]  
+ []
+
+[53
+
+]
+<correlations.pdf, id=1804, 462.52798pt x 346.89601pt>
+File: correlations.pdf Graphic file (type pdf)
+<use correlations.pdf>
+Package pdftex.def Info: correlations.pdf  used on input line 525.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+
+Overfull \hbox (16.4775pt too wide) in paragraph at lines 525--525
+[][]  
+ []
+
+
+Overfull \hbox (45.45863pt too wide) in paragraph at lines 525--525
+ []|[][][]  
+ []
+
+[54
+
+ <./correlations.pdf>]
+Overfull \hbox (56.07065pt too wide) in paragraph at lines 541--541
+ []|[][][]  
+ []
+
+[55
+
+]
+Overfull \hbox (35.76659pt too wide) in paragraph at lines 553--553
+ []|[][][]  
+ []
+
+[56
+
+]
+Overfull \hbox (35.76659pt too wide) in paragraph at lines 553--553
+ []|[][][]  
+ []
+
+[57
+
+]
+<div30.pdf, id=1945, 462.52798pt x 346.89601pt>
+File: div30.pdf Graphic file (type pdf)
+<use div30.pdf>
+Package pdftex.def Info: div30.pdf  used on input line 557.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+
+Overfull \hbox (16.4775pt too wide) in paragraph at lines 557--557
+[][]  
+ []
+
+
+Overfull \hbox (151.69904pt too wide) in paragraph at lines 557--557
+ []|[][][]  
+ []
+
+[58
+
+ <./div30.pdf>]
 \tf@nav=\write6
 \openout6 = `L31_RiskReturnDiversification.nav'.
 
@@ -964,43 +1419,39 @@ thkerncmss.
 \tf@snm=\write8
 \openout8 = `L31_RiskReturnDiversification.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 112.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 112.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 564.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 564.
  (./L31_RiskReturnDiversification.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 112.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 112.
-
-
-Package rerunfilecheck Warning: File `L31_RiskReturnDiversification.out' has ch
-anged.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `L31_RiskReturnDiversification.out':
-
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  02E370EE507B620B5EE700ED50A6FF4F;188.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 564.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 564.
+Package rerunfilecheck Info: File `L31_RiskReturnDiversification.out' has not c
+hanged.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 20177 strings out of 492615
- 399950 string characters out of 6131391
- 475293 words of memory out of 5000000
- 23623 multiletter control sequences out of 15000+600000
- 10989 words of font info for 40 fonts, out of 8000000 for 9000
+ 20226 strings out of 492615
+ 395416 string characters out of 6131391
+ 470831 words of memory out of 5000000
+ 23570 multiletter control sequences out of 15000+600000
+ 12251 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,15n,55p,818b,566s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb>
-Output written on L31_RiskReturnDiversification.pdf (11 pages, 90074 bytes).
+ 56i,14n,55p,818b,560s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbo
+ls/msam10.pfb>
+Output written on L31_RiskReturnDiversification.pdf (58 pages, 390184 bytes).
 PDF statistics:
- 351 PDF objects out of 1000 (max. 8388607)
- 319 compressed objects within 4 object streams
- 27 named destinations out of 1000 (max. 500000)
- 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2089 PDF objects out of 2487 (max. 8388607)
+ 1547 compressed objects within 16 object streams
+ 117 named destinations out of 1000 (max. 500000)
+ 103 words of extra memory for PDF output out of 10000 (max. 10000000)
 
