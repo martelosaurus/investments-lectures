@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.6.6)  13 SEP 2020 19:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.6.6)  14 SEP 2020 09:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -912,417 +912,431 @@ Dictionary: translator-theorem-dictionary, Language: English
 ) (./L31_RiskReturnDiversification.nav) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for U+msa on input line 23.
+LaTeX Font Info:    Try loading font information for U+msa on input line 20.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 23.
+LaTeX Font Info:    Try loading font information for U+msb on input line 20.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 23.
+line 20.
 
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-Overfull \hbox (180.99115pt too wide) in paragraph at lines 23--23
+Overfull \hbox (180.99115pt too wide) in paragraph at lines 20--20
  []|[][][]  
  []
 
 [2
 
 ]
-Overfull \hbox (95.31882pt too wide) in paragraph at lines 33--33
+Overfull \hbox (95.31882pt too wide) in paragraph at lines 40--40
  []|[][][]  
  []
 
 [3
 
 ]
-Overfull \hbox (129.23895pt too wide) in paragraph at lines 46--46
+Overfull \hbox (95.31882pt too wide) in paragraph at lines 40--40
  []|[][][]  
  []
 
 [4
 
 ]
-<myth.pdf, id=126, 462.52798pt x 346.89601pt>
-File: myth.pdf Graphic file (type pdf)
-<use myth.pdf>
-Package pdftex.def Info: myth.pdf  used on input line 50.
-(pdftex.def)             Requested size: 254.39116pt x 190.79338pt.
-
-Overfull \hbox (129.23895pt too wide) in paragraph at lines 50--50
+Overfull \hbox (129.23895pt too wide) in paragraph at lines 52--52
  []|[][][]  
  []
 
 [5
 
- <./myth.pdf>]
-<apple.pdf, id=189, 462.52798pt x 346.89601pt>
-File: apple.pdf Graphic file (type pdf)
-<use apple.pdf>
-Package pdftex.def Info: apple.pdf  used on input line 54.
+]
+<myth.pdf, id=153, 462.52798pt x 346.89601pt>
+File: myth.pdf Graphic file (type pdf)
+<use myth.pdf>
+Package pdftex.def Info: myth.pdf  used on input line 58.
 (pdftex.def)             Requested size: 254.39116pt x 190.79338pt.
 
-Overfull \hbox (129.23895pt too wide) in paragraph at lines 54--54
+Overfull \hbox (129.23895pt too wide) in paragraph at lines 58--58
  []|[][][]  
  []
 
 [6
 
- <./apple.pdf>]
-Overfull \hbox (4.04648pt too wide) in paragraph at lines 68--68
+ <./myth.pdf>]
+<apple.pdf, id=215, 462.52798pt x 346.89601pt>
+File: apple.pdf Graphic file (type pdf)
+<use apple.pdf>
+Package pdftex.def Info: apple.pdf  used on input line 64.
+(pdftex.def)             Requested size: 254.39116pt x 190.79338pt.
+
+Overfull \hbox (129.23895pt too wide) in paragraph at lines 64--64
  []|[][][]  
  []
 
 [7
 
-]
-Overfull \hbox (23.28656pt too wide) in paragraph at lines 81--81
+ <./apple.pdf>]
+<mean_shift.pdf, id=282, 462.52798pt x 346.89601pt>
+File: mean_shift.pdf Graphic file (type pdf)
+<use mean_shift.pdf>
+Package pdftex.def Info: mean_shift.pdf  used on input line 70.
+(pdftex.def)             Requested size: 254.39116pt x 190.79338pt.
+
+Overfull \hbox (73.73875pt too wide) in paragraph at lines 70--70
  []|[][][]  
  []
 
 [8
 
-]
-Overfull \hbox (93.88684pt too wide) in paragraph at lines 93--93
+ <./mean_shift.pdf>]
+<stdv_shift.pdf, id=333, 462.52798pt x 346.89601pt>
+File: stdv_shift.pdf Graphic file (type pdf)
+<use stdv_shift.pdf>
+Package pdftex.def Info: stdv_shift.pdf  used on input line 76.
+(pdftex.def)             Requested size: 254.39116pt x 190.79338pt.
+
+Overfull \hbox (163.57912pt too wide) in paragraph at lines 76--76
  []|[][][]  
  []
 
 [9
 
-]
-Overfull \hbox (93.88684pt too wide) in paragraph at lines 93--93
+ <./stdv_shift.pdf>]
+<mean_stdv_shift.pdf, id=384, 462.52798pt x 346.89601pt>
+File: mean_stdv_shift.pdf Graphic file (type pdf)
+<use mean_stdv_shift.pdf>
+Package pdftex.def Info: mean_stdv_shift.pdf  used on input line 82.
+(pdftex.def)             Requested size: 254.39116pt x 190.79338pt.
+
+Overfull \hbox (241.01144pt too wide) in paragraph at lines 82--82
  []|[][][]  
  []
 
 [10
 
-]
-Overfull \hbox (38.40662pt too wide) in paragraph at lines 106--106
+ <./mean_stdv_shift.pdf>]
+Overfull \hbox (77.68674pt too wide) in paragraph at lines 96--96
  []|[][][]  
  []
 
 [11
 
 ]
-Overfull \hbox (39.38661pt too wide) in paragraph at lines 124--124
+Overfull \hbox (25.90652pt too wide) in paragraph at lines 113--113
  []|[][][]  
  []
 
 [12
 
 ]
-Overfull \hbox (39.38661pt too wide) in paragraph at lines 124--124
+Overfull \hbox (38.40662pt too wide) in paragraph at lines 126--126
  []|[][][]  
  []
 
 [13
 
 ]
-Overfull \hbox (39.38661pt too wide) in paragraph at lines 128--128
+Overfull \hbox (39.38661pt too wide) in paragraph at lines 137--137
  []|[][][]  
  []
 
 [14
 
 ]
-Overfull \hbox (124.43886pt too wide) in paragraph at lines 143--143
+Overfull \hbox (124.43886pt too wide) in paragraph at lines 152--152
  []|[][][]  
  []
 
 [15
 
 ]
-Overfull \hbox (97.26683pt too wide) in paragraph at lines 160--160
+Overfull \hbox (97.26683pt too wide) in paragraph at lines 169--169
  []|[][][]  
  []
 
 [16
 
 ]
-Overfull \hbox (1.57259pt too wide) detected at line 182
-[]
- []
-
-
-Overfull \hbox (97.26683pt too wide) in paragraph at lines 182--182
+Overfull \hbox (71.64674pt too wide) in paragraph at lines 178--178
  []|[][][]  
  []
 
 [17
 
+] [18
+
 ]
-Overfull \hbox (1.57259pt too wide) detected at line 182
-[]
- []
-
-
-Overfull \hbox (97.26683pt too wide) in paragraph at lines 182--182
+Overfull \hbox (69.3627pt too wide) in paragraph at lines 193--193
  []|[][][]  
  []
 
-[18
-
-] [19
+[19
 
 ]
-Overfull \hbox (69.3627pt too wide) in paragraph at lines 197--197
+Overfull \hbox (46.31863pt too wide) in paragraph at lines 204--204
  []|[][][]  
  []
 
 [20
 
 ]
-Overfull \hbox (46.31863pt too wide) in paragraph at lines 208--208
+Overfull \hbox (46.31863pt too wide) in paragraph at lines 216--216
  []|[][][]  
  []
 
 [21
 
 ]
-Overfull \hbox (46.31863pt too wide) in paragraph at lines 220--220
+Overfull \hbox (46.31863pt too wide) in paragraph at lines 216--216
  []|[][][]  
  []
 
 [22
 
+] [23
+
 ]
-Overfull \hbox (46.31863pt too wide) in paragraph at lines 220--220
+Overfull \hbox (58.65868pt too wide) in paragraph at lines 233--233
  []|[][][]  
  []
 
-[23
-
-] [24
+[24
 
 ]
-Overfull \hbox (58.65868pt too wide) in paragraph at lines 237--237
+Overfull \hbox (58.65868pt too wide) in paragraph at lines 244--244
  []|[][][]  
  []
 
 [25
 
 ]
-Overfull \hbox (58.65868pt too wide) in paragraph at lines 248--248
+Overfull \hbox (58.65868pt too wide) in paragraph at lines 244--244
  []|[][][]  
  []
 
 [26
 
+] [27
+
 ]
-Overfull \hbox (58.65868pt too wide) in paragraph at lines 248--248
+Overfull \hbox (294.52754pt too wide) in paragraph at lines 269--269
  []|[][][]  
  []
 
-[27
-
-] [28
+[28
 
 ]
-Overfull \hbox (294.52754pt too wide) in paragraph at lines 273--273
+Overfull \hbox (22.56654pt too wide) in paragraph at lines 284--284
  []|[][][]  
  []
 
 [29
 
 ]
-<airlines.pdf, id=843, 462.52798pt x 346.89601pt>
-File: airlines.pdf Graphic file (type pdf)
-<use airlines.pdf>
-Package pdftex.def Info: airlines.pdf  used on input line 279.
-(pdftex.def)             Requested size: 254.39116pt x 190.79338pt.
-
-Overfull \hbox (15.43849pt too wide) in paragraph at lines 279--279
+Overfull \hbox (22.56654pt too wide) in paragraph at lines 302--302
  []|[][][]  
  []
 
 [30
 
- <./airlines.pdf>]
-<bigtech.pdf, id=905, 462.52798pt x 346.89601pt>
-File: bigtech.pdf Graphic file (type pdf)
-<use bigtech.pdf>
-Package pdftex.def Info: bigtech.pdf  used on input line 285.
+]
+<airlines.pdf, id=947, 462.52798pt x 346.89601pt>
+File: airlines.pdf Graphic file (type pdf)
+<use airlines.pdf>
+Package pdftex.def Info: airlines.pdf  used on input line 308.
 (pdftex.def)             Requested size: 254.39116pt x 190.79338pt.
 
-Overfull \hbox (26.12653pt too wide) in paragraph at lines 285--285
+Overfull \hbox (15.43849pt too wide) in paragraph at lines 308--308
  []|[][][]  
  []
 
 [31
 
- <./bigtech.pdf>]
-<banks.pdf, id=969, 462.52798pt x 346.89601pt>
-File: banks.pdf Graphic file (type pdf)
-<use banks.pdf>
-Package pdftex.def Info: banks.pdf  used on input line 291.
+ <./airlines.pdf>]
+<bigtech.pdf, id=1010, 462.52798pt x 346.89601pt>
+File: bigtech.pdf Graphic file (type pdf)
+<use bigtech.pdf>
+Package pdftex.def Info: bigtech.pdf  used on input line 314.
 (pdftex.def)             Requested size: 254.39116pt x 190.79338pt.
 
-Overfull \hbox (6.87848pt too wide) in paragraph at lines 291--291
+Overfull \hbox (26.12653pt too wide) in paragraph at lines 314--314
  []|[][][]  
  []
 
 [32
 
- <./banks.pdf>]
-Overfull \hbox (22.56654pt too wide) in paragraph at lines 306--306
+ <./bigtech.pdf>]
+<banks.pdf, id=1074, 462.52798pt x 346.89601pt>
+File: banks.pdf Graphic file (type pdf)
+<use banks.pdf>
+Package pdftex.def Info: banks.pdf  used on input line 320.
+(pdftex.def)             Requested size: 254.39116pt x 190.79338pt.
+
+Overfull \hbox (6.87848pt too wide) in paragraph at lines 320--320
  []|[][][]  
  []
 
 [33
 
+ <./banks.pdf>] [34
+
 ]
-Overfull \hbox (22.56654pt too wide) in paragraph at lines 324--324
+Overfull \hbox (31.52658pt too wide) in paragraph at lines 341--341
  []|[][][]  
  []
 
-[34
-
-] [35
+[35
 
 ]
-Overfull \hbox (152.819pt too wide) in paragraph at lines 340--340
+Overfull \hbox (31.52658pt too wide) in paragraph at lines 353--353
  []|[][][]  
  []
 
 [36
 
 ]
-Overfull \hbox (31.52658pt too wide) in paragraph at lines 354--354
+Overfull \hbox (31.52658pt too wide) in paragraph at lines 370--370
  []|[][][]  
  []
 
 [37
 
 ]
-Overfull \hbox (31.52658pt too wide) in paragraph at lines 366--366
+Overfull \hbox (31.52658pt too wide) in paragraph at lines 380--380
  []|[][][]  
  []
 
 [38
 
 ]
-Overfull \hbox (31.52658pt too wide) in paragraph at lines 383--383
+Overfull \hbox (31.52658pt too wide) in paragraph at lines 397--397
  []|[][][]  
  []
 
 [39
 
 ]
-Overfull \hbox (31.52658pt too wide) in paragraph at lines 393--393
+Overfull \hbox (31.52658pt too wide) in paragraph at lines 406--406
  []|[][][]  
  []
 
 [40
 
 ]
-Overfull \hbox (31.52658pt too wide) in paragraph at lines 410--410
+Overfull \hbox (31.52658pt too wide) in paragraph at lines 422--422
  []|[][][]  
  []
 
 [41
 
 ]
-Overfull \hbox (31.52658pt too wide) in paragraph at lines 419--419
+Overfull \hbox (88.69879pt too wide) in paragraph at lines 441--441
  []|[][][]  
  []
 
 [42
 
 ]
-Overfull \hbox (31.52658pt too wide) in paragraph at lines 435--435
+<blank.pdf, id=1364, 462.52798pt x 346.89601pt>
+File: blank.pdf Graphic file (type pdf)
+<use blank.pdf>
+Package pdftex.def Info: blank.pdf  used on input line 445.
+(pdftex.def)             Requested size: 300.63962pt x 225.47972pt.
+
+Overfull \hbox (88.69879pt too wide) in paragraph at lines 445--445
  []|[][][]  
  []
 
 [43
 
-]
-Overfull \hbox (88.69879pt too wide) in paragraph at lines 454--454
+ <./blank.pdf>]
+<frontier.pdf, id=1431, 462.52798pt x 346.89601pt>
+File: frontier.pdf Graphic file (type pdf)
+<use frontier.pdf>
+Package pdftex.def Info: frontier.pdf  used on input line 449.
+(pdftex.def)             Requested size: 300.63962pt x 225.47972pt.
+
+Overfull \hbox (211.63927pt too wide) in paragraph at lines 449--449
  []|[][][]  
  []
 
 [44
 
-]
-<blank.pdf, id=1337, 462.52798pt x 346.89601pt>
-File: blank.pdf Graphic file (type pdf)
-<use blank.pdf>
-Package pdftex.def Info: blank.pdf  used on input line 458.
-(pdftex.def)             Requested size: 300.63962pt x 225.47972pt.
-
-Overfull \hbox (88.69879pt too wide) in paragraph at lines 458--458
+ <./frontier.pdf>]
+Overfull \hbox (211.63927pt too wide) in paragraph at lines 457--457
  []|[][][]  
  []
 
 [45
 
- <./blank.pdf>]
-<frontier.pdf, id=1404, 462.52798pt x 346.89601pt>
-File: frontier.pdf Graphic file (type pdf)
-<use frontier.pdf>
-Package pdftex.def Info: frontier.pdf  used on input line 462.
-(pdftex.def)             Requested size: 300.63962pt x 225.47972pt.
-
-Overfull \hbox (211.63927pt too wide) in paragraph at lines 462--462
+]
+Overfull \hbox (31.52658pt too wide) in paragraph at lines 465--465
  []|[][][]  
  []
 
 [46
 
- <./frontier.pdf>]
-Overfull \hbox (211.63927pt too wide) in paragraph at lines 470--470
+]
+Overfull \hbox (31.52658pt too wide) in paragraph at lines 465--465
  []|[][][]  
  []
 
 [47
 
 ]
-Overfull \hbox (31.52658pt too wide) in paragraph at lines 478--478
+<big_aapl.pdf, id=1578, 462.52798pt x 346.89601pt>
+File: big_aapl.pdf Graphic file (type pdf)
+<use big_aapl.pdf>
+Package pdftex.def Info: big_aapl.pdf  used on input line 469.
+(pdftex.def)             Requested size: 300.63962pt x 225.47972pt.
+
+Overfull \hbox (297.69954pt too wide) in paragraph at lines 469--469
  []|[][][]  
  []
 
 [48
 
-]
-Overfull \hbox (31.52658pt too wide) in paragraph at lines 478--478
+ <./big_aapl.pdf>]
+<big_pg.pdf, id=1653, 462.52798pt x 346.89601pt>
+File: big_pg.pdf Graphic file (type pdf)
+<use big_pg.pdf>
+Package pdftex.def Info: big_pg.pdf  used on input line 473.
+(pdftex.def)             Requested size: 300.63962pt x 225.47972pt.
+
+Overfull \hbox (297.69954pt too wide) in paragraph at lines 473--473
  []|[][][]  
  []
 
 [49
 
-]
-<big_aapl.pdf, id=1551, 462.52798pt x 346.89601pt>
-File: big_aapl.pdf Graphic file (type pdf)
-<use big_aapl.pdf>
-Package pdftex.def Info: big_aapl.pdf  used on input line 482.
-(pdftex.def)             Requested size: 300.63962pt x 225.47972pt.
-
-Overfull \hbox (297.69954pt too wide) in paragraph at lines 482--482
+ <./big_pg.pdf>]
+Overfull \hbox (297.69954pt too wide) in paragraph at lines 481--481
  []|[][][]  
  []
 
 [50
 
- <./big_aapl.pdf>]
-<big_pg.pdf, id=1626, 462.52798pt x 346.89601pt>
-File: big_pg.pdf Graphic file (type pdf)
-<use big_pg.pdf>
-Package pdftex.def Info: big_pg.pdf  used on input line 486.
+]
+<tangency.pdf, id=1754, 462.52798pt x 346.89601pt>
+File: tangency.pdf Graphic file (type pdf)
+<use tangency.pdf>
+Package pdftex.def Info: tangency.pdf  used on input line 485.
 (pdftex.def)             Requested size: 300.63962pt x 225.47972pt.
 
-Overfull \hbox (297.69954pt too wide) in paragraph at lines 486--486
+Overfull \hbox (224.27928pt too wide) in paragraph at lines 485--485
  []|[][][]  
  []
 
 [51
 
- <./big_pg.pdf>]
+ <./tangency.pdf>]
 Overfull \hbox (297.69954pt too wide) in paragraph at lines 494--494
  []|[][][]  
  []
@@ -1330,95 +1344,75 @@ Overfull \hbox (297.69954pt too wide) in paragraph at lines 494--494
 [52
 
 ]
-<tangency.pdf, id=1727, 462.52798pt x 346.89601pt>
-File: tangency.pdf Graphic file (type pdf)
-<use tangency.pdf>
-Package pdftex.def Info: tangency.pdf  used on input line 498.
-(pdftex.def)             Requested size: 300.63962pt x 225.47972pt.
-
-Overfull \hbox (224.27928pt too wide) in paragraph at lines 498--498
+Overfull \hbox (91.10678pt too wide) in paragraph at lines 510--510
  []|[][][]  
  []
 
 [53
 
- <./tangency.pdf>]
-Overfull \hbox (297.69954pt too wide) in paragraph at lines 507--507
+]
+Overfull \hbox (52.89864pt too wide) in paragraph at lines 528--528
  []|[][][]  
  []
 
 [54
 
 ]
-Overfull \hbox (91.10678pt too wide) in paragraph at lines 523--523
+<correlations.pdf, id=1908, 462.52798pt x 346.89601pt>
+File: correlations.pdf Graphic file (type pdf)
+<use correlations.pdf>
+Package pdftex.def Info: correlations.pdf  used on input line 532.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+
+Overfull \hbox (16.4775pt too wide) in paragraph at lines 532--532
+[][]  
+ []
+
+
+Overfull \hbox (45.45863pt too wide) in paragraph at lines 532--532
  []|[][][]  
  []
 
 [55
 
-]
-Overfull \hbox (52.89864pt too wide) in paragraph at lines 541--541
+ <./correlations.pdf>]
+Overfull \hbox (56.07065pt too wide) in paragraph at lines 548--548
  []|[][][]  
  []
 
 [56
 
 ]
-<correlations.pdf, id=1882, 462.52798pt x 346.89601pt>
-File: correlations.pdf Graphic file (type pdf)
-<use correlations.pdf>
-Package pdftex.def Info: correlations.pdf  used on input line 545.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
-
-Overfull \hbox (16.4775pt too wide) in paragraph at lines 545--545
-[][]  
- []
-
-
-Overfull \hbox (45.45863pt too wide) in paragraph at lines 545--545
+Overfull \hbox (35.76659pt too wide) in paragraph at lines 560--560
  []|[][][]  
  []
 
 [57
 
- <./correlations.pdf>]
-Overfull \hbox (56.07065pt too wide) in paragraph at lines 561--561
+]
+Overfull \hbox (35.76659pt too wide) in paragraph at lines 560--560
  []|[][][]  
  []
 
 [58
 
 ]
-Overfull \hbox (35.76659pt too wide) in paragraph at lines 573--573
- []|[][][]  
- []
-
-[59
-
-]
-Overfull \hbox (35.76659pt too wide) in paragraph at lines 573--573
- []|[][][]  
- []
-
-[60
-
-]
-<div30.pdf, id=2022, 462.52798pt x 346.89601pt>
+<div30.pdf, id=2049, 462.52798pt x 346.89601pt>
 File: div30.pdf Graphic file (type pdf)
 <use div30.pdf>
-Package pdftex.def Info: div30.pdf  used on input line 577.
+Package pdftex.def Info: div30.pdf  used on input line 564.
 (pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
 
-Overfull \hbox (16.4775pt too wide) in paragraph at lines 577--577
+Overfull \hbox (16.4775pt too wide) in paragraph at lines 564--564
 [][]  
  []
 
 
-Overfull \hbox (151.69904pt too wide) in paragraph at lines 577--577
+Overfull \hbox (151.69904pt too wide) in paragraph at lines 564--564
  []|[][][]  
  []
 
-[61
+[59
 
  <./div30.pdf>]
 \tf@nav=\write6
@@ -1430,40 +1424,41 @@ Overfull \hbox (151.69904pt too wide) in paragraph at lines 577--577
 \tf@snm=\write8
 \openout8 = `L31_RiskReturnDiversification.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 584.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 584.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 571.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 571.
  (./L31_RiskReturnDiversification.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 584.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 584.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 571.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 571.
 Package rerunfilecheck Info: File `L31_RiskReturnDiversification.out' has not c
 hanged.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 20238 strings out of 492615
- 395527 string characters out of 6131391
- 470831 words of memory out of 5000000
- 23576 multiletter control sequences out of 15000+600000
- 12251 words of font info for 44 fonts, out of 8000000 for 9000
+ 20256 strings out of 492615
+ 395936 string characters out of 6131391
+ 471831 words of memory out of 5000000
+ 23593 multiletter control sequences out of 15000+600000
+ 13591 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,14n,55p,818b,560s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam
-10.pfb>
-Output written on L31_RiskReturnDiversification.pdf (61 pages, 401385 bytes).
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+
+Output written on L31_RiskReturnDiversification.pdf (59 pages, 427313 bytes).
 PDF statistics:
- 2171 PDF objects out of 2487 (max. 8388607)
- 1624 compressed objects within 17 object streams
- 123 named destinations out of 1000 (max. 500000)
- 103 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2200 PDF objects out of 2487 (max. 8388607)
+ 1607 compressed objects within 17 object streams
+ 119 named destinations out of 1000 (max. 500000)
+ 118 words of extra memory for PDF output out of 10000 (max. 10000000)
 

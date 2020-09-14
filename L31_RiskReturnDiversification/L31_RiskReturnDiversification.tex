@@ -14,50 +14,78 @@ Risk, Return, and Diversification
 \begin{frame}{\ftheader{Risk, Return, and Diversification}}
 	\begin{itemize}
 		\item Investors prefer more return and less risk
-		\item In this lecture, we will focus on two concepts related to investors' preferences over return and risk
-		\begin{enumerate}
-			\item The risk premium, which is the return we expect to receive for taking a certain amount of risk
-			\item The Sharpe ratio, which tells us how much return we receive for each unit of risk we take
-		\end{enumerate}
+		\item We will show that diversification enables enables investors to decrease risk without sacrificing return
+		\item We need to quantify ``risk,'' ``return,'' and ``diversification'' so that they can be useful concepts in real-world applications
 	\end{itemize}
 \end{frame}
 
 \begin{frame}{\fttheory{Computing Returns}}
 	\begin{itemize}
 		\item We will let $R_{s,t}$ denote the random return of stock $s$ on date $t$
-			\begin{equation}
+			\begin{equation*}
 				R_{s,t}=\frac{P_{s,t}+D_{s,t}-P_{s,t-1}}{P_{s,t-1}}
-			\end{equation}
+			\end{equation*}
 		\item We will focus on monthly returns, although you can just as well think of hourly, daily, weekly, monthly, yearly returns 
+		\item Example: On 2020-07-31, Apple (AAPL) traded for 106.0643 USD. On 2020-08-31, Apple traded for 129.04 USD and paid a dividend of 0.82 USD. What was Apple's return during the month of August?
+	\pause
+	{\color{blue}
+		\scriptsize
+		\begin{align}
+			R_{\text{AAPL},\text{August}}&=\frac{P_{\text{AAPL},\text{August}}+D_{\text{AAPL},\text{August}}-P_{\text{AAPL},\text{July}}}{P_{\text{AAPL},\text{July}}}\\
+			&=\frac{129.04\text{ USD}+0.82\text{ USD}-106.0643\text{ USD}}{106.0643\text{ USD}}\\
+			&=22.44\%
+		\end{align}
+	}
 	\end{itemize}
 \end{frame}
 
 \begin{frame}{\fttheory{The Normal Distribution}}
 	\begin{itemize}
-		\item Assumption: returns are normally distributed
-		\item Consequently, the returns of a \underline{portfolio} are also normally distributed 
+		\item We assume that returns are normally distributed. Under this assumption, the returns of a \underline{portfolio} are also normally distributed 
 		\item The returns of a portfolio are characterized by three attributes of its constituent stocks:
 		\begin{enumerate}
-			\item the mean return of each stock;
-			\item the standard deviation (volatility) of each stock;
-			\item the covariance between each pair of stocks.
+			\item the expected return of each stock;
+			\item the volatility of each stock;
+			\item the correlation between each pair of stocks.
 		\end{enumerate}
 	\end{itemize}
 \end{frame}
 
 \begin{frame}{\ftdata{The Normal Distribution}}
-	\includegraphics[scale=.55]{myth}
+	\begin{center}
+		\includegraphics[scale=.55]{myth}
+	\end{center}
 \end{frame}
 
 \begin{frame}{\ftdata{The Normal Distribution}}
-	\includegraphics[scale=.55]{apple}
+	\begin{center}
+		\includegraphics[scale=.55]{apple}
+	\end{center}
 \end{frame}
 
-\begin{frame}{\fttheory{Mean}}
+\begin{frame}{\fttheory{Different Means}}
+	\begin{center}
+		\includegraphics[scale=.55]{mean_shift}
+	\end{center}
+\end{frame}
+
+\begin{frame}{\fttheory{Different Standard Deviations}}
+	\begin{center}
+		\includegraphics[scale=.55]{stdv_shift}
+	\end{center}
+\end{frame}
+
+\begin{frame}{\fttheory{Different Means and Standard Deviations}}
+	\begin{center}
+		\includegraphics[scale=.55]{mean_stdv_shift}
+	\end{center}
+\end{frame}
+
+\begin{frame}{\fttheory{Expected Return}}
 	\begin{itemize}
 		\item We denoted by $\text{E}[R_{s}]$ the mean, or expectation of $R_{s}$
 		\item It is just a \underline{number} 
-		\item It tells what the typical return
+		\item It is the \underline{expected return}
 		\item The mean is expressed in ``\%''
 		\item Our \underline{estimate} of the mean return for stock $s$ is
 		\begin{equation*}
@@ -67,7 +95,7 @@ Risk, Return, and Diversification
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{\fttheory{Variance}}
+\begin{frame}{\fttheory{Volatility}}
 	\begin{itemize}
 		\item We denoted by $\text{Var}[R_{s}]$ the variance of $R_{s}$
 		\item The variance is used to construct the standard deviation
@@ -77,18 +105,10 @@ Risk, Return, and Diversification
 			\sigma_{s}^{2}=\frac{1}{N-1}\sum_{t=1}^{N}{(R_{s,t}-\mu_{s})^{2}}
 		\end{equation*}
 		\item The ``$N-1$'' makes the estimator unbiased
-	\end{itemize}
-\end{frame}
-
-\begin{frame}{\fttheory{Standard Deviation}}
-	\begin{itemize}
 		\item We denote by $\text{SD}[R_{s}]$ the standard deviation or \underline{volatility} of $R_{s}$
 		\item It is our measure of \underline{risk}
 		\item The standard deviation is $\text{SD}[R_{s}]=\sqrt{\text{Var}[R_{s}]}$	
 		\item It is expressed in ``\%''
-		\pause
-		\item {\color{blue}Our \underline{estimate} in the Apple (AAPL) example is $12.0304\%=\sqrt{0.014473}$}
-		\item {\color{blue}Our \underline{estimate} in the Home Depot (HD) example is $7.2877\%=\sqrt{0.005311}$}
 	\end{itemize}
 \end{frame}
 
@@ -112,19 +132,8 @@ Risk, Return, and Diversification
 			\begin{equation*}
 				\text{Corr}[R_{A},R_{B}]=\frac{\text{Cov}[R_{A},R_{B}]}{\text{SD}[R_{A}]\text{SD}[R_{B}]}
 			\end{equation*}
+		\item The correlation is between $-1$ and $+1$, with a correlation of $-1$ meaning perfectly negatively correlated ($A$ goes up, $B$ goes down), a correlation of $0$ meaning they are not correlated at all ($A$'s return doesn't tell us anything about $B$'s return), and a correlation of $+1$ meaning perfectly positively correlated ($A$ goes up, $B$ goes up) 
 	\end{itemize}
-\pause
-	{\color{blue}
-		 Our estimate in the Apple, Home Depot example is
-			\begin{align*}
-				\text{Corr}[R_{AAPL},R_{HD}]&=\frac{\text{Cov}[R_{AAPL},R_{HD}]}{\text{SD}[R_{AAPL}]\text{SD}[R_{HD}]}\\
-				&=\frac{0.005788}{.0120304\times 0.072877}=0.6602
-			\end{align*}
-}
-\end{frame}
-
-\begin{frame}{\fttheory{Correlation}}
-		The correlation is between $-1$ and $+1$, with a correlation of $-1$ meaning perfectly negatively correlated ($A$ goes up, $B$ goes down), a correlation of $0$ meaning they are not correlated at all ($A$'s return doesn't tell us anything about $B$'s return), and a correlation of $+1$ meaning perfectly positively correlated ($A$ goes up, $B$ goes up) 
 \end{frame}
 
 \begin{frame}{\fttheory{Portfolio of Two Stocks}}
@@ -144,7 +153,7 @@ Risk, Return, and Diversification
 
 \begin{frame}{\fttheory{Mean and Volatility}}
 	\begin{itemize}
-		\item The mean return of the portfolio is
+		\item The expected return of the portfolio is
 		\begin{equation*}
 			\text{E}[R_{P}]=x_{A}\text{E}[R_{A}]+x_{B}\text{E}[R_{B}]
 		\end{equation*}
@@ -159,26 +168,13 @@ Risk, Return, and Diversification
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{\ftexampl{Mean and Volatility}}
-	What is the mean return and volatility of a portfolio that is 25\% in Apple (AAPL) and 75\% in Home Depot (HD)?
-	\pause
-	{\color{blue}
-	The mean return is
-	\begin{equation*}
-		\mu_{P}=.25\times(4.1767\%)+.75\times(4.2167\%)=4.2067\%
-	\end{equation*}
-	}
-	{\color{blue}
-	The variance is
-	\begin{align*}
-		\sigma_{P}^{2}&=(.25)^2(0.014473)+(.75)^2(0.005311)+2(.25)(.75)(0.005788)\\
-		&=0.006063
-	\end{align*}
-	and hence the volatlity is
-	\begin{equation}
-		\sigma_{P}=\sqrt{0.006063}=7.7862\%
-	\end{equation}
-	}
+\begin{frame}{\ftexampl{Apple and P\&G}}
+	\begin{itemize}
+		\item What are the expected returns and volatilities of Apple and P\&G? How do they compare in terms of risk and return?
+		\item What is the correlation between the returns?
+		\item What is the expected return of a portfolio that is split evenly between Apple and P\&G?
+		\item What is the volatility of the portfolio?
+	\end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -199,9 +195,9 @@ Risk, Return, and Diversification
 \begin{frame}{\fttheory{Risk Premia}}
 	\begin{itemize}
 		\item The risk premium is the expected excess return over the risk-free rate
-		\begin{equation}
+		\begin{equation*}
 			\text{RP}[R_{P}]=\text{E}[R_{P}]-R_{F}
-		\end{equation}
+		\end{equation*}
 		\item It is the return we earn for taking risk: higher risk stocks will generally have higher risk premia, safer stocks will generally have lower risk premia
 		\item If the portfolio $P$ is risk-free, its risk-premium will be zero
 	\end{itemize}
@@ -212,9 +208,9 @@ Risk, Return, and Diversification
 	\pause
 	{\color{blue}
 		The monthly market risk premium was
-		\begin{equation}
+		\begin{equation*}
 			\text{RP}[R_{\text{Market}}]=0.9379\%-0.2732\%=0.6647\%
-		\end{equation}
+		\end{equation*}
 		This is how much the market had to compensate investors for the risk they were taking.
 	}
 \end{frame}
@@ -228,9 +224,9 @@ Risk, Return, and Diversification
 \begin{frame}{\fttheory{Sharpe Ratios}}
 	\begin{itemize}
 		\item The Sharpe ratio is the ratio of a portfolio's risk premium to its standard deviation:
-			\begin{equation}
+			\begin{equation*}
 				\text{SR}[R_{P}]=\frac{\text{RP}[R_{P}]}{\text{SD}[R_{P}]}=\frac{\text{E}[R_{P}]-R_{F}}{\text{SD}[R_{P}]}
-			\end{equation}
+			\end{equation*}
 			where $\text{E}[R_{P}]$ and $\text{SD}[R_{P}]$ are the mean and standard deviation of the return on the portfolio respectively 
 		\item It is the return we earn for each unit of risk we take
 	\end{itemize}
@@ -241,9 +237,9 @@ Risk, Return, and Diversification
 	\pause
 	{\color{blue}
 		The monthly market risk premium was
-		\begin{equation}
+		\begin{equation*}
 			\text{SR}[R_{\text{Market}}]=\frac{.6647\%}{5.3324\%}=0.1247
-		\end{equation}
+		\end{equation*}
 }
 \end{frame}
 
@@ -261,33 +257,15 @@ Risk, Return, and Diversification
 		\item $N$ stocks, $j=1,2,\ldots,N$; $p_{j,t}$ price of stock $j$ on date $t$; $r_{j,t}$ total return on stock $j$ from date $t$ to date $t+1$; $n_{j}$ number of shares of stock $j$
 		\item $n_{j}p_{j,t}$ is $j$'s market capitalization (cap) on date $t$ 
 		\item The level of the index is
-			\begin{equation}
+			\begin{equation*}
 				V_{t}=n_{1}p_{1,t}+n_{2}p_{2,t}+\cdots+n_{N}p_{N,t}
-			\end{equation}
+			\end{equation*}
 		\item The \textit{return} of the index is
-			\begin{equation}
+			\begin{equation*}
 				\frac{n_{1}p_{1,t}}{V_{t}}r_{1,t}+\frac{n_{2}p_{2,t}}{V_{t}}r_{2,t}+\cdots+\frac{n_{N}p_{N,t}}{V_{t}}r_{N,t}
-			\end{equation}
+			\end{equation*}
 		\item\textbf{Important:} the rate of return on a value-weighted index is the rate of a return on a portfolio that buys-and-holds all of the shares of all of the securities that make up the index
 	\end{itemize}
-\end{frame}
-
-\begin{frame}{\ftdata{Airlines}}
-	\begin{center}
-		\includegraphics[scale=.55]{airlines}
-	\end{center}
-\end{frame}
-
-\begin{frame}{\ftdata{Big Tech}}
-	\begin{center}
-		\includegraphics[scale=.55]{bigtech}
-	\end{center}
-\end{frame}
-
-\begin{frame}{\ftdata{Banks}}
-	\begin{center}
-		\includegraphics[scale=.55]{banks}
-	\end{center}
 \end{frame}
 
 \begin{frame}{\ftexampl{Example}}
@@ -323,20 +301,29 @@ Risk, Return, and Diversification
 	\end{center}
 \end{frame}
 
+\begin{frame}{\ftdata{Airlines}}
+	\begin{center}
+		\includegraphics[scale=.55]{airlines}
+	\end{center}
+\end{frame}
+
+\begin{frame}{\ftdata{Big Tech}}
+	\begin{center}
+		\includegraphics[scale=.55]{bigtech}
+	\end{center}
+\end{frame}
+
+\begin{frame}{\ftdata{Banks}}
+	\begin{center}
+		\includegraphics[scale=.55]{banks}
+	\end{center}
+\end{frame}
+
+
 \begin{frame}
 \begin{center}
 \Huge Diversification
 \end{center}
-\end{frame}
-
-\begin{frame}{\ftheader{Introduction: Diversification}}
-	\begin{itemize}
-		\item In this lecture, we begin our study of portfolio design
-		\item In order to properly design portfolios, we need to understand how the returns of the stocks in the portfolio co-move (covary, correlate, etc.)
-		\item We will learn that by choosing stocks that do not co-move too much, we can lower the risk of the portfolio without sacrificing return
-		\item This is known as diversification
-		\item We will introduce diversification with three stylized examples
-	\end{itemize}
 \end{frame}
 
 \begin{frame}{\ftexampl{Moral \#1}}
@@ -528,13 +515,13 @@ Risk, Return, and Diversification
 		\item What about portfolios consisting of more than two stocks?
 		\item Consider $N\geq2$ stocks, $1,2,\ldots,N$
 		\item The general problem is to choose weights $x_{1},x_{2},\ldots,x_{N}$ to minimize the portfolio variance
-		\begin{equation}
+		\begin{equation*}
 			\text{Var}[R_{P}]=\text{Var}[x_{1}R_{1}+x_{2}R_{2}+\cdots+x_{N}R_{N}]
-		\end{equation}
+		\end{equation*}
 		given an expected return $\mu$
-		\begin{equation}
+		\begin{equation*}
 			\mu=\text{E}[R_{P}]=\text{E}[x_{1}R_{1}+x_{2}R_{2}+\cdots+x_{N}R_{N}]
-		\end{equation}
+		\end{equation*}
 		and $x_{1}+x_{2}+\cdots+x_{N}=1$
 		\item One can solve this problem using \textit{quadratic programming}
 	\end{itemize}
