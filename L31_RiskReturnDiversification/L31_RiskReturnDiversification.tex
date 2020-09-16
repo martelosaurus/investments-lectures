@@ -161,9 +161,12 @@ Risk, Return, and Diversification
 			\text{E}[R_{P}]=x_{A}\text{E}[R_{A}]+x_{B}\text{E}[R_{B}]
 		\end{equation*}
 		\item The variance of the portfolio is
-		\begin{equation*}
-			\text{Var}[R_{P}]=x_{A}^{2}\text{Var}[R_{A}]+x_{B}^{2}\text{Var}[R_{B}]+2x_{A}x_{B}\text{Cov}[R_{A},R_{B}]
-		\end{equation*}
+		{\footnotesize
+		\begin{align*}
+			\text{Var}[R_{P}]&=x_{A}^{2}\text{Var}[R_{A}]+x_{B}^{2}\text{Var}[R_{B}]+2x_{A}x_{B}\text{Cov}[R_{A},R_{B}]\\
+			&=(x_{A}\text{SD}[R_{A}])^{2}+(x_{B}\text{SD}[R_{B}])^{2}+2x_{A}x_{B}\text{SD}[R_{A}]\text{SD}[R_{B}]\text{Corr}[R_{A},R_{B}]
+		\end{align*}
+		}
 		\item Therefore, the volatility of the portfolio is
 		\begin{equation*}
 			\text{SD}[R_{P}]=\sqrt{\text{Var}[R_{P}]}
@@ -178,13 +181,11 @@ Risk, Return, and Diversification
 		\item What is the expected return of a portfolio that is split evenly between Apple and P\&G? What is the volatility of the portfolio?
 	\end{itemize}
 	\pause
-	{\color{blue}
 	\begin{itemize}
-		\item Expected returns are 3.56\% and 1.09\% (resp.) and volatilities are 12.21\% and 5.21\% (resp.)
-		\item -0.0541 (weird!)
-		\item 2.33\% and 6.51\%
+		\item {\color{blue}Expected returns are 3.56\% and 1.09\% (resp.) and volatilities are 12.21\% and 5.21\% (resp.)}
+		\item {\color{blue}-0.0541 (weird!)}
+		\item {\color{blue}2.33\% and 6.51\%}
 	\end{itemize}
-	}
 \end{frame}
 
 \begin{frame}
@@ -256,6 +257,7 @@ Risk, Return, and Diversification
 %-----------------------------------------------------------------------------%
 %   INDICES                                                                   %
 %-----------------------------------------------------------------------------%
+\iffalse
 \begin{frame}
 \begin{center}
 \Huge Stock Indices
@@ -328,7 +330,7 @@ Risk, Return, and Diversification
 		\includegraphics[scale=.55]{banks}
 	\end{center}
 \end{frame}
-
+\fi
 
 \begin{frame}
 \begin{center}
@@ -353,8 +355,7 @@ Risk, Return, and Diversification
 \begin{frame}{\ftexampl{Moral \#1}}
 	Suppose that $A$ and $B$ have a correlation of $0.5$. Then
 	\begin{align*}
-		\text{Var}[R_{P}]&=x_{A}^{2}\text{SD}[R_{A}]^{2}+x_{B}^{2}\text{SD}[R_{B}]^{2}+2x_{A}x_{B}\text{Cov}[R_{A},R_{B}]\\
-		&=x_{A}^{2}\text{SD}[R_{A}]^{2}+x_{B}^{2}\text{SD}[R_{B}]^{2}\\
+		\text{Var}[R_{P}]&=x_{A}^{2}\text{SD}[R_{A}]^{2}+x_{B}^{2}\text{SD}[R_{B}]^{2}\\
 		&\hspace{.5in}+2x_{A}x_{B}\text{SD}[R_{A}]\text{SD}[R_{B}]\text{Corr}[R_{A},R_{B}]\\
 		&=(.5)^2(.2)^2+(.5)^2(.2)^2+2(.5)(.5)(.2)(.2)(.5)\\
 		&=.03
