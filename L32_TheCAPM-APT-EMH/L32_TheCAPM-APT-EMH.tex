@@ -1,8 +1,5 @@
 \documentclass{beamer}
-\newcommand{\fttheory}[1]{\fcolorbox{blue}{blue}{\color{white}\textbf{#1}\hspace{\textwidth}}}
-\newcommand{\ftexampl}[1]{\fcolorbox{orange}{orange}{\color{black}\textbf{#1}\hspace{\textwidth}}}
-\newcommand{\ftdata}[1]{\fcolorbox{violet}{violet}{\color{white}\textbf{#1}\hspace{\textwidth}}}
-\newcommand{\ftheader}[1]{\fcolorbox{lightgray}{lightgray}{\color{black}\textbf{#1}\hspace{\textwidth}}}
+\input{../jordan_header}
 \begin{document}
 
 \begin{frame}{\ftheader{Capital Asset Pricing Model.}}
@@ -191,6 +188,143 @@ of the stock's volatility is systematic; we say that the remaining fraction is i
 	\item Should we go long or short? {\color{blue}short}
 	\item What about Caterpillar?
 \end{enumerate}
+\end{frame}
+
+\begin{frame}
+	\begin{center}
+		\Huge The Efficient Market Hypothesis 
+	\end{center}
+\end{frame}
+
+\begin{frame}{\ftheader{The Efficient Market Hypothesis (EMH)}}
+	\begin{itemize}
+		\item The Efficient Market Hypothesis (EMH) states that prices of securities fully reflect available information about securities
+		\item It highlights the difficulties associated with earning abnormal returns using either \textit{fundamental analysis} (predicting returns based on accounting or economic data) or \textit{technical analysis} (predicting returns based on the past history of returns). 
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{\fttheory{The Random Walk}}
+	\begin{itemize}
+		\item A stock price follows a \textit{random walk} returns are unpredictable.
+		\item Suppose that Apple traded for 266 USD at 12:00 and everyone knew that at the end of the day, it would trade for 270 USD (a risk-free return of 1.5\% in just one afternoon!)
+		\item Everyone would start buying. The price would rise to 267 (a return of 1.13\%), to 268 (.75\%), and so on until at 12:01, when the price would be 270 (0\%). 
+		\item Put differently, all information (such as the fact that the price will be 270 USD by the end of day). 
+		\item The random walk explains why the stock market does well on days when bad news comes out (e.g. the market expected that unemployment would rise by 1\%, traded stocks at price reflecting the expectation that unemployment would rise by 1\%, and then when unemployment rose by .95\%, the stock price rose).
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{\fttheory{The Efficient Market Hypothesis (EMH)}}
+	There are three forms of the hypothesis, depending on how much information it assumes investors have
+	\begin{enumerate}
+		\item\textbf{Weak Form:} the assertion that stockprices already reflect all information contained in the history of past trading
+		\item\textbf{Semi-Strong Form:} the assertion that stockprices already reflect all publicly available information 
+		\item\textbf{Strong Form:} the assertion that stockprices already reflect all relevant information including inside information
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}{\fttheory{Technical Analysis}}
+	\begin{itemize}
+		\item Technical analysis involves researching recurrent and predictable stock price patterns
+		\item It claims that even if prices on average incorporate all publicly information, they deviate in the short-term in predictable ways
+		\item It's less about the long-term value of the security and more about its short-term supply and demand
+		\item Technical analysts typically attribute these patterns to market psychology. 
+		\item History note: technical analysis has its roots in Charles Dow's ``Dow theory'' (Dow, of the Dow Jones Industrial Average and the \text{Wall Street Journal}).
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{\fttheory{Technical Analysis}}
+	\begin{itemize}
+		\item Common concepts in technical analysis include \textit{support} (a price below which a stock's price doesn't typically fall) and \textit{resistence} (a price above which a stock's price doesn't typically rise).  
+		\item It follows that when a stock's price nears its support, one should buy (it can only go up) and when the price nears its resistence, one should sell (it can only go down).
+		\item \textbf{Important Caveat:} one factor identified in research is momentum: specifically the return of a portfolio that goes long stocks that have down well and short stocks that have done poorly. While this certaintly has the flavor of technical analysis, the trading costs of such a strategy are high. 
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{\ftexampl{Support and Resistence}}
+ 	Consider a stock ($S$) that pays a quarterly dividend of 1.2 USD per share and has a beta of 1.5. Suppose that the equity risk premium is 8\%. According to the CAPM, the discount rate should be
+	\begin{equation}
+		\text{E}[r_{S}]=r_{F}+\beta E[r_{M}-r_{F}]=1.5\times 8\%=12\%. 
+	\end{equation}
+	The dividend discount model predicts that the fair price is
+	\begin{equation}
+		P=\frac{D}{r_{S}}=\frac{1.2\text{ USD}}{12\%}=10\text{ USD}
+	\end{equation}
+	Suppose that the chart shows a support of 9 USD and a resistence of 11 USD and suppose that stock starts paying dividends of 1.8 USD per share. The fair price should now be 15 USD. Continued on next slide...
+\end{frame}
+
+\begin{frame}{\ftexampl{Support and Resistence}}
+	If other traders believe in a resistence level, then as soon as the price nears 11 USD, they will be willing to sell to you for 11 USD. If you buy at 11 USD, then you make an arbitrage profit of 4 USD, as the present value of the cash flows is 15 USD. In order to realize this profit, the market must either give-up the resistence level or you have to hold the stock long-term and obtain the dividends yourself.
+\end{frame}
+
+\begin{frame}{\fttheory{Fundamental Analysis}}
+	\begin{itemize}
+		\item Fundamental analysis involves research on the determinants of stock value, such as earnings and dividends prospects, expectations for future interest rates, and risk of the firm 
+		\item An extreme form of fundamental ``analysis'' involves collecting inside information (e.g. someone on the board tells you on the phone that he will announce a special dividend tomorrow or someone at the Fed tells you that the Fed will lower rates next week). This behavior is typically illegal.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{\ftexampl{Fundamental Analysis}}
+	Consider our example with support and resistence, but suppose now that the market did not believe in a support or resistence. Fundamental analysis would involve predicting the change in dividend, buying the stock when it traded for 10 USD and selling when it adjusted to 15 USD.  
+\end{frame}
+
+\begin{frame}{\fttheory{Technical and Fundamental Analyses: A Summary}}
+	\begin{itemize}
+		\item Technical analysis can easily be automated and traded \textit{against}. One need only stock price data and a few milliseconds of computer time to identify trading opportunities and submit trade orders.
+		\item Example algorithm: if everyone sells at an arbitrary resistence level, then submit a limit buy order at that level; if everyone buys at an arbitrary support level, then submit a limit sell order at that level. You will make money on average. 
+		\item Fundamental analysis, in constrast, requires much more work, and the people who do it are compensated for their labor in the form of alpha. 
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\begin{center}
+		\Huge The Arbitrage Pricing Theory 
+	\end{center}
+\end{frame}
+
+\begin{frame}{\fttheory{The Arbitrage Pricing Theory}}
+	\begin{itemize}
+		\item These examples show that if $\alpha\neq0$, then one can costlessly construct a portfolio that pays $|\alpha|$ on average. 
+		\item Suppose, for concreteness, that $\alpha>0$ (as in the Walmart example). Then arbitrageurs start buying the stock. 
+		\item According to the laws of supply and demand, the price will rise (the return will fall) until $\alpha=0$.
+		\item The APT claims that $\alpha=0$ on average:
+			\begin{equation}
+				\text{E}[r_{S}-r_{F}]=\beta\text{E}[r_{M}-r_{F}]
+			\end{equation}
+			which is exactly what the CAPM claims. 
+		\item The APT tells us \textit{why} the CAPM should hold and \textit{how} to profit when it breaks.
+		\item Note that these trades involve idiosyncratic risk ($\epsilon$) but \underline{not} systematic risk ($r_{M}$)
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{\fttheory{Multifactor Models}}
+
+	\begin{itemize}
+		\item A multifactor model decomposes a security's return into \textit{factors} $f_{1},f_{2},\ldots,f_{N}$:
+			\begin{equation}\small
+				r_{S}-r_{F}=\alpha+\beta_{1}f_{1}+\beta_{2}f_{2}+\cdots+\beta_{N}f_{N}+\epsilon
+			\end{equation}
+		\item The CAPM is a 1-factor model with $f_{1}=r_{M}-r_{F}$. 
+		\item There are multifactor models for stocks (which we will explore in a moment), bonds, currencies, housing, and other securities. 
+		\item In currencies, for example, the two most popular popular factors are ``value'' and ``carry'', each corresponding to the return on a certain portfolio of currencies. 
+		\item Again, the APT claims that $\alpha=0$ on average:
+			\begin{equation}
+				\text{E}[r_{S}-r_{F}]=\beta_{1}\text{E}[f_{1}]+\beta_{2}\text{E}[f_{2}]+\cdots+\beta_{N}\text{E}[f_{N}]
+			\end{equation}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{\ftdata{Application: Fama-French 3-Factor Model}}
+	\begin{itemize}
+		\item The Fama-French model is a  multifactor model for stocks. 
+		\item It has factors $f_{1}=r_{\text{MKT}}-r_{F}$, $f_{2}=r_{\text{SMB}}$, and $f_{3}=r_{\text{HML}}$.
+		\item SMB is a portfolio that goes long (S)mall stocks and short (or (M)inus) (B)ig stocks (as measured by market cap).
+		\item Smaller firms outperform bigger firms (3.06\% 1927-2019). 
+		\item HML is a portfolio that goes long (H)igh book-to-market stocks and short (or (M)inus) (L)ow book-to-market stocks. 
+		\item Two definitions: \textit{value stocks} are stocks with a (H)igh book-to-market ratio, while \textit{growth stocks} are stocks with a (L)ow book-to-market ratio.  
+		\item Value stocks outperform growth stocks (4.48\% 1927-2019).
+		\item The idea is that smaller stocks and stocks with higher book-to-market are riskier and therefore offer higher returns
+		\item \url{https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html}
+	\end{itemize}
 \end{frame}
 
 \end{document}
