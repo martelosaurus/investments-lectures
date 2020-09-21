@@ -23,7 +23,7 @@
 		\item The market portfolio is the value-weighted portfolio of \underline{all} securities (yes, \underline{all} of them)...
 		\item ...but in practice, we approximate the returns of the market portfolio with the returns of the S\&P 500
 		\item Investors \underline{demand} a combination of the risk-free asset and the tangency portfolio; the market \underline{supplies} the market portfolio and the risk-free asset
-		\item In equilibrium, demand equals supply: 
+		\item In equilibrium, returns adjust so that demand equals supply: 
 	\end{itemize}
 	\begin{center}
 		\textbf{The tangency portfolio of all securities is the market portfolio }
@@ -264,26 +264,11 @@ of the stock's volatility is systematic; we say that the remaining fraction is i
 
 \begin{frame}
 	\begin{center}
-		\Huge The Arbitrage Pricing Theory 
+		\Huge Multirfactor Models
 	\end{center}
 \end{frame}
 
-\begin{frame}{\fttheory{The Arbitrage Pricing Theory}}
-	\begin{itemize}
-		\item These examples show that if $\alpha\neq0$, then one can costlessly construct a portfolio that pays $|\alpha|$ on average. 
-		\item Suppose, for concreteness, that $\alpha>0$ (as in the Walmart example). Then arbitrageurs start buying the stock. 
-		\item According to the laws of supply and demand, the price will rise (the return will fall) until $\alpha=0$.
-		\item The APT claims that $\alpha=0$ on average:
-			\begin{equation}
-				\text{E}[r_{S}-r_{F}]=\beta\text{E}[r_{M}-r_{F}]
-			\end{equation}
-			which is exactly what the CAPM claims. 
-		\item The APT tells us \textit{why} the CAPM should hold and \textit{how} to profit when it breaks.
-		\item Note that these trades involve idiosyncratic risk ($\epsilon$) but \underline{not} systematic risk ($r_{M}$)
-	\end{itemize}
-\end{frame}
-
-\begin{frame}{\fttheory{Multifactor Models}}
+\begin{frame}{\fttheory{Multifactor Models (APT Part I)}}
 
 	\begin{itemize}
 		\item A multifactor model decomposes a security's return into \textit{factors} $f_{1},f_{2},\ldots,f_{N}$:
