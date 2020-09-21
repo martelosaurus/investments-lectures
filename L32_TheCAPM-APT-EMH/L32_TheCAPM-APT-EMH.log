@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.6.6)  20 SEP 2020 14:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.6.6)  21 SEP 2020 10:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -820,198 +820,191 @@ Dictionary: translator-numbers-dictionary, Language: English
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-theorem-dictiona
 ry-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-) (./L32_TheCAPM-APT-EMH.nav)
-LaTeX Font Info:    Try loading font information for U+msa on input line 10.
+) (./L32_TheCAPM-APT-EMH.nav) [1
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Try loading font information for U+msa on input line 16.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 10.
-
+LaTeX Font Info:    Try loading font information for U+msb on input line 16.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 10.
+line 16.
 
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-Overfull \hbox (157.03102pt too wide) in paragraph at lines 10--10
- []|[][][]  
- []
-
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (106.84686pt too wide) in paragraph at lines 25--25
+Overfull \hbox (215.11125pt too wide) in paragraph at lines 16--16
  []|[][][]  
  []
 
 [2
 
 ]
-Overfull \hbox (194.23518pt too wide) in paragraph at lines 41--41
+Overfull \hbox (106.84686pt too wide) in paragraph at lines 31--31
  []|[][][]  
  []
 
 [3
 
 ]
-Overfull \hbox (132.49895pt too wide) in paragraph at lines 59--59
+Overfull \hbox (194.23518pt too wide) in paragraph at lines 47--47
  []|[][][]  
  []
 
 [4
 
 ]
-Overfull \hbox (100.04283pt too wide) in paragraph at lines 78--78
+Overfull \hbox (132.49895pt too wide) in paragraph at lines 65--65
  []|[][][]  
  []
 
 [5
 
-] [6
-
 ]
-<wmt.png, id=176, 903.375pt x 501.875pt>
-File: wmt.png Graphic file (type png)
-<use wmt.png>
-Package pdftex.def Info: wmt.png  used on input line 103.
-(pdftex.def)             Requested size: 316.18599pt x 175.65887pt.
-
-Overfull \hbox (8.89612pt too wide) in paragraph at lines 103--103
- [] 
- []
-
-
-Overfull \hbox (121.53893pt too wide) in paragraph at lines 103--103
+Overfull \hbox (100.04283pt too wide) in paragraph at lines 84--84
  []|[][][]  
  []
 
-[7
+[6
 
- <./wmt.png>]
-<tif.png, id=205, 903.375pt x 501.875pt>
-File: tif.png Graphic file (type png)
-<use tif.png>
-Package pdftex.def Info: tif.png  used on input line 113.
+] [7
+
+]
+<wmt.png, id=203, 903.375pt x 501.875pt>
+File: wmt.png Graphic file (type png)
+<use wmt.png>
+Package pdftex.def Info: wmt.png  used on input line 109.
 (pdftex.def)             Requested size: 316.18599pt x 175.65887pt.
 
-Overfull \hbox (8.89612pt too wide) in paragraph at lines 113--113
+Overfull \hbox (8.89612pt too wide) in paragraph at lines 109--109
  [] 
  []
 
 
-Overfull \hbox (121.53893pt too wide) in paragraph at lines 113--113
+Overfull \hbox (121.53893pt too wide) in paragraph at lines 109--109
  []|[][][]  
  []
 
 [8
 
- <./tif.png>]
-Overfull \hbox (123.07887pt too wide) in paragraph at lines 127--127
+ <./wmt.png>]
+<tif.png, id=231, 903.375pt x 501.875pt>
+File: tif.png Graphic file (type png)
+<use tif.png>
+Package pdftex.def Info: tif.png  used on input line 119.
+(pdftex.def)             Requested size: 316.18599pt x 175.65887pt.
+
+Overfull \hbox (8.89612pt too wide) in paragraph at lines 119--119
+ [] 
+ []
+
+
+Overfull \hbox (121.53893pt too wide) in paragraph at lines 119--119
  []|[][][]  
  []
 
 [9
 
-]
-Overfull \hbox (22.56654pt too wide) in paragraph at lines 147--147
+ <./tif.png>]
+Overfull \hbox (123.07887pt too wide) in paragraph at lines 132--132
  []|[][][]  
  []
 
 [10
 
 ]
-Overfull \hbox (22.56654pt too wide) in paragraph at lines 167--167
+Overfull \hbox (22.56654pt too wide) in paragraph at lines 152--152
  []|[][][]  
  []
 
 [11
 
 ]
-Overfull \hbox (4.92647pt too wide) in paragraph at lines 182--182
+Overfull \hbox (22.56654pt too wide) in paragraph at lines 172--172
  []|[][][]  
  []
 
 [12
 
 ]
-Overfull \hbox (22.56654pt too wide) in paragraph at lines 191--191
+Overfull \hbox (4.92647pt too wide) in paragraph at lines 182--182
  []|[][][]  
  []
 
 [13
 
-] [14
-
 ]
-Overfull \hbox (234.33136pt too wide) in paragraph at lines 204--204
+Overfull \hbox (22.56654pt too wide) in paragraph at lines 190--190
  []|[][][]  
  []
 
-[15
+[14
+
+] [15
 
 ]
-Overfull \hbox (91.16682pt too wide) in paragraph at lines 214--214
+Overfull \hbox (234.33136pt too wide) in paragraph at lines 203--203
  []|[][][]  
  []
 
 [16
 
 ]
-Overfull \hbox (234.33136pt too wide) in paragraph at lines 223--223
+Overfull \hbox (91.16682pt too wide) in paragraph at lines 213--213
  []|[][][]  
  []
 
 [17
 
 ]
-Overfull \hbox (86.91077pt too wide) in paragraph at lines 233--233
+Overfull \hbox (91.33879pt too wide) in paragraph at lines 222--222
  []|[][][]  
  []
 
 [18
 
 ]
-Overfull \hbox (86.91077pt too wide) in paragraph at lines 241--241
+Overfull \hbox (86.91077pt too wide) in paragraph at lines 232--232
  []|[][][]  
  []
 
 [19
 
 ]
-Overfull \hbox (122.3509pt too wide) in paragraph at lines 253--253
+Overfull \hbox (86.91077pt too wide) in paragraph at lines 240--240
  []|[][][]  
  []
 
 [20
 
 ]
-Overfull \hbox (122.3509pt too wide) in paragraph at lines 257--257
+Overfull \hbox (122.3509pt too wide) in paragraph at lines 244--244
  []|[][][]  
  []
 
 [21
 
 ]
-Overfull \hbox (110.2909pt too wide) in paragraph at lines 264--264
+Overfull \hbox (110.2909pt too wide) in paragraph at lines 251--251
  []|[][][]  
  []
 
 [22
 
 ]
-Overfull \hbox (110.2909pt too wide) in paragraph at lines 268--268
+Overfull \hbox (110.2909pt too wide) in paragraph at lines 255--255
  []|[][][]  
  []
 
 [23
 
 ]
-Overfull \hbox (299.03165pt too wide) in paragraph at lines 276--276
+Overfull \hbox (299.03165pt too wide) in paragraph at lines 263--263
  []|[][][]  
  []
 
@@ -1020,7 +1013,7 @@ Overfull \hbox (299.03165pt too wide) in paragraph at lines 276--276
 ] [25
 
 ]
-Overfull \hbox (162.6471pt too wide) in paragraph at lines 297--297
+Overfull \hbox (162.6471pt too wide) in paragraph at lines 284--284
  []|[][][]  
  []
 
@@ -1028,54 +1021,54 @@ Overfull \hbox (162.6471pt too wide) in paragraph at lines 297--297
 
 ]
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 314.
+LaTeX Font Warning: Command \small invalid in math mode on input line 301.
 
-LaTeX Font Info:    Calculating math sizes for size <> on input line 314.
+LaTeX Font Info:    Calculating math sizes for size <> on input line 301.
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <> not available
-(Font)              size <3> substituted on input line 314.
+(Font)              size <3> substituted on input line 301.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <0.7> not available
-(Font)              size <3> substituted on input line 314.
+(Font)              size <3> substituted on input line 301.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <0.5> not available
-(Font)              size <3> substituted on input line 314.
+(Font)              size <3> substituted on input line 301.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <> not available
-(Font)              size <5> substituted on input line 314.
+(Font)              size <5> substituted on input line 301.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <0.7> not available
-(Font)              size <5> substituted on input line 314.
+(Font)              size <5> substituted on input line 301.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <0.5> not available
-(Font)              size <5> substituted on input line 314.
+(Font)              size <5> substituted on input line 301.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <> not available
-(Font)              size <5> substituted on input line 314.
+(Font)              size <5> substituted on input line 301.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <0.7> not available
-(Font)              size <5> substituted on input line 314.
+(Font)              size <5> substituted on input line 301.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <0.5> not available
-(Font)              size <5> substituted on input line 314.
+(Font)              size <5> substituted on input line 301.
 
 
-Overfull \hbox (93.31879pt too wide) in paragraph at lines 314--314
+Overfull \hbox (93.31879pt too wide) in paragraph at lines 301--301
  []|[][][]  
  []
 
 [27
 
 ]
-Overfull \hbox (245.04738pt too wide) in paragraph at lines 328--328
+Overfull \hbox (245.04738pt too wide) in paragraph at lines 315--315
  []|[][][]  
  []
 
@@ -1091,11 +1084,11 @@ Overfull \hbox (245.04738pt too wide) in paragraph at lines 328--328
 \tf@snm=\write8
 \openout8 = `L32_TheCAPM-APT-EMH.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 330.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 330.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 317.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 317.
  (./L32_TheCAPM-APT-EMH.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 330.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 330.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 317.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 317.
 Package rerunfilecheck Info: File `L32_TheCAPM-APT-EMH.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1105,10 +1098,10 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 17158 strings out of 492615
- 325165 string characters out of 6131391
- 405076 words of memory out of 5000000
- 20625 multiletter control sequences out of 15000+600000
+ 17149 strings out of 492615
+ 324901 string characters out of 6131391
+ 405077 words of memory out of 5000000
+ 20616 multiletter control sequences out of 15000+600000
  19022 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,14n,55p,806b,558s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1123,10 +1116,10 @@ ype1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/symbols/msam10.pfb>
-Output written on L32_TheCAPM-APT-EMH.pdf (28 pages, 268053 bytes).
+Output written on L32_TheCAPM-APT-EMH.pdf (28 pages, 266585 bytes).
 PDF statistics:
- 797 PDF objects out of 1000 (max. 8388607)
- 738 compressed objects within 8 object streams
+ 796 PDF objects out of 1000 (max. 8388607)
+ 737 compressed objects within 8 object streams
  58 named destinations out of 1000 (max. 500000)
  53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

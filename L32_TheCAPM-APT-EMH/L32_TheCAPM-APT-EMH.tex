@@ -2,7 +2,13 @@
 \input{../jordan_header}
 \begin{document}
 
-\begin{frame}{\ftheader{Capital Asset Pricing Model.}}
+\begin{frame}
+	\begin{center}
+		\Huge Capital Asset Pricing Model 
+	\end{center}
+\end{frame}
+
+\begin{frame}{\ftheader{Capital Asset Pricing Model (CAPM)}}
 \begin{itemize}
 \item The capital asset pricing model (CAPM) is used to determine a theoretically appropriate required rate of return of an asset, {if that asset is to be added to an already well-diversified portfolio (market portfolio)}.
 \item The model takes into account the {asset's sensitivity to market risk} (also known as systematic risk or non-diversifiable risk), often represented by the quantity beta ($\beta$) in the financial industry, as well as the expected return of the market and the expected return of a theoretical risk-free asset. 
@@ -20,7 +26,7 @@
 		\item In equilibrium, demand equals supply: 
 	\end{itemize}
 	\begin{center}
-		The tangency portfolio of all securities equals the market portfolio 
+		\textbf{The tangency portfolio of all securities is the market portfolio }
 	\end{center}
 \end{frame}
 
@@ -85,7 +91,7 @@ where $\epsilon_{\text{Stock}}$ is a random shock to the stock's return
 \begin{itemize}
 \item $\beta_{\text{Stock}}$ (Beta) is the slope of the regression line obtained by regressing the stock's returns on the market's returns
 \begin{equation}
-\beta_{\text{Stock}}=\frac{\text{Cov}[R_{\text{Stock}},R_{\text{Market}}]}{\text{Var}[R_{\text{Market}}]}
+\beta_{\text{Stock}}=\frac{\text{SD}[R_{\text{Stock}}]}{\text{SD}[R_{\text{Market}}]}\times\text{Corr}[R_{\text{Stock}},R_{\text{Market}}]
 \end{equation}
 \item The beta of a security is the expected \% change in its return given a 1\% change in the return of the market portfolio
 \item It is the sensitivity of the stock's returns to systematic risk
@@ -122,7 +128,6 @@ where $\epsilon_{\text{Stock}}$ is a random shock to the stock's return
 		\frac{\beta_{\text{Stock}}\text{SD}[R_{\text{Market}}]}{\text{SD}[R_{\text{Stock}}]}
 	\end{equation}
 of the stock's volatility is systematic; we say that the remaining fraction is idiosyncratic
-\item Note that Equation \ref{eq:systematic} is just $\sqrt{R^{2}}$ from regression analysis
 \end{itemize}
 \end{frame}
 
@@ -158,7 +163,7 @@ of the stock's volatility is systematic; we say that the remaining fraction is i
 	\end{center}
 \begin{enumerate}
 	\item What are Caterpillar's and the market's Sharpe ratios? 
-	\item What is Caterpillar's beta 
+	\item What is Caterpillar's beta?
 	\item What is the market's risk premium? 
 	\item What is Caterpillar's risk premium? 
 	\item What fraction of Caterpillar's volatility is systematic? 
@@ -172,11 +177,6 @@ of the stock's volatility is systematic; we say that the remaining fraction is i
 	\begin{equation}
 		\alpha_{\text{Stock}} = \underbrace{(\text{E}[R_{\text{Stock}}]-R_{F})}_{\text{True Value}}-\underbrace{\beta_{\text{Stock}}\times(\text{E}[R_{\text{Market}}] - R_{F})}_{\text{CAPM}}
 	\end{equation}
-	\item If $\alpha\neq0$, then one can make an arbitrage profit 
-	\begin{itemize}
-	\item If $\alpha>0$, then go long 
-	\item If $\alpha<0$, then go short 
-	\end{itemize}
 	\item While one might observe a non-zero alpha in the short-term, it will likely become zero in the long-term
 	\end{itemize}
 \end{frame}
@@ -185,7 +185,6 @@ of the stock's volatility is systematic; we say that the remaining fraction is i
 \begin{frame}{\ftexampl{Example}}
 \begin{enumerate}
 	\item What is Cisco's alpha? {\color{blue}-0.2845\%}
-	\item Should we go long or short? {\color{blue}short}
 	\item What about Caterpillar?
 \end{enumerate}
 \end{frame}
@@ -208,17 +207,17 @@ of the stock's volatility is systematic; we say that the remaining fraction is i
 		\item A stock price follows a \textit{random walk} returns are unpredictable.
 		\item Suppose that Apple traded for 266 USD at 12:00 and everyone knew that at the end of the day, it would trade for 270 USD (a risk-free return of 1.5\% in just one afternoon!)
 		\item Everyone would start buying. The price would rise to 267 (a return of 1.13\%), to 268 (.75\%), and so on until at 12:01, when the price would be 270 (0\%). 
-		\item Put differently, all information (such as the fact that the price will be 270 USD by the end of day). 
-		\item The random walk explains why the stock market does well on days when bad news comes out (e.g. the market expected that unemployment would rise by 1\%, traded stocks at price reflecting the expectation that unemployment would rise by 1\%, and then when unemployment rose by .95\%, the stock price rose).
+		\item Put differently, all information (such as the fact that the price will be 270 USD by the end of day) is immediately incorporated into the price
+		\item The random walk explains why the stock market does well on days when bad news comes out (e.g. the market expected that unemployment would rise by 1\%, traded stocks at prices reflecting that expectation, and then when unemployment rose by .95\%, stock prices rose).
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{\fttheory{The Efficient Market Hypothesis (EMH)}}
+\begin{frame}{\fttheory{Forms of the EMH}}
 	There are three forms of the hypothesis, depending on how much information it assumes investors have
 	\begin{enumerate}
-		\item\textbf{Weak Form:} the assertion that stockprices already reflect all information contained in the history of past trading
-		\item\textbf{Semi-Strong Form:} the assertion that stockprices already reflect all publicly available information 
-		\item\textbf{Strong Form:} the assertion that stockprices already reflect all relevant information including inside information
+		\item\textbf{Weak Form:} the assertion that stock prices already reflect all information contained in the history of past trading
+		\item\textbf{Semi-Strong Form:} the assertion that stock prices already reflect all publicly available information 
+		\item\textbf{Strong Form:} the assertion that stock prices already reflect all relevant information including inside information
 	\end{enumerate}
 \end{frame}
 
@@ -241,19 +240,7 @@ of the stock's volatility is systematic; we say that the remaining fraction is i
 \end{frame}
 
 \begin{frame}{\ftexampl{Support and Resistence}}
- 	Consider a stock ($S$) that pays a quarterly dividend of 1.2 USD per share and has a beta of 1.5. Suppose that the equity risk premium is 8\%. According to the CAPM, the discount rate should be
-	\begin{equation}
-		\text{E}[r_{S}]=r_{F}+\beta E[r_{M}-r_{F}]=1.5\times 8\%=12\%. 
-	\end{equation}
-	The dividend discount model predicts that the fair price is
-	\begin{equation}
-		P=\frac{D}{r_{S}}=\frac{1.2\text{ USD}}{12\%}=10\text{ USD}
-	\end{equation}
-	Suppose that the chart shows a support of 9 USD and a resistence of 11 USD and suppose that stock starts paying dividends of 1.8 USD per share. The fair price should now be 15 USD. Continued on next slide...
-\end{frame}
-
-\begin{frame}{\ftexampl{Support and Resistence}}
-	If other traders believe in a resistence level, then as soon as the price nears 11 USD, they will be willing to sell to you for 11 USD. If you buy at 11 USD, then you make an arbitrage profit of 4 USD, as the present value of the cash flows is 15 USD. In order to realize this profit, the market must either give-up the resistence level or you have to hold the stock long-term and obtain the dividends yourself.
+	Consider a stock valued at 10 USD per share. Suppose that the chart shows a support of 9 USD and a resistence of 11 USD and suppose that because of a dividend increase, it is now valued at 15 USD per share. If other traders believe in a resistence level, then as soon as the price nears 11 USD, they will be willing to sell to you for 11 USD. If you buy at 11 USD, then you make a profit of 4 USD, as the present value of the cash flows is 15 USD. In order to realize this profit, the market must either give-up the resistence level or you have to hold the stock long-term and obtain the dividends yourself.
 \end{frame}
 
 \begin{frame}{\fttheory{Fundamental Analysis}}
