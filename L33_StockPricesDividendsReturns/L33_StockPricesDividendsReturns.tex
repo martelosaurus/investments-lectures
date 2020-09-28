@@ -15,23 +15,18 @@
 	\end{center}
 \end{frame}
 
-\iffalse
 \begin{frame}{\ftheader{Stocks Prices, Dividends, and Returns}}
 	\begin{itemize}
 		\item The CAPM gives us a way of computing a stock's expected rate of return:
-			\begin{equation*}
-				\text{E}[r_{S}]=r_{F}+\beta_{S}\text{E}[r_{M}-r_{F}]
-			\end{equation*}
-		\item We now want to price a stock's dividends using the expected rate of return from the CAPM 
-		\item 
-		\item We will look at 
+		\item We now want to price a stock's dividends using the expected rate of return from the CAPM (we call this process \underline{valuation})
+		\item This is a difficult task, so we will have to make some assumptions along the way
+		\item We will look at two methods of valuation
 			\begin{enumerate}
-				\item Discounted Cash Flows (DCF) Valuation
+				\item Discounted Cash Flows (DCF) (DCF) Valuation
 				\item Price-to-Earnings (P/E) Valuation
 			\end{enumerate}
 	\end{itemize}
 \end{frame}
-\fi
 
 \begin{frame}
 \begin{center}
@@ -78,7 +73,7 @@
 \end{frame}
 
 % A One Year Investor
-\begin{frame}{\fttheory{Dividend Discount Model}}
+\begin{frame}{\fttheory{Discounted Cash Flows (DCF)}}
 	\begin{itemize}
 	\item To simplify the math that follows, we will consider a stock whose dividends are uncorrelated with the market
 	\end{itemize}
@@ -107,9 +102,9 @@
 \end{frame}
 
 % Dividend Yields, Capital Gains, and Total Returns
-\begin{frame}{\fttheory{Didend Yields, Capital Gains, and Total Returns}}
+\begin{frame}{\fttheory{Dividend Yields, Capital Gains, and Total Returns}}
 \begin{equation*}
-	r\should\frac{D_{1}+P_{1}}{P_{0}}-1=\underbrace{\frac{D_{1}}{P_{0}}}_{\text{Didend Yield}}+\underbrace{\frac{P_{1}-P_{0}}{P_{0}}}_{\text{Capital Gain Rate}}
+	r\should\frac{D_{1}+P_{1}}{P_{0}}-1=\underbrace{\frac{D_{1}}{P_{0}}}_{\text{Dividend Yield}}+\underbrace{\frac{P_{1}-P_{0}}{P_{0}}}_{\text{Capital Gain Rate}}
 \end{equation*}
 \begin{itemize}
 \item The \underline{dividend yield} is the expected annual dividend of the stock divided by its current price 
@@ -118,7 +113,7 @@
 \end{itemize}
 \end{frame}
 
-\begin{frame}{\ftexampl{Didend Yields, Capital Gains, and Total Returns}}
+\begin{frame}{\ftexampl{Dividend Yields, Capital Gains, and Total Returns}}
 	What are the average dividend yields, capital gains rates, and total returns for Proctor \& Gamble and Apple?
 	\pause
 	{\color{blue}
@@ -136,7 +131,7 @@
 \end{frame}
 
 % A Multiyear Investor
-\begin{frame}{\fttheory{Stocks}}
+\begin{frame}{\fttheory{Discounted Cash Flows (DCF)}}
 	\begin{figure}[H]
 		\begin{center}
 			\begin{tikzpicture}
@@ -164,8 +159,8 @@
 \end{itemize}
 \end{frame}
 
-% Dividend Discount Model Equation
-\begin{frame}{\fttheory{The Dividend Discount Model}}
+% Discounted Cash Flows (DCF) Equation
+\begin{frame}{\fttheory{Discounted Cash Flows (DCF)}}
 	\begin{itemize}
 		\item It doesn't matter whether the investor wants to hold the stock for one quarter, two quarters, or infinitely many quarters: she is always willing to pay the same price $P_{0}$
 		\item In particular, the investor who holds the stock for infinitely many periods is willing to pay 
@@ -209,7 +204,7 @@ where $D_{0}$ is the dividend that was just paid
 % Constant Dividend Growth
 \begin{frame}{\fttheory{Constant Dividend Growth}}
 \begin{itemize}
-	\item The Dividend Discount Model says that
+	\item Discounted Cash Flows (DCF) says that
 	\begin{equation*}
 		P_{0}\should\frac{(1+g)D_{0}}{r-g}=\frac{D_{1}}{r-g}
 	\end{equation*}
@@ -241,14 +236,14 @@ where $D_{0}$ is the dividend that was just paid
 \end{center}
 \end{frame}
 
-\begin{frame}{\fttheory{Price-to-Earnings (P/E) Ratios}}
+\begin{frame}{\fttheory{Price-to-Earnings (P/E)}}
 \begin{itemize}
 	\item Unfortunately, computing prices via DCF can be extremely complicated and prone to error as one must be able to forecast the firm's payout policies, how those payouts correlate with the performance of the market, and so on
 	\item In practice, finance professionals often use \underline{multiples} to price stocks (or entire companies), the most popular of which is the \underline{price-to-earnings ratio}
 \end{itemize}
 \end{frame}
 
-\begin{frame}{\fttheory{Price-to-Earnings (P/E) Ratios}}
+\begin{frame}{\fttheory{Price-to-Earnings (P/E)}}
 \begin{itemize}
 	\item Suppose that companies $A$ and $B$ have similar risk ($\beta_{A}\approx\beta_{B}$) and hence similar expected returns ($\text{E}[r_{A}]\approx\text{E}[r_{B}]$)
 	\item P/E valuation assumes that earnings equal dividends: $E_{A}=D_{A}$ and $E_{B}=D_{B}$. 
@@ -264,13 +259,13 @@ where $D_{0}$ is the dividend that was just paid
 \end{itemize}
 \end{frame}
 
-\begin{frame}{\ftexampl{Price-to-Earnings (P/E) Ratios}}
+\begin{frame}{\ftexampl{Price-to-Earnings (P/E)}}
 	Suppose that we want to price Honeywell (HON), which has a beta of 1.08. Lockheed Martin (LMT) has a beta of 0.93, while Walmart has a beta of 0.29. We should use the multiple of which company?\\
 	\pause
 	{\color{blue} Lockheed Martin. Its beta (and hence expected return) is much closer to that of Honeywell than that of Walmart.}
 \end{frame}
 
-\begin{frame}{\ftexampl{Price-to-Earnings (P/E) Ratios}}
+\begin{frame}{\ftexampl{Price-to-Earnings (P/E)}}
 \begin{center}
 	\begin{tabular}{lllll}
 		\textbf{Stock} & \textbf{Beta} & \textbf{P} & \textbf{E}(PS) & \textbf{P/E} \\ 
