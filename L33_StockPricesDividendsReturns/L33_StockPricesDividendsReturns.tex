@@ -16,7 +16,10 @@
 
 \begin{frame}{\ftheader{Stocks Prices, Dividends, and Returns}}
 	\begin{itemize}
-		\item The CAPM gives us a way of computing a stock's return
+		\item The CAPM gives us a way of computing a stock's expected rate of return:
+			\begin{equation}
+				\text{E}[r_{S}]=r_{F}+\beta_{S}\text{E}[r_{M}-r_{F}]
+			\end{equation}
 		\item We now want to compute prices
 		\item 
 		\item We will look at 
@@ -55,6 +58,7 @@
 \end{frame}
 
 % dividend examples
+\iffalse
 \begin{frame}{\ftdata{Observations}}
 	\begin{itemize}
 		\item Verizon's dividends are (generally) constant across the four quarters in each year, but increase from the fourth quarter of one year to the first quarter of the next
@@ -62,6 +66,7 @@
 		\item Walmart's dividends follow a similar pattern to those of Verizon and Exxon, but the annual growth in the dividend rate seems to kink in 2013
 	\end{itemize}
 \end{frame}
+\fi
 
 \begin{frame}
 	\begin{center}
@@ -70,7 +75,10 @@
 \end{frame}
 
 % A One Year Investor
-\begin{frame}{\fttheory{Stocks}}
+\begin{frame}{\fttheory{Dividend Discount Model}}
+	\begin{itemize}
+	\item To simplify the math that follows, we will consider a stock whose dividends are uncorrelated with the market
+	\end{itemize}
 	\begin{figure}[H]
 		\begin{center}
 			\begin{tikzpicture}
@@ -86,11 +94,11 @@
 	\end{figure}
 	\begin{itemize}
 		\item $P_{1}$ is the expected price in one period 
-		\item $r_{S}$ is the required total rate of return 
+		\item $r$ is the required total rate of return 
 		\item $D_{1}$ is the expected dividend 
 		\item The price should be
 		\begin{equation*}
-			P_{0}\should\frac{D_{1}+P_{1}}{1+r_{S}}.
+			P_{0}\should\frac{D_{1}+P_{1}}{1+r}.
 		\end{equation*}
 	\end{itemize}
 \end{frame}
@@ -98,13 +106,30 @@
 % Dividend Yields, Capital Gains, and Total Returns
 \begin{frame}{\fttheory{Didend Yields, Capital Gains, and Total Returns}}
 \begin{equation*}
-r\should\frac{D_{1}+P_{1}}{P_{0}}-1=\underbrace{\frac{D_{1}}{P_{0}}}_{\text{Didend Yield}}+\underbrace{\frac{P_{1}-P_{0}}{P_{0}}}_{\text{Capital Gain Rate}}
+	r\should\frac{D_{1}+P_{1}}{P_{0}}-1=\underbrace{\frac{D_{1}}{P_{0}}}_{\text{Didend Yield}}+\underbrace{\frac{P_{1}-P_{0}}{P_{0}}}_{\text{Capital Gain Rate}}
 \end{equation*}
 \begin{itemize}
 \item The \underline{dividend yield} is the expected annual dividend of the stock divided by its current price 
 \item The \underline{capital gain rate} is the percent by which the stock price increases from the current period to the next
 \item The \underline{total return} (or \underline{holding period return}) is the sum of the dividend yield and the capital gain rate  
 \end{itemize}
+\end{frame}
+
+\begin{frame}{\ftexampl{Didend Yields, Capital Gains, and Total Returns}}
+	What are the average dividend yields, capital gains rates, and total returns for Proctor \& Gamble and Apple?
+	\pause
+	{\color{blue}
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{lrr}
+			& \textbf{PG} & \textbf{AAPL} \\ 
+			Mean Capital Gain Rate & 0.6775\% & 2.6681\% \\
+			Mean Dividend Yield & 0.3563\% & 0.7634\% \\
+			Mean Total Return & 1.0338\% & 3.4314\% 
+		\end{tabular}
+	\end{center}
+\end{table}
+	}
 \end{frame}
 
 % A Multiyear Investor
@@ -127,11 +152,11 @@ r\should\frac{D_{1}+P_{1}}{P_{0}}-1=\underbrace{\frac{D_{1}}{P_{0}}}_{\text{Dide
 \begin{itemize}
 \item The prices should be
 \begin{equation*}
-	P_{0}\should\frac{D_{1}}{1+r_{S}}+\frac{D_{2}+P_{2}}{(1+r_{S})^2}\text{ and } P_{1}\should\frac{D_{2}+P_{2}}{1+r_{S}}.
+	P_{0}\should\frac{D_{1}}{1+r}+\frac{D_{2}+P_{2}}{(1+r)^2}\text{ and } P_{1}\should\frac{D_{2}+P_{2}}{1+r}.
 \end{equation*}
 \item Does the two-year investor value the stock differently than the one-ear investor? No:
 \begin{equation*}
-	P_{0}=\frac{D_{1}}{1+r_{S}}+\frac{D_{2}+P_{2}}{(1+r_{S})^2}=\frac{D_{1}}{1+r_{S}}+\frac{P_{1}}{1+r_{S}}=\frac{D_{1}+P_{1}}{1+r_{S}}
+	P_{0}=\frac{D_{1}}{1+r}+\frac{D_{2}+P_{2}}{(1+r)^2}=\frac{D_{1}}{1+r}+\frac{P_{1}}{1+r}=\frac{D_{1}+P_{1}}{1+r}
 \end{equation*}
 \end{itemize}
 \end{frame}
@@ -142,7 +167,7 @@ r\should\frac{D_{1}+P_{1}}{P_{0}}-1=\underbrace{\frac{D_{1}}{P_{0}}}_{\text{Dide
 		\item It doesn't matter whether the investor wants to hold the stock for one quarter, two quarters, or infinitely many quarters: she is always willing to pay the same price $P_{0}$
 		\item In particular, the investor who holds the stock for infinitely many periods is willing to pay 
 		\begin{equation*}
-			P_{0}\should\frac{D_{1}}{1+r_{S}}+\frac{D_{2}}{(1+r_{S})^2}+\frac{D_{3}}{(1+r_{S})^3}+\cdots 
+			P_{0}\should\frac{D_{1}}{1+r}+\frac{D_{2}}{(1+r)^2}+\frac{D_{3}}{(1+r)^3}+\cdots 
 		\end{equation*}
 		for the stock
 		\item Implication: we don't need to know the prices $P_{1}$, $P_{2}$, $\ldots$, just the dividends $D_{1}$, $D_{2}$, $D_{3}$, $\ldots$
@@ -174,7 +199,7 @@ Suppose dividends grow at a constant rate $g$
 \end{figure}
 where $D_{0}$ is the dividend that was just paid
 \begin{equation*}
-	P_{0}\should\frac{(1+g)D_{0}}{(1+r_{S})}+\frac{(1+g)^{2}D_{0}}{(1+r_{S})^2}+\frac{(1+g)^{3}D_{0}}{(1+r_{S})^3}+\cdots=\frac{(1+g)D_{0}}{r_{S}-g}
+	P_{0}\should\frac{(1+g)D_{0}}{(1+r)}+\frac{(1+g)^{2}D_{0}}{(1+r)^2}+\frac{(1+g)^{3}D_{0}}{(1+r)^3}+\cdots=\frac{(1+g)D_{0}}{r-g}
 \end{equation*}
 \end{frame}
 
@@ -183,11 +208,11 @@ where $D_{0}$ is the dividend that was just paid
 \begin{itemize}
 	\item The Dividend Discount Model says that
 	\begin{equation*}
-		P_{0}\should\frac{(1+g)D_{0}}{r_{S}-g}=\frac{D_{1}}{r_{S}-g}
+		P_{0}\should\frac{(1+g)D_{0}}{r-g}=\frac{D_{1}}{r-g}
 	\end{equation*}
 	\item In this case, the \underline{growth rate} $g$ is the \underline{capital gain rate}:
 	\begin{equation*}
-		\overbrace{\frac{D_{1}}{P_{0}}+g}^{\text{Specific Formula}}\should r_{S}\should\overbrace{\underbrace{\frac{D_{1}}{P_{0}}}_{\text{Dividend Yield}}+\underbrace{\frac{P_{1}-P_{0}}{P_{0}}}_{\text{Capital Gain Rate}}}^{\text{General Formula}}
+		\overbrace{\frac{D_{1}}{P_{0}}+g}^{\text{Specific Formula}}\should r\should\overbrace{\underbrace{\frac{D_{1}}{P_{0}}}_{\text{Dividend Yield}}+\underbrace{\frac{P_{1}-P_{0}}{P_{0}}}_{\text{Capital Gain Rate}}}^{\text{General Formula}}
 	\end{equation*}
 \end{itemize}
 \end{frame}
@@ -201,7 +226,7 @@ where $D_{0}$ is the dividend that was just paid
 \begin{frame}{\fttheory{Price-to-Earnings (P/E) Ratios}}
 \begin{itemize}
 	\item Unfortunately, computing prices via DCF can be extremely complicated and prone to error as one must be able to forecast the firm's payout policies, how those payouts correlate with the performance of the market, and so on
-	\item In practice, finance professionals often use \underline{multiples} to price stocks (or entire companies)
+	\item In practice, finance professionals often use \underline{multiples} to price stocks (or entire companies), the most popular of which is the \underline{price-to-earnings ratio}
 \end{itemize}
 \end{frame}
 
@@ -250,15 +275,16 @@ where $D_{0}$ is the dividend that was just paid
 \end{frame}
 
 \begin{frame}{Notes to self}
-	\footnotesize
+	\scriptsize
 The SDF $m(1+r_{f})=1-\text{SR}[r_{m}]z_{m}$ prices the return of the total endowment, $r_{m}$, and the risk-free rate, $r_{f}$, where $z_{m}=(r_{m}-\text{E}[r_{m}])/\text{SD}[r_{m}]$. So if the stock's dividends grow at a random rate of $g$, then
 \begin{align}
 	P_{0}&=\sum_{k=1}^{\infty}{\text{E}\left[(m(1+g))^{k}\right]D_{0}}\\
 	&\geq\sum_{k=1}^{\infty}{\text{E}[(m(1+g))]^{k}D_{0}}\\
 	&=\sum_{k=1}^{\infty}{(1+r_{f})^{-k}\text{E}\left[(1-\text{SR}[r_{m}]z_{m})(1+g)\right]^{k}D_{0}}\\
 	&=\sum_{k=1}^{\infty}{(1+r_{f})^{-k}\left(1+\text{E}[g]-\beta_{g}\text{E}[r_{m}-r_{f}]\right)^{k}D_{0}}\\
-	&=\frac{D_{1}}{\beta_{g}\text{E}[r_{m}-r_{f}]-\text{E}[g-r_{f}]}
+	&=\frac{1+\text{E}[g]-\beta_{g}\text{E}[r_{m}-r_{f}]}{(r_{F}+\beta_{g}\text{E}[r_{m}-r_{f}])-\text{E}[g]}D_{0}\\
+	&=\frac{D_{1}-\beta_{g}\text{E}[r_{m}-r_{f}]D_{0}}{(r_{F}+\beta_{g}\text{E}[r_{m}-r_{f}])-\text{E}[g]}
 \end{align}
-	where $D_{1}=(1+\text{E}[g]-\beta_{g}\text{E}[r_{m}-r_{f}])D_{0}$
+	where $\beta_{g}=\text{Cov}[g,r_{m}]/\text{Var}[r_{m}]$.
 \end{frame}
 \end{document}
