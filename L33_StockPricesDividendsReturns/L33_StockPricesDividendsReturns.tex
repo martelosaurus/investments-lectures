@@ -1,6 +1,7 @@
 \documentclass{beamer}
 \usepackage{amsfonts,amsmath,amssymb,tikz}
 \newcommand{\should}{\overset{\text{should}}{=}}
+\newcommand{\USD}{\text{\scriptsize\:USD\:}}
 \input{../jordan_header}
 \begin{document}
 %-----------------------------------------------------------------------------%
@@ -14,13 +15,14 @@
 	\end{center}
 \end{frame}
 
+\iffalse
 \begin{frame}{\ftheader{Stocks Prices, Dividends, and Returns}}
 	\begin{itemize}
 		\item The CAPM gives us a way of computing a stock's expected rate of return:
-			\begin{equation}
+			\begin{equation*}
 				\text{E}[r_{S}]=r_{F}+\beta_{S}\text{E}[r_{M}-r_{F}]
-			\end{equation}
-		\item We now want to compute prices
+			\end{equation*}
+		\item We now want to price a stock's dividends using the expected rate of return from the CAPM 
 		\item 
 		\item We will look at 
 			\begin{enumerate}
@@ -29,6 +31,7 @@
 			\end{enumerate}
 	\end{itemize}
 \end{frame}
+\fi
 
 \begin{frame}
 \begin{center}
@@ -217,6 +220,21 @@ where $D_{0}$ is the dividend that was just paid
 \end{itemize}
 \end{frame}
 
+% Constant Dividend Growth
+\begin{frame}{\ftexampl{Constant Dividend Growth}}
+	Suppose a company has an expected \textbf{quarterly} rate of return of 2\%. It just paid a dividend of 0.5\USD and dividends are expected to grow by 1\% each \textbf{quarter}. What would you expect the stock to trade for? What is its dividend yield? Capital gain rate? \\
+	\pause
+	{\color{blue}The next dividend will be 
+	\begin{equation*}
+		D_{1}=(1+g)D_{0}=1.01\times 0.5\USD=0.505\USD
+	\end{equation*}
+	so the price should be
+	\begin{equation}
+		P_{0}=\frac{D_{1}}{r-g}=\frac{0.505\USD}{2\%-1\%}=50.5\USD
+	\end{equation}
+	The dividend yield is $D_{1}/P_{0}=1\%$. The capital gain rate is the dividend growth rate: 1\%.
+	}
+\end{frame}
 \begin{frame}
 \begin{center}
 \Huge P/E Valuation
@@ -234,44 +252,42 @@ where $D_{0}$ is the dividend that was just paid
 \begin{itemize}
 	\item Suppose that companies $A$ and $B$ have similar risk ($\beta_{A}\approx\beta_{B}$) and hence similar expected returns ($\text{E}[r_{A}]\approx\text{E}[r_{B}]$)
 	\item P/E valuation assumes that earnings equal dividends: $E_{A}=D_{A}$ and $E_{B}=D_{B}$. 
-	\item Then $A$ and $B$ should have the same P/E ratio:
-	\begin{equation}
+	\item Then $A$ and $B$ should have similar P/E ratios:
+	\begin{equation*}
 		\frac{P_{A}}{E_{A}}\approx\frac{P_{B}}{E_{B}}
-	\end{equation}
+	\end{equation*}
 	\item If we know $B$'s P/E ratio and $A$'s earnings-per-share, we can approximate $A$'s price:
-	\begin{equation}
+	\begin{equation*}
 		P_{A}\approx E_{A}\times\frac{P_{B}}{E_{B}}
-	\end{equation}
+	\end{equation*}
 	\item In this case, $P_{B}/E_{B}$ is the \textit{multiple}
 \end{itemize}
 \end{frame}
 
 \begin{frame}{\ftexampl{Price-to-Earnings (P/E) Ratios}}
-\begin{itemize}
-	\item Suppose that we want to price Honeywell (HON), which has a beta of 1.08. Lockheed Martin (LMT) has a beta of 0.93, while Walmart has a beta of 0.29. We should use the multiple of which company?
+	Suppose that we want to price Honeywell (HON), which has a beta of 1.08. Lockheed Martin (LMT) has a beta of 0.93, while Walmart has a beta of 0.29. We should use the multiple of which company?\\
 	\pause
-	\item {\color{blue} Lockheed Martin. It's beta (and hence expected return) is much closer to that of Honeywell than that of Walmart.}
-\end{itemize}
+	{\color{blue} Lockheed Martin. Its beta (and hence expected return) is much closer to that of Honeywell than that of Walmart.}
 \end{frame}
 
 \begin{frame}{\ftexampl{Price-to-Earnings (P/E) Ratios}}
 \begin{center}
 	\begin{tabular}{lllll}
 		\textbf{Stock} & \textbf{Beta} & \textbf{P} & \textbf{E}(PS) & \textbf{P/E} \\ 
-		Honeywell & & & & 8.14 \\
-		Lockheed & & 386.70 & 22.82 & 16.95 \\
+		Honeywell & 1.08 & $\times$ & 8.14\USD & $\times$ \\
+		Lockheed & 0.93 & 386.70\USD & 22.82\USD & 16.95\USD \\
 	\end{tabular}
 \end{center}
-\begin{itemize}
-	\item What should Honeywell trade for?
+	What should Honeywell trade for?\\
 	\pause
-	\item {\color{blue}
-		\begin{equation}
-			P_{\text{HON}}\approx E_{\text{HON}}\times\frac{P_{\text{LMT}}}{E_{\text{LMT}}}=8.14\text{ USD}\times\frac{386.70\text{ USD}}{22.82\text{ USD}}=
-		\end{equation}
+	{\color{blue}
+		\begin{align*}
+			P_{\text{HON}}&\approx E_{\text{HON}}\times\frac{P_{\text{LMT}}}{E_{\text{LMT}}}\\
+			&=8.14\USD\times\frac{386.70\USD}{22.82\USD}\\
+			&=137.94\USD
+		\end{align*}
 	}
-	\item {\color{blue} Honeywell was \textit{actually} trading for 161.49}
-\end{itemize}
+	\noindent{\color{blue} Honeywell was \textit{actually} trading for 161.49}
 \end{frame}
 
 \begin{frame}{Notes to self}
