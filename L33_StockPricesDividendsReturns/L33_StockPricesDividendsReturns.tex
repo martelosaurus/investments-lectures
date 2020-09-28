@@ -7,9 +7,23 @@
 % STOCKS
 %-----------------------------------------------------------------------------%
 
-\begin{frame}{\ftheader{Stocks}}
+\begin{frame}
+	\begin{center}
+		\Huge Lecture 3.3: Stock 
+		Prices, Dividends, and Returns
+	\end{center}
+\end{frame}
+
+\begin{frame}{\ftheader{Stocks Prices, Dividends, and Returns}}
 	\begin{itemize}
+		\item The CAPM gives us a way of computing a stock's return
+		\item We now want to compute prices
 		\item 
+		\item We will look at 
+			\begin{enumerate}
+				\item Discounted Cash Flows (DCF) Valuation
+				\item Price-to-Earnings (P/E) Valuation
+			\end{enumerate}
 	\end{itemize}
 \end{frame}
 
@@ -22,21 +36,21 @@
 % dividend examples
 \begin{frame}{\ftdata{Visa}}
 	\begin{center}
-		\includegraphics[scale=0.5]{V_col}
+		\includegraphics[scale=0.6]{V_col}
 	\end{center}
 \end{frame}
 
 % dividend examples
 \begin{frame}{\ftdata{Exxon}}
 	\begin{center}
-		\includegraphics[scale=0.5]{XOM_col}
+		\includegraphics[scale=0.6]{XOM_col}
 	\end{center}
 \end{frame}
 
 % dividend examples
 \begin{frame}{\ftdata{Walmart}}
 	\begin{center}
-		\includegraphics[scale=0.5]{WMT_col} 
+		\includegraphics[scale=0.6]{WMT_col} 
 	\end{center}
 \end{frame}
 
@@ -51,7 +65,7 @@
 
 \begin{frame}
 	\begin{center}
-		\Huge Stock Prices
+		\Huge DCF Valuation
 	\end{center}
 \end{frame}
 
@@ -71,10 +85,10 @@
 		\end{center}
 	\end{figure}
 	\begin{itemize}
-		\item $P_{1}$ is the expected price in one period (usually one quarter)
-		\item $r$ is the required total rate of return (usually quarterly)
+		\item $P_{1}$ is the expected price in one period 
+		\item $r_{S}$ is the required total rate of return 
 		\item $D_{1}$ is the expected dividend 
-		\item The price \underline{should} be
+		\item The price should be
 		\begin{equation*}
 			P_{0}\should\frac{D_{1}+P_{1}}{1+r_{S}}.
 		\end{equation*}
@@ -115,7 +129,7 @@ r\should\frac{D_{1}+P_{1}}{P_{0}}-1=\underbrace{\frac{D_{1}}{P_{0}}}_{\text{Dide
 \begin{equation*}
 	P_{0}\should\frac{D_{1}}{1+r_{S}}+\frac{D_{2}+P_{2}}{(1+r_{S})^2}\text{ and } P_{1}\should\frac{D_{2}+P_{2}}{1+r_{S}}.
 \end{equation*}
-\item Does the two-year investor value the stock differently than the one-ear investor? \textbf{No!}
+\item Does the two-year investor value the stock differently than the one-ear investor? No:
 \begin{equation*}
 	P_{0}=\frac{D_{1}}{1+r_{S}}+\frac{D_{2}+P_{2}}{(1+r_{S})^2}=\frac{D_{1}}{1+r_{S}}+\frac{P_{1}}{1+r_{S}}=\frac{D_{1}+P_{1}}{1+r_{S}}
 \end{equation*}
@@ -137,7 +151,7 @@ r\should\frac{D_{1}+P_{1}}{P_{0}}-1=\underbrace{\frac{D_{1}}{P_{0}}}_{\text{Dide
 
 % Growing Perpetuities
 \begin{frame}{\fttheory{Constant Dividend Growth}}
-Simple model: dividends grow at a constant rate $g$ 
+Suppose dividends grow at a constant rate $g$ 
 \begin{figure}[H]
 	\begin{center}
 		\begin{tikzpicture}
@@ -158,7 +172,7 @@ Simple model: dividends grow at a constant rate $g$
 		\end{tikzpicture}
 	\end{center}
 \end{figure}
-where $D_{0}$ is the dividend that was \underline{just} paid
+where $D_{0}$ is the dividend that was just paid
 \begin{equation*}
 	P_{0}\should\frac{(1+g)D_{0}}{(1+r_{S})}+\frac{(1+g)^{2}D_{0}}{(1+r_{S})^2}+\frac{(1+g)^{3}D_{0}}{(1+r_{S})^3}+\cdots=\frac{(1+g)D_{0}}{r_{S}-g}
 \end{equation*}
@@ -171,17 +185,16 @@ where $D_{0}$ is the dividend that was \underline{just} paid
 	\begin{equation*}
 		P_{0}\should\frac{(1+g)D_{0}}{r_{S}-g}=\frac{D_{1}}{r_{S}-g}
 	\end{equation*}
-	\item Awesome interpretation!
+	\item In this case, the \underline{growth rate} $g$ is the \underline{capital gain rate}:
 	\begin{equation*}
-		\overbrace{\frac{D_{1}}{P_{0}}+g}^{\text{Specific Formula}}\should r\should\overbrace{\underbrace{\frac{D_{1}}{P_{0}}}_{\text{Didend Yield}}+\underbrace{\frac{P_{1}-P_{0}}{P_{0}}}_{\text{Capital Gain Rate}}}^{\text{General Formula}}
+		\overbrace{\frac{D_{1}}{P_{0}}+g}^{\text{Specific Formula}}\should r_{S}\should\overbrace{\underbrace{\frac{D_{1}}{P_{0}}}_{\text{Dividend Yield}}+\underbrace{\frac{P_{1}-P_{0}}{P_{0}}}_{\text{Capital Gain Rate}}}^{\text{General Formula}}
 	\end{equation*}
-	\item In this case, the \underline{growth rate} $g$ is the \underline{capital gain rate}
 \end{itemize}
 \end{frame}
 
 \begin{frame}
 \begin{center}
-\Huge Price-to-Earnings Ratios
+\Huge P/E Valuation
 \end{center}
 \end{frame}
 
@@ -236,15 +249,16 @@ where $D_{0}$ is the dividend that was \underline{just} paid
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Notes for Jordan (and the curious student)}
-The SDF
-\begin{equation}
-	m(1+r_{f})=1-\text{SR}[r_{m}]z_{m}
-\end{equation}
-prices the return of the total endowment, $r_{m}$, and the risk-free rate, $r_{f}$, where $z_{m}=(r_{m}-\text{E}[r_{m}])/\text{SD}[r_{m}]$. So if the stock's dividends grow at a random rate of $g$, then
+\begin{frame}{Notes to self}
+	\footnotesize
+The SDF $m(1+r_{f})=1-\text{SR}[r_{m}]z_{m}$ prices the return of the total endowment, $r_{m}$, and the risk-free rate, $r_{f}$, where $z_{m}=(r_{m}-\text{E}[r_{m}])/\text{SD}[r_{m}]$. So if the stock's dividends grow at a random rate of $g$, then
 \begin{align}
 	P_{0}&=\sum_{k=1}^{\infty}{\text{E}\left[(m(1+g))^{k}\right]D_{0}}\\
-	&=\sum_{k=1}^{\infty}{\frac{\text{E}\left[((1-\text{SR}[r_{m}]z_{m})(1+g))^{k}\right]D_{0}}{(1+r_{f})^k}}
+	&\geq\sum_{k=1}^{\infty}{\text{E}[(m(1+g))]^{k}D_{0}}\\
+	&=\sum_{k=1}^{\infty}{(1+r_{f})^{-k}\text{E}\left[(1-\text{SR}[r_{m}]z_{m})(1+g)\right]^{k}D_{0}}\\
+	&=\sum_{k=1}^{\infty}{(1+r_{f})^{-k}\left(1+\text{E}[g]-\beta_{g}\text{E}[r_{m}-r_{f}]\right)^{k}D_{0}}\\
+	&=\frac{D_{1}}{\beta_{g}\text{E}[r_{m}-r_{f}]-\text{E}[g-r_{f}]}
 \end{align}
+	where $D_{1}=(1+\text{E}[g]-\beta_{g}\text{E}[r_{m}-r_{f}])D_{0}$
 \end{frame}
 \end{document}
