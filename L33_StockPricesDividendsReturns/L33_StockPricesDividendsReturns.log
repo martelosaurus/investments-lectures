@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.6.6)  28 SEP 2020 11:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.6.6)  29 SEP 2020 15:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -951,123 +951,130 @@ Overfull \hbox (23.50658pt too wide) in paragraph at lines 56--56
 
 [6
 
- <./WMT_col.pdf>] [7
-
-]
-Overfull \hbox (167.64307pt too wide) in paragraph at lines 102--102
+ <./WMT_col.pdf>]
+Overfull \hbox (51.61066pt too wide) in paragraph at lines 65--65
  []|[][][]  
  []
 
-[8
+[7
+
+] [8
 
 ]
-Overfull \hbox (295.76358pt too wide) in paragraph at lines 114--114
+Overfull \hbox (167.64307pt too wide) in paragraph at lines 100--100
  []|[][][]  
  []
 
 [9
 
 ]
-Overfull \hbox (295.76358pt too wide) in paragraph at lines 131--131
+Overfull \hbox (295.76358pt too wide) in paragraph at lines 112--112
  []|[][][]  
  []
 
 [10
 
 ]
-Overfull \hbox (295.76358pt too wide) in paragraph at lines 131--131
+Overfull \hbox (295.76358pt too wide) in paragraph at lines 129--129
  []|[][][]  
  []
 
 [11
 
 ]
-Overfull \hbox (167.64307pt too wide) in paragraph at lines 160--160
+Overfull \hbox (295.76358pt too wide) in paragraph at lines 129--129
  []|[][][]  
  []
 
 [12
 
 ]
-Overfull \hbox (167.64307pt too wide) in paragraph at lines 173--173
+Overfull \hbox (167.64307pt too wide) in paragraph at lines 158--158
  []|[][][]  
  []
 
 [13
 
 ]
-Overfull \hbox (142.619pt too wide) in paragraph at lines 202--202
+Overfull \hbox (167.64307pt too wide) in paragraph at lines 171--171
  []|[][][]  
  []
 
 [14
 
 ]
-Overfull \hbox (142.619pt too wide) in paragraph at lines 216--216
+Overfull \hbox (142.619pt too wide) in paragraph at lines 200--200
  []|[][][]  
  []
 
 [15
 
 ]
-Overfull \hbox (142.619pt too wide) in paragraph at lines 232--232
+Overfull \hbox (142.619pt too wide) in paragraph at lines 214--214
  []|[][][]  
  []
 
 [16
 
 ]
-Overfull \hbox (142.619pt too wide) in paragraph at lines 232--232
+Overfull \hbox (142.619pt too wide) in paragraph at lines 230--230
  []|[][][]  
  []
 
 [17
 
-] [18
-
 ]
-Overfull \hbox (125.25891pt too wide) in paragraph at lines 244--244
+Overfull \hbox (142.619pt too wide) in paragraph at lines 230--230
  []|[][][]  
  []
 
-[19
+[18
+
+] [19
 
 ]
-Overfull \hbox (125.25891pt too wide) in paragraph at lines 260--260
+Overfull \hbox (125.25891pt too wide) in paragraph at lines 242--242
  []|[][][]  
  []
 
 [20
 
 ]
-Overfull \hbox (125.25891pt too wide) in paragraph at lines 266--266
+Overfull \hbox (125.25891pt too wide) in paragraph at lines 258--258
  []|[][][]  
  []
 
 [21
 
 ]
-Overfull \hbox (125.25891pt too wide) in paragraph at lines 266--266
+Overfull \hbox (125.25891pt too wide) in paragraph at lines 264--264
  []|[][][]  
  []
 
 [22
 
 ]
-Overfull \hbox (125.25891pt too wide) in paragraph at lines 286--286
+Overfull \hbox (125.25891pt too wide) in paragraph at lines 264--264
  []|[][][]  
  []
 
 [23
 
 ]
-Overfull \hbox (125.25891pt too wide) in paragraph at lines 286--286
+Overfull \hbox (125.25891pt too wide) in paragraph at lines 284--284
  []|[][][]  
  []
 
 [24
 
-] [25
+]
+Overfull \hbox (125.25891pt too wide) in paragraph at lines 284--284
+ []|[][][]  
+ []
+
+[25
+
+] [26
 
 ]
 \tf@nav=\write6
@@ -1079,20 +1086,20 @@ Overfull \hbox (125.25891pt too wide) in paragraph at lines 286--286
 \tf@snm=\write8
 \openout8 = `L33_StockPricesDividendsReturns.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 301.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 301.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 299.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 299.
  (./L33_StockPricesDividendsReturns.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 301.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 301.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 299.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 299.
 Package rerunfilecheck Info: File `L33_StockPricesDividendsReturns.out' has not
  changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 20034 strings out of 492615
- 393219 string characters out of 6131391
+ 20038 strings out of 492615
+ 393254 string characters out of 6131391
  473049 words of memory out of 5000000
- 23451 multiletter control sequences out of 15000+600000
+ 23453 multiletter control sequences out of 15000+600000
  15238 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,17n,55p,836b,706s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1113,11 +1120,11 @@ i9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on L33_StockPricesDividendsReturns.pdf (25 pages, 245512 bytes).
+Output written on L33_StockPricesDividendsReturns.pdf (26 pages, 247849 bytes).
 
 PDF statistics:
- 864 PDF objects out of 1000 (max. 8388607)
- 699 compressed objects within 7 object streams
- 51 named destinations out of 1000 (max. 500000)
+ 890 PDF objects out of 1000 (max. 8388607)
+ 723 compressed objects within 8 object streams
+ 53 named destinations out of 1000 (max. 500000)
  58 words of extra memory for PDF output out of 10000 (max. 10000000)
 

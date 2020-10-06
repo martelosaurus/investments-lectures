@@ -22,7 +22,7 @@
 		\item This is a difficult task, so we will have to make some assumptions along the way
 		\item We will look at two methods of valuation
 			\begin{enumerate}
-				\item Discounted Cash Flows (DCF) (DCF) Valuation
+				\item Discounted Cash Flows (DCF) Valuation
 				\item Price-to-Earnings (P/E) Valuation
 			\end{enumerate}
 	\end{itemize}
@@ -56,7 +56,6 @@
 \end{frame}
 
 % dividend examples
-\iffalse
 \begin{frame}{\ftdata{Observations}}
 	\begin{itemize}
 		\item Verizon's dividends are (generally) constant across the four quarters in each year, but increase from the fourth quarter of one year to the first quarter of the next
@@ -64,7 +63,6 @@
 		\item Walmart's dividends follow a similar pattern to those of Verizon and Exxon, but the annual growth in the dividend rate seems to kink in 2013
 	\end{itemize}
 \end{frame}
-\fi
 
 \begin{frame}
 	\begin{center}
@@ -285,17 +283,4 @@ where $D_{0}$ is the dividend that was just paid
 	\noindent{\color{blue} Honeywell was \textit{actually} trading for 161.49}
 \end{frame}
 
-\begin{frame}{Notes to self}
-	\scriptsize
-The SDF $m(1+r_{f})=1-\text{SR}[r_{m}]z_{m}$ prices the return of the total endowment, $r_{m}$, and the risk-free rate, $r_{f}$, where $z_{m}=(r_{m}-\text{E}[r_{m}])/\text{SD}[r_{m}]$. So if the stock's dividends grow at a random rate of $g$, then
-\begin{align}
-	P_{0}&=\sum_{k=1}^{\infty}{\text{E}\left[(m(1+g))^{k}\right]D_{0}}\\
-	&\geq\sum_{k=1}^{\infty}{\text{E}[(m(1+g))]^{k}D_{0}}\\
-	&=\sum_{k=1}^{\infty}{(1+r_{f})^{-k}\text{E}\left[(1-\text{SR}[r_{m}]z_{m})(1+g)\right]^{k}D_{0}}\\
-	&=\sum_{k=1}^{\infty}{(1+r_{f})^{-k}\left(1+\text{E}[g]-\beta_{g}\text{E}[r_{m}-r_{f}]\right)^{k}D_{0}}\\
-	&=\frac{1+\text{E}[g]-\beta_{g}\text{E}[r_{m}-r_{f}]}{(r_{F}+\beta_{g}\text{E}[r_{m}-r_{f}])-\text{E}[g]}D_{0}\\
-	&=\frac{D_{1}-\beta_{g}\text{E}[r_{m}-r_{f}]D_{0}}{(r_{F}+\beta_{g}\text{E}[r_{m}-r_{f}])-\text{E}[g]}
-\end{align}
-	where $\beta_{g}=\text{Cov}[g,r_{m}]/\text{Var}[r_{m}]$.
-\end{frame}
 \end{document}
