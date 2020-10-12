@@ -28,38 +28,29 @@
 		\alpha_{\text{Stock}} = \underbrace{(\text{E}[R_{\text{Stock}}]-R_{F})}_{\text{True Value}}-\underbrace{\beta_{\text{Stock}}\times(\text{E}[R_{\text{Market}}] - R_{F})}_{\text{CAPM}}
 	\end{equation}
 	\item While one might observe a non-zero alpha in the short-term, it will likely become zero in the long-term
+	\item There are two ways of thinking about $\alpha$, one akin to ``statistical analysis,'' the other to ``fundamental analysis.''
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{\fttheory{Two Kinds of Alpha}}
+\begin{frame}{\fttheory{Alpha: Statistical}}
 	\begin{itemize}
-		\item There are two ways of thinking about $\alpha$, one is like ``technical analysis,'' the other like ``fundamental analysis.''
+		\item Run the regression
+			\begin{equation}
+				r_{S,i}-r_{F,i}=\alpha_{S}+\beta_{S}(r_{M,i}-r_{F,i})+\epsilon_{S,i}
+			\end{equation}
+			where each $i$ is an observation
+		\item If $\alpha_{S}$ is not statistically significant (a $t$-statistic of between $-3$ and $3$), then you (probably) do not have alpha. If it is significant, then either (1) the stock is overpriced (and you should short), or underpriced (and you should long). 
+		\item It could also be that your model is wrong. The true model is a multifactor model, and $\alpha_{S}$ is really just the SML (small vs. large) or HML (value vs. growth) factors. 
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{\ftexampl{Alpha I}}
+\begin{frame}{\fttheory{Alpha: Fundamental}}
 	\begin{itemize}
-		\item The alpha depends on how long you believe it will take the market to catch-up
+		\item Recall 
+			\begin{equation}
+				r_{S}-r_{F}=\alpha_{S}+\beta_{S}(r_{M}-r_{F})+\epsilon_{S}
+			\end{equation}
 	\end{itemize}
-\end{frame}
-
-\begin{frame}{\ftexampl{Alpha I}}
-	On 2020-10-09, Tesla was trading for 433.95 USD. It has a beta of 1.37 If you believe instead it should be trading for 450.50 USD, what is its alpha? Suppose that the risk-free rate is zero.
-	\pause
-	{\color{blue}
-		According to the CAPM, Tesla should have a return of
-		\begin{equation}
-			E[r_{\text{TSLA}}]=r_{F}+\beta_{\text{TSLA}}E[r_{M}-r_{F}]=
-		\end{equation}
-	}
-\end{frame}
-
-\begin{frame}{\ftexampl{Alpha II}}
-	On 2020-10-09, Tesla was trading for 433.95 USD. If you believe instead it should be trading for 450.50 USD, what is its alpha?
-	\pause
-	{\color{blue}
-
-	}
 \end{frame}
 
 \begin{frame}
@@ -155,7 +146,10 @@
 
 \begin{frame}{\ftdata{Long-Short Equity}}
 	\begin{itemize}
-		\item 
+		\item Hedge funds that employ trades like the one in the Walmart example are called \underline{long-short equity} funds
+		\item They are often called \underline{market-neutral} funds, because their returns aren't correlated with those of the market
+		\item Some long-short equity funds have a ``long-bias'' and follow a 130/30 rule: they are 130\% long and 30\% short (put differently, 30\% of their long are financed with shorts)
+		\item Although we have considered trades in which the arbitrageur goes long/short the stock and short/long the market, many long-short equity funds will employ \underline{paired trades} in which they go long one stock (say Coca-Cola) and short another (say Pepsi) with the belief that the long stock with outperform the short stock, even if both stocks rise or fall
 	\end{itemize}
 \end{frame}
 
