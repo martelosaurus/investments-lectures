@@ -267,14 +267,8 @@ Net Cash Flow & +.9849 USD & 0 USD
 \begin{frame}{\fttheory{Zero Rates}}
 	\begin{itemize}
 		\item We can use the yield curve to compute the rates on zero-coupon bonds of various terms called \underline{zero rates} through a process known as \underline{bootstrapping}
-		\item $y_{1}$, $y_{2}$ are the 6-and 12-month yields from the yield curve
 		\item $z_{1}$, $z_{2}$ are the 6-and 12-month zero rates
-		\item The 6-month zero rate is the 6-month yield from the yield curve: $z_{1}=y_{1}$
-		\item Solve for $z_{2}$:
-			\begin{equation*}
-				P=F=\frac{{y_{2}}F/2}{1+{z_{1}}/2}+\frac{{y_{2}}F/2}{(1+{z_{2}/2})^{2}}+\frac{F}{(1+{z_{2}/2})^{2}}
-			\end{equation*}
-		\item This equation says that $z_{2}$ is the zero rate for a 12-month, semi-annual coupon bond that trades at par
+		\item The Federal Reserve reports zero curves at \url{https://www.federalreserve.gov/data/nominal-yield-curve.htm}
 	\end{itemize}
 \end{frame}
 

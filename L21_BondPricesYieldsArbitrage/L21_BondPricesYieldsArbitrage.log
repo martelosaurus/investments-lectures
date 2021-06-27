@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.6.6)  1 SEP 2020 15:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2021.5.17)  27 JUN 2021 00:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1076,49 +1076,49 @@ Overfull \hbox (95.35077pt too wide) in paragraph at lines 259--259
  <./ts12240.pdf>] [23
 
 ]
-Overfull \hbox (39.49861pt too wide) in paragraph at lines 279--279
+Overfull \hbox (39.49861pt too wide) in paragraph at lines 273--273
  []|[][][]  
  []
 
 [24
 
 ]
-Overfull \hbox (39.49861pt too wide) in paragraph at lines 296--296
+Overfull \hbox (39.49861pt too wide) in paragraph at lines 290--290
  []|[][][]  
  []
 
 [25
 
 ]
-Overfull \hbox (39.49861pt too wide) in paragraph at lines 296--296
+Overfull \hbox (39.49861pt too wide) in paragraph at lines 290--290
  []|[][][]  
  []
 
 [26
 
 ]
-Overfull \hbox (61.21872pt too wide) in paragraph at lines 326--326
+Overfull \hbox (61.21872pt too wide) in paragraph at lines 320--320
  []|[][][]  
  []
 
 [27
 
 ]
-Overfull \hbox (61.21872pt too wide) in paragraph at lines 358--358
+Overfull \hbox (61.21872pt too wide) in paragraph at lines 352--352
  []|[][][]  
  []
 
 [28
 
 ]
-Overfull \hbox (61.21872pt too wide) in paragraph at lines 368--368
+Overfull \hbox (61.21872pt too wide) in paragraph at lines 362--362
  []|[][][]  
  []
 
 [29
 
 ]
-Overfull \hbox (61.21872pt too wide) in paragraph at lines 368--368
+Overfull \hbox (61.21872pt too wide) in paragraph at lines 362--362
  []|[][][]  
  []
 
@@ -1127,42 +1127,42 @@ Overfull \hbox (61.21872pt too wide) in paragraph at lines 368--368
 ] [31
 
 ]
-Overfull \hbox (216.15125pt too wide) in paragraph at lines 404--404
+Overfull \hbox (216.15125pt too wide) in paragraph at lines 398--398
  []|[][][]  
  []
 
 [32
 
 ]
-Overfull \hbox (216.15125pt too wide) in paragraph at lines 427--427
+Overfull \hbox (216.15125pt too wide) in paragraph at lines 421--421
  []|[][][]  
  []
 
 [33
 
 ]
-Overfull \hbox (216.15125pt too wide) in paragraph at lines 427--427
+Overfull \hbox (216.15125pt too wide) in paragraph at lines 421--421
  []|[][][]  
  []
 
 [34
 
 ]
-Overfull \hbox (134.58696pt too wide) in paragraph at lines 435--435
+Overfull \hbox (134.58696pt too wide) in paragraph at lines 429--429
  []|[][][]  
  []
 
 [35
 
 ]
-Overfull \hbox (134.58696pt too wide) in paragraph at lines 451--451
+Overfull \hbox (134.58696pt too wide) in paragraph at lines 445--445
  []|[][][]  
  []
 
 [36
 
 ]
-Overfull \hbox (134.58696pt too wide) in paragraph at lines 451--451
+Overfull \hbox (134.58696pt too wide) in paragraph at lines 445--445
  []|[][][]  
  []
 
@@ -1178,20 +1178,20 @@ Overfull \hbox (134.58696pt too wide) in paragraph at lines 451--451
 \tf@snm=\write8
 \openout8 = `L21_BondPricesYieldsArbitrage.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 452.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 452.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 446.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 446.
  (./L21_BondPricesYieldsArbitrage.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 452.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 452.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 446.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 446.
 Package rerunfilecheck Info: File `L21_BondPricesYieldsArbitrage.out' has not c
 hanged.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 20155 strings out of 492615
- 395669 string characters out of 6131391
- 472884 words of memory out of 5000000
- 23534 multiletter control sequences out of 15000+600000
+ 20157 strings out of 492615
+ 395685 string characters out of 6131390
+ 472882 words of memory out of 5000000
+ 23536 multiletter control sequences out of 15000+600000
  17493 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,14n,55p,809b,705s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1209,10 +1209,10 @@ onts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on L21_BondPricesYieldsArbitrage.pdf (37 pages, 365522 bytes).
+Output written on L21_BondPricesYieldsArbitrage.pdf (37 pages, 366996 bytes).
 PDF statistics:
- 1203 PDF objects out of 1440 (max. 8388607)
- 998 compressed objects within 10 object streams
+ 1205 PDF objects out of 1440 (max. 8388607)
+ 1000 compressed objects within 10 object streams
  75 named destinations out of 1000 (max. 500000)
  68 words of extra memory for PDF output out of 10000 (max. 10000000)
 
