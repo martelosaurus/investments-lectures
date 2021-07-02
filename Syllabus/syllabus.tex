@@ -1,0 +1,238 @@
+\documentclass[12pt]{article} % Font size
+\usepackage{float}
+\usepackage[hyphens]{url} 
+\usepackage{array}
+\usepackage{pdflscape,multicol,comment,fullpage,paralist}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\renewcommand{\familydefault}{\sfdefault}
+\title{F303: Intermediate Investments}
+\author{Prof. Jordan Martel}
+\date{Fall 2021}
+\begin{document}
+\maketitle
+\section*{Basic Information}
+My office is HH6155 (6th floor of Hodge Hall). My email is jmartel@iu.edu. All of the course materials, assignments, and grades are on Canvas. Office hours are on Mondays and Wednesdays 05:00P-06:00P. The \underline{optional} text for this course is \textit{Essentials of Investments} by Bodie, Kane, and Marcus (BKM). 
+\begin{table}[h]
+	\begin{center}
+		\begin{tabular}{llll}
+			10481 RSTR & 02:30P-03:45P & MW & HH 2050\\
+			10491 RSTR & 04:00P-05:15P & MW & HH 2050\\
+			10493 RSTR & 05:30P-06:45P & MW & HH 2050 
+		\end{tabular}
+	\end{center}
+\end{table}
+\section*{Course Description, Goals, and Objectives}
+\noindent\textit{Course Description.} This course provides a rigorous treatment of the core concepts of investments. We will cover portfolio optimization, market efficiency, the pricing of equity, fixed income and derivative securities, and analyze international investments. We will make use of Excel to implement financial models. This course serves as a foundation for all 400-level finance electives. \\
+
+\noindent\textit{Course Goals.} The goal of this course is to train you to \underline{be} a competent investment professional and \underline{have} the toolkit you'll need to continue your study of finance.\\
+
+\noindent\textit{Course Overview and Objectives.} The following table (a) enumerates the objectives of this course and (b) matches each assessment to one or more of the objectives. There is a one-to-one mapping from lectures to homework assigments: for each lecture, there is a homework assignment, and for each homework assignment, there is a lecture (where lectures will span multiple class meetings). More details about the assessments can be found later in this document. The ``Kelley Objectives'' are the IU \textit{undergraduate student learning objectives}, and are described in detail at the end of this document.
+
+\begin{table}[H]
+	\small
+	\begin{center}
+		\begin{tabular}{c}
+		\begin{tabular}{lllll}
+			\multicolumn{5}{l}{\textbf{Course Goal:} \textit{be} a competent investment professional and \textit{have} a toolkit for continued study}\\ \\
+			\multicolumn{4}{l}{\textbf{Course Objective}} & \textbf{Kelley Objective}\\ \hline
+			\multicolumn{4}{l}{\textbf{ 1:} \textit{taxonomize} assets into classes and sub-classes} & \\
+			\multicolumn{4}{l}{\textbf{ 2:} \textit{discount} cash flows using the yield curve} & 5.2\\
+			\multicolumn{4}{l}{\textbf{ 3:} \textit{quantify} risk using the variance and covariance} & 5.1-5.2\\
+			\multicolumn{4}{l}{\textbf{ 4:} \textit{price} risk using the Capital Asset Pricing Model} &3.3,5.2 \\
+			\multicolumn{4}{l}{\textbf{ 5:} \textit{collaborate} with colleagues to construct portfolios} & 4.2,5.1-5.2,6.1\\
+			\multicolumn{4}{l}{\textbf{ 6:} \textit{draw} a derivative's payoff as a function of the underlying payoff} & 3.3\\
+			\multicolumn{4}{l}{\textbf{ 7:} \textit{compute} a derivative's fair price} & 5.2\\ 
+			\multicolumn{4}{l}{\textbf{ 8:} \textit{explain} how a derivative can hedge risk} & 3.3,5.4\\
+			\multicolumn{4}{l}{\textbf{ 9:} \textit{identify} implementation issues (fees, margin, shorting)} & \\
+			\multicolumn{4}{l}{\textbf{ 10:} \textit{assess} the validity of investment theory using real-world data} & 3.2\\ \\
+			\textbf{Lecture$+$Assignment} & \textbf{BKM} & \textbf{Points} & \textbf{Due Date} & \textbf{Objective(s)} \\ \hline
+			\multicolumn{5}{l}{\textbf{I. Introduction}} \\
+			Asset Classes and Markets & 3.2,3.8-3.9 & 20 & 08-27 (f) &  1,9\\
+			\multicolumn{5}{l}{\textbf{II. X-Time: Bonds}} \\
+			Bond Prices, Yields, and Arbitrage & 10.1-10.4,10.6 & 20 & 09-03 (f) &  2,9\\
+			Managing Bond Portfolios & 11.1-11.3 & 20 & 09-10 (f) &  2,9\\ 
+			\multicolumn{5}{l}{\textbf{III. X-Risks: Stocks}} \\
+			Risk, Return, and Diversification & 5.3-5.6,6.1-6.6 & 20 & 09-17 (f) &  3\\
+			The CAPM, APT, and EMH & 7.1-7.4,18.1 & 20 & 09-24 (f) &  4,10 \\ 
+			Stock Prices, Dividends, and Returns & 8.1-8.3 & 20 & 10-01 (f) &  3,4,10\\ \hline
+			\multicolumn{2}{l}{\textit{Exam I}} & 300 & 10-06 (w) & \\ \hline
+			\multicolumn{5}{l}{\textbf{IV. Arbitrage}} \\
+			Arbitrage and Pricing & 7.5 & 20 & 10-15 (f) &  4 \\
+			\multicolumn{5}{l}{\textbf{V. Forwards}} \\
+			Forwards I: Contracts and Trading & 17.1-17.3 & 20 & 10-22 (f) &  6,9 \\
+			Forwards II: Valuation & 17.4-17.6 & 20 & 10-29 (f) &  7-9\\
+			\multicolumn{5}{l}{\textbf{VI. Options}} \\
+			Options I: Contracts and Trading & 15.1-15.4 & 20 & 11-05 (f) &  6,9\\
+			Options II: Valuation & 16.1-16.4 & 20 & 11-12 (f) &  7-9 \\ \hline
+			\multicolumn{2}{l}{\textit{Exam II}} & 300 & 11-17 (w)  & \\ \hline
+			\multicolumn{5}{l}{\textbf{VII. Investment Project}} \\
+			\multicolumn{2}{l}{\textit{Investment Project Part A}} & 30 & 09-11 (f) & \\ 
+			\multicolumn{2}{l}{\textit{Investment Project Part B}} & 150 & 12-16 (w) & \\ \hline
+			\multicolumn{2}{l}{\textit{Final Exam}} & 300 & 12-16 (m)  & \\ \hline
+			\multicolumn{2}{l}{\textit{Total Points}} & 1000 & & 
+		\end{tabular}\\ \\
+		\begin{tabular}{llllllllllllll}
+			\footnotesize
+			\textbf{Minimum Points} & 970 & 930 & 900 & 870 & 830 & 800 & 770 & 730 & 700 & 670 & 630 & 600 & 0 \\
+			\textbf{Letter Grade} & A+ & A & A-- & B+ & B & B-- & C+ & C & C-- & D+ & D & D-- & F  
+		\end{tabular}
+		\end{tabular}
+	\end{center}
+\end{table}
+
+\section*{Assessments}
+\noindent\textit{Exams.} Exams will be taken on Canvas during classtime. Exams are \underline{not} cumulative. A formula sheet will be provided to you and posted on Canvas prior to the exam. You must take all exams at the date and time for which they are scheduled. Make-up final exams will be given only for family or medical \underline{emergencies}. If you will be taking the exam outside of the continental United States, please let me know so that we can make alternative arrangements suitable for your time-zone. More details will be comminicated prior to the exam. If you do not take the final exam, I will fill your final exam grade with the average of your exam I and II grades. \\ 
+
+\noindent\textit{Homework Assignments.} All homework assignments will be posted to Canvas under \underline{Quizzes} and available for one week. Homework assignments are graded. More details can be found in the homework assignment descriptions on Canvas. I encourage (but do not require) you to work on the problem sets with your peers. There are no make-ups for homework.\\
+
+\noindent\textit{Investment Project.} Due to the unusual circumstances brought about by Covid-19, you may choose to complete the ``group'' investment project either with a group \underline{or} individually. There will be two due dates. On the first due date, you or your group will send me a portfolio of stocks you've chosen (a list of stock tickers and their corresponding portfolio weights) and a one-page explanation for why you have chosen each stock. There are no right or wrong answers for this part. I just want to see that you've thought critically about your portfolio given what you've learned in previous courses. On the second due date, you or your group will send me a document detailing how your portfolio performed during the semester using the tools that we will have learned in class. The full details of this project can be found on Canvas. \\
+
+\noindent\textit{Grades.} Following standard finance department policy, the average course grade across my three sections of F303  will fall between 2.70 and 3.10.
+
+\section*{Code of Student Rights, Responsibilities and Conduct}
+Students enjoy the rights and accept the responsibilities enumerated in the Code of Student Rights, Responsibilities and Conduct. Violations of the Code (e.g. plagiarism) will be handled according to the procedures enumerated in said code.
+
+\pagebreak
+\begin{center}
+	\Large Appendix
+\end{center}
+\tableofcontents
+\pagebreak
+\section{Learning Goals and Outcomes}
+Below, you'll find the Bloomington Undergraduate Program Learning Goals and Student Learning Outcomes (SLOs). They are referenced in the course goals and objectives. 
+
+% An Integrative Point of View.
+\subsection{An Integrative Point of View.}
+Evaluate and make business decisions taking into account the interdependent relationships among competitive and environmental conditions, organizational resources, and the major functional areas of business.
+\begin{itemize} 
+	\item\textbf{SLO 1.1:} Identify the relationships between two or more business functions; explain how actions in one functional area affect other functional areas.
+	\item\textbf{SLO 1.2:} Describe how the relationships among the functional areas relate to the goals of the organization.
+	\item\textbf{SLO 1.3:} Use integrative techniques, structures, or frameworks to make business decisions.
+\end{itemize}
+% Ethical Reasoning.
+\subsection{Ethical Reasoning.}
+Recognize ethical issues, describe various frameworks for ethical reasoning, and discern the tradeoffs and implications of applying various ethical frameworks when making business decisions.
+\begin{itemize}
+	\item\textbf{SLO 2.1:} Identify the ethical dimension(s) of a business decision.
+	\item\textbf{SLO 2.2:} Recognize the tradeoffs created by application of competing ethical theories and perspectives.
+	\item\textbf{SLO 2.3:} Formulate and defend a well-supported recommendation for the resolution of an ethical issue.
+\end{itemize}
+% Critical Thinking and Decision Making in Business.
+\subsection{Critical Thinking and Decision Making in Business.}
+Identify and critically evaluate implications of business decisions for organizational stakeholders and the natural environment.
+\begin{itemize}
+	\item\textbf{SLO 3.1:} Recognize the implications of a proposed decision from a variety of diverse stakeholder perspectives.
+	\item\textbf{SLO 3.2:} Evaluate the integrity of the supporting evidence and data for a given decision.
+	\item\textbf{SLO 3.3:} Analyze a given decision using critical techniques, structures, or frameworks.
+\end{itemize}
+% Communication and Leadership.
+\subsection{Communication and Leadership.}
+Communicate effectively in a wide variety of business settings employing multiple media of communications.
+\begin{itemize}
+	\item\textbf{SLO 4.1:} Deliver clear, concise, and audience-centered individual and team presentations.
+	\item\textbf{SLO 4.2:} Write clear, concise, and audience-centered business documents.
+	\item\textbf{SLO 4.3:} Effectively participate in informational and employment interviews.
+	\item\textbf{SLO 4.4:} Articulate one’s unique value proposition to a given audience.
+\end{itemize}
+% Quantitative Analysis and Modeling.
+\subsection{Quantitative Analysis and Modeling.}
+Systematically apply tools of quantitative analysis and modeling to make recommendations and business decisions.
+\begin{itemize}
+	\item\textbf{SLO 5.1:} Use appropriate technology to solve a given business problem.
+	\item\textbf{SLO 5.2:} Analyze business problems using appropriate mathematical theories and techniques.
+	\item\textbf{SLO 5.3:} Explain the role of technologies in business decision making analysis, or modeling.
+	\item\textbf{SLO 5.4:} Structure logic and frame quantitative analysis to solve business problems.
+\end{itemize}
+% Team Membership \& Inclusiveness
+\subsection{Team Membership \& Inclusiveness.}
+Collaborate productively with others, functioning effectively as both members and leaders of teams.
+\begin{itemize}
+	\item\textbf{SLO 6.1:} Facilitate team meetings and collaborate effectively in both face-to-face and virtual interactions.
+	\item\textbf{SLO 6.2:} Identify and employ best team practices.
+	\item\textbf{SLO 6.3:} Assess and offer feedback on one’s own effectiveness as well as one’s team members’ effectiveness with respect to productivity and relationship-building in both oral and written formats.
+	\item\textbf{SLO 6.4:} Articulate and analyze the value of inclusivity in a variety of business settings.
+\end{itemize}
+% Cultural awareness and global effectiveness.
+\subsection{Cultural awareness and global effectiveness.}
+Become conversant with major economic, social, political, and technological trends and conditions that influence the development of the global economy and demonstrate competence in the cultural, interpersonal and analytical dimensions of international business.
+\begin{itemize}
+	\item\textbf{SLO 7.1:} Identify the risks and opportunities associated with determining and implementing optimal global business strategies.
+	\item\textbf{SLO 7.2:} Integrate international, regional, and local non-market forces into strategic decisions of multinational corporations.
+	\item\textbf{SLO 7.3:} Analyze obstacles resulting from cultural differences and recommend leadership approaches that leverage diversity to enhance business performance.
+	\item\textbf{SLO 7.4:} Identify the personal and contrasting attitudes, values, and beliefs that shape business relationships.
+\end{itemize}
+
+% ==============================================================================
+% BIAS-BASED INCIDENT REPORTING
+\section{Bias-Based Incident Reporting}
+Bias-based incident reports can be made by students, faculty and staff. Any act of discrimination or harassment based on race, ethnicity, religious affiliation, gender, gender identity, sexual orientation or disability can be reported through any of the options: 1) email \url{biasincident@indiana.edu} or \url{incident@indiana.edu}; 2) call the Dean of Students Office at (812) 855-8188 or 3) use the IU mobile App (\url{m.iu.edu}). Reports can be made anonymously.
+
+% ==============================================================================
+% COVID 19
+\section{Covid-19}
+% classroom policies
+\subsection{Classroom Policies}
+The following are our classroom policies regarding Covid-19. 
+\begin{itemize}
+	\item Wear your mask at all times even while speaking.  Failure to do so will result in penalties, which may include suspension (see course syllabus for more details)
+	\item Sit in your assigned seat for every class session.
+	\item Do not attend other sections of this course; you must attend the section to which you’ve been assigned.
+	\item If cleaning supplies are available, clean off your desk space in the classroom.
+	\item Stay at least 6 feet apart from others even while in the classroom.
+	\item If you are ill, stay home; do not come to class.
+	\item If you have COVID-19 symptoms, contact the IU health center IMMEDIATELY and follow their instructions to be tested.
+	\item Contact the instructor and your advisor by e-mail in advance if you are unable to meet course requirements due to illness (or for other reasons); work with them to make alternative arrangements for assignments or exams (see course syllabus for details about your responsibility for missed assignments or exams).
+\end{itemize}
+\subsection{Masks and Physical Distancing Requirements}
+In recognition of what all IU community members owe to each other all students, staff, and faculty signed an
+acknowledgement of their responsibility to follow public health measures as a condition returning to the
+campus this fall. Included in that commitment were requirements for wearing masks in all IU buildings and
+maintaining physical distancing in all IU buildings. Both are classroom requirements.
+Both requirements are necessary for us to protect each other from transmission of COVID-19.
+\begin{itemize}
+\item Therefore, if a student is present in class without a mask, the instructor will ask the student to put a
+mask on immediately or leave the class.
+\begin{itemize}
+	\item If a student comes to class a second time without a mask, the student’s final grade will be reduced by one letter (e.g., from an A to a B, for instance), and the instructor will report the student to the Office of Student Conduct of the Division of Student Affairs.
+	\item If a student refuses to put a mask on after being instructed to do so, the instructor may end the class immediately, and report the student to the Office of Student Conduct. The student will be summarily suspended from the university pursuant to IU’s Summary Suspension Policy
+\end{itemize}
+\item If Student Conduct receives three cumulative reports from any combination of instructors or staff
+members that a student is not complying with the requirements of masking and physical distancing,
+the student will be summarily suspended from the university for the semester.
+\end{itemize}
+Summary Suspension Policy
+\begin{quotation}
+“A student may be summarily suspended from the university and summarily excluded from university
+property and programs by the Provost or designee of a university campus. The Provost or designee may
+act summarily without following the hearing procedures established by this section if the officer is
+satisfied that the student’s continued presence on the campus constitutes a serious threat of harm to the
+student or to any other person on the campus or to the property of the university or property of other
+persons on the university campus.”
+\end{quotation}
+The Provost has determined that refusal to comply with the public health requirements specified in the
+Student Responsibility form, including the requirement of wearing a mask in all IU buildings, constitutes
+“a serious threat of harm to other persons” within the meaning of the summary suspension policy. In
+addition, the Provost has determined that a person who does not comply with these requirements, as
+evidenced by three credible violations of the policy reported to the campus from any source, constitutes
+“a serious threat of harm to other persons” within the meaning of the summary suspension policy.
+\subsection{Student Rights}
+Any student who believes another person in a class is threatening the safety of the class by not wearing a mask or observing physical distancing requirements may leave the class without consequence.  
+\subsection{Attendance}
+The student responsibility form requires that you take your temperature every morning and that you refrain
+from attending class if you have a temperature of 100.4 or other symptoms of illness. In order to ensure
+that you can do this, attendance will not be a factor in the final grade. Attendance may still be taken to
+comply with accreditation requirements.
+\subsection{Assigned Seating}
+In order to ensure we can contact you in the event you are exposed to COVID-19, you must remain in your
+assigned seat for the entire semester.
+% ==============================================================================
+% SEXUAL MISCONDUCT AND TITLE IX
+\section{Sexual Misconduct and Title IX}
+As your instructor, one of my responsibilities is to create a positive learning environment for all students. Title IX and IU’s Sexual Misconduct Policy prohibit sexual misconduct in any form, including sexual harassment, sexual assault, stalking, and dating and domestic violence. If you have experienced sexual misconduct, or know someone who has, the University can help. If you are seeking help and would like to speak to someone confidentially, you can make an appointment with:
+\begin{itemize}
+	\item The Sexual Assault Crisis Services (SACS) at (812) 855-8900 (counseling services)
+	\item Confidential Victim Advocates (CVA) at (812) 856-2469 (advocacy and advice services)
+	\item IU Health Center at (812) 855-4011 (health and medical services)
+\end{itemize}
+It is also important that you know that Title IX and University policy require me to share any information brought to my attention about potential sexual misconduct, with the campus Deputy Title IX Coordinator or IU’s Title IX Coordinator. In that event, those individuals will work to ensure that appropriate measures are taken and resources are made available. Protecting student privacy is of utmost concern, and information will only be shared with those that need to know to ensure the University can respond and assist.  I encourage you to visit \url{stopsexualviolence.iu.edu} to learn more.
+\end{document}
